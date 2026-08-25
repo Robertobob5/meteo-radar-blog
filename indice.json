@@ -1,6 +1,18 @@
 {
- "aggiornato": "2026-08-25T20:27:36.456Z",
+ "aggiornato": "2026-08-25T20:37:41.710Z",
  "articoli": [
+  {
+   "id": "2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille-",
+   "data": "2026-08-25",
+   "titolo": "Campi Flegrei, lo sciame del 31 luglio visto con oltre mille terremoti",
+   "sottotitolo": "L’analisi con algoritmi di intelligenza artificiale ricostruisce la sequenza sismica nella parte centrale della caldera.",
+   "categoria": "Vulcani",
+   "minuti": 5,
+   "copertina": "immagini/2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille--copertina.webp",
+   "fonte": "INGV Vulcani",
+   "fonteUrl": "https://ingvvulcani.com/2026/08/24/campi-flegrei-il-terremoto-md-4-7-del-31-luglio-e-lo-sciame-sismico-che-hanno-scosso-la-caldera-flegrea-una-nuova-foto-della-sismicita/",
+   "file": "articoli/2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille-.json"
+  },
   {
    "id": "2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab",
    "data": "2026-08-25",
