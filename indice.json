@@ -1,6 +1,18 @@
 {
- "aggiornato": "2026-08-25T20:42:36.926Z",
+ "aggiornato": "2026-08-25T20:59:55.393Z",
  "articoli": [
+  {
+   "id": "2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi",
+   "data": "2026-08-25",
+   "titolo": "Dieci sensori per osservare l’inquinamento dell’aria ad Addis Abeba",
+   "sottotitolo": "La rete della missione NASA MAIA misura le polveri sottili e il carbonio nero nella capitale dell’Etiopia.",
+   "categoria": "Aria",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/photojournal/mapping-air-pollution-with-maia-sensors-in-addis-ababa/",
+   "file": "articoli/2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi.json"
+  },
   {
    "id": "2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-",
    "data": "2026-08-25",
