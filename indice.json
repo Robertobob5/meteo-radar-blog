@@ -1,6 +1,18 @@
 {
- "aggiornato": "2026-08-25T20:08:33.839Z",
+ "aggiornato": "2026-08-25T20:21:04.005Z",
  "articoli": [
+  {
+   "id": "2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-",
+   "data": "2026-08-25",
+   "titolo": "MTG-I2 completa la costellazione per le immagini meteo sull’Europa",
+   "sottotitolo": "Il satellite Meteosat di terza generazione è destinato a rafforzare le osservazioni utili alle previsioni e agli avvisi meteorologici.",
+   "categoria": "Spazio",
+   "minuti": 2,
+   "copertina": "immagini/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull--copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Replay_MTG-I2_pre-launch_media_briefing",
+   "file": "articoli/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-.json"
+  },
   {
    "id": "2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio",
    "data": "2026-08-25",

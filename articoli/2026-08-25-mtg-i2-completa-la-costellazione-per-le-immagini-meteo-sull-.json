@@ -1,0 +1,73 @@
+{
+ "id": "2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-",
+ "data": "2026-08-25",
+ "scritto": "2026-08-25T20:21:04.004Z",
+ "titolo": "MTG-I2 completa la costellazione per le immagini meteo sull’Europa",
+ "sottotitolo": "Il satellite Meteosat di terza generazione è destinato a rafforzare le osservazioni utili alle previsioni e agli avvisi meteorologici.",
+ "categoria": "Spazio",
+ "copertina": "immagini/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull--copertina.webp",
+ "copertinaAlt": "Un satellite osserva dall’alto l’Europa e il Nord Africa, dove sono visibili nubi e lampi.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Il satellite MTG-I2 è il prossimo Meteosat di terza generazione della serie Imager, dedicata alla produzione di immagini per le previsioni del tempo. Il suo lancio è previsto il 27 agosto con un razzo Ariane 6, dal porto spaziale europeo nella Guyana francese. Prima del lancio, il 19 agosto, i rappresentanti dei media sono stati invitati a un incontro dedicato alla missione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "MTG-I2 è il terzo satellite del programma MTG e completa la costellazione MTG, l’insieme di satelliti indicato dalla fonte. Insieme, questi satelliti produrranno immagini destinate alle previsioni meteorologiche in Europa con un dettaglio senza precedenti. La missione porta inoltre nuovi prodotti di dati e nuove capacità ai servizi meteorologici europei."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Osservazioni pensate per il tempo che cambia rapidamente"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra gli impieghi segnalati per la missione c’è il nowcasting degli eventi meteorologici intensi. Il nowcasting è indicato qui come un’attività particolarmente adatta a seguire fenomeni severi e a sostenere avvisi meteorologici tempestivi. Per questo tipo di osservazione conta la capacità di costruire immagini dei sistemi meteorologici che evolvono rapidamente."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I satelliti MTG-Imager trasportano due strumenti: il Lightning Imager e il Flexible Combined Imager. Il Lightning Imager introduce capacità nuove per i satelliti meteorologici europei perché controlla continuamente la presenza di fulmini. Il Flexible Combined Imager, invece, costruisce un quadro dei sistemi meteorologici in rapida evoluzione e può essere usato per emettere avvisi meteo in tempi utili."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Una vista satellitare illustrata di nubi sull’Europa e sul Nord Africa, con temporali evidenziati da lampi.",
+   "didascalia": "Gli strumenti a bordo sono dedicati sia al monitoraggio dei fulmini sia alle immagini dei sistemi meteorologici in evoluzione.",
+   "file": "immagini/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull--1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una scansione frequente di Terra, Europa e Nord Africa"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Flexible Combined Imager opera dalla posizione geostazionaria del satellite, cioè dalla posizione da cui osserva la Terra sopra l’equatore. MTG-I2 si trova a 36 000 chilometri sopra l’equatore. Da lì, lo strumento può acquisire l’intera superficie terrestre visibile dal satellite in 10 minuti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La stessa capacità di osservazione permette anche una scansione più frequente dell’Europa e del Nord Africa: queste aree possono essere riprese ogni 2,5 minuti. La combinazione tra il controllo continuo dei fulmini e le immagini ripetute dei sistemi meteorologici è al centro delle capacità che la missione mette a disposizione dei servizi meteorologici europei."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di un satellite sopra l’equatore che osserva la Terra, con una copertura più frequente su Europa e Nord Africa.",
+   "didascalia": "Dalla sua posizione, MTG-I2 può riprendere l’intera Terra visibile e osservare più spesso Europa e Nord Africa.",
+   "file": "immagini/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull--2.webp"
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "MTG-I2 è il terzo satellite MTG e completa la costellazione. Il lancio è previsto il 27 agosto con Ariane 6 dalla Guyana francese. A bordo porta il Lightning Imager, per il monitoraggio continuo dei fulmini, e il Flexible Combined Imager, per immagini dei sistemi meteorologici in rapida evoluzione. Lo strumento può scansionare la Terra visibile in 10 minuti ed Europa e Nord Africa ogni 2,5 minuti."
+  }
+ ],
+ "parole": 400,
+ "minuti": 2,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "Replay: MTG-I2 pre-launch media briefing",
+  "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Replay_MTG-I2_pre-launch_media_briefing",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
