@@ -1,6 +1,18 @@
 {
- "aggiornato": "2026-08-25T20:37:41.710Z",
+ "aggiornato": "2026-08-25T20:42:36.926Z",
  "articoli": [
+  {
+   "id": "2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-",
+   "data": "2026-08-25",
+   "titolo": "Dieci anni dalla sequenza del 2016: le lezioni della scienza sui terremoti dell’Appennino centrale",
+   "sottotitolo": "Dalla propagazione delle rotture al monitoraggio integrato, le ricerche aiutano a leggere una sequenza complessa senza promettere previsioni impossibili.",
+   "categoria": "Terremoti",
+   "minuti": 6,
+   "copertina": "immagini/2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza--copertina.webp",
+   "fonte": "INGV Terremoti",
+   "fonteUrl": "https://ingvterremoti.com/2026/08/24/dieci-anni-dalla-sequenza-in-italia-centrale-cosa-abbiamo-imparato-dalla-scienza/",
+   "file": "articoli/2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-.json"
+  },
   {
    "id": "2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille-",
    "data": "2026-08-25",
