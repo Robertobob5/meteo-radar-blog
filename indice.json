@@ -1,6 +1,18 @@
 {
- "aggiornato": "2026-08-25T20:59:55.393Z",
+ "aggiornato": "2026-08-25T21:06:54.207Z",
  "articoli": [
+  {
+   "id": "2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo",
+   "data": "2026-08-25",
+   "titolo": "MTG-I2 pronto al lancio per rafforzare le osservazioni meteorologiche",
+   "sottotitolo": "Il satellite partirà a bordo di Ariane 6 e completerà la prima famiglia della missione Meteosat di terza generazione.",
+   "categoria": "Spazio",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/Watch_live_MTG-I2_set_for_liftoff",
+   "file": "articoli/2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo.json"
+  },
   {
    "id": "2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi",
    "data": "2026-08-25",
