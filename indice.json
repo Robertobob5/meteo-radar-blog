@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-25T21:35:02.339Z",
+ "aggiornato": "2026-08-25T21:45:44.702Z",
  "articoli": [
+  {
+   "id": "2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ",
+   "data": "2026-08-25",
+   "titolo": "Sentinel-3 accelera l’arrivo dei dati sugli incendi in Europa",
+   "sottotitolo": "Una nuova strategia di trasmissione riduce i tempi di consegna delle immagini satellitari per i servizi di emergenza.",
+   "categoria": "Spazio",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3_provides_faster_data_for_Europe_fires",
+   "fonteTitolo": "Sentinel-3 provides faster data for Europe fires",
+   "file": "articoli/2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ.json"
+  },
   {
    "id": "2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d",
    "data": "2026-08-25",
@@ -13,30 +26,6 @@
    "fonteUrl": "https://ingvvulcani.com/2026/07/31/lintrusione-magmatica-del-13-maggio-2008-un-evento-chiave-per-interpretare-le-eruzioni-laterali-delletna/",
    "fonteTitolo": "L’intrusione magmatica del 13 maggio 2008: un evento chiave per interpretare le eruzioni laterali dell’Etna",
    "file": "articoli/2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d.json"
-  },
-  {
-   "id": "2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo",
-   "data": "2026-08-25",
-   "titolo": "MTG-I2 pronto al lancio per rafforzare le osservazioni meteorologiche",
-   "sottotitolo": "Il satellite partirà a bordo di Ariane 6 e completerà la prima famiglia della missione Meteosat di terza generazione.",
-   "categoria": "Spazio",
-   "minuti": 3,
-   "copertina": "immagini/2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo-copertina.webp",
-   "fonte": "ESA Observing the Earth",
-   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/Watch_live_MTG-I2_set_for_liftoff",
-   "file": "articoli/2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo.json"
-  },
-  {
-   "id": "2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi",
-   "data": "2026-08-25",
-   "titolo": "Dieci sensori per osservare l’inquinamento dell’aria ad Addis Abeba",
-   "sottotitolo": "La rete della missione NASA MAIA misura le polveri sottili e il carbonio nero nella capitale dell’Etiopia.",
-   "categoria": "Aria",
-   "minuti": 3,
-   "copertina": "immagini/2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi-copertina.webp",
-   "fonte": "NASA Science",
-   "fonteUrl": "https://science.nasa.gov/photojournal/mapping-air-pollution-with-maia-sensors-in-addis-ababa/",
-   "file": "articoli/2026-08-25-dieci-sensori-per-osservare-l-inquinamento-dell-aria-ad-addi.json"
   },
   {
    "id": "2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-",
