@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-25T21:06:54.207Z",
+ "aggiornato": "2026-08-25T21:35:02.339Z",
  "articoli": [
+  {
+   "id": "2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d",
+   "data": "2026-08-25",
+   "titolo": "Etna, l’intrusione del 2008 che ha mostrato l’arresto di un dicco magmatico",
+   "sottotitolo": "Fratture al suolo, terremoti e deformazioni hanno permesso di seguire una propagazione sotterranea sul fianco settentrionale del vulcano.",
+   "categoria": "Vulcani",
+   "minuti": 4,
+   "copertina": "immagini/2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d-copertina.webp",
+   "fonte": "INGV Vulcani",
+   "fonteUrl": "https://ingvvulcani.com/2026/07/31/lintrusione-magmatica-del-13-maggio-2008-un-evento-chiave-per-interpretare-le-eruzioni-laterali-delletna/",
+   "fonteTitolo": "L’intrusione magmatica del 13 maggio 2008: un evento chiave per interpretare le eruzioni laterali dell’Etna",
+   "file": "articoli/2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d.json"
+  },
   {
    "id": "2026-08-25-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo",
    "data": "2026-08-25",
