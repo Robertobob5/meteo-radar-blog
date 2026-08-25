@@ -35,8 +35,10 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODELLO_TESTO: ${{ vars.MODELLO_TESTO || 'gpt-5.6-terra' }}
           MODELLO_IMMAGINI: ${{ vars.MODELLO_IMMAGINI || 'gpt-image-2' }}
-          MAX_IMMAGINI_INTERNE: ${{ vars.MAX_IMMAGINI_INTERNE || '2' }}
+          MAX_IMMAGINI_INTERNE: ${{ vars.MAX_IMMAGINI_INTERNE || '1' }}
+          QUALITA_IMMAGINI: ${{ vars.QUALITA_IMMAGINI || 'low' }}
           FUSO: Europe/Rome
+          SITO: https://robertobob5.github.io/meteo-radar-blog/
         run: node genera.mjs ${{ inputs.forza && '--forza' || '' }}
 
       - name: Pubblica
@@ -47,6 +49,6 @@ jobs:
           fi
           git config user.name  "Meteo Radar"
           git config user.email "blog@meteoradar.local"
-          git add -A articoli immagini indice.json 2>/dev/null || git add -A
+          git add -A articoli immagini p indice.json index.html .nojekyll 2>/dev/null || git add -A
           git commit -m "Articolo del $(TZ=Europe/Rome date +%d/%m/%Y)"
           git push
