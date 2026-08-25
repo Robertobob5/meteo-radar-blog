@@ -1,0 +1,87 @@
+{
+ "id": "2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio",
+ "data": "2026-08-25",
+ "scritto": "2026-08-25T20:08:33.838Z",
+ "titolo": "Caldo estremo, siccità e incendi: il monitoraggio dallo spazio nel 2026",
+ "sottotitolo": "I satelliti di osservazione della Terra seguono temperature, condizioni di siccità, fumo e incendi per comprendere fenomeni strettamente collegati.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio-copertina.webp",
+ "copertinaAlt": "Illustrazione della Terra osservata dallo spazio, con territori aridi, pennacchi di fumo e un satellite in orbita.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Caldo estremo, siccità e incendi boschivi non sono fenomeni isolati. Le alte temperature, la scarsità di pioggia e di umidità nel suolo, insieme al vento forte, possono creare condizioni favorevoli agli incendi. Dallo spazio, i satelliti di osservazione della Terra aiutano a seguire questi processi e a mostrare come gli effetti del cambiamento climatico stiano incidendo sul pianeta."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il caldo estremo è diventato sempre più frequente e intenso in Europa e nel resto del mondo. Il Servizio Copernicus per il cambiamento climatico ha segnalato temperature eccezionali: giugno 2026 è stato il secondo giugno più caldo a livello globale, mentre l’Europa occidentale ha vissuto il giugno più caldo mai registrato."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le condizioni che favoriscono il fuoco"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un incendio può essere innescato dalla disattenzione umana, per esempio da una sigaretta gettata via, oppure da cause naturali come i fulmini. Ma l’innesco è solo una parte della situazione. Temperature elevate, assenza di piogge, poca umidità nel terreno e vento forte possono offrire un ambiente particolarmente adatto alla propagazione delle fiamme."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La siccità persistente è collegata alla diminuzione delle precipitazioni e della portata dei fiumi. Tra le immagini raccolte dall’Agenzia spaziale europea compaiono, per esempio, due osservazioni in falsi colori della campagna attorno a Belgrado, realizzate l’8 agosto 2026 con il canale del vicino infrarosso di Sentinel-2. I falsi colori sono immagini in cui i dati non vengono mostrati con i colori visibili naturali, così da mettere in evidenza caratteristiche del territorio. Un’altra serie di immagini Sentinel-2 sul Danubio a nord di Budapest documenta un livello del fiume sceso a un minimo record in Ungheria durante una grave siccità nell’Europa centrale."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di campi e di un grande fiume con un livello dell’acqua ridotto, osservati con dati satellitari.",
+   "didascalia": "Le immagini satellitari possono rendere visibili gli effetti della siccità sul territorio e sui corsi d’acqua.",
+   "file": "immagini/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalla superficie terrestre all’aria"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gli incendi rilasciano grandi quantità di gas in traccia e aerosol. I gas in traccia sono gas presenti nell’atmosfera in quantità ridotte; gli aerosol sono minuscole particelle sospese nell’aria. Queste emissioni possono influire sulla qualità dell’aria a livello regionale. L’Agenzia spaziale europea segnala inoltre che si stima che fino al 35% dei gas serra sia prodotto dalla combustione della materia organica in foreste, aree cespugliose e praterie."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le osservazioni del 2026 hanno mostrato situazioni molto diverse ma connesse: incendi vicino a Vancouver e in Ontario, in Canada; incendi in Grecia; roghi nelle vicinanze di Madrid e nell’area a ovest di Bordeaux, in Francia; un pennacchio di fumo dagli incendi greci visto da Sentinel-3; monossido di carbonio prodotto dagli incendi nel Nord America. Un’immagine basata sui dati di Sentinel-5P, acquisita il 26 luglio, ha mostrato l’indice degli aerosol su Spagna e Francia dopo giorni di propagazione degli incendi nelle campagne secche."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Anche il mare fa parte di questo quadro di osservazione. Un’immagine del 29 giugno 2026 ha rilevato un’anomalia della temperatura superficiale del Mediterraneo. Un’anomalia è una differenza rispetto a un valore di riferimento. Sentinel-3 ha inoltre acquisito immagini della temperatura della superficie terrestre il 23 giugno e durante un’ondata di calore in Europa il 26 maggio."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Gli strumenti satellitari impiegati"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dal 1° maggio 2026, il Servizio di gestione delle emergenze Copernicus è stato attivato più di 30 volte per fornire dati e immagini sugli incendi in Croazia, Francia, Germania, Grecia, Groenlandia, Italia, Polonia, Portogallo, Spagna, Tunisia e Regno Unito. Mentre prosegue la stagione del caldo estremo e delle condizioni asciutte al suolo, i satelliti forniscono dati tempestivi attraverso questo servizio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Sentinel-2 acquisisce immagini ad alta risoluzione in 13 bande spettrali, cioè intervalli di lunghezze d’onda della luce. Per questo può osservare la vegetazione sia nei colori naturali sia attraverso dati infrarossi, utili a mostrare le aree calde. Sentinel-3 raccoglie dati sia sulla terraferma sia sul mare. Il suo strumento Ocean Land and Colour Instrument osserva una fascia larga 1270 chilometri, mentre il radiometro Sea and Land Surface Temperature misura con elevata accuratezza la temperatura del suolo e degli oceani."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Sentinel-5P misura gas in traccia e aerosol emessi in grandi quantità dagli incendi. Anche EarthCARE può evidenziare incendi attivi e pennacchi di fumo grazie al suo strumento di imaging multispettrale. Il suo lidar avanzato, uno strumento che usa impulsi di luce per analizzare l’atmosfera, può essere impiegato per caratterizzare emissioni come il fumo."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Caldo estremo, siccità, incendi e qualità dell’aria sono fenomeni strettamente collegati al cambiamento climatico. Le osservazioni dallo spazio permettono di rilevare condizioni del territorio, temperature di terra e mare, fumo, aerosol e gas, offrendo dati utili per comprendere questi eventi interconnessi."
+  }
+ ],
+ "parole": 714,
+ "minuti": 4,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "Wildfires, drought and extreme heat, 2026",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

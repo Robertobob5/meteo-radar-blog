@@ -1,1 +1,17 @@
-{"aggiornato":null,"articoli":[]}
+{
+ "aggiornato": "2026-08-25T20:08:33.839Z",
+ "articoli": [
+  {
+   "id": "2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio",
+   "data": "2026-08-25",
+   "titolo": "Caldo estremo, siccità e incendi: il monitoraggio dallo spazio nel 2026",
+   "sottotitolo": "I satelliti di osservazione della Terra seguono temperature, condizioni di siccità, fumo e incendi per comprendere fenomeni strettamente collegati.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026",
+   "file": "articoli/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio.json"
+  }
+ ]
+}
