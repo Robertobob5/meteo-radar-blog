@@ -118,22 +118,64 @@ async function scaricaFeed(fonte) {
    stessa notizia e si passa oltre. */
 const VUOTE = new Set(('il lo la i gli le un uno una di a da in con su per tra fra e o ma che chi cui non ' +
   'del della dei delle dal dalla al alla allo agli alle nel nella nei sul sulla come dove quando più meno ' +
-  'nuovo nuova nuovi nuove primo prima ancora anche dopo prima verso sono stato stata dalle degli ' +
+  'nuovo nuova nuovi nuove primo prima ancora anche dopo sono stato stata dalle degli sull dell nell ' +
   'the a an of to in on for with and or from that this at by is are as new study research about into ' +
   'science scientists researchers).').split(' '));
+
+/* Le parole si accorciano a cinque lettere: così "sensori" e "sensore",
+   "osserva" e "osservare" diventano la stessa cosa. Le sigle con dentro
+   un numero (MTG-I2, Sentinel-1, 2016) restano intere: sono le impronte
+   digitali di una notizia, accorciarle vorrebbe dire buttarle via. */
 function paroleChiave(titolo){
-  return new Set(String(titolo).toLowerCase()
+  const fuori = new Set();
+  String(titolo).toLowerCase()
     .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[-'’]/g, '')                 /* MTG-I2 → mtgi2, l'aria → laria */
     .replace(/[^a-z0-9\s]/g, ' ')
     .split(/\s+/)
-    .filter(p => p.length > 3 && !VUOTE.has(p)));
+    .forEach(p => {
+      if (!p || VUOTE.has(p)) return;
+      if (/\d/.test(p)) { fuori.add(p); return; }      /* sigle e anni: interi */
+      if (p.length < 4) return;
+      fuori.add(p.slice(0, 5));
+    });
+  return fuori;
 }
+const conNumero = p => /\d/.test(p);
+/* due parole si somigliano se sono uguali o se ballano di una lettera
+   sola: "abeba" e "ababa" sono lo stesso posto scritto in due modi */
+function quasiUguali(a, b){
+  if (a === b) return true;
+  if (conNumero(a) || conNumero(b)) return false;      /* sulle sigle nessuno sconto */
+  if (a.length < 5 || Math.abs(a.length - b.length) > 1) return false;
+  let i = 0, j = 0, sgarri = 0;
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) { i++; j++; continue; }
+    if (++sgarri > 1) return false;
+    if (a.length === b.length) { i++; j++; }
+    else if (a.length > b.length) i++;
+    else j++;
+  }
+  return sgarri + (a.length - i) + (b.length - j) <= 1;
+}
+
+/* Stessa storia? Due strade:
+   · le parole in comune sono tante (quasi metà), oppure
+   · c'è una sigla in comune (MTG-I2, un anno) e un po' di parole intorno.
+   Il filtro è volutamente severo: saltare una notizia buona costa poco
+   (se ne prende un'altra), pubblicare due volte la stessa costa a te. */
 function stessaStoria(a, b){
-  const A = paroleChiave(a), B = paroleChiave(b);
-  if (A.size < 2 || B.size < 2) return false;
-  let comuni = 0;
-  A.forEach(p => { if (B.has(p)) comuni++; });
-  return comuni / Math.min(A.size, B.size) > 0.5;
+  const A = [...paroleChiave(a)], B = [...paroleChiave(b)];
+  if (A.length < 2 || B.length < 2) return false;
+  let comuni = 0, sigla = false;
+  A.forEach(x => {
+    const trovata = B.find(y => quasiUguali(x, y));
+    if (!trovata) return;
+    comuni++;
+    if (conNumero(x)) sigla = true;
+  });
+  const quota = comuni / Math.min(A.length, B.length);
+  return quota >= 0.45 || (sigla && quota >= 0.3);
 }
 
 /* ─────────────── scelta della notizia ─────────────── */
@@ -482,6 +524,42 @@ const perUrl = s => String(s).toLowerCase()
   .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 
+/* ─────────────── pulizia dei doppioni già pubblicati ───────────────
+   Chi era uscito prima che il controllo esistesse resta lì. A ogni giro
+   si guarda l'archivio: se due articoli raccontano la stessa storia si
+   tiene il PRIMO (di solito il più completo, ed è quello che la gente
+   ha già letto) e si butta l'altro, file, immagini e pagina compresi. */
+async function butta(nome){
+  try { await fs.unlink(path.join(QUI, nome)); return true; } catch { return false; }
+}
+async function ripulisciDoppioni(indice){
+  const tenuti = [], buttati = [];
+  /* dal più vecchio al più recente, così a restare è il primo uscito */
+  const ordinati = indice.articoli.slice().reverse();
+  for (const a of ordinati) {
+    const gemello = tenuti.find(t => stessaStoria(t.titolo, a.titolo));
+    if (gemello) buttati.push({ a, gemello });
+    else tenuti.push(a);
+  }
+  if (!buttati.length) return 0;
+
+  dice('\nPulizia: ' + buttati.length + (buttati.length === 1 ? ' doppione trovato' : ' doppioni trovati') + ' nell\'archivio');
+  for (const { a, gemello } of buttati) {
+    dice('  \u2716 "' + a.titolo + '"');
+    dice('     stessa storia di "' + gemello.titolo + '"');
+    await butta(a.file || ('articoli/' + a.id + '.json'));
+    await butta('p/' + a.id + '.html');
+    if (a.copertina) await butta(a.copertina);
+    /* le immagini interne portano il nome dell'articolo con un numero in coda */
+    for (let n = 1; n <= 4; n++) await butta('immagini/' + a.id + '-' + n + '.webp');
+  }
+  indice.articoli = tenuti.reverse();
+  indice.aggiornato = new Date().toISOString();
+  await fs.writeFile(path.join(QUI, 'indice.json'), JSON.stringify(indice, null, 1));
+  await fs.writeFile(path.join(QUI, 'index.html'), paginaIndice(indice));
+  return buttati.length;
+}
+
 /* ─────────────── il giro completo ─────────────── */
 async function main() {
   const config = JSON.parse(await fs.readFile(path.join(QUI, 'fonti.json'), 'utf8'));
@@ -503,6 +581,9 @@ async function main() {
     dice('Manca OPENAI_API_KEY. Mi fermo qui senza spendere niente.');
     process.exit(1);
   }
+
+  /* prima di scrivere: si mette in ordine la casa */
+  const puliti = await ripulisciDoppioni(indice);
 
   const attive = config.fonti.filter(f => f.attiva !== false);
   dice('Fonti attive: ' + attive.length);
@@ -610,6 +691,7 @@ async function main() {
   }
 
   dice('\nNessuna notizia ha superato i controlli. Oggi il blog resta fermo: è il comportamento giusto.');
+  if (puliti) dice('(ma l\'archivio è stato ripulito: ' + puliti + ' doppioni in meno)');
 }
 
 /* I pezzi si possono provare uno per uno dal banco di prova; il giro completo
