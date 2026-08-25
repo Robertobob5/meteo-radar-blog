@@ -32,7 +32,12 @@ const MODELLO_TESTO = process.env.MODELLO_TESTO || 'gpt-5.6-terra';
 const MODELLO_IMMAGINI = process.env.MODELLO_IMMAGINI || 'gpt-image-2';
 const FUSO = process.env.FUSO || 'Europe/Rome';
 const MAX_TENTATIVI = Number(process.env.MAX_TENTATIVI || 4);
-const MAX_IMMAGINI_INTERNE = Number(process.env.MAX_IMMAGINI_INTERNE || 2);
+const MAX_IMMAGINI_INTERNE = Number(process.env.MAX_IMMAGINI_INTERNE || 1);
+/* Le immagini sono la voce di spesa vera: il testo di un articolo costa
+   un paio di centesimi, ogni immagine molto di più, e cresce con la
+   qualità. "low" basta e avanza per una copertina di blog letta su un
+   telefono; si può alzare da GitHub senza toccare il codice. */
+const QUALITA_IMMAGINI = process.env.QUALITA_IMMAGINI || 'low';
 
 const dice = (...t) => console.log(...t);
 
@@ -102,6 +107,33 @@ async function scaricaFeed(fonte) {
     dice('  ⚠ feed non raggiungibile: ' + fonte.nome + ' → ' + e.message);
     return [];
   }
+}
+
+/* ─────────────── niente doppioni sull'argomento ───────────────
+   Fino alla v1 si scartava soltanto lo stesso INDIRIZZO. Ma la stessa
+   storia esce spesso due volte — l'istituto la ripubblica aggiornata,
+   oppure la raccontano due enti diversi — e uscivano due articoli
+   gemelli. Ora si confrontano anche le parole del titolo: se due
+   titoli condividono più della metà delle parole che contano, è la
+   stessa notizia e si passa oltre. */
+const VUOTE = new Set(('il lo la i gli le un uno una di a da in con su per tra fra e o ma che chi cui non ' +
+  'del della dei delle dal dalla al alla allo agli alle nel nella nei sul sulla come dove quando più meno ' +
+  'nuovo nuova nuovi nuove primo prima ancora anche dopo prima verso sono stato stata dalle degli ' +
+  'the a an of to in on for with and or from that this at by is are as new study research about into ' +
+  'science scientists researchers).').split(' '));
+function paroleChiave(titolo){
+  return new Set(String(titolo).toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter(p => p.length > 3 && !VUOTE.has(p)));
+}
+function stessaStoria(a, b){
+  const A = paroleChiave(a), B = paroleChiave(b);
+  if (A.size < 2 || B.size < 2) return false;
+  let comuni = 0;
+  A.forEach(p => { if (B.has(p)) comuni++; });
+  return comuni / Math.min(A.size, B.size) > 0.5;
 }
 
 /* ─────────────── scelta della notizia ─────────────── */
@@ -279,8 +311,13 @@ async function scriviArticolo(voce, testo) {
         'TITOLO ORIGINALE: ' + voce.titolo + '\n' +
         'INDIRIZZO: ' + voce.url + '\n\n' +
         'TESTO DELLA FONTE:\n"""\n' + testo + '\n"""\n\n' +
+        (voce.giaFatti && voce.giaFatti.length
+          ? 'ARTICOLI GIÀ PUBBLICATI SU QUESTO BLOG (non rifare la stessa storia):\n- ' +
+            voce.giaFatti.join('\n- ') + '\n\n' : '') +
         'Scrivi l\'articolo in italiano seguendo le regole. Se la fonte è in inglese, traduci i concetti: ' +
-        'il lettore è italiano e non deve incontrare frasi in inglese.' }
+        'il lettore è italiano e non deve incontrare frasi in inglese. ' +
+        'Se questa notizia racconta la stessa cosa di uno degli articoli già pubblicati qui sopra, ' +
+        'rispondi {"scarta": true, "perche": "doppione"}.' }
     ]
   });
   const grezzo = r.choices?.[0]?.message?.content || '{}';
@@ -298,7 +335,7 @@ async function generaImmagine(prompt, destinazione) {
       model: MODELLO_IMMAGINI,
       prompt: prompt + '. Clean scientific illustration, natural colours, no text, no words, no letters, no logos, no recognisable real people.',
       size: '1024x1024',
-      quality: 'medium',
+      quality: QUALITA_IMMAGINI,
       output_format: 'webp',
       n: 1
     });
@@ -310,6 +347,130 @@ async function generaImmagine(prompt, destinazione) {
     dice('  ⚠ immagine non generata: ' + e.message);
     return false;
   }
+}
+
+/* ─────────────── le pagine da leggere sul web ───────────────
+   Gli stessi articoli, ma come pagine vere: servono per CONDIVIDERE.
+   Un file JSON non si può mandare a nessuno; questa pagina invece si
+   apre in qualunque telefono, mostra la copertina nell'anteprima di
+   WhatsApp o Telegram (sono i tag "og:") e non ha bisogno dell'app.
+   Le pubblica GitHub Pages, gratis, dal repository stesso. */
+
+const scappa = s => String(s == null ? '' : s)
+  .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+
+const STILE_WEB = `*{box-sizing:border-box}
+:root{--sf:#eef3fa;--ct:#fff;--mo:#f6f8fc;--tx:#172033;--mu:#6d788d;--li:#dce4ef;--bl:#0878f9;--cy:#0bb6d4}
+@media(prefers-color-scheme:dark){:root{--sf:#0d1420;--ct:#172131;--mo:#1d293b;--tx:#edf4ff;--mu:#a8b4c7;--li:#2b3a51;--bl:#4ba2ff;--cy:#38c6df}}
+body{margin:0;background:var(--sf);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.gu{max-width:720px;margin:0 auto;background:var(--ct);min-height:100vh}
+.tt{display:flex;align-items:center;gap:10px;padding:13px 18px;border-bottom:1px solid var(--li);position:sticky;top:0;background:var(--ct);z-index:5}
+.mk{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;color:#fff;font-size:18px;background:linear-gradient(135deg,var(--bl),var(--cy))}
+.tt b{font-size:15px}.tt small{display:block;color:var(--mu);font-size:11px}
+.tt a{margin-left:auto;color:var(--bl);text-decoration:none;font-size:13px;font-weight:700}
+.cp{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.dd{padding:20px 18px 46px}
+.pl{display:inline-block;padding:5px 11px;margin:0 6px 6px 0;border-radius:99px;font-size:11px;font-weight:800;background:color-mix(in srgb,var(--bl) 15%,var(--mo));color:var(--tx)}
+h1{margin:14px 0 8px;font-size:29px;line-height:1.18;letter-spacing:-.5px}
+.so{margin:0 0 20px;color:var(--mu);font-size:17px;line-height:1.45}
+h2{margin:30px 0 10px;font-size:20px;line-height:1.3}
+p{margin:0 0 17px}
+figure{margin:24px -18px}figure img{width:100%;display:block}
+figcaption{padding:8px 18px 0;color:var(--mu);font-size:12.5px;line-height:1.45}
+.rq{margin:24px 0;padding:16px 18px;border-left:3px solid var(--bl);border-radius:0 14px 14px 0;background:var(--mo)}
+.rq b{display:block;margin-bottom:6px;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--bl)}
+.rq p{margin:0}
+blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font-style:italic;font-size:18px}
+.fo{margin-top:34px;padding:16px 18px;border:1px solid var(--li);border-radius:16px;background:var(--mo)}
+.fo small{display:block;color:var(--mu);font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+.fo b{display:block;margin:5px 0 10px;font-size:15px;line-height:1.4}
+.fo a{display:inline-block;padding:9px 15px;border-radius:11px;background:var(--bl);color:#fff;text-decoration:none;font-weight:800;font-size:13px}
+.ia{margin-top:14px;padding:13px 16px;border:1px dashed var(--li);border-radius:14px;color:var(--mu);font-size:12.5px;line-height:1.55}
+.ia b{color:var(--tx)}
+.el{display:grid;gap:13px;padding:18px}
+.rg{display:grid;grid-template-columns:118px 1fr;gap:14px;overflow:hidden;border:1px solid var(--li);border-radius:17px;background:var(--ct);text-decoration:none;color:inherit}
+.rg img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.rg div{padding:13px 15px 13px 0;align-self:center}
+.rg b{display:block;font-size:15px;line-height:1.34}
+.rg small{display:block;margin-top:6px;color:var(--mu);font-size:12px}
+@media(max-width:520px){.rg{grid-template-columns:96px 1fr}h1{font-size:25px}}`;
+
+const TESTATA_WEB = (attiva) =>
+  '<div class="tt"><div class="mk">\u25c9</div><div><b>Meteo Radar</b><small>il blog</small></div>' +
+  (attiva ? '<a href="../">Tutti gli articoli</a>' : '') + '</div>';
+
+function paginaArticolo(a, sito) {
+  const su = '../';
+  const corpo = (a.blocchi || []).map(b => {
+    if (b.tipo === 'sottotitolo') return '<h2>' + scappa(b.testo) + '</h2>';
+    if (b.tipo === 'citazione') return '<blockquote>' + scappa(b.testo) + '</blockquote>';
+    if (b.tipo === 'riquadro') return '<div class="rq">' + (b.titolo ? '<b>' + scappa(b.titolo) + '</b>' : '') +
+      '<p>' + scappa(b.testo) + '</p></div>';
+    if (b.tipo === 'immagine' && b.file) return '<figure><img src="' + su + scappa(b.file) + '" alt="' +
+      scappa(b.alt || '') + '" loading="lazy">' +
+      (b.didascalia ? '<figcaption>' + scappa(b.didascalia) + '</figcaption>' : '') + '</figure>';
+    return '<p>' + scappa(b.testo || '') + '</p>';
+  }).join('\n');
+
+  const f = a.fonte || {};
+  const img = a.copertina ? sito + a.copertina : '';
+  return `<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${scappa(a.titolo)} · Meteo Radar</title>
+<meta name="description" content="${scappa(a.sottotitolo || a.titolo)}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="${scappa(a.titolo)}">
+<meta property="og:description" content="${scappa(a.sottotitolo || '')}">
+${img ? '<meta property="og:image" content="' + scappa(img) + '">' : ''}
+<meta property="og:site_name" content="Meteo Radar · il blog">
+<meta property="article:published_time" content="${scappa(a.data)}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0878f9">
+<style>${STILE_WEB}</style>
+</head>
+<body><div class="gu">
+${TESTATA_WEB(true)}
+${a.copertina ? '<img class="cp" src="' + su + scappa(a.copertina) + '" alt="' + scappa(a.copertinaAlt || '') + '">' : ''}
+<div class="dd">
+<span class="pl">${scappa(a.categoria || 'Ricerca')}</span><span class="pl">${scappa(a.data)}</span><span class="pl">${scappa(String(a.minuti || 3))} min</span>
+<h1>${scappa(a.titolo)}</h1>
+${a.sottotitolo ? '<p class="so">' + scappa(a.sottotitolo) + '</p>' : ''}
+${corpo}
+<div class="fo"><small>Da dove viene</small><b>${scappa(f.titolo || '')}</b>
+${f.url ? '<a href="' + scappa(f.url) + '" target="_blank" rel="noopener">Leggi la fonte originale \u00b7 ' + scappa(f.nome || '') + ' \u2197</a>' : scappa(f.nome || '')}</div>
+<div class="ia"><b>Come \u00e8 nato questo articolo.</b> Il testo e le immagini sono stati generati da un'intelligenza
+artificiale a partire dalla fonte qui sopra, e prima della pubblicazione un controllo automatico verifica che ogni
+numero citato compaia davvero nella fonte. Non \u00e8 un articolo scritto da una persona, e le immagini sono
+illustrazioni, non fotografie di quello che \u00e8 successo.</div>
+</div></div></body></html>`;
+}
+
+function paginaIndice(indice) {
+  const righe = indice.articoli.map(a =>
+    '<a class="rg" href="p/' + scappa(a.id) + '.html">' +
+     (a.copertina ? '<img src="' + scappa(a.copertina) + '" alt="" loading="lazy">' : '<div></div>') +
+     '<div><b>' + scappa(a.titolo) + '</b><small>' + scappa(a.categoria || '') + ' \u00b7 ' +
+       scappa(String(a.minuti || 3)) + ' min \u00b7 ' + scappa(a.fonte || '') + '</small></div></a>').join('\n');
+  return `<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meteo Radar \u00b7 il blog</title>
+<meta name="description" content="Un articolo al giorno su meteo, clima, atmosfera e terremoti, scritto a partire dai comunicati degli istituti di ricerca.">
+<meta property="og:title" content="Meteo Radar \u00b7 il blog">
+<meta property="og:description" content="Un articolo al giorno su meteo, clima, atmosfera e terremoti.">
+<meta name="theme-color" content="#0878f9">
+<style>${STILE_WEB}</style>
+</head>
+<body><div class="gu">
+${TESTATA_WEB(false)}
+<div class="el">${righe || '<p style="color:var(--mu)">Ancora nessun articolo.</p>'}</div>
+</div></body></html>`;
 }
 
 /* ─────────────── archivio ─────────────── */
@@ -349,8 +510,11 @@ async function main() {
   dice('Notizie trovate: ' + tutte.length);
 
   const usate = new Set(indice.articoli.map(a => a.fonteUrl));
+  /* i titoli già raccontati: quelli della fonte e quelli dei nostri articoli */
+  const gia = indice.articoli.flatMap(a => [a.fonteTitolo, a.titolo]).filter(Boolean);
   const candidate = tutte
     .filter(v => !usate.has(v.url))
+    .filter(v => !gia.some(t => stessaStoria(t, v.titolo)))
     .map(v => ({ v, p: punteggio(v, config.parole_chiave) }))
     .filter(x => x.p > 0)
     .sort((a, b) => b.p - a.p)
@@ -367,6 +531,7 @@ async function main() {
     if (testo.length < 700) { dice('  · fonte troppo magra (' + testo.length + ' caratteri): passo oltre'); continue; }
     dice('  · testo della fonte: ' + testo.length + ' caratteri');
 
+    voce.giaFatti = indice.articoli.slice(0, 12).map(a => a.titolo);
     let art;
     try { art = await scriviArticolo(voce, testo); }
     catch (e) { dice('  ⚠ scrittura fallita: ' + e.message); continue; }
@@ -421,13 +586,26 @@ async function main() {
     indice.articoli.unshift({
       id, data: articolo.data, titolo: articolo.titolo, sottotitolo: articolo.sottotitolo,
       categoria: articolo.categoria, minuti: articolo.minuti, copertina: articolo.copertina,
-      fonte: voce.fonte.nome, fonteUrl: voce.url, file: 'articoli/' + id + '.json'
+      fonte: voce.fonte.nome, fonteUrl: voce.url, fonteTitolo: voce.titolo,
+      file: 'articoli/' + id + '.json'
     });
     indice.aggiornato = new Date().toISOString();
     await fs.writeFile(path.join(QUI, 'indice.json'), JSON.stringify(indice, null, 1));
 
+    /* Le pagine da leggere sul web: una per l'articolo, più l'elenco.
+       Servono a CONDIVIDERE un pezzo con chi non ha l'app — un file JSON
+       non si può mandare a nessuno, una pagina sì. */
+    const sito = (process.env.SITO || '').replace(/\/?$/, '/');
+    await fs.mkdir(path.join(QUI, 'p'), { recursive: true });
+    await fs.writeFile(path.join(QUI, 'p', id + '.html'), paginaArticolo(articolo, sito));
+    await fs.writeFile(path.join(QUI, 'index.html'), paginaIndice(indice));
+    /* senza questo file GitHub Pages passerebbe le pagine in un frullatore
+       per blog e salterebbe le cartelle che cominciano con l'underscore */
+    await fs.writeFile(path.join(QUI, '.nojekyll'), '');
+
     dice('\n✔ PUBBLICATO: ' + articolo.titolo);
     dice('  ' + parole + ' parole · ' + articolo.minuti + ' min · fonte: ' + voce.fonte.nome);
+    dice('  pagina da condividere: p/' + id + '.html');
     return;
   }
 
@@ -436,7 +614,7 @@ async function main() {
 
 /* I pezzi si possono provare uno per uno dal banco di prova; il giro completo
    parte da solo soltanto quando il file viene lanciato davvero da riga di comando. */
-export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl };
+export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave };
 
 const lanciatoDaSolo = (() => {
   try {
