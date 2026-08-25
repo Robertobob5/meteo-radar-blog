@@ -1,0 +1,60 @@
+{
+  "_nota": "Sorgenti del blog di Meteo Radar. Sono tutte FONTI PRIMARIE: istituti di ricerca ed enti che pubblicano i propri comunicati. Non giornali: riscrivere il pezzo di un giornalista, anche con parole diverse, resta prendere il suo lavoro. Per aggiungerne una basta una riga; per toglierla, mettere \"attiva\": false. Dopo ogni modifica conviene lanciare `node prova-fonti.mjs`.",
+  "fonti": [
+    {
+      "nome": "INGV Terremoti",
+      "url": "https://ingvterremoti.com/feed/",
+      "lingua": "it",
+      "attiva": true,
+      "temi": "terremoti, faglie, sismicità italiana"
+    },
+    {
+      "nome": "INGV Vulcani",
+      "url": "https://ingvvulcani.com/feed/",
+      "lingua": "it",
+      "attiva": true,
+      "temi": "vulcani, Campi Flegrei, Etna, Stromboli"
+    },
+    {
+      "nome": "INGV Ambiente",
+      "url": "https://ingvambiente.com/feed/",
+      "lingua": "it",
+      "attiva": true,
+      "temi": "clima, atmosfera, ambiente, storia della scienza"
+    },
+    {
+      "nome": "ESA Observing the Earth",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Observing_the_Earth",
+      "lingua": "en",
+      "attiva": true,
+      "temi": "satelliti, osservazione della Terra, ghiacci, meteo dallo spazio"
+    },
+    {
+      "nome": "NASA Science",
+      "url": "https://science.nasa.gov/feed/?science_org=19791,22453",
+      "lingua": "en",
+      "attiva": true,
+      "temi": "Terra dallo spazio, atmosfera, oceani"
+    },
+    {
+      "nome": "NOAA",
+      "url": "https://www.noaa.gov/rss.xml",
+      "lingua": "en",
+      "attiva": true,
+      "temi": "oceani, uragani, clima, previsioni"
+    }
+  ],
+  "parole_chiave": [
+    "meteo", "meteorolog", "clima", "climat", "atmosfer", "temporal", "tempesta", "uragan", "ciclon",
+    "pioggia", "piogge", "precipitazion", "neve", "ghiacc", "grandine", "vento", "raffic",
+    "temperatur", "caldo", "freddo", "ondata", "siccit", "alluvion", "inondazion",
+    "terremot", "sismic", "faglia", "vulcan", "erruzion", "eruzion", "magma", "caldera",
+    "ozono", "polvere", "sabbia", "sahara", "aerosol", "inquinament", "qualità dell'aria",
+    "oceano", "mare", "onde", "corrente", "el niño", "la niña", "monsone", "jet stream",
+    "satellit", "radar", "previsione", "modello", "sensore",
+    "weather", "climate", "storm", "hurricane", "cyclone", "rain", "snow", "ice", "glacier",
+    "temperature", "heat", "drought", "flood", "earthquake", "seismic", "fault", "volcan",
+    "ozone", "dust", "aerosol", "air quality", "ocean", "wave", "current", "satellite",
+    "forecast", "atmosphere", "lightning", "thunder"
+  ]
+}
