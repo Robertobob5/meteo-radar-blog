@@ -1,6 +1,18 @@
 {
- "aggiornato": "2026-08-25T20:21:04.005Z",
+ "aggiornato": "2026-08-25T20:27:36.456Z",
  "articoli": [
+  {
+   "id": "2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab",
+   "data": "2026-08-25",
+   "titolo": "Un sensore sul tetto osserva il particolato fine ad Addis Ababa",
+   "sottotitolo": "Dieci sensori del progetto MAIA misurano come cambia durante il giorno e nelle stagioni l’inquinamento dell’aria nella capitale etiope.",
+   "categoria": "Aria",
+   "minuti": 2,
+   "copertina": "immagini/2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/photojournal/maia-air-sensor-at-work-in-addis-ababa/",
+   "file": "articoli/2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab.json"
+  },
   {
    "id": "2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-",
    "data": "2026-08-25",
