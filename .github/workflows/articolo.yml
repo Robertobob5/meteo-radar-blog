@@ -1,0 +1,52 @@
+name: Articolo del giorno
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+    inputs:
+      forza:
+        description: "Scrivi l'articolo anche se quello di oggi c'è già"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: articolo-del-giorno
+  cancel-in-progress: false
+
+jobs:
+  scrivi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prendi il repository
+        uses: actions/checkout@v4
+
+      - name: Prepara Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Scrivi l'articolo
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MODELLO_TESTO: ${{ vars.MODELLO_TESTO || 'gpt-5.6-terra' }}
+          MODELLO_IMMAGINI: ${{ vars.MODELLO_IMMAGINI || 'gpt-image-2' }}
+          MAX_IMMAGINI_INTERNE: ${{ vars.MAX_IMMAGINI_INTERNE || '2' }}
+          FUSO: Europe/Rome
+        run: node genera.mjs ${{ inputs.forza && '--forza' || '' }}
+
+      - name: Pubblica
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Niente di nuovo: oggi il blog resta com'è."
+            exit 0
+          fi
+          git config user.name  "Meteo Radar"
+          git config user.email "blog@meteoradar.local"
+          git add -A articoli immagini indice.json 2>/dev/null || git add -A
+          git commit -m "Articolo del $(TZ=Europe/Rome date +%d/%m/%Y)"
+          git push
