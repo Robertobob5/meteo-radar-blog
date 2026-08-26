@@ -1,0 +1,75 @@
+{
+ "id": "2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg",
+ "data": "2026-08-26",
+ "scritto": "2026-08-26T14:19:25.046Z",
+ "titolo": "L’ombra della Luna attraversa l’Europa nelle immagini di MTG-I1",
+ "sottotitolo": "Il satellite meteorologico ha seguito dallo spazio il percorso della totalità e l’arrivo del crepuscolo sull’Europa.",
+ "categoria": "Spazio",
+ "copertina": "immagini/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg-copertina.webp",
+ "copertinaAlt": "La Terra vista dallo spazio, con l’ombra della Luna che attraversa parte dell’Europa e si incontra con il crepuscolo.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Per alcuni minuti, tra le 20:26 e le 20:34 dell’Europa centrale, una parte della penisola Iberica ha vissuto un’eclissi totale di Sole. L’evento è stato osservato anche da molto lontano: il satellite MTG-I1 ha ripreso l’ombra scura della Luna mentre scorreva sulla superficie terrestre, fino a incontrare l’ombra del crepuscolo che avanzava con la sera sull’Europa."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’animazione diffusa dall’Agenzia spaziale europea è composta da immagini del satellite Meteosat Third Generation Imager, chiamato MTG-I1. Nella sequenza si distingue il movimento dell’ombra lunare, cioè la zona della Terra dalla quale il Sole viene completamente nascosto. È il percorso della totalità: la fascia in cui l’eclissi raggiunge la sua fase massima."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un’ombra in viaggio dalla Groenlandia alla Spagna"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dalla sua posizione, MTG-I1 ha potuto seguire l’ombra della Luna prima sulla Groenlandia e sull’Islanda, poi su una piccola parte del Portogallo nord-orientale e infine sulla Spagna. Il satellite si trova in orbita geostazionaria, un’orbita nella quale resta rivolto continuamente verso la stessa area della Terra. I suoi strumenti osservano Europa e Africa settentrionale da una distanza di 36 000 chilometri sopra la superficie terrestre."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questa prospettiva rende visibile un aspetto che da terra non si può cogliere nello stesso modo: non soltanto l’eclissi osservata in un singolo luogo, ma la sua ombra che procede sul pianeta. Nelle immagini, la macchia scura della totalità si avvicina alla fascia dell’oscurità serale. L’incontro fra i due fenomeni racconta una transizione molto rapida: da una parte l’ombra prodotta dalla Luna, dall’altra il naturale avanzamento della notte."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Uno schema mostra il satellite sopra la Terra, l’ombra compatta della Luna e la fascia più ampia del crepuscolo.",
+   "didascalia": "Dallo spazio, il percorso della totalità appare come un’ombra scura in movimento sulla superficie terrestre.",
+   "file": "immagini/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Che cosa accade durante un’eclissi totale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un’eclissi totale di Sole avviene quando la Luna passa fra il Sole e la Terra e copre per un breve periodo il disco solare. Nella fase di totalità, attorno alla Luna diventa visibile un alone luminoso: è la corona del Sole, la sua parte esterna luminosa. Sulla terraferma europea, questa fase è durata soltanto pochi minuti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’eclissi parziale, invece, è stata visibile su un’area molto più ampia. In questo caso la Luna copre solo una parte del disco del Sole. Secondo l’Agenzia spaziale europea, il fenomeno è stato osservabile dal Canada settentrionale ai Paesi nordici e alla costa occidentale dell’Africa, fino alla Sierra Leone e alla Liberia."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le prossime osservazioni dallo spazio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Sono previste altre eclissi solari da qui al 2028, e l’Agenzia spaziale europea segnala che seguiranno aggiornamenti dedicati alle sue attività di osservazione. Nel frattempo, la missione MTG si prepara a collocare in orbita il suo terzo satellite. MTG-I2 è programmato per il lancio il 27 agosto 2026, a bordo del volo VA270 con un lanciatore Ariane 6, dallo spazioporto europeo nella Guyana francese."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "MTG-I1 ha osservato dall’orbita geostazionaria l’ombra della Luna durante l’eclissi totale di Sole. Il suo percorso ha interessato Groenlandia, Islanda, una piccola parte del Portogallo nord-orientale e la Spagna, mentre sull’Europa avanzava anche il crepuscolo."
+  }
+ ],
+ "parole": 465,
+ "minuti": 2,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "MTG-I1 captures eclipse path of totality over Europe",
+  "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/MTG-I1_captures_eclipse_path_of_totality_over_Europe",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

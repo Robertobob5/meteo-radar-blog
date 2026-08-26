@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-26T14:05:58.191Z",
+ "aggiornato": "2026-08-26T14:19:25.047Z",
  "articoli": [
+  {
+   "id": "2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg",
+   "data": "2026-08-26",
+   "titolo": "L’ombra della Luna attraversa l’Europa nelle immagini di MTG-I1",
+   "sottotitolo": "Il satellite meteorologico ha seguito dallo spazio il percorso della totalità e l’arrivo del crepuscolo sull’Europa.",
+   "categoria": "Spazio",
+   "minuti": 2,
+   "copertina": "immagini/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/MTG-I1_captures_eclipse_path_of_totality_over_Europe",
+   "fonteTitolo": "MTG-I1 captures eclipse path of totality over Europe",
+   "file": "articoli/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg.json"
+  },
   {
    "id": "2026-08-26-una-story-map-ripercorre-la-sequenza-sismica-del-2016-17-e-l",
    "data": "2026-08-26",
