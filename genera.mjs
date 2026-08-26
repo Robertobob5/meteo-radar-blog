@@ -435,8 +435,41 @@ blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font
 .rg img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}
 .rg div{padding:13px 15px 13px 0;align-self:center}
 .rg b{display:block;font-size:15px;line-height:1.34}
+.ad{margin:34px 0 0;padding:22px 20px 20px;border-radius:20px;color:#fff;text-align:center;
+  background:linear-gradient(150deg,#0b5fd0,#0878f9 45%,#0bb6d4)}
+.ad .mk2{width:52px;height:52px;margin:0 auto 12px;border-radius:17px;display:grid;place-items:center;
+  font-size:27px;background:rgba(255,255,255,.17);border:1px solid rgba(255,255,255,.28)}
+.ad b{display:block;font-size:21px;line-height:1.25;letter-spacing:-.3px}
+.ad p{margin:11px auto 0;max-width:430px;font-size:14.5px;line-height:1.55;opacity:.94}
+.ad .btn{display:inline-block;margin-top:17px;padding:14px 26px;border-radius:14px;background:#fff;color:#0a4fa8;
+  text-decoration:none;font-weight:800;font-size:15px;box-shadow:0 10px 24px rgba(4,30,66,.28)}
+.ad .btn:active{transform:translateY(1px)}
+.ad .nota{display:block;margin:13px auto 0;max-width:420px;font-size:11.5px;line-height:1.5;opacity:.8}
+.ad .cose{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:15px}
+.ad .cose span{padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.16);font-size:11.5px;font-weight:700}
+@media(max-width:520px){.ad{margin-left:-4px;margin-right:-4px;padding:20px 16px 18px}.ad b{font-size:19px}}
 .rg small{display:block;margin-top:6px;color:var(--mu);font-size:12px}
 @media(max-width:520px){.rg{grid-template-columns:96px 1fr}h1{font-size:25px}}`;
+
+/* Lo spot. Sta in fondo, dopo la fonte: chi è arrivato fin lì ha appena
+   letto la prova di quello che gli stiamo promettendo. Nessun numero
+   inventato, nessuna stellina, nessuna finta recensione — il blog vive
+   sull'essere verificabile e una bugia qui butterebbe via proprio quello.
+   L'indirizzo dell'apk si cambia dalla variabile APK, senza toccare il codice. */
+const APK = process.env.APK || 'https://drive.google.com/drive/folders/12S14HNl9zudUCuLCyeIYXtYYD1Sf6I07';
+
+const SPOT = () => `<div class="ad">
+<div class="mk2">\u25c9</div>
+<b>Il meteo spiegato, non solo previsto</b>
+<p>Questo articolo l'hai letto sul blog di <strong>Meteo Radar</strong>: un'app che ti mostra da dove
+vengono i numeri, invece di limitarsi a dartelo. E ogni mattina ne trovi uno nuovo come questo.</p>
+<div class="cose"><span>Radar della pioggia</span><span>Allerte Protezione Civile</span>
+<span>Qualit\u00e0 dell'aria</span><span>Mare e onde</span><span>Pollini</span></div>
+<a class="btn" href="${scappa(APK)}" target="_blank" rel="noopener">Scarica l'app per Android</a>
+<small class="nota">Gratis, senza pubblicit\u00e0 e senza account. Il file arriva da Google Drive:
+la prima volta Android chieder\u00e0 di autorizzare l'installazione da questa origine \u2014 succede con
+tutte le app che non passano dallo store.</small>
+</div>`;
 
 const TESTATA_WEB = (attiva) =>
   '<div class="tt"><div class="mk">\u25c9</div><div><b>Meteo Radar</b><small>il blog</small></div>' +
@@ -488,6 +521,7 @@ ${f.url ? '<a href="' + scappa(f.url) + '" target="_blank" rel="noopener">Leggi 
 artificiale a partire dalla fonte qui sopra, e prima della pubblicazione un controllo automatico verifica che ogni
 numero citato compaia davvero nella fonte. Non \u00e8 un articolo scritto da una persona, e le immagini sono
 illustrazioni, non fotografie di quello che \u00e8 successo.</div>
+${SPOT()}
 </div></div></body></html>`;
 }
 
@@ -512,6 +546,7 @@ function paginaIndice(indice) {
 <body><div class="gu">
 ${TESTATA_WEB(false)}
 <div class="el">${righe || '<p style="color:var(--mu)">Ancora nessun articolo.</p>'}</div>
+<div class="dd" style="padding-top:0">${SPOT()}</div>
 </div></body></html>`;
 }
 
@@ -560,11 +595,42 @@ async function ripulisciDoppioni(indice){
   return buttati.length;
 }
 
+/* Rifà le pagine web di TUTTI gli articoli già in archivio, partendo dai file
+   JSON che sono già qui: non chiama OpenAI, non scarica niente, non spende un
+   centesimo. Serve perché le pagine da condividere vengono scritte una volta
+   sola, il giorno in cui nasce l'articolo: senza questo passaggio, una modifica
+   all'impaginazione (per dire, il riquadro dell'app in fondo) comparirebbe solo
+   sui pezzi futuri, e i sei già pubblicati resterebbero indietro per sempre. */
+async function rifaiPagine(indice, sito) {
+  let rifatte = 0;
+  await fs.mkdir(path.join(QUI, 'p'), { recursive: true });
+  for (const voce of indice.articoli) {
+    try {
+      const dove = voce.file || ('articoli/' + voce.id + '.json');
+      const a = JSON.parse(await fs.readFile(path.join(QUI, dove), 'utf8'));
+      const nuova = paginaArticolo(a, sito);
+      const pagina = path.join(QUI, 'p', voce.id + '.html');
+      const vecchia = await fs.readFile(pagina, 'utf8').catch(() => '');
+      if (vecchia === nuova) continue;          // già a posto: non si tocca
+      await fs.writeFile(pagina, nuova);
+      rifatte++;
+    } catch (e) { /* un articolo senza il suo file non deve fermare il giro */ }
+  }
+  if (rifatte) dice('Pagine da condividere rimesse a nuovo: ' + rifatte + ' (nessuna spesa)');
+  return rifatte;
+}
+
 /* ─────────────── il giro completo ─────────────── */
 async function main() {
   const config = JSON.parse(await fs.readFile(path.join(QUI, 'fonti.json'), 'utf8'));
   const indice = await leggiIndice();
   const oggi = oggiLocale();
+  const SITO_WEB = (process.env.SITO || '').replace(/\/?$/, '/');
+
+  /* prima di tutto, e comunque vada il resto: le pagine da condividere degli
+     articoli già pubblicati vengono riallineate all'impaginazione di oggi.
+     Non costa niente e non chiama nessuno. */
+  await rifaiPagine(indice, SITO_WEB);
 
   if (!FORZA && indice.articoli.some(a => a.data === oggi)) {
     dice('L\'articolo di oggi (' + oggi + ') c\'è già. Niente da fare.');
@@ -696,7 +762,8 @@ async function main() {
 
 /* I pezzi si possono provare uno per uno dal banco di prova; il giro completo
    parte da solo soltanto quando il file viene lanciato davvero da riga di comando. */
-export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave };
+export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave,
+         paginaArticolo, paginaIndice, SPOT };
 
 const lanciatoDaSolo = (() => {
   try {
