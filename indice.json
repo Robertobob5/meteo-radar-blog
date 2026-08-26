@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-25T21:45:44.702Z",
+ "aggiornato": "2026-08-26T06:25:00.534Z",
  "articoli": [
+  {
+   "id": "2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i",
+   "data": "2026-08-26",
+   "titolo": "I pinguini imperatore cambiano sito di riproduzione quando il ghiaccio si rompe",
+   "sottotitolo": "Le immagini satellitari raccolte in decenni mostrano colonie persistenti e una capacità di spostarsi tra ghiaccio marino, iceberg e piattaforme di ghiaccio.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
+   "fonteTitolo": "A Changing World for Emperor Penguins",
+   "file": "articoli/2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i.json"
+  },
   {
    "id": "2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ",
    "data": "2026-08-25",
