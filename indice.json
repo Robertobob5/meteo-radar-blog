@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-26T14:19:25.047Z",
+ "aggiornato": "2026-08-27T07:06:09.738Z",
  "articoli": [
+  {
+   "id": "2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost",
+   "data": "2026-08-27",
+   "titolo": "Neve estesa nel deserto di Atacama dopo le tempeste di agosto",
+   "sottotitolo": "Due perturbazioni invernali hanno portato neve dalle Ande fino alle vicinanze della costa pacifica del Cile settentrionale.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/rare-widespread-snow-in-the-atacama-desert/",
+   "fonteTitolo": "Rare, Widespread Snow in the Atacama Desert",
+   "file": "articoli/2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost.json"
+  },
   {
    "id": "2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg",
    "data": "2026-08-26",
