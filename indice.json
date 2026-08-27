@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-27T07:06:09.738Z",
+ "aggiornato": "2026-08-27T16:33:50.079Z",
  "articoli": [
+  {
+   "id": "2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr",
+   "data": "2026-08-27",
+   "titolo": "NOAA amplia la rete di osservazioni meteo con un nuovo contratto Mesonet",
+   "sottotitolo": "Il National Weather Service riunirà dati raccolti a terra, in aria e in mare per migliorare previsioni e allerte negli Stati Uniti.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr-copertina.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-boosts-weather-data-collection-capabilities-with-new-mesonet-contract",
+   "fonteTitolo": "NOAA boosts weather data collection capabilities with new Mesonet contract",
+   "file": "articoli/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr.json"
+  },
   {
    "id": "2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost",
    "data": "2026-08-27",

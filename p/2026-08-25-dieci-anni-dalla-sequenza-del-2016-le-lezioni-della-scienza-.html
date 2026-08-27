@@ -60,6 +60,17 @@ blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font
 .ad .cose span{padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.16);font-size:11.5px;font-weight:700}
 @media(max-width:520px){.ad{margin-left:-4px;margin-right:-4px;padding:20px 16px 18px}.ad b{font-size:19px}}
 .rg small{display:block;margin-top:6px;color:var(--mu);font-size:12px}
+/* il lettore vocale */
+.vc{display:inline-flex;align-items:center;gap:9px;margin:0 0 22px;padding:10px 17px 10px 13px;border:1px solid var(--li);
+  border-radius:99px;background:var(--mo);color:var(--tx);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.vc:hover{border-color:var(--bl)}
+.vc[data-on="1"]{background:var(--bl);border-color:var(--bl);color:#fff}
+.vc .ic{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:11px;
+  background:var(--bl);color:#fff}
+.vc[data-on="1"] .ic{background:rgba(255,255,255,.24)}
+.vc small{font-weight:600;opacity:.72}
+.leggo{background:color-mix(in srgb,var(--bl) 12%,transparent);border-radius:8px;
+  box-shadow:0 0 0 6px color-mix(in srgb,var(--bl) 12%,transparent)}
 @media(max-width:520px){.rg{grid-template-columns:96px 1fr}h1{font-size:25px}}</style>
 </head>
 <body><div class="gu">
@@ -69,6 +80,7 @@ blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font
 <span class="pl">Terremoti</span><span class="pl">2026-08-25</span><span class="pl">6 min</span>
 <h1>Dieci anni dalla sequenza del 2016: le lezioni della scienza sui terremoti dell’Appennino centrale</h1>
 <p class="so">Dalla propagazione delle rotture al monitoraggio integrato, le ricerche aiutano a leggere una sequenza complessa senza promettere previsioni impossibili.</p>
+<button id="vc" class="vc" type="button" hidden data-on="0"><span class="ic">▶</span><span class="tx">Ascolta</span><small>6 min</small></button>
 <p>Alle 3:36 del 24 agosto 2016 un terremoto di magnitudo 6.0 colpì Amatrice, Accumoli e molti altri paesi dell’Italia centrale. Quella scossa non rimase un evento isolato: aprì una sequenza sismica, cioè una successione di terremoti collegati nello spazio e nel tempo, che fu la più forte osservata in Italia dopo il terremoto dell’Irpinia del 1980.</p>
 <p>La sequenza si sviluppò in più fasi. Dal 24 agosto al 30 ottobre la rottura coinvolse progressivamente più faglie: prima l’evento di Amatrice-Accumoli, poi quelli di Visso del 26 ottobre e infine il terremoto di magnitudo 6.5 verso Norcia del 30 ottobre, il più forte dell’intera sequenza. A gennaio 2017 l’attività riprese nell’area di Campotosto, più a sud, con diversi eventi fino a magnitudo 5.5.</p>
 <h2>Una rottura distribuita nel tempo</h2>
@@ -117,4 +129,58 @@ vengono i numeri, invece di limitarsi a dartelo. E ogni mattina ne trovi uno nuo
 la prima volta Android chiederà di autorizzare l'installazione da questa origine — succede con
 tutte le app che non passano dallo store.</small>
 </div>
-</div></div></body></html>
+</div></div>
+<script>
+(function(){
+ var S=window.speechSynthesis;
+ var b=document.getElementById('vc');
+ if(!S||!b){ if(b) b.remove(); return; }
+ b.hidden=false;
+ var giro=0,acceso=false;
+ function pezzi(){
+  var dd=document.querySelector('.dd'); if(!dd) return [];
+  var out=[];
+  dd.querySelectorAll('h1,.so,h2,.rq b,.rq p,blockquote,p').forEach(function(el){
+   if(el.closest('.fo')||el.closest('.ia')||el.closest('.ad')||el.closest('figcaption')) return;
+   var t=(el.textContent||'').trim();
+   if(t.length>1) out.push({el:el,testo:t});
+  });
+  return out;
+ }
+ function luce(el){
+  var v=document.querySelector('.leggo'); if(v) v.classList.remove('leggo');
+  if(!el) return;
+  el.classList.add('leggo');
+  try{ el.scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){}
+ }
+ function stato(on){
+  acceso=on; b.dataset.on=on?'1':'0';
+  b.querySelector('.ic').textContent=on?'\u25a0':'\u25b6';
+  b.querySelector('.tx').textContent=on?'Ferma':'Ascolta';
+ }
+ function dire(t){
+  return new Promise(function(fine){
+   var u=new SpeechSynthesisUtterance(t);
+   u.lang='it-IT'; u.onend=fine; u.onerror=fine;
+   S.speak(u);
+  });
+ }
+ function stop(){ giro++; S.cancel(); luce(null); stato(false); }
+ b.onclick=async function(){
+  if(acceso){ stop(); return; }
+  var mio=++giro; stato(true);
+  var lista=pezzi();
+  for(var i=0;i<lista.length;i++){
+   if(mio!==giro) return;
+   luce(lista[i].el);
+   await dire(lista[i].testo);
+  }
+  if(mio!==giro) return;
+  luce(null);
+  await dire('Fine dell\'articolo. Il testo \u00e8 stato scritto da un\'intelligenza artificiale a partire da INGV Terremoti.');
+  if(mio===giro) stop();
+ };
+ window.addEventListener('pagehide',function(){ try{S.cancel();}catch(e){} });
+})();
+</script>
+</body></html>

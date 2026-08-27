@@ -1,0 +1,83 @@
+{
+ "id": "2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr",
+ "data": "2026-08-27",
+ "scritto": "2026-08-27T16:33:50.078Z",
+ "titolo": "NOAA amplia la rete di osservazioni meteo con un nuovo contratto Mesonet",
+ "sottotitolo": "Il National Weather Service riunirà dati raccolti a terra, in aria e in mare per migliorare previsioni e allerte negli Stati Uniti.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr-copertina.webp",
+ "copertinaAlt": "Una rete di strumenti meteorologici a terra, in aria e in mare collegati tra loro.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Il National Weather Service della NOAA amplierà il National Mesonet Program, una rete di reti osservativa che raccoglie informazioni utili alle previsioni meteorologiche e alle allerte negli Stati Uniti. Il cambiamento passerà da un nuovo contratto, in avvio il primo settembre, che estende una collaborazione già esistente con KBR Wyle Services e ne aumenta in modo significativo il campo d’azione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Mesonet non è un singolo strumento né una sola rete. Riunisce osservazioni provenienti da molte fonti: radar, palloni meteorologici, sensori di temperatura al suolo e boe oceaniche, ma anche stazioni terrestri, velivoli commerciali e droni. Lo scopo è rendere disponibili dati ambientali raccolti sulla terraferma, nell’aria e nell’acqua, affinché possano essere usati dai meteorologi e dai modelli di previsione."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dai dati grezzi alle previsioni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nell’accordo, KBR agirà come contraente principale e lavorerà con altri partner dell’industria privata, circa settanta in tutto. I servizi previsti comprendono la registrazione, la raccolta e l’aggregazione dei dati, oltre alla loro acquisizione e trasformazione in un formato utilizzabile dai modelli meteorologici e dai previsori del National Weather Service."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questo passaggio è importante perché le osservazioni non arrivano tutte nello stesso modo né sono prodotte dagli stessi soggetti. Una gestione centralizzata punta a semplificare l’approvvigionamento dei dati, eliminare duplicazioni e raccogliere le informazioni in un unico luogo. Secondo la NOAA, ciò dovrebbe rendere più facile integrare nuove fonti quando diventano disponibili e adottare un’architettura moderna basata sul cloud, cioè servizi informatici che elaborano e gestiscono dati attraverso infrastrutture in rete."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Strumenti diversi raccolgono osservazioni meteorologiche a terra, nell’atmosfera e in mare.",
+   "didascalia": "Il programma riunisce dati provenienti da strumenti e piattaforme molto diversi.",
+   "file": "immagini/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una rete più fitta per seguire il tempo che cambia"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per la NOAA, una rete di osservazioni fitta e affidabile è essenziale per migliorare i modelli meteorologici. Un modello meteorologico è un sistema che usa dati e calcoli per simulare l’evoluzione dell’atmosfera e produrre previsioni. Più misure sono disponibili, più la rete può cogliere come le condizioni cambiano da una zona all’altra e come evolvono nel tempo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’accesso a osservazioni commerciali di nuova generazione viene indicato come uno dei risultati attesi del contratto. La NOAA potrà inoltre raggiungere tecnologie emergenti quando arrivano sul mercato. In questo modo, il sistema di osservazione del National Weather Service dipenderà meno da strumenti posseduti e gestiti direttamente dall’agenzia."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il programma era nato per mettere a disposizione osservazioni di superficie provenienti da reti gestite dagli Stati. Nel tempo si è allargato fino a includere molti altri dati meteorologici e ambientali: condizioni nell’alta atmosfera, umidità e temperatura del suolo, altezza delle onde e correnti oceaniche. Il nuovo contratto consolida anche dati ottenuti da boe in mare, radar installati al suolo, palloni commerciali, droni e aeromobili commerciali."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati per monitoraggio, fenomeni a breve termine e modelli"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La disponibilità ordinata di queste informazioni serve a funzioni considerate essenziali dal National Weather Service: mantenere la consapevolezza della situazione meteorologica, prevedere fenomeni a breve termine e far funzionare i modelli di previsione. Riunire le osservazioni sotto un’unica gestione non significa che gli strumenti siano tutti uguali: significa poterli usare insieme, con procedure più snelle, per costruire una visione più ampia delle condizioni in corso."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per la NOAA, un Mesonet solido sostiene anche l’obiettivo di mantenere una posizione di riferimento nella previsione meteorologica numerica, cioè nelle previsioni ottenute elaborando dati atmosferici con modelli matematici e informatici. Il contratto apre infine la strada a future innovazioni nell’osservazione e nelle previsioni, facendo confluire in un solo sistema dati raccolti fuori dalle strutture della NOAA."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il National Mesonet Program della NOAA raccoglie osservazioni da numerose reti e piattaforme. Il nuovo contratto amplia la collaborazione con KBR e altri partner privati per registrare, aggregare e preparare i dati destinati a previsori e modelli meteorologici. Le fonti comprendono strumenti a terra, palloni, droni, aerei commerciali, radar e boe oceaniche."
+  }
+ ],
+ "parole": 608,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "NOAA boosts weather data collection capabilities with new Mesonet contract",
+  "url": "https://www.noaa.gov/news-release/noaa-boosts-weather-data-collection-capabilities-with-new-mesonet-contract",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

@@ -60,6 +60,17 @@ blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font
 .ad .cose span{padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.16);font-size:11.5px;font-weight:700}
 @media(max-width:520px){.ad{margin-left:-4px;margin-right:-4px;padding:20px 16px 18px}.ad b{font-size:19px}}
 .rg small{display:block;margin-top:6px;color:var(--mu);font-size:12px}
+/* il lettore vocale */
+.vc{display:inline-flex;align-items:center;gap:9px;margin:0 0 22px;padding:10px 17px 10px 13px;border:1px solid var(--li);
+  border-radius:99px;background:var(--mo);color:var(--tx);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.vc:hover{border-color:var(--bl)}
+.vc[data-on="1"]{background:var(--bl);border-color:var(--bl);color:#fff}
+.vc .ic{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:11px;
+  background:var(--bl);color:#fff}
+.vc[data-on="1"] .ic{background:rgba(255,255,255,.24)}
+.vc small{font-weight:600;opacity:.72}
+.leggo{background:color-mix(in srgb,var(--bl) 12%,transparent);border-radius:8px;
+  box-shadow:0 0 0 6px color-mix(in srgb,var(--bl) 12%,transparent)}
 @media(max-width:520px){.rg{grid-template-columns:96px 1fr}h1{font-size:25px}}</style>
 </head>
 <body><div class="gu">
@@ -69,6 +80,7 @@ blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font
 <span class="pl">Atmosfera</span><span class="pl">2026-08-27</span><span class="pl">3 min</span>
 <h1>Neve estesa nel deserto di Atacama dopo le tempeste di agosto</h1>
 <p class="so">Due perturbazioni invernali hanno portato neve dalle Ande fino alle vicinanze della costa pacifica del Cile settentrionale.</p>
+<button id="vc" class="vc" type="button" hidden data-on="0"><span class="ic">▶</span><span class="tx">Ascolta</span><small>3 min</small></button>
 <p>Nell’agosto 2026, due tempeste invernali ravvicinate hanno lasciato parti del deserto di Atacama, nel Cile settentrionale, sotto una rara coltre di neve. La neve è comparsa in un territorio di solito arido e ha raggiunto un’estensione insolita: dalle Ande fino alle zone prossime alla costa dell’oceano Pacifico. Il deserto aveva già ricevuto nevicate, in particolare nel 2025 e, prima ancora, nel 2011. Uno degli eventi del 2026 si è però distinto per l’ampiezza dell’area interessata.</p>
 <p>Le immagini raccolte dallo spazio permettono di osservare con chiarezza questa trasformazione. I satelliti NASA-USGS Landsat 8 e Landsat 9 hanno ripreso il territorio prima e dopo un periodo di maltempo intenso: un’immagine del 6 agosto mostra un altopiano prevalentemente bruno e asciutto, mentre quella del 14 agosto mostra lo stesso paesaggio ricoperto di bianco. Le riprese si concentrano sull’altopiano di Chajnantor, all’interno del complesso vulcanico Altiplano-Puna.</p>
 <h2>L’altopiano cambia aspetto</h2>
@@ -101,4 +113,58 @@ vengono i numeri, invece di limitarsi a dartelo. E ogni mattina ne trovi uno nuo
 la prima volta Android chiederà di autorizzare l'installazione da questa origine — succede con
 tutte le app che non passano dallo store.</small>
 </div>
-</div></div></body></html>
+</div></div>
+<script>
+(function(){
+ var S=window.speechSynthesis;
+ var b=document.getElementById('vc');
+ if(!S||!b){ if(b) b.remove(); return; }
+ b.hidden=false;
+ var giro=0,acceso=false;
+ function pezzi(){
+  var dd=document.querySelector('.dd'); if(!dd) return [];
+  var out=[];
+  dd.querySelectorAll('h1,.so,h2,.rq b,.rq p,blockquote,p').forEach(function(el){
+   if(el.closest('.fo')||el.closest('.ia')||el.closest('.ad')||el.closest('figcaption')) return;
+   var t=(el.textContent||'').trim();
+   if(t.length>1) out.push({el:el,testo:t});
+  });
+  return out;
+ }
+ function luce(el){
+  var v=document.querySelector('.leggo'); if(v) v.classList.remove('leggo');
+  if(!el) return;
+  el.classList.add('leggo');
+  try{ el.scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){}
+ }
+ function stato(on){
+  acceso=on; b.dataset.on=on?'1':'0';
+  b.querySelector('.ic').textContent=on?'\u25a0':'\u25b6';
+  b.querySelector('.tx').textContent=on?'Ferma':'Ascolta';
+ }
+ function dire(t){
+  return new Promise(function(fine){
+   var u=new SpeechSynthesisUtterance(t);
+   u.lang='it-IT'; u.onend=fine; u.onerror=fine;
+   S.speak(u);
+  });
+ }
+ function stop(){ giro++; S.cancel(); luce(null); stato(false); }
+ b.onclick=async function(){
+  if(acceso){ stop(); return; }
+  var mio=++giro; stato(true);
+  var lista=pezzi();
+  for(var i=0;i<lista.length;i++){
+   if(mio!==giro) return;
+   luce(lista[i].el);
+   await dire(lista[i].testo);
+  }
+  if(mio!==giro) return;
+  luce(null);
+  await dire('Fine dell\'articolo. Il testo \u00e8 stato scritto da un\'intelligenza artificiale a partire da NASA Science.');
+  if(mio===giro) stop();
+ };
+ window.addEventListener('pagehide',function(){ try{S.cancel();}catch(e){} });
+})();
+</script>
+</body></html>
