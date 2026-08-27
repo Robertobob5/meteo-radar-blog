@@ -449,7 +449,79 @@ blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font
 .ad .cose span{padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.16);font-size:11.5px;font-weight:700}
 @media(max-width:520px){.ad{margin-left:-4px;margin-right:-4px;padding:20px 16px 18px}.ad b{font-size:19px}}
 .rg small{display:block;margin-top:6px;color:var(--mu);font-size:12px}
+/* il lettore vocale */
+.vc{display:inline-flex;align-items:center;gap:9px;margin:0 0 22px;padding:10px 17px 10px 13px;border:1px solid var(--li);
+  border-radius:99px;background:var(--mo);color:var(--tx);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.vc:hover{border-color:var(--bl)}
+.vc[data-on="1"]{background:var(--bl);border-color:var(--bl);color:#fff}
+.vc .ic{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:11px;
+  background:var(--bl);color:#fff}
+.vc[data-on="1"] .ic{background:rgba(255,255,255,.24)}
+.vc small{font-weight:600;opacity:.72}
+.leggo{background:color-mix(in srgb,var(--bl) 12%,transparent);border-radius:8px;
+  box-shadow:0 0 0 6px color-mix(in srgb,var(--bl) 12%,transparent)}
 @media(max-width:520px){.rg{grid-template-columns:96px 1fr}h1{font-size:25px}}`;
+
+/* Il lettore vocale delle pagine da condividere.
+   Usa la voce che c'è già dentro il browser di chi legge: nessuna chiave,
+   nessun file audio da pubblicare, nessun costo. Legge un pezzo alla volta
+   perché Chrome, su letture lunghe, si spegne da solo dopo poco — è un
+   difetto noto — e perché così si vede dove sta leggendo e si può fermare
+   e riprendere. In fondo dice che l'ha scritto un'intelligenza artificiale:
+   chi ascolta senza guardare lo schermo quella nota non la vede. */
+const VOCE_WEB = (fonte) => `<script>
+(function(){
+ var S=window.speechSynthesis;
+ var b=document.getElementById('vc');
+ if(!S||!b){ if(b) b.remove(); return; }
+ b.hidden=false;
+ var giro=0,acceso=false;
+ function pezzi(){
+  var dd=document.querySelector('.dd'); if(!dd) return [];
+  var out=[];
+  dd.querySelectorAll('h1,.so,h2,.rq b,.rq p,blockquote,p').forEach(function(el){
+   if(el.closest('.fo')||el.closest('.ia')||el.closest('.ad')||el.closest('figcaption')) return;
+   var t=(el.textContent||'').trim();
+   if(t.length>1) out.push({el:el,testo:t});
+  });
+  return out;
+ }
+ function luce(el){
+  var v=document.querySelector('.leggo'); if(v) v.classList.remove('leggo');
+  if(!el) return;
+  el.classList.add('leggo');
+  try{ el.scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){}
+ }
+ function stato(on){
+  acceso=on; b.dataset.on=on?'1':'0';
+  b.querySelector('.ic').textContent=on?'\\u25a0':'\\u25b6';
+  b.querySelector('.tx').textContent=on?'Ferma':'Ascolta';
+ }
+ function dire(t){
+  return new Promise(function(fine){
+   var u=new SpeechSynthesisUtterance(t);
+   u.lang='it-IT'; u.onend=fine; u.onerror=fine;
+   S.speak(u);
+  });
+ }
+ function stop(){ giro++; S.cancel(); luce(null); stato(false); }
+ b.onclick=async function(){
+  if(acceso){ stop(); return; }
+  var mio=++giro; stato(true);
+  var lista=pezzi();
+  for(var i=0;i<lista.length;i++){
+   if(mio!==giro) return;
+   luce(lista[i].el);
+   await dire(lista[i].testo);
+  }
+  if(mio!==giro) return;
+  luce(null);
+  await dire('Fine dell\\'articolo. Il testo \\u00e8 stato scritto da un\\'intelligenza artificiale a partire da ${fonte}.');
+  if(mio===giro) stop();
+ };
+ window.addEventListener('pagehide',function(){ try{S.cancel();}catch(e){} });
+})();
+<\/script>`;
 
 /* Lo spot. Sta in fondo, dopo la fonte: chi è arrivato fin lì ha appena
    letto la prova di quello che gli stiamo promettendo. Nessun numero
@@ -514,6 +586,7 @@ ${a.copertina ? '<img class="cp" src="' + su + scappa(a.copertina) + '" alt="' +
 <span class="pl">${scappa(a.categoria || 'Ricerca')}</span><span class="pl">${scappa(a.data)}</span><span class="pl">${scappa(String(a.minuti || 3))} min</span>
 <h1>${scappa(a.titolo)}</h1>
 ${a.sottotitolo ? '<p class="so">' + scappa(a.sottotitolo) + '</p>' : ''}
+<button id="vc" class="vc" type="button" hidden data-on="0"><span class="ic">▶</span><span class="tx">Ascolta</span><small>${scappa(String(a.minuti || 3))} min</small></button>
 ${corpo}
 <div class="fo"><small>Da dove viene</small><b>${scappa(f.titolo || '')}</b>
 ${f.url ? '<a href="' + scappa(f.url) + '" target="_blank" rel="noopener">Leggi la fonte originale \u00b7 ' + scappa(f.nome || '') + ' \u2197</a>' : scappa(f.nome || '')}</div>
@@ -522,7 +595,9 @@ artificiale a partire dalla fonte qui sopra, e prima della pubblicazione un cont
 numero citato compaia davvero nella fonte. Non \u00e8 un articolo scritto da una persona, e le immagini sono
 illustrazioni, non fotografie di quello che \u00e8 successo.</div>
 ${SPOT()}
-</div></div></body></html>`;
+</div></div>
+${VOCE_WEB(scappa((a.fonte && a.fonte.nome) || 'la fonte citata').replace(/'/g, "\\'"))}
+</body></html>`;
 }
 
 function paginaIndice(indice) {
