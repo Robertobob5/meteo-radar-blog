@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-27T16:33:50.079Z",
+ "aggiornato": "2026-08-28T08:28:08.926Z",
  "articoli": [
+  {
+   "id": "2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort",
+   "data": "2026-08-28",
+   "titolo": "NOAA ricostruirà lo storico laboratorio marino di Beaufort",
+   "sottotitolo": "La nuova struttura sostituirà l’edificio chiuso per danni strutturali legati agli uragani e sarà costruita sopra la pianura alluvionale.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort-copertina.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-to-rebuild-historic-science-lab-in-beaufort-north-carolina",
+   "fonteTitolo": "NOAA to rebuild historic science lab in Beaufort, North Carolina",
+   "file": "articoli/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort.json"
+  },
   {
    "id": "2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr",
    "data": "2026-08-27",

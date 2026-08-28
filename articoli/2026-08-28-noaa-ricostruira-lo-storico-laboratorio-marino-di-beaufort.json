@@ -1,0 +1,79 @@
+{
+ "id": "2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort",
+ "data": "2026-08-28",
+ "scritto": "2026-08-28T08:28:08.926Z",
+ "titolo": "NOAA ricostruirà lo storico laboratorio marino di Beaufort",
+ "sottotitolo": "La nuova struttura sostituirà l’edificio chiuso per danni strutturali legati agli uragani e sarà costruita sopra la pianura alluvionale.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort-copertina.webp",
+ "copertinaAlt": "Illustrazione di un laboratorio di ricerca marino sopraelevato accanto a un estuario.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "NOAA ha annunciato il finanziamento per ricostruire un laboratorio a Beaufort, nella Carolina del Nord. La nuova struttura prenderà il posto dell’edificio precedente, chiuso definitivamente nel 2024 dopo gravi danni strutturali collegati agli uragani. In seguito a un’ispezione ordinaria, l’agenzia aveva stabilito che i danni alle fondamenta rendevano pericolosa l’occupazione dell’edificio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il progetto riceverà 64 milioni di dollari dal Disaster Relief Supplemental Appropriations Act del 2025, il provvedimento destinato agli aiuti per i disastri. La progettazione e le attività che precedono la costruzione dovrebbero iniziare all’inizio del 2027. Il nuovo laboratorio sarà realizzato sopra la pianura alluvionale, cioè l’area che può essere interessata dalle piene, e sarà progettato per resistere a tempeste e inondazioni."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un laboratorio con una lunga storia"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Beaufort Laboratory è stato istituito nel 1899 ed è il secondo più antico laboratorio federale di scienze marine del Paese. È precedente alla stessa NOAA di oltre settant’anni. Nel 1902 il laboratorio si trasferì nella sede attuale, sull’isola di Pivers, dove si trova il complesso del campus."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La posizione del centro di ricerca è parte della sua importanza scientifica. Il laboratorio si trova nel secondo estuario più grande del Paese, un ambiente costiero in cui le acque interne incontrano il mare, e vicino alla Corrente del Golfo. NOAA indica che la nuova struttura consentirà di proseguire la ricerca svolta finora e di rafforzare la collaborazione con partner dell’industria e del mondo accademico."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di un laboratorio sopraelevato in un ambiente costiero esposto alle inondazioni.",
+   "didascalia": "La nuova struttura sarà costruita sopra la pianura alluvionale e progettata per affrontare tempeste e allagamenti.",
+   "file": "immagini/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalle fioriture algali alle risorse marine"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gli spazi del nuovo laboratorio dovranno ampliare le attività di ricerca e i servizi di NOAA sia lungo la costa della Carolina del Nord sia nel resto degli Stati Uniti. Tra i compiti indicati ci sono lo studio, il monitoraggio e la previsione delle fioriture algali dannose: aumenti di alghe che possono avere effetti negativi sull’ambiente marino."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La struttura sarà inoltre impiegata per usare sistemi senza equipaggio nella mappatura degli habitat sottomarini e nel ripristino dei coralli. Gli habitat sottomarini sono gli ambienti in cui vivono le specie marine; mapparli significa descriverne e localizzarne le caratteristiche. Il laboratorio fungerà anche da centro di ricerca per sostenere la gestione della pesca nell’Atlantico meridionale e la tutela delle risorse marine."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un’altra linea di lavoro riguarda la valutazione delle infrastrutture naturali per la protezione delle coste. Con questa espressione NOAA si riferisce agli elementi naturali usati per contribuire alla difesa costiera. Il campus gestisce inoltre la Rachel Carson National Estuarine Research Reserve, una riserva nazionale di ricerca estuarina, offrendo opportunità per istruzione, ricerca e usi tradizionali compatibili."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le realtà riunite nel campus"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel laboratorio di Beaufort lavorano personale del National Ocean Service e del National Marine Fisheries Service di NOAA, insieme al North Carolina Coastal Reserve e al National Estuarine Research Reserve. Quest’ultima rete di riserve è gestita attraverso una collaborazione tra il federal Office for Coastal Management di NOAA e la Division of Coastal Management della Carolina del Nord."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il laboratorio di Beaufort, istituito nel 1899, sarà ricostruito dopo la chiusura dell’edificio danneggiato dagli uragani. Il finanziamento previsto è di 64 milioni di dollari. La futura struttura sarà sopraelevata rispetto alla pianura alluvionale e sosterrà ricerche su fioriture algali dannose, habitat sottomarini, coralli, pesca, risorse marine e protezione delle coste."
+  }
+ ],
+ "parole": 527,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "NOAA to rebuild historic science lab in Beaufort, North Carolina",
+  "url": "https://www.noaa.gov/news-release/noaa-to-rebuild-historic-science-lab-in-beaufort-north-carolina",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
