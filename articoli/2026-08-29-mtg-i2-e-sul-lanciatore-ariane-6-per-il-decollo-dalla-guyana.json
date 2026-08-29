@@ -1,0 +1,67 @@
+{
+ "id": "2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana",
+ "data": "2026-08-29",
+ "scritto": "2026-08-29T07:24:38.066Z",
+ "titolo": "MTG-I2 è sul lanciatore Ariane 6 per il decollo dalla Guyana francese",
+ "sottotitolo": "Il satellite meteorologico completerà la prima famiglia MTG e fornirà immagini dell’atmosfera ogni due minuti e mezzo.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana-copertina.webp",
+ "copertinaAlt": "Illustrazione di Ariane 6 sulla rampa di lancio con il satellite MTG-I2 protetto nella carenatura.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Il satellite Meteosat di Terza Generazione Imager 2, chiamato MTG-I2, è pronto per il lancio a bordo di Ariane 6. Il decollo è programmato per la sera di giovedì 27 agosto dallo Spazioporto europeo nella Guyana francese. Il satellite è già stato inserito nella parte superiore del razzo: un passaggio conclusivo che porta la missione alla fase del conto alla rovescia."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "MTG-I2 fa parte della costellazione MTG, una costellazione è un insieme di satelliti che lavora come sistema coordinato. La missione è dedicata alle osservazioni meteorologiche su Europa e Africa settentrionale. Una volta operativo, il satellite completerà la prima famiglia di satelliti MTG e contribuirà a migliorare i dati disponibili per le previsioni del tempo."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il satellite è già nella carenatura"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’incapsulamento è avvenuto con le due metà della carenatura già fissate tra loro. La carenatura è il cono protettivo posto sulla sommità del razzo, che ripara il satellite durante le prime fasi del volo. Questa struttura è stata abbassata sopra MTG-I2; in seguito, il segmento superiore del lanciatore con il satellite all’interno è stato sollevato e posizionato sulla parte principale di Ariane 6, già verticale sulla rampa e ospitata nella torre mobile."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato del satellite MTG-I2 nella carenatura mentre viene collocato sulla sommità del razzo.",
+   "didascalia": "La carenatura protegge MTG-I2 durante il lancio.",
+   "file": "immagini/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana-1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Prima del decollo, la torre mobile verrà allontanata dalla rampa. Ariane 6 e il suo carico resteranno così pronti per il conto alla rovescia. Per questa missione il lanciatore sarà configurato con due motori a propellente solido basati sul modello P120C. Si tratta del nono lancio di Ariane 6 e della prima missione del razzo diretta verso un’orbita di trasferimento geostazionaria, cioè la traiettoria usata per raggiungere un’orbita attorno alla Terra."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Immagini dell’atmosfera ogni due minuti e mezzo"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La funzione centrale di MTG-I2 sarà raccogliere dati su fulmini, atmosfera, nuvole e tempeste in formazione. Il satellite fornirà immagini ad alta risoluzione dell’atmosfera sopra Europa e Africa settentrionale ogni due minuti e mezzo. La frequenza delle osservazioni, insieme alla qualità e alla quantità dei dati, è pensata per seguire più da vicino l’evoluzione delle condizioni meteorologiche."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Disporre di segnali di allerta più precoci può aiutare servizi di emergenza, autorità e cittadini a prepararsi ai temporali intensi e alle forti piogge. Una maggiore capacità di seguire e prevedere il tempo estremo con più precisione e in tempi più brevi è rilevante anche per attività e reti dipendenti dalle condizioni meteorologiche: agricoltura, trasporti, assicurazioni, turismo, infrastrutture e reti energetiche."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "MTG-I2 è destinato a rimanere in orbita attorno alla Terra per almeno otto anni e mezzo. Dopo il completamento della fase di messa in servizio, Eumetsat gestirà i satelliti e diffonderà i dati scientifici. I tre satelliti MTG sono stati sviluppati dall’ESA e costruiti da un consorzio di industrie europee guidato da Thales Alenia Space, con OHB System e Leonardo come principali partner."
+  }
+ ],
+ "parole": 452,
+ "minuti": 2,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "MTG-I2 ready for launch on Ariane 6",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/MTG-I2_ready_for_launch_on_Ariane_6",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

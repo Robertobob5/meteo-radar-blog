@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-29T07:15:46.581Z",
+ "aggiornato": "2026-08-29T07:24:38.067Z",
  "articoli": [
+  {
+   "id": "2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana",
+   "data": "2026-08-29",
+   "titolo": "MTG-I2 è sul lanciatore Ariane 6 per il decollo dalla Guyana francese",
+   "sottotitolo": "Il satellite meteorologico completerà la prima famiglia MTG e fornirà immagini dell’atmosfera ogni due minuti e mezzo.",
+   "categoria": "Atmosfera",
+   "minuti": 2,
+   "copertina": "immagini/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/MTG-I2_ready_for_launch_on_Ariane_6",
+   "fonteTitolo": "MTG-I2 ready for launch on Ariane 6",
+   "file": "articoli/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana.json"
+  },
   {
    "id": "2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi",
    "data": "2026-08-29",
