@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-28T08:28:08.926Z",
+ "aggiornato": "2026-08-29T07:15:46.581Z",
  "articoli": [
+  {
+   "id": "2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi",
+   "data": "2026-08-29",
+   "titolo": "FLEX e Sentinel-3C pronti al lancio insieme per osservare piante, oceani e atmosfera",
+   "sottotitolo": "Le due missioni saranno portate in orbita dal razzo Vega-C e raccoglieranno dati utili per vegetazione, meteo e clima.",
+   "categoria": "Spazio",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Newsroom/Press_Releases/Media_invitation_FLEX_and_Copernicus_Sentinel-3C_online_media_briefings",
+   "fonteTitolo": "Media invitation: FLEX and Copernicus Sentinel-3C online media briefings",
+   "file": "articoli/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi.json"
+  },
   {
    "id": "2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort",
    "data": "2026-08-28",

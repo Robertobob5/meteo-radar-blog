@@ -1,0 +1,89 @@
+{
+ "id": "2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi",
+ "data": "2026-08-29",
+ "scritto": "2026-08-29T07:15:46.581Z",
+ "titolo": "FLEX e Sentinel-3C pronti al lancio insieme per osservare piante, oceani e atmosfera",
+ "sottotitolo": "Le due missioni saranno portate in orbita dal razzo Vega-C e raccoglieranno dati utili per vegetazione, meteo e clima.",
+ "categoria": "Spazio",
+ "copertina": "immagini/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi-copertina.webp",
+ "copertinaAlt": "Illustrazione di un razzo che porta in orbita due satelliti per osservare la Terra.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Due satelliti dedicati all’osservazione della Terra, FLEX e Copernicus Sentinel-3C, sono attesi al lancio a bordo di un razzo Vega-C nella missione VV30. Il decollo è previsto dallo Spazioporto europeo nella Guyana francese il 14 settembre 2026, alle 22:21 ora locale: in Italia saranno le 03:21 del 15 settembre."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le due missioni hanno compiti differenti ma complementari. FLEX guarderà in particolare alla salute della vegetazione e alla fotosintesi, il processo con cui le piante assorbono la luce del Sole. Sentinel-3C osserverà invece condizioni su oceani, terre emerse, ghiacci e atmosfera, fornendo dati quasi in tempo reale a sostegno delle previsioni meteorologiche e degli studi sul clima."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "FLEX, il satellite che cerca il debole segnale delle piante"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "FLEX è una missione Earth Explorer dell’Agenzia spaziale europea dedicata alla fotosintesi. A bordo porta lo spettrometro di imaging della fluorescenza, uno strumento capace di rilevare la debole fluorescenza emessa dalle piante mentre assorbono la luce solare. La fluorescenza è una luce molto tenue, invisibile all’occhio umano, che in questo caso viene emessa dalla vegetazione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il segnale varia in base allo stato di salute delle piante e alle condizioni ambientali. Misurarlo dallo spazio permetterà di ottenere nuove informazioni sulla salute della vegetazione e sull’attività fotosintetica su scala globale. Lo strumento principale di FLEX è stato fornito da Leonardo."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di un satellite che rileva il debole segnale emesso dalla vegetazione.",
+   "didascalia": "FLEX misurerà la fluorescenza delle piante, un segnale legato alla loro attività fotosintetica.",
+   "file": "immagini/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Sentinel-3C amplia le osservazioni di mare, ghiaccio e terraferma"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Copernicus Sentinel-3C è il terzo satellite della serie Sentinel-3. Trasporterà un insieme di strumenti per misurare l’altezza dell’oceano, le temperature della superficie del mare e del ghiaccio, il colore dell’oceano e lo spessore del ghiaccio marino. Il colore dell’oceano è una misura osservata dai satelliti che descrive come la luce viene riflessa dalle acque."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Sulle terre emerse, Sentinel-3C monitorerà vegetazione, incendi boschivi, calotte glaciali e livelli dell’acqua nei laghi e nei fiumi interni. I suoi dati quasi in tempo reale contribuiranno quindi a seguire molte componenti del sistema terrestre, dall’atmosfera alle superfici marine e continentali."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il satellite fa parte di Copernicus, l’iniziativa di osservazione della Terra dell’Unione europea all’interno del suo programma spaziale. Copernicus è gestito e finanziato dall’Unione europea in collaborazione con l’Agenzia spaziale europea. Insieme alle altre missioni Sentinel, Sentinel-3C contribuirà a questo programma di osservazione."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Illustrazione di un satellite sopra oceano, ghiaccio, terra e atmosfera.",
+   "didascalia": "Sentinel-3C raccoglierà osservazioni su oceani, ghiacci, terre emerse e atmosfera.",
+   "file": "immagini/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi-2.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un unico volo Vega-C, due inserimenti in orbita"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "FLEX e Sentinel-3C viaggeranno nello spazio sul Vega-C. Il razzo è alto 35 metri e pesa 210 tonnellate sulla rampa di lancio. Dopo tre stadi alimentati da propellente solido, entrerà in funzione un quarto stadio a propellente liquido. Questo stadio effettuerà due rilasci precisi attorno alla Terra, per portare i satelliti nelle rispettive orbite richieste."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il programma Vega-C è guidato dall’Agenzia spaziale europea con Avio come contraente principale e autorità di progetto. Per entrambi i satelliti, il contraente principale è Thales Alenia Space. Il volo unirà quindi due osservatori diversi: uno rivolto al tenue segnale emesso dalla vegetazione, l’altro a un quadro esteso delle condizioni di mare, terra, ghiaccio e atmosfera."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "FLEX studierà la fluorescenza delle piante per comprendere meglio salute della vegetazione e fotosintesi. Sentinel-3C fornirà dati quasi in tempo reale per monitorare oceani, terre, ghiacci e atmosfera, con applicazioni per le previsioni del tempo e la scienza del clima. Entrambi saranno lanciati insieme sul Vega-C."
+  }
+ ],
+ "parole": 526,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "Media invitation: FLEX and Copernicus Sentinel-3C online media briefings",
+  "url": "https://www.esa.int/Newsroom/Press_Releases/Media_invitation_FLEX_and_Copernicus_Sentinel-3C_online_media_briefings",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
