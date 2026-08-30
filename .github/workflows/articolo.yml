@@ -7,19 +7,22 @@
 # PERCHÉ NON AL MINUTO ZERO. La documentazione di GitHub dice che gli avvii
 # programmati "possono essere ritardati nei periodi di carico" e che fra i
 # periodi di carico c'è "l'inizio di ogni ora". Un avvio troppo in ritardo
-# non viene recuperato: si perde. Mettendo i minuti spostati si sta fuori
-# dalla calca. I quattro tentativi servono a questo: se GitHub ne salta uno,
-# ci pensa il successivo.
+# non viene recuperato: si perde. Ai minuti 13 e 43 si sta fuori dalla calca.
 #
 # Si può sempre lanciare a mano dalla scheda "Actions".
 name: Articolo del giorno
 
 on:
   schedule:
-    - cron: '17 6 * * *'     # 08:17 in Italia con l'ora legale
-    - cron: '43 6 * * *'
-    - cron: '17 7 * * *'     # 08:17 in Italia con l'ora solare
-    - cron: '43 7 * * *'
+    # DODICI tentativi, ogni mezz'ora dalle 08:13 alle 13:43 italiane.
+    # Non è accanimento: GitHub non garantisce gli avvii programmati e ne
+    # lascia cadere parecchi senza recuperarli. Misurato su questo blog:
+    # in tre giorni ne sono partiti due, e quei due con 24 e 47 minuti di
+    # ritardo. Con dodici occasioni basta che ne vada in porto una.
+    # Costano zero: la prima che riesce pubblica, tutte le altre trovano
+    # l'articolo di oggi già fatto ed escono in dieci secondi senza
+    # chiamare nessuno e senza spendere un centesimo.
+    - cron: '13,43 6-11 * * *'
   workflow_dispatch:
     inputs:
       forza:
@@ -39,10 +42,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Prendi il repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Prepara Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: '22'
 
