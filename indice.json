@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-29T07:24:38.067Z",
+ "aggiornato": "2026-08-30T06:53:10.097Z",
  "articoli": [
+  {
+   "id": "2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe",
+   "data": "2026-08-30",
+   "titolo": "Un grande iceberg si stacca dal ghiacciaio Petermann in Groenlandia",
+   "sottotitolo": "Le immagini radar di Sentinel-1 hanno seguito la crescita delle fratture fino al distacco di una vasta lingua di ghiaccio galleggiante.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Sentinel-1_captures_major_ice_loss_from_Greenland_glacier",
+   "fonteTitolo": "Sentinel-1 captures major ice loss from Greenland glacier",
+   "file": "articoli/2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe.json"
+  },
   {
    "id": "2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana",
    "data": "2026-08-29",
