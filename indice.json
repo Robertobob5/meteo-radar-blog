@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-30T06:53:10.097Z",
+ "aggiornato": "2026-08-30T14:34:25.613Z",
  "articoli": [
+  {
+   "id": "2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e-",
+   "data": "2026-08-30",
+   "titolo": "Posidonia oceanica: una prateria marina che protegge coste e clima",
+   "sottotitolo": "Nel Mediterraneo, questa pianta marina sostiene la biodiversità, accumula carbonio e affronta pressioni crescenti.",
+   "categoria": "Mare",
+   "minuti": 4,
+   "copertina": "immagini/2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e--copertina.webp",
+   "fonte": "INGV Ambiente",
+   "fonteUrl": "https://ingvambiente.com/2026/07/28/posidonia-oceanica-un-alleato-del-clima-in-un-mediterraneo-sempre-piu-caldo/",
+   "fonteTitolo": "Posidonia oceanica: un alleato del clima in un Mediterraneo sempre più caldo",
+   "file": "articoli/2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e-.json"
+  },
   {
    "id": "2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe",
    "data": "2026-08-30",
