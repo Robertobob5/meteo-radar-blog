@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-30T14:34:25.613Z",
+ "aggiornato": "2026-08-31T06:21:32.826Z",
  "articoli": [
+  {
+   "id": "2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di",
+   "data": "2026-08-31",
+   "titolo": "Il ghiacciaio Pasterze resta unito da una stretta cascata di ghiaccio",
+   "sottotitolo": "Nelle Alpi orientali, l’ultimo collegamento tra la parte alta e quella bassa del ghiacciaio si è molto ristretto.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/pasterze-hangs-on-as-austrias-largest-glacier/",
+   "fonteTitolo": "Pasterze Hangs on as Austria’s Largest Glacier",
+   "file": "articoli/2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di.json"
+  },
   {
    "id": "2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e-",
    "data": "2026-08-30",
