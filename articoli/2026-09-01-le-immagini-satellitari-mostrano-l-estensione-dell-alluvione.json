@@ -1,0 +1,85 @@
+{
+ "id": "2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione",
+ "data": "2026-09-01",
+ "scritto": "2026-09-01T06:21:57.740Z",
+ "titolo": "Le immagini satellitari mostrano l’estensione dell’alluvione improvvisa nel Nepal settentrionale",
+ "sottotitolo": "Dopo il collasso di un ghiacciaio nel Parco nazionale di Langtang, i satelliti aiutano a osservare le aree colpite e a sostenere i soccorsi.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione-copertina.webp",
+ "copertinaAlt": "Illustrazione di una valle montana himalayana attraversata da una piena carica di detriti.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel Nepal settentrionale, un’alluvione improvvisa e una valanga di detriti hanno colpito la regione di confine tra Nepal e Cina la mattina del 26 agosto 2026. Mentre migliaia di soccorritori conducono operazioni di ricerca e salvataggio, le immagini da satellite stanno contribuendo a rivelare l’estensione dell’inondazione e della devastazione nell’area interessata."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il disastro ha lasciato centinaia di vittime e migliaia di persone ancora disperse. L’evento è stato innescato da un rapido cedimento di versante associato al collasso di un ghiacciaio sul Langtang Lirung, nel Parco nazionale di Langtang. L’impatto del ghiacciaio crollato sul fondo della valle è stato così potente da generare un’energia equivalente a quella di un terremoto di magnitudo 5,2."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un flusso di acqua, ghiaccio e detriti lungo le valli"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dopo il collasso, un torrente di acqua, ghiaccio e detriti si è riversato per quasi 100 chilometri verso valle. Nel suo percorso ha raccolto altra acqua e altro materiale, attraversando località frequentate da turisti dell’alpinismo e pellegrini. La piena ha sommerso anche il valico di frontiera di Gyirong Port e ha devastato infrastrutture lungo le valli del Lende Kholā e del fiume Trishuli."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le operazioni di soccorso sono rese più difficili dal terreno montuoso, già naturalmente complesso da attraversare. A questo si aggiungono zone rimaste isolate, infrastrutture danneggiate, condizioni meteorologiche e il rischio continuo di ulteriori inondazioni e frane. In un contesto simile, disporre di una vista dall’alto e ripetuta nel tempo può essere utile per capire dove l’acqua e i detriti abbiano modificato il territorio."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Confronto visivo tra una valle prima dell’evento e la stessa valle con il fiume molto più esteso dopo la piena.",
+   "didascalia": "Le immagini in colore naturale permettono di confrontare l’ampiezza del corso d’acqua prima e dopo l’evento.",
+   "file": "immagini/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il confronto tra immagini prima e dopo"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La missione Copernicus Sentinel-2 ha acquisito una coppia di immagini dell’area. L’immagine successiva all’evento è del 27 agosto, il giorno dopo l’alluvione, mentre quella precedente è del 12 agosto. Entrambe sono mostrate in colore naturale. Nel confronto, l’immagine dopo l’evento evidenzia chiaramente il forte aumento dell’acqua nei fiumi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un secondo insieme di immagini usa i canali nell’infrarosso a onde corte, cioè osservazioni che in questa situazione possono aiutare a distinguere acqua e ghiaccio dalle nubi. Si tratta di un aspetto particolarmente utile in una regione montuosa spesso coperta da nuvole. L’immagine del satellite statunitense Landsat-9 è stata acquisita il 26 agosto, circa due ore dopo il collasso del ghiacciaio. Per il confronto con la situazione precedente, Sentinel-2 aveva osservato la stessa area il 24 agosto."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di una valle montana osservata con dati che distinguono acqua e ghiaccio dalle nubi.",
+   "didascalia": "Le osservazioni nell’infrarosso a onde corte aiutano a separare acqua e ghiaccio dalle nubi in un’area spesso nuvolosa.",
+   "file": "immagini/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione-2.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati spaziali per l’emergenza e la ricostruzione"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per sostenere la risposta all’emergenza sono stati attivati la Carta internazionale Spazio e grandi catastrofi e il Servizio di mappatura di emergenza Copernicus. La Carta riunisce agenzie spaziali e operatori satellitari di tutto il mondo per mobilitare rapidamente dati satellitari dopo grandi disastri. Il servizio Copernicus, invece, fornisce informazioni sul territorio per sostenere la risposta alle emergenze, la preparazione e il recupero."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’Agenzia spaziale europea è cofondatrice e membro attivo della Carta internazionale e contribuisce alla rapida mobilitazione dei dati satellitari. Nel Servizio di mappatura di emergenza Copernicus, l’Agenzia fornisce i dati dei satelliti Sentinel e gestisce l’accesso ai dati complementari delle missioni che contribuiscono a Copernicus. I due sistemi collaborano, unendo le capacità spaziali dell’Agenzia agli sforzi internazionali e dell’Unione europea per la cartografia di emergenza."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Le immagini satellitari sono importanti nelle prime fasi dopo un disastro, ma il loro valore prosegue nelle settimane, nei mesi e negli anni successivi. Possono offrire un quadro dettagliato dei danni, aiutare a valutare quali strade, ponti ed edifici siano stati colpiti e sostenere il ripristino dei servizi essenziali e la ricostruzione delle comunità. Confrontando il paesaggio prima e dopo l’evento, i dati possono inoltre aiutare a seguire il recupero, individuare le aree che restano a rischio e prendere decisioni più informate su dove e come ricostruire."
+  }
+ ],
+ "parole": 601,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "Nepal flash flood imaged by satellites",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2/Nepal_flash_flood_imaged_by_satellites",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

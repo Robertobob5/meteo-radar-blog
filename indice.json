@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-08-31T06:21:32.826Z",
+ "aggiornato": "2026-09-01T06:21:57.741Z",
  "articoli": [
+  {
+   "id": "2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione",
+   "data": "2026-09-01",
+   "titolo": "Le immagini satellitari mostrano l’estensione dell’alluvione improvvisa nel Nepal settentrionale",
+   "sottotitolo": "Dopo il collasso di un ghiacciaio nel Parco nazionale di Langtang, i satelliti aiutano a osservare le aree colpite e a sostenere i soccorsi.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2/Nepal_flash_flood_imaged_by_satellites",
+   "fonteTitolo": "Nepal flash flood imaged by satellites",
+   "file": "articoli/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione.json"
+  },
   {
    "id": "2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di",
    "data": "2026-08-31",
