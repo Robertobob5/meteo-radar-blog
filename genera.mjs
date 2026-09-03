@@ -17,6 +17,10 @@
    Uso:  node genera.mjs            (serve OPENAI_API_KEY nell'ambiente)
          node genera.mjs --prova    (non chiama OpenAI: usa risposte finte)
          node genera.mjs --forza    (rifà l'articolo anche se oggi c'è già)
+
+   3 settembre 2026 · la pulizia dell'archivio cancella solo i doppioni
+   certi (stessa fonte), ricorda chi ha buttato in "scartati" e il
+   confronto fra titoli non si fa più ingannare da parole simili.
    ============================================================ */
 
 import fs from 'node:fs/promises';
@@ -163,16 +167,20 @@ function quasiUguali(a, b){
    · le parole in comune sono tante (quasi metà), oppure
    · c'è una sigla in comune (MTG-I2, un anno) e un po' di parole intorno.
    Il filtro è volutamente severo: saltare una notizia buona costa poco
-   (se ne prende un'altra), pubblicare due volte la stessa costa a te. */
+   (se ne prende un'altra), pubblicare due volte la stessa costa a te.
+
+   Una parola uguale vale un punto; una che "balla" di una lettera vale
+   mezzo. Con radici di cinque lettere la tolleranza prendeva lucciole per
+   lanterne: "intensifica" e "incendi" diventano "inten" e "incen", e così
+   "La siccità si intensifica a Porto Rico" risultava la stessa storia di
+   "Caldo estremo, siccità e incendi" (è successo davvero, il 3 settembre). */
 function stessaStoria(a, b){
   const A = [...paroleChiave(a)], B = [...paroleChiave(b)];
   if (A.length < 2 || B.length < 2) return false;
   let comuni = 0, sigla = false;
   A.forEach(x => {
-    const trovata = B.find(y => quasiUguali(x, y));
-    if (!trovata) return;
-    comuni++;
-    if (conNumero(x)) sigla = true;
+    if (B.includes(x)) { comuni += 1; if (conNumero(x)) sigla = true; return; }
+    if (B.some(y => quasiUguali(x, y))) comuni += 0.5;
   });
   const quota = comuni / Math.min(A.length, B.length);
   return quota >= 0.45 || (sigla && quota >= 0.3);
@@ -635,19 +643,33 @@ const perUrl = s => String(s).toLowerCase()
   .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 
 /* ─────────────── pulizia dei doppioni già pubblicati ───────────────
-   Chi era uscito prima che il controllo esistesse resta lì. A ogni giro
-   si guarda l'archivio: se due articoli raccontano la stessa storia si
-   tiene il PRIMO (di solito il più completo, ed è quello che la gente
-   ha già letto) e si butta l'altro, file, immagini e pagina compresi. */
+   Un articolo pubblicato si tocca solo quando il doppione è CERTO: due
+   pezzi nati dalla STESSA FONTE (stesso indirizzo). Allora si tiene il
+   primo uscito, quello che la gente ha già letto, e si butta l'altro,
+   file, immagini e pagina compresi.
+
+   Fino al 2 settembre la pulizia si fidava della somiglianza dei titoli,
+   e una somiglianza sbagliata ha cancellato un articolo buono; il giorno
+   dopo, sparita con lui anche la memoria della fonte, la stessa notizia è
+   stata scritta di nuovo. Da qui le due regole: si cancella solo per
+   fonte uguale, e chi viene buttato resta scritto in "scartati" dentro
+   indice.json, così la sua fonte e il suo titolo non tornano mai più. */
+const MEMORIA_SCARTATI = 300;
 async function butta(nome){
   try { await fs.unlink(path.join(QUI, nome)); return true; } catch { return false; }
+}
+function ricordaScartato(indice, a, perche){
+  if (!Array.isArray(indice.scartati)) indice.scartati = [];
+  indice.scartati.push({ id: a.id, data: a.data, titolo: a.titolo, fonteUrl: a.fonteUrl || '',
+                         fonteTitolo: a.fonteTitolo || '', quando: new Date().toISOString(), perche });
+  if (indice.scartati.length > MEMORIA_SCARTATI) indice.scartati = indice.scartati.slice(-MEMORIA_SCARTATI);
 }
 async function ripulisciDoppioni(indice){
   const tenuti = [], buttati = [];
   /* dal più vecchio al più recente, così a restare è il primo uscito */
   const ordinati = indice.articoli.slice().reverse();
   for (const a of ordinati) {
-    const gemello = tenuti.find(t => stessaStoria(t.titolo, a.titolo));
+    const gemello = a.fonteUrl ? tenuti.find(t => t.fonteUrl === a.fonteUrl) : null;
     if (gemello) buttati.push({ a, gemello });
     else tenuti.push(a);
   }
@@ -656,12 +678,13 @@ async function ripulisciDoppioni(indice){
   dice('\nPulizia: ' + buttati.length + (buttati.length === 1 ? ' doppione trovato' : ' doppioni trovati') + ' nell\'archivio');
   for (const { a, gemello } of buttati) {
     dice('  \u2716 "' + a.titolo + '"');
-    dice('     stessa storia di "' + gemello.titolo + '"');
+    dice('     stessa fonte di "' + gemello.titolo + '" (' + gemello.data + ')');
     await butta(a.file || ('articoli/' + a.id + '.json'));
     await butta('p/' + a.id + '.html');
     if (a.copertina) await butta(a.copertina);
     /* le immagini interne portano il nome dell'articolo con un numero in coda */
     for (let n = 1; n <= 4; n++) await butta('immagini/' + a.id + '-' + n + '.webp');
+    ricordaScartato(indice, a, 'stessa fonte di ' + gemello.id);
   }
   indice.articoli = tenuti.reverse();
   indice.aggiornato = new Date().toISOString();
@@ -707,6 +730,12 @@ async function main() {
      Non costa niente e non chiama nessuno. */
   await rifaiPagine(indice, SITO_WEB);
 
+  /* poi si mette in ordine la casa: due articoli nati dalla stessa fonte
+     sono uno di troppo. Viene PRIMA del controllo "oggi c'è già", così se
+     il doppione è proprio quello di oggi il posto si libera e l'articolo
+     del giorno viene scritto da una notizia nuova. */
+  const puliti = await ripulisciDoppioni(indice);
+
   if (!FORZA && indice.articoli.some(a => a.data === oggi)) {
     dice('L\'articolo di oggi (' + oggi + ') c\'è già. Niente da fare.');
     return;
@@ -723,17 +752,17 @@ async function main() {
     process.exit(1);
   }
 
-  /* prima di scrivere: si mette in ordine la casa */
-  const puliti = await ripulisciDoppioni(indice);
-
   const attive = config.fonti.filter(f => f.attiva !== false);
   dice('Fonti attive: ' + attive.length);
   const tutte = (await Promise.all(attive.map(scaricaFeed))).flat();
   dice('Notizie trovate: ' + tutte.length);
 
-  const usate = new Set(indice.articoli.map(a => a.fonteUrl));
+  /* gli scartati contano come usati: una fonte buttata via non deve
+     tornare il giorno dopo come se fosse nuova (è successo) */
+  const memoria = indice.articoli.concat(Array.isArray(indice.scartati) ? indice.scartati : []);
+  const usate = new Set(memoria.map(a => a.fonteUrl).filter(Boolean));
   /* i titoli già raccontati: quelli della fonte e quelli dei nostri articoli */
-  const gia = indice.articoli.flatMap(a => [a.fonteTitolo, a.titolo]).filter(Boolean);
+  const gia = memoria.flatMap(a => [a.fonteTitolo, a.titolo]).filter(Boolean);
   const candidate = tutte
     .filter(v => !usate.has(v.url))
     .filter(v => !gia.some(t => stessaStoria(t, v.titolo)))
