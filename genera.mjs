@@ -186,11 +186,18 @@ function stessaStoria(a, b){
   return quota >= 0.45 || (sigla && quota >= 0.3);
 }
 
-/* ─────────────── scelta della notizia ─────────────── */
-function punteggio(voce, chiavi) {
+/* ─────────────── scelta della notizia ───────────────
+   Il tema conta PRIMA della freschezza: una notizia senza nemmeno una parola
+   a tema vale zero, per quanto fresca e lunga sia (il 3 settembre 2026 è
+   passato un comunicato sulla filiera ittica americana solo perché era di
+   giornata e aveva un riassunto lungo). Le parole "escluse" (pesca, appalti,
+   nomine…) bocciano la notizia anche se una parola a tema c'è. */
+function punteggio(voce, chiavi, escluse = []) {
   const t = (voce.titolo + ' ' + voce.sommario).toLowerCase();
+  if (escluse.some(k => k && t.includes(String(k).toLowerCase()))) return -100;
   let p = 0;
   chiavi.forEach(k => { if (t.includes(k)) p += 3; });
+  if (p === 0) return 0;                            /* fuori tema: la freschezza non lo salva */
   const q = Date.parse(voce.quando);
   if (Number.isFinite(q)) {
     const giorni = (Date.now() - q) / 86400000;
@@ -766,7 +773,7 @@ async function main() {
   const candidate = tutte
     .filter(v => !usate.has(v.url))
     .filter(v => !gia.some(t => stessaStoria(t, v.titolo)))
-    .map(v => ({ v, p: punteggio(v, config.parole_chiave) }))
+    .map(v => ({ v, p: punteggio(v, config.parole_chiave, config.parole_escluse || []) }))
     .filter(x => x.p > 0)
     .sort((a, b) => b.p - a.p)
     .map(x => x.v);
