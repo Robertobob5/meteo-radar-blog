@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-03T09:58:11.742Z",
+ "aggiornato": "2026-09-03T10:03:15.715Z",
  "articoli": [
+  {
+   "id": "2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo",
+   "data": "2026-09-03",
+   "titolo": "MTG-I2 pronto al lancio per rafforzare le osservazioni meteorologiche su Europa e Nord Africa",
+   "sottotitolo": "Il terzo satellite della costellazione Meteosat di terza generazione partirà con Ariane 6 e porterà nuove capacità per seguire temporali e fenomeni in rapida evoluzione.",
+   "categoria": "Spazio",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/Watch_live_MTG-I2_set_for_liftoff",
+   "fonteTitolo": "Watch live: MTG-I2 set for liftoff",
+   "file": "articoli/2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo.json"
+  },
   {
    "id": "2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera-",
    "data": "2026-09-03",
