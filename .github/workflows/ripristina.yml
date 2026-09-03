@@ -1,0 +1,71 @@
+# Ripristino, una volta sola: rimette a posto l'articolo del 2 settembre 2026
+# ("La siccità si intensifica a Porto Rico"), cancellato per sbaglio dalla
+# vecchia pulizia dei doppioni. Prende i file com'erano dalla cronologia del
+# repository e rimette la riga nell'indice. Il gemello del 3 settembre, nato
+# dalla stessa fonte, lo toglie poi il generatore al giro successivo, e al
+# suo posto scrive un articolo nuovo.
+#
+# Si lancia a mano da Actions → "Ripristina articolo del 2 settembre" →
+# Run workflow. Se l'articolo c'è già non fa niente. Dopo, questo file si
+# può cancellare (o lasciare: da solo non parte mai).
+name: Ripristina articolo del 2 settembre
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ripristina:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prendi il repository con tutta la cronologia
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Prepara Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Rimetti i file dalla cronologia
+        run: |
+          ID="2026-09-02-la-siccita-si-intensifica-a-porto-rico"
+          COMMIT="6a61d85"
+          if [ -f "articoli/$ID.json" ]; then
+            echo "L'articolo del 2 settembre c'è già: niente da fare."
+            exit 0
+          fi
+          git checkout "$COMMIT" -- "articoli/$ID.json" "immagini/$ID-copertina.webp" "immagini/$ID-1.webp" "p/$ID.html"
+          git show "$COMMIT:indice.json" > /tmp/indice_di_allora.json
+          node --input-type=module -e '
+            import fs from "node:fs";
+            import { paginaIndice } from "./genera.mjs";
+            const ID = "2026-09-02-la-siccita-si-intensifica-a-porto-rico";
+            const indice = JSON.parse(fs.readFileSync("indice.json", "utf8"));
+            if (!indice.articoli.some(a => a.id === ID)) {
+              const allora = JSON.parse(fs.readFileSync("/tmp/indice_di_allora.json", "utf8"));
+              const voce = allora.articoli.find(a => a.id === ID);
+              if (!voce) throw new Error("riga dell articolo non trovata nell indice di allora");
+              indice.articoli.push(voce);
+              indice.articoli.sort((a, b) => a.data < b.data ? 1 : a.data > b.data ? -1 : 0);
+              indice.aggiornato = new Date().toISOString();
+              fs.writeFileSync("indice.json", JSON.stringify(indice, null, 1));
+            }
+            fs.writeFileSync("index.html", paginaIndice(indice));
+            console.log("ripristinato: " + ID + " (" + indice.articoli.length + " articoli in archivio)");
+          '
+
+      - name: Pubblica
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Niente da pubblicare."
+            exit 0
+          fi
+          git config user.name  "Meteo Radar"
+          git config user.email "blog@meteoradar.local"
+          git add -A articoli immagini p indice.json index.html
+          git commit -m "Ripristino dell'articolo del 02/09/2026"
+          git push
