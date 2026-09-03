@@ -1,18 +1,18 @@
 {
- "aggiornato": "2026-09-03T09:54:51.998Z",
+ "aggiornato": "2026-09-03T09:58:11.742Z",
  "articoli": [
   {
-   "id": "2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t",
+   "id": "2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera-",
    "data": "2026-09-03",
-   "titolo": "La siccità si intensifica a Porto Rico tra piogge scarse e temperature elevate",
-   "sottotitolo": "A fine agosto gran parte del territorio era in condizioni di siccità, con carenze idriche e razionamenti in alcune aree.",
-   "categoria": "Clima",
-   "minuti": 3,
-   "copertina": "immagini/2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t-copertina.webp",
-   "fonte": "NASA Science",
-   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
-   "fonteTitolo": "Drought Intensifies Across Puerto Rico",
-   "file": "articoli/2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t.json"
+   "titolo": "NOAA Fisheries indica le priorità per rafforzare la filiera ittica statunitense",
+   "sottotitolo": "L’agenzia punta su regole basate sulla scienza, opportunità di pesca sostenibile e maggiore efficienza normativa.",
+   "categoria": "Mare",
+   "minuti": 2,
+   "copertina": "immagini/2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera--copertina.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-announces-priorities-to-promote-science-based-american-seafood-dominance",
+   "fonteTitolo": "NOAA announces priorities to promote science-based American seafood dominance",
+   "file": "articoli/2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera-.json"
   },
   {
    "id": "2026-09-02-la-siccita-si-intensifica-a-porto-rico",
@@ -268,6 +268,17 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026",
    "file": "articoli/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio.json"
+  }
+ ],
+ "scartati": [
+  {
+   "id": "2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t",
+   "data": "2026-09-03",
+   "titolo": "La siccità si intensifica a Porto Rico tra piogge scarse e temperature elevate",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
+   "fonteTitolo": "Drought Intensifies Across Puerto Rico",
+   "quando": "2026-09-03T09:57:05.033Z",
+   "perche": "stessa fonte di 2026-09-02-la-siccita-si-intensifica-a-porto-rico"
   }
  ]
 }
