@@ -1,0 +1,83 @@
+{
+ "id": "2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t",
+ "data": "2026-09-03",
+ "scritto": "2026-09-03T06:21:54.281Z",
+ "titolo": "La siccità si intensifica a Porto Rico tra piogge scarse e temperature elevate",
+ "sottotitolo": "A fine agosto gran parte del territorio era in condizioni di siccità, con carenze idriche e razionamenti in alcune aree.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t-copertina.webp",
+ "copertinaAlt": "Illustrazione di un paesaggio tropicale di Porto Rico segnato dalla siccità, con campi asciutti e un corso d’acqua poco profondo.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Maggio segna di solito l’inizio della stagione delle piogge a Porto Rico. Nel 2026, però, fino alla fine di agosto le precipitazioni sono in larga parte mancate. Il risultato è stato un peggioramento della siccità in una vasta porzione dell’arcipelago tropicale, con risorse idriche sotto pressione, carenze d’acqua e razionamenti in alcune zone."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le condizioni asciutte hanno portato il governatore di Porto Rico a dichiarare lo stato di emergenza verso la fine di luglio. Verso la fine di agosto, inoltre, il governo degli Stati Uniti ha emesso una dichiarazione di disastro legata alla siccità per più di due dozzine di città e località. L’emergenza riguarda quindi non solo l’andamento delle piogge, ma anche la disponibilità concreta di acqua per abitanti, attività agricole e allevamenti."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una siccità cresciuta rapidamente"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La mappa del 25 agosto elaborata dallo U.S. Drought Monitor, il sistema statunitense che valuta ogni settimana estensione e intensità della siccità, mostrava che tre quarti di Porto Rico si trovavano almeno in siccità moderata. Le zone in siccità estrema si erano estese nella parte orientale e sud-occidentale dell’isola principale e coprivano il 44 per cento del territorio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il confronto con pochi mesi prima descrive la rapidità del cambiamento. Tre mesi prima, nessuna parte di Porto Rico era classificata in siccità e meno di un quinto della sua superficie risultava anormalmente asciutto. Tra la fine dell’inverno e l’inizio della primavera, le condizioni nei Caraibi statunitensi erano state più umide del normale. In seguito, il territorio si è asciugato in modo marcato."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo dell’isola principale di Porto Rico con aree più secche a est e sud-ovest.",
+   "didascalia": "A fine agosto le aree di siccità estrema risultavano concentrate anche nelle regioni orientali e sud-occidentali dell’isola principale.",
+   "file": "immagini/2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Piogge insufficienti, caldo e fiumi ai minimi"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Da metà maggio a metà luglio, gran parte di Porto Rico ha ricevuto meno del 60 per cento delle precipitazioni normali. Nelle aree meridionali e sud-occidentali, le piogge sono scese sotto il 20 per cento dei valori normali. In queste zone, il deficit di precipitazioni è arrivato a diversi pollici, equivalenti a decine di millimetri."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Al disseccamento hanno contribuito anche temperature insolitamente alte. A San Juan, per esempio, luglio è stato tra i più caldi mai registrati. Gli effetti sono emersi anche nei corsi d’acqua: la portata fluviale, cioè la quantità di acqua che passa in un fiume, ha raggiunto minimi record in fiumi come il Rio Fajardo, nel nord-est."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per costruire le valutazioni settimanali, lo U.S. Drought Monitor mette insieme diverse osservazioni. Tra quelle particolarmente importanti per gli aggiornamenti recenti su Porto Rico figurano le stime satellitari dell’umidità del suolo, cioè dell’acqua contenuta nel terreno, i dati meteorologici, le misure della portata dei fiumi e le osservazioni dei pozzi. Le condizioni calde e asciutte sono state infatti visibili sia nei dati da satellite sia nelle rilevazioni effettuate a terra."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le conseguenze per acqua e agricoltura"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il razionamento dell’acqua era attivo in diversi comuni dall’inizio di agosto. Secondo quanto riportato nella fonte, i problemi delle infrastrutture hanno aggravato le carenze. Le risorse idriche limitate hanno colpito agricoltori, allevatori e residenti in tutto il territorio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nei campi, i suoli aridi hanno ostacolato la crescita di piante da frutto, alberi di cacao, banani e piante di caffè, causando perdite agricole. Gli allevatori, invece, hanno dovuto fare i conti con riserve di fieno in diminuzione. Sono effetti che mostrano come una lunga assenza di piogge possa propagarsi dal terreno alle colture, dagli allevamenti alla gestione quotidiana dell’acqua."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Le mappe dello U.S. Drought Monitor sono pubblicate dal 1999 e aiutano i decisori federali, statali, locali e tribali a rispondere alla siccità. Il Dipartimento dell’Agricoltura degli Stati Uniti le utilizza anche in una procedura rapida per le dichiarazioni di disastro, che possono indirizzare risorse di emergenza alle persone colpite. NASA contribuisce al progetto con osservazioni della Terra e competenze scientifiche; nel 2026 due suoi scienziati sono entrati nel piccolo gruppo che prepara le valutazioni settimanali."
+  }
+ ],
+ "parole": 616,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "Drought Intensifies Across Puerto Rico",
+  "url": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

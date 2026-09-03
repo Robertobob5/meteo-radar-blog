@@ -1,18 +1,18 @@
 {
- "aggiornato": "2026-09-02T06:21:39.039Z",
+ "aggiornato": "2026-09-03T06:21:54.281Z",
  "articoli": [
   {
-   "id": "2026-09-02-la-siccita-si-intensifica-a-porto-rico",
-   "data": "2026-09-02",
-   "titolo": "La siccità si intensifica a Porto Rico",
-   "sottotitolo": "Poche piogge e temperature elevate hanno aggravato la scarsità d’acqua nell’arcipelago tropicale.",
+   "id": "2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t",
+   "data": "2026-09-03",
+   "titolo": "La siccità si intensifica a Porto Rico tra piogge scarse e temperature elevate",
+   "sottotitolo": "A fine agosto gran parte del territorio era in condizioni di siccità, con carenze idriche e razionamenti in alcune aree.",
    "categoria": "Clima",
    "minuti": 3,
-   "copertina": "immagini/2026-09-02-la-siccita-si-intensifica-a-porto-rico-copertina.webp",
+   "copertina": "immagini/2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t-copertina.webp",
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
    "fonteTitolo": "Drought Intensifies Across Puerto Rico",
-   "file": "articoli/2026-09-02-la-siccita-si-intensifica-a-porto-rico.json"
+   "file": "articoli/2026-09-03-la-siccita-si-intensifica-a-porto-rico-tra-piogge-scarse-e-t.json"
   },
   {
    "id": "2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione",
