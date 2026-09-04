@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-03T10:03:15.715Z",
+ "aggiornato": "2026-09-04T06:21:55.494Z",
  "articoli": [
+  {
+   "id": "2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne",
+   "data": "2026-09-04",
+   "titolo": "Le faglie silenti dell’Appennino centrale lasciano tracce nel paesaggio",
+   "sottotitolo": "Gli studi geologici e paleosismologici aiutano a riconoscere strutture attive anche senza terremoti recenti nei cataloghi.",
+   "categoria": "Terremoti",
+   "minuti": 5,
+   "copertina": "immagini/2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne-copertina.webp",
+   "fonte": "INGV Terremoti",
+   "fonteUrl": "https://ingvterremoti.com/2026/09/02/la-sequenza-sismica-nellitalia-centrale-dalla-faglia-del-monte-vettore-monte-bove-allidentificazione-geologica-di-faglie-attive-silenti/",
+   "fonteTitolo": "Faglie attive silenti riconosciute con dati geologici come lacune sismiche dell’Appennino centrale",
+   "file": "articoli/2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne.json"
+  },
   {
    "id": "2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo",
    "data": "2026-09-03",
