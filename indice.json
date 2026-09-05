@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-04T06:21:55.494Z",
+ "aggiornato": "2026-09-05T06:21:54.903Z",
  "articoli": [
+  {
+   "id": "2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p",
+   "data": "2026-09-05",
+   "titolo": "Sentinel-3 osserva oceani, ghiacci, terre emerse e atmosfera per seguire il clima",
+   "sottotitolo": "La missione europea combina strumenti diversi per raccogliere ogni giorno dati utili a monitorare i principali sistemi della Terra.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/How_Sentinel-3_tracks_climate_change",
+   "fonteTitolo": "How Sentinel-3 tracks climate change",
+   "file": "articoli/2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p.json"
+  },
   {
    "id": "2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne",
    "data": "2026-09-04",
