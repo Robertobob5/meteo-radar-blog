@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-05T06:21:54.903Z",
+ "aggiornato": "2026-09-06T06:22:05.600Z",
  "articoli": [
+  {
+   "id": "2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla",
+   "data": "2026-09-06",
+   "titolo": "L’isola di ghiaccio del Petermann supera l’urto con Joe Island",
+   "sottotitolo": "Dopo essersi staccato dal ghiacciaio, il grande iceberg ha urtato un isolotto roccioso e ha proseguito nello stretto di Nares.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/iceberg-from-petermann-glacier-speeds-away/",
+   "fonteTitolo": "Ice Island Survives Run-In With Joe Island",
+   "file": "articoli/2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla.json"
+  },
   {
    "id": "2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p",
    "data": "2026-09-05",
