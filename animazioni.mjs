@@ -18,7 +18,9 @@
    quattro giri al giorno. Se un servizio non risponde, quel filmato
    resta quello del giro prima e gli altri si fanno lo stesso.
 
-   Uso:   node animazioni.mjs        (RAMO_DIR = cartella del ramo filmati, default "ramo")
+   Uso:   node animazioni.mjs        (RAMO_DIR = cartella del ramo filmati, default "ramo";
+          MIN_ORE = se le animazioni del giro prima hanno meno di tante ore, non si rifanno (5,5);
+          FORZA=1 = rifalle comunque)
    Prove: import { giro, ... } con una rete finta.
    Serve: npm install canvas@3 · ffmpeg nel PATH
    ============================================================ */
@@ -383,16 +385,47 @@ async function filmato(base, voce, time, cartella, ffmpeg) {
   return { fotogrammi: n, secondi: Math.round((n + 9) / 6 * 10) / 10, da: tempo[voce.indici[0]], a: tempo[voce.indici[Math.min(voce.indici.length, n) - 1]], byte: fs.statSync(uscita).size };
 }
 
-/** @param opzioni { rete, adesso, dir, ffmpeg, solo: [id…] } */
+const TUTTI = ['temperature', 'pioggia', 'vento', 'neve', 'nuvole', 'mare'];
+
+/** Le animazioni del giro prima sono ancora fresche? (fatte da meno di minOre ore, tutte e sei,
+ *  coi file al loro posto). Serve perché il lavoro viene messo in calendario ogni mezz'ora —
+ *  GitHub lascia cadere molti avvii programmati — ma va rifatto solo quattro volte al giorno:
+ *  i giri in più trovano tutto fresco ed escono in un secondo, senza chiamare Open-Meteo. */
+function fresche(precedente, dir, adesso, minOre) {
+  if (!precedente || !precedente.generato || !Array.isArray(precedente.video)) return false;
+  const eta = (adesso.getTime() - new Date(precedente.generato).getTime()) / 3600000;
+  if (!(eta >= 0 && eta < minOre)) return false;
+  return TUTTI.every(id => {
+    const v = precedente.video.find(x => x && x.id === id);
+    return v && v.file && fs.existsSync(path.join(dir, v.file)) && (!v.poster || fs.existsSync(path.join(dir, v.poster)));
+  });
+}
+
+/** Per il workflow: nuovo=1 se c'è qualcosa da pubblicare, 0 se era tutto fresco. */
+function avvisaWorkflow(nuovo) {
+  try { if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, 'nuovo=' + (nuovo ? '1' : '0') + '\n'); } catch {}
+}
+
+/** @param opzioni { rete, adesso, dir, ffmpeg, solo: [id…], minOre, forza } */
 async function giro(opzioni = {}) {
   const rete = opzioni.rete || RETE;
   const adesso = opzioni.adesso ? new Date(opzioni.adesso) : new Date();
   const dir = opzioni.dir || process.env.RAMO_DIR || path.join(QUI, 'ramo');
   const ffmpeg = opzioni.ffmpeg || process.env.FFMPEG || 'ffmpeg';
+  const minOre = Number(opzioni.minOre != null ? opzioni.minOre : (process.env.MIN_ORE || 5.5));
+  const forza = opzioni.forza != null ? !!opzioni.forza : /^(1|true|s[iì]|yes)$/i.test(String(process.env.FORZA || ''));
   const cartella = path.join(dir, 'previsioni');
   fs.mkdirSync(cartella, { recursive: true });
   let precedente = { video: [] };
   try { precedente = JSON.parse(fs.readFileSync(path.join(dir, 'previsioni.json'), 'utf8')); } catch {}
+
+  if (!forza && !opzioni.solo && fresche(precedente, dir, adesso, minOre)) {
+    const quando = new Date(precedente.generato);
+    const eta = Math.round((adesso.getTime() - quando.getTime()) / 60000);
+    dice('✔ animazioni ancora fresche: fatte ' + eta + ' minuti fa (si rifanno dopo ' + minOre + ' ore). Niente da fare, niente chiamate a Open-Meteo.');
+    avvisaWorkflow(false);
+    return Object.assign({}, precedente, { saltato: true });
+  }
 
   dice('· sfondo della mappa');
   const base = await sfondo(rete);
@@ -424,15 +457,15 @@ async function giro(opzioni = {}) {
   for (const vecchio of (precedente.video || [])) {
     if (!fatti.some(f => f.id === vecchio.id) && fs.existsSync(path.join(dir, vecchio.file))) fatti.push(vecchio);
   }
-  const ordine = ['temperature', 'pioggia', 'vento', 'neve', 'nuvole', 'mare'];
-  fatti.sort((a, b) => ordine.indexOf(a.id) - ordine.indexOf(b.id));
+  fatti.sort((a, b) => TUTTI.indexOf(a.id) - TUTTI.indexOf(b.id));
   const fuori = { versione: 1, generato: adesso.toISOString(), modello: 'Open-Meteo (modello migliore per l\'Italia, di solito ICON)', griglia: '0,5° · ' + (NLAT * NLON) + ' punti', video: fatti };
   fs.writeFileSync(path.join(dir, 'previsioni.json'), JSON.stringify(fuori, null, 1));
   dice('✔ previsioni.json: ' + fatti.length + ' filmati');
+  avvisaWorkflow(true);
   return fuori;
 }
 
-export { giro, finestre, campiona, campo, scala, SCALE, TAPPE, etichetta, puntiGriglia, fotogramma, sfondo, scaricaGriglia, W, H };
+export { giro, fresche, finestre, campiona, campo, scala, SCALE, TAPPE, etichetta, puntiGriglia, fotogramma, sfondo, scaricaGriglia, W, H };
 
 const lanciatoDaSolo = (() => {
   try { return process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname); } catch { return false; }
