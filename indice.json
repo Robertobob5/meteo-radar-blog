@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-06T06:22:05.600Z",
+ "aggiornato": "2026-09-07T06:22:01.690Z",
  "articoli": [
+  {
+   "id": "2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall",
+   "data": "2026-09-07",
+   "titolo": "Il lago di lava persistente del Mount Michael osservato dallo spazio",
+   "sottotitolo": "Un raro cielo sereno sull’isola di Saunders ha mostrato il calore del cratere e l’attività del vulcano nell’Atlantico meridionale.",
+   "categoria": "Vulcani",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/a-bright-spot-at-mount-michael/",
+   "fonteTitolo": "A Bright Spot at Mount Michael",
+   "file": "articoli/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall.json"
+  },
   {
    "id": "2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla",
    "data": "2026-09-06",

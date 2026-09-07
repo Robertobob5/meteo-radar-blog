@@ -1,0 +1,93 @@
+{
+ "id": "2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall",
+ "data": "2026-09-07",
+ "scritto": "2026-09-07T06:22:01.690Z",
+ "titolo": "Il lago di lava persistente del Mount Michael osservato dallo spazio",
+ "sottotitolo": "Un raro cielo sereno sull’isola di Saunders ha mostrato il calore del cratere e l’attività del vulcano nell’Atlantico meridionale.",
+ "categoria": "Vulcani",
+ "copertina": "immagini/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall-copertina.webp",
+ "copertinaAlt": "Il vulcano Mount Michael innevato emerge dall’oceano, con il calore del cratere evidenziato in rosso.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Alla fine dell’inverno australe, un intervallo insolitamente libero dalle nubi ha permesso ai satelliti di osservare il Mount Michael, il vulcano che domina l’isola di Saunders nell’Atlantico meridionale. L’immagine, acquisita il 24 agosto 2026 dallo strumento OLI a bordo del satellite Landsat 8, mostra una zona remota e gelida ma tutt’altro che immobile dal punto di vista vulcanico."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Mount Michael è uno stratovulcano, cioè un vulcano dalla forma generalmente conica costruito dall’accumulo di lava e altri materiali eruttivi. Si innalza sopra un oceano carico di ghiaccio e ospita nel cratere sommitale un lago di lava frequentemente attivo. Un lago di lava è una massa di roccia fusa che resta esposta o molto vicina alla superficie all’interno di un cratere."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il calore visto nell’infrarosso"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’immagine di Landsat 8 combina i colori naturali con un segnale infrarosso, rappresentato in rosso. L’infrarosso è una parte della radiazione elettromagnetica che permette di rilevare il calore: in questo caso mette in evidenza la temperatura del lago di lava persistente nel cratere. La macchia luminosa del Mount Michael non indica quindi un semplice dettaglio del paesaggio innevato, ma il calore associato alla sua attività vulcanica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Anche altri elementi osservati nell’immagine suggeriscono che il vulcano fosse attivo: un piccolo sbuffo di pennacchio vulcanico sopra la vetta e neve più scura sui versanti settentrionali. Il pennacchio è la nube di gas e particelle emessa dal vulcano. In un luogo così isolato, questi indizi raccolti dallo spazio sono particolarmente importanti per seguire ciò che accade."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Visualizzazione satellitare del Mount Michael con il segnale termico rosso sul cratere.",
+   "didascalia": "Il segnale infrarosso evidenzia il calore del lago di lava nel cratere sommitale.",
+   "file": "immagini/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un vulcano remoto seguito dai satelliti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’isola di Saunders fa parte delle Isole Sandwich Meridionali, una serie di piccoli rilievi vulcanici lunga circa 350 chilometri. Queste isole si sono formate perché la placca sudamericana scende sotto la piccola placca delle Sandwich Meridionali. Questo processo è chiamato subduzione: una placca della crosta terrestre sprofonda al di sotto di un’altra, favorendo in questo caso l’attività vulcanica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nelle isole si sono verificate eruzioni regolari anche nei secoli recenti, compreso il Mount Michael. La loro lontananza rende però difficile l’osservazione diretta, perciò gli scienziati si affidano soprattutto ai dati satellitari. Un’analisi delle anomalie termiche, cioè aree che risultano più calde rispetto all’ambiente circostante, effettuata con osservazioni Landsat, Sentinel e ASTER nell’arco di 30 anni ha portato i ricercatori a concludere che il cratere del Mount Michael contiene un lago di lava persistente."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Sulla Terra sono noti solo pochi altri vulcani con caratteristiche simili e frequentemente attive, tra cui Kīlauea, Nyamulagira ed Erta Ale. Le osservazioni termiche degli strumenti MODIS e VIIRS hanno consentito inoltre un monitoraggio di lungo periodo del Mount Michael. I dati del sistema MIROVA, dedicato all’individuazione quasi in tempo reale dei punti caldi vulcanici, indicano un’attività di bassa intensità in corso da diversi anni."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le osservazioni del satellite Aura della NASA mostrano inoltre che al Mount Michael sono comuni emissioni di anidride solforosa e di altri gas. Il degassamento, ossia la liberazione di gas da parte del vulcano, può quindi lasciare una traccia osservabile anche lontano dal cratere."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Quando tornano le nubi"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La finestra di cielo sereno sopra il Mount Michael è durata poco. Una settimana dopo, il passaggio di Landsat 9 ha trovato di nuovo un’atmosfera più attiva. Questa volta, però, l’interazione fra i venti e l’isola ha prodotto un fenomeno atmosferico riconoscibile: una serie di nubi ondulate sottovento, simili alla scia lasciata da una nave."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Queste nubi d’onda si formano quando il picco dell’isola, alto 843 metri, disturba il flusso dei venti in arrivo. Le immagini a falsi colori del satellite Aqua indicano anche la probabile presenza di una traccia vulcanica collegata al degassamento di anidride solforosa. Così, nelle immagini satellitari successive, atmosfera e vulcano raccontano insieme la continua attività di una delle aree più remote dell’Atlantico meridionale."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Nubi d’onda in serie si allungano sottovento rispetto a un’isola vulcanica innevata.",
+   "didascalia": "Il rilievo dell’isola può perturbare i venti e creare caratteristiche nubi d’onda.",
+   "file": "immagini/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall-2.webp"
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il Mount Michael, sull’isola di Saunders, ospita un lago di lava persistente nel cratere sommitale. Le immagini di Landsat 8 hanno evidenziato il suo calore con dati infrarossi, oltre a un pennacchio vulcanico e neve scurita sui versanti. In un’area remota, satelliti e strumenti di monitoraggio permettono di seguire nel tempo sia l’attività termica sia le emissioni di gas."
+  }
+ ],
+ "parole": 675,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "A Bright Spot at Mount Michael",
+  "url": "https://science.nasa.gov/earth/earth-observatory/a-bright-spot-at-mount-michael/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
