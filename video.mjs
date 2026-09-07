@@ -143,11 +143,14 @@ async function feedDailymotion(fonte, rete) {
 }
 
 /* ─────────────── il setaccio ─────────────── */
-/** -1 = fuori (parola esclusa), 0 = fuori tema, >0 = quante parole chiave ha preso. */
+/** -1 = fuori (parola esclusa nel titolo o nella descrizione), 0 = fuori tema, >0 = quante parole
+ *  chiave ha preso NEL TITOLO. La descrizione non fa passare nessuno: i cacciatori di tempeste
+ *  scrivono "storm chasing" in ogni descrizione, anche sotto il video dell'auto da corsa. */
 function setaccio(voce, config, fonte) {
-  const t = normalizza(voce.titolo + ' ' + voce.descrizione);
-  if ((config.parole_escluse || []).some(p => contiene(t, p))) return -1;
-  const prese = (config.parole_chiave || []).filter(p => contiene(t, p)).length;
+  const tutto = normalizza(voce.titolo + ' ' + voce.descrizione);
+  if ((config.parole_escluse || []).some(p => contiene(tutto, p))) return -1;
+  const titolo = normalizza(voce.titolo);
+  const prese = (config.parole_chiave || []).filter(p => contiene(titolo, p)).length;
   if (fonte.fidato) return Math.max(1, prese);
   return prese;
 }
@@ -246,7 +249,7 @@ async function giro(opzioni = {}) {
   for (const c of nuovi) {
     const g = chiaveG(c), k = g + '|' + c.fonte.nome;
     if ((contaGiorno[g] || 0) >= tetto) continue;
-    if ((contaCanale[k] || 0) >= perCanale) continue;
+    if ((contaCanale[k] || 0) >= (Number(c.fonte.max_giorno) || perCanale)) continue;
     /* 5 · si può incorporare? (Dailymotion lo dice nel feed; YouTube lo si chiede) */
     if (c.fonte.tipo === 'dailymotion') { if (c.incorporabile === false) continue; }
     else {

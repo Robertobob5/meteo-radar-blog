@@ -4,7 +4,8 @@
     "'fidato': true = del canale si prende tutto tranne quello che contiene le parole escluse; altrimenti serve almeno una parola chiave nel titolo o nella descrizione.",
     "'lingua': se non è 'it', i titoli vengono riscritti in italiano con la chiave del blog (OPENAI_API_KEY); senza chiave restano in originale.",
     "tetto_giorno = quanti video al massimo per giorno di pubblicazione; per_canale = quanti per canale nello stesso giorno; giorni = quanto indietro si guarda.",
-    "versione_setaccio: alzala di uno quando cambi parole o canali e vuoi che l'elenco già pubblicato venga rifatto da zero con le regole nuove (altrimenti i video già scelti restano per i loro 7 giorni)."
+    "versione_setaccio: alzala di uno quando cambi parole o canali e vuoi che l'elenco già pubblicato venga rifatto da zero con le regole nuove (altrimenti i video già scelti restano per i loro 7 giorni).",
+    "Le parole chiave devono stare nel TITOLO (la descrizione conta solo per le parole escluse): così 'storm chasing vehicle' scritto in ogni descrizione non fa passare un video di auto da corsa. 'max_giorno' su una fonte = quanti suoi video al massimo nello stesso giorno (se manca vale per_canale)."
   ],
   "tetto_giorno": 12,
   "per_canale": 4,
@@ -92,21 +93,24 @@
       "tipo": "youtube",
       "id": "https://www.youtube.com/@ReedTimmerWx",
       "lingua": "en",
-      "peso": 1
+      "peso": 1,
+      "max_giorno": 2
     },
     {
       "nome": "WXChasing",
       "tipo": "youtube",
       "id": "https://www.youtube.com/@WxChasing",
       "lingua": "en",
-      "peso": 1
+      "peso": 1,
+      "max_giorno": 2
     },
     {
       "nome": "Pecos Hank",
       "tipo": "youtube",
       "id": "UCAQpSHsgUcNt6uCOjpgD8kw",
       "lingua": "en",
-      "peso": 1
+      "peso": 1,
+      "max_giorno": 2
     }
   ],
   "parole_chiave": [
@@ -293,7 +297,27 @@
     "models show",
     "model ",
     "long range",
-    "seasonal"
+    "seasonal",
+    "storm chaser",
+    "storm chasing",
+    "chase recap",
+    "season recap",
+    "recap",
+    "vlog",
+    "q&a",
+    "livestream",
+    "pace car",
+    "dominator",
+    "behind the scenes",
+    "dietro le quinte",
+    "compilation",
+    "top 10",
+    "top 5",
+    "best of",
+    "highlights",
+    "tour",
+    "review",
+    "merch"
   ],
-  "versione_setaccio": 2
+  "versione_setaccio": 3
 }
