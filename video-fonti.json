@@ -3,7 +3,8 @@
     "Le fonti della carta 'Video meteo · Attualità'. Ogni voce è un canale: tipo youtube (id = channel UC…, oppure handle/@nome o url /c/…, oppure playlist PL…) o dailymotion (id = nome utente).",
     "'fidato': true = del canale si prende tutto tranne quello che contiene le parole escluse; altrimenti serve almeno una parola chiave nel titolo o nella descrizione.",
     "'lingua': se non è 'it', i titoli vengono riscritti in italiano con la chiave del blog (OPENAI_API_KEY); senza chiave restano in originale.",
-    "tetto_giorno = quanti video al massimo per giorno di pubblicazione; per_canale = quanti per canale nello stesso giorno; giorni = quanto indietro si guarda."
+    "tetto_giorno = quanti video al massimo per giorno di pubblicazione; per_canale = quanti per canale nello stesso giorno; giorni = quanto indietro si guarda.",
+    "versione_setaccio: alzala di uno quando cambi parole o canali e vuoi che l'elenco già pubblicato venga rifatto da zero con le regole nuove (altrimenti i video già scelti restano per i loro 7 giorni)."
   ],
   "tetto_giorno": 12,
   "per_canale": 4,
@@ -14,7 +15,6 @@
       "tipo": "dailymotion",
       "id": "meteoredit",
       "lingua": "it",
-      "fidato": true,
       "peso": 3
     },
     {
@@ -77,6 +77,34 @@
       "nome": "EUMETSAT",
       "tipo": "youtube",
       "id": "UCiN59j5b1fAGnXVzIYFpaMw",
+      "lingua": "en",
+      "peso": 1
+    },
+    {
+      "nome": "Tornado in Italia",
+      "tipo": "youtube",
+      "id": "https://www.youtube.com/@tornadoinitalia",
+      "lingua": "it",
+      "peso": 2
+    },
+    {
+      "nome": "Reed Timmer",
+      "tipo": "youtube",
+      "id": "https://www.youtube.com/@ReedTimmerWx",
+      "lingua": "en",
+      "peso": 1
+    },
+    {
+      "nome": "WXChasing",
+      "tipo": "youtube",
+      "id": "https://www.youtube.com/@WxChasing",
+      "lingua": "en",
+      "peso": 1
+    },
+    {
+      "nome": "Pecos Hank",
+      "tipo": "youtube",
+      "id": "UCAQpSHsgUcNt6uCOjpgD8kw",
       "lingua": "en",
       "peso": 1
     }
@@ -217,6 +245,55 @@
     "quiz",
     "conferenza",
     "press conference",
-    "trailer"
-  ]
+    "trailer",
+    "corrente a getto",
+    "jet stream",
+    "geopotenziale",
+    "hpa",
+    "anticiclon",
+    "anomalia termica",
+    "flusso perturbato",
+    "circolazione",
+    "ondulazion",
+    "i dati mostrano",
+    "modello",
+    "ecmwf",
+    "gfs",
+    "ensemble",
+    "da lunedì",
+    "da martedì",
+    "da mercoledì",
+    "da giovedì",
+    "da venerdì",
+    "da sabato",
+    "da domenica",
+    "nei prossimi",
+    "in arrivo",
+    "autunno meteorologico",
+    "inverno meteorologico",
+    "estate meteorologica",
+    "primavera meteorologica",
+    "tendenze",
+    "previsión",
+    "previsiones",
+    "fin de semana",
+    "próxima semana",
+    "proxima semana",
+    "esta semana",
+    "otoño",
+    "tendencia",
+    "modelo",
+    "el tiempo para",
+    "las próximas",
+    "los próximos",
+    "this weekend",
+    "next weekend",
+    "10-day",
+    "7-day",
+    "models show",
+    "model ",
+    "long range",
+    "seasonal"
+  ],
+  "versione_setaccio": 2
 }

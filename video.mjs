@@ -194,8 +194,11 @@ async function giro(opzioni = {}) {
   const limite = adesso.getTime() - giorni * 86400000;
   const memoriaCanali = Object.assign({}, precedente.canali || {});
 
-  /* 1 · quello che c'era già resta (se ancora nei giorni buoni) */
-  const tenuti = (precedente.video || []).filter(v => v && v.data && new Date(v.data).getTime() >= limite && new Date(v.data).getTime() <= adesso.getTime() + 3600000);
+  /* 1 · quello che c'era già resta (se ancora nei giorni buoni); ma se il setaccio è
+     cambiato di versione, si riparte da zero: le regole nuove valgono anche per il passato */
+  const setaccioCambiato = Number(precedente.versione_setaccio || 1) !== Number(config.versione_setaccio || 1);
+  if (setaccioCambiato && (precedente.video || []).length) dice('· setaccio cambiato (v' + (precedente.versione_setaccio || 1) + ' → v' + (config.versione_setaccio || 1) + '): l\'elenco si rifà da zero');
+  const tenuti = setaccioCambiato ? [] : (precedente.video || []).filter(v => v && v.data && new Date(v.data).getTime() >= limite && new Date(v.data).getTime() <= adesso.getTime() + 3600000);
   const gia = new Set(tenuti.map(v => v.id));
   dice('· in memoria ' + tenuti.length + ' video degli ultimi ' + giorni + ' giorni');
 
@@ -274,7 +277,7 @@ async function giro(opzioni = {}) {
     anteprima: c.anteprima || undefined, url: c.url
   }))).sort((a, b) => new Date(b.data) - new Date(a.data)).slice(0, tetto * giorni);
 
-  const fuori = { versione: 1, aggiornato: adesso.toISOString(), tetto_giorno: tetto, per_canale: perCanale, giorni,
+  const fuori = { versione: 1, versione_setaccio: Number(config.versione_setaccio || 1), aggiornato: adesso.toISOString(), tetto_giorno: tetto, per_canale: perCanale, giorni,
                   canali: memoriaCanali, video };
   dice('✔ video.json: ' + video.length + ' video (' + scelti.length + ' nuovi, ' + tradotti + ' titoli riscritti in italiano)');
   return fuori;
