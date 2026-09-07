@@ -25,10 +25,15 @@ jobs:
         with:
           node-version: '22'
 
-      - name: Prepara il disegno (canvas) e controlla ffmpeg
+      - name: Prepara ffmpeg e il disegno (canvas)
         run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg >/dev/null
+          fi
+          test -x "$(command -v ffmpeg)" || { echo "ffmpeg non trovato"; exit 1; }
+          ffmpeg -version 2>&1 | head -1
           npm install --no-save --no-audit --no-fund canvas@3
-          ffmpeg -version | head -1
 
       - name: Prendi quello che c'è già sul ramo filmati
         run: |
