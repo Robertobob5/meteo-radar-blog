@@ -2,13 +2,8 @@ name: Video di attualità
 
 on:
   schedule:
-    - cron: '17,47 * * * *'
+    - cron: '13,43 * * * *'
   workflow_dispatch:
-    inputs:
-      forza:
-        description: 'Rifai le animazioni anche se sono fresche'
-        type: boolean
-        default: false
 
 permissions:
   contents: write
@@ -18,9 +13,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  animazioni:
+  video:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
     steps:
       - name: Prendi il repository
         uses: actions/checkout@v5
@@ -29,16 +23,6 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: '22'
-
-      - name: Prepara ffmpeg e il disegno (canvas)
-        run: |
-          if ! command -v ffmpeg >/dev/null 2>&1; then
-            sudo apt-get update -qq
-            sudo apt-get install -y -qq ffmpeg >/dev/null
-          fi
-          test -x "$(command -v ffmpeg)" || { echo "ffmpeg non trovato"; exit 1; }
-          ffmpeg -version 2>&1 | head -1
-          npm install --no-save --no-audit --no-fund canvas@3
 
       - name: Prendi quello che c'è già sul ramo filmati
         run: |
@@ -50,17 +34,15 @@ jobs:
             echo "ramo filmati ancora da creare"
           fi
 
-      - name: Disegna i filmati (solo se quelli di prima hanno più di 5 ore e mezza)
-        id: disegna
+      - name: Cerca i video
         env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MODELLO_TESTO: ${{ vars.MODELLO_TESTO || 'gpt-5.6-terra' }}
           FUSO: Europe/Rome
           RAMO_DIR: ramo
-          MIN_ORE: '5.5'
-          FORZA: ${{ github.event.inputs.forza == 'true' && '1' || '' }}
-        run: node animazioni.mjs
+        run: node video.mjs
 
       - name: Pubblica sul ramo filmati
-        if: steps.disegna.outputs.nuovo == '1'
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -71,7 +53,7 @@ jobs:
           git config user.name  "Meteo Radar"
           git config user.email "video@meteoradar.local"
           git add -A
-          git commit -q -m "Animazioni · $(TZ=Europe/Rome date '+%d/%m/%Y %H:%M')"
+          git commit -q -m "Video di attualità · $(TZ=Europe/Rome date '+%d/%m/%Y %H:%M')"
           for i in 1 2 3; do
             if git push -q --force "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" filmati; then
               echo "pubblicato"; exit 0
