@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-07T06:22:01.690Z",
+ "aggiornato": "2026-09-08T06:21:46.348Z",
  "articoli": [
+  {
+   "id": "2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la",
+   "data": "2026-09-08",
+   "titolo": "FLEX e Sentinel-3C pronti al lancio insieme per osservare la Terra",
+   "sottotitolo": "Le due missioni partiranno a bordo di Vega-C e offriranno dati sulla vegetazione e sull’ambiente terrestre.",
+   "categoria": "Spazio",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Newsroom/Press_Releases/FLEX_and_Sentinel-3C_launch_re-watch_event_on_15_September_at_ESA_s_Space_Operations_Centre",
+   "fonteTitolo": "FLEX and Sentinel-3C launch re-watch event on 15 September at ESA's Space Operations Centre",
+   "file": "articoli/2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la.json"
+  },
   {
    "id": "2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall",
    "data": "2026-09-07",
