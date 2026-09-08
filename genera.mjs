@@ -21,6 +21,18 @@
    3 settembre 2026 · la pulizia dell'archivio cancella solo i doppioni
    certi (stessa fonte), ricorda chi ha buttato in "scartati" e il
    confronto fra titoli non si fa più ingannare da parole simili.
+
+   8 settembre 2026 · tre difese in più contro la stessa storia raccontata
+   due volte (FLEX/Sentinel-3C il 29/8 e l'8/9, MTG-I2 tre volte):
+   · due NOMI FORTI in comune (sigle come FLEX, Sentinel-3C, MTG-I2)
+     bastano da soli a dire "stessa storia", senza percentuali;
+   · RIPOSO: una sigla che ha già fatto da titolo negli ultimi 15 giorni
+     (riposo_giorni in fonti.json) non torna, a meno che il comunicato
+     non parli del lancio avvenuto o delle prime immagini, che sono
+     notizie vere;
+   · dopo la scrittura si confronta anche il NOSTRO titolo italiano con
+     i nostri titoli vecchi: se è un gemello, l'articolo si butta, la
+     fonte finisce fra gli scartati e si passa al candidato dopo.
    ============================================================ */
 
 import fs from 'node:fs/promises';
@@ -174,7 +186,42 @@ function quasiUguali(a, b){
    lanterne: "intensifica" e "incendi" diventano "inten" e "incen", e così
    "La siccità si intensifica a Porto Rico" risultava la stessa storia di
    "Caldo estremo, siccità e incendi" (è successo davvero, il 3 settembre). */
+/* I NOMI FORTI di un titolo: le sigle con dentro un numero (Sentinel-3C,
+   MTG-I2, GOES-19) e le parole scritte tutte in maiuscolo (FLEX, SWOT,
+   ICON). Sono il nome proprio della notizia: due titoli che ne condividono
+   due parlano della stessa cosa, comunque siano scritti attorno. Gli anni
+   nudi (2016) e i numeri nudi (6, 15) non contano, e nemmeno le sigle degli
+   enti (ESA, NASA, INGV…): stanno in mezzo a notizie diversissime. */
+const ENTI = new Set(('esa nasa noaa ingv cnr cnrs eumetsat ecmwf ispra arpa arpae arpav jaxa cnes dlr jrc wmo omm cams c3s ' +
+  'onu un eu ue usa uk us nsidc ncar ucar ipcc cmcc enea asi esoc estec esrin pdf live video covid news italia ' +
+  'europa europe world global press media online web app api gps ai update breaking watch new alert warning report study ' +
+  'co2 ch4 no2 so2 o3 pm10 pm25 pm2 h2o covid19 3d 2d 4k 8k 5g 4g mp4 24h 48h 72h h24').split(' '));
+function nomiForti(titolo){
+  const fuori = new Set();
+  const pezzi = String(titolo)
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[-'’]/g, '')
+    .replace(/[^A-Za-z0-9\s]/g, ' ')
+    .split(/\s+/).filter(Boolean);
+  /* un titolo URLATO TUTTO IN MAIUSCOLO non ha nomi forti fra le parole: lì
+     contano solo le sigle con un numero dentro */
+  const parole = pezzi.filter(p => /^[A-Za-z]{3,}$/.test(p));
+  const urlato = parole.length >= 3 && parole.filter(p => p === p.toUpperCase()).length / parole.length > 0.6;
+  pezzi.forEach(p => {
+    const basso = p.toLowerCase();
+    if (ENTI.has(basso)) return;
+    if (/\d/.test(p) && /[A-Za-z]/.test(p)) { fuori.add(basso); return; }        /* Sentinel-3C, MTG-I2, GOES-19 */
+    if (!urlato && p.length >= 3 && /^[A-Z]+$/.test(p)) fuori.add(basso);           /* FLEX, SWOT */
+  });
+  return fuori;
+}
+function fortiComuni(a, b){
+  const B = nomiForti(b);
+  return [...nomiForti(a)].filter(x => B.has(x));
+}
+
 function stessaStoria(a, b){
+  if (fortiComuni(a, b).length >= 2) return true;      /* FLEX + Sentinel-3C: non serve altro */
   const A = [...paroleChiave(a)], B = [...paroleChiave(b)];
   if (A.length < 2 || B.length < 2) return false;
   let comuni = 0, sigla = false;
@@ -183,7 +230,36 @@ function stessaStoria(a, b){
     if (B.some(y => quasiUguali(x, y))) comuni += 0.5;
   });
   const quota = comuni / Math.min(A.length, B.length);
-  return quota >= 0.45 || (sigla && quota >= 0.3);
+  /* con una sigla in comune bastava il 30%: "FLEX and Sentinel-3C launch
+     re-watch event on 15 September at ESA's Space Operations Centre" contro
+     l'invito stampa del 29 agosto faceva il 29%, e "Watch live: MTG-I2 set
+     for liftoff" contro "MTG-I2 ready for launch on Ariane 6" il 25% */
+  return quota >= 0.45 || (sigla && quota >= 0.25);
+}
+
+/* RIPOSO: la stessa sigla non fa da titolo due volte in quindici giorni.
+   L'ESA racconta un lancio in quattro comunicati (invito stampa, "pronto
+   al lancio", "guarda in diretta", "rivedi il lancio") e ognuno ha un titolo
+   diverso: il confronto fra titoli ne lascia passare qualcuno, il riposo no.
+   Eccezione: il lancio avvenuto e le prime immagini sono notizie nuove. */
+const RIPOSO_GIORNI = 15;
+const NOTIZIA_VERA = /\b(launched|lifted off|has lifted|is in orbit|in orbit|reache[sd] orbit|first (light|images?|data|results|pictures?)|successfully|lanciat[oa]|in orbita|decollat[oa]|prime immagini|primi dati|riuscit[oa])\b/i;
+function giorniFra(a, b){
+  const ta = Date.parse(String(a).slice(0, 10) + 'T12:00:00Z'), tb = Date.parse(String(b).slice(0, 10) + 'T12:00:00Z');
+  if (!Number.isFinite(ta) || !Number.isFinite(tb)) return Infinity;
+  return Math.abs(tb - ta) / 86400000;
+}
+/* → null se può passare, altrimenti l'articolo recente che la fa riposare */
+function inRiposo(titoloCandidato, memoria, oggi, giorni = RIPOSO_GIORNI){
+  const forti = nomiForti(titoloCandidato);
+  if (!forti.size) return null;
+  if (NOTIZIA_VERA.test(String(titoloCandidato))) return null;
+  for (const a of memoria) {
+    if (!a || !a.data || giorniFra(a.data, oggi) > giorni) continue;
+    const suoi = new Set([...nomiForti(a.titolo || ''), ...nomiForti(a.fonteTitolo || '')]);
+    for (const f of forti) if (suoi.has(f)) return Object.assign({ sigla: f }, a);
+  }
+  return null;
 }
 
 /* ─────────────── scelta della notizia ───────────────
@@ -770,14 +846,27 @@ async function main() {
   const usate = new Set(memoria.map(a => a.fonteUrl).filter(Boolean));
   /* i titoli già raccontati: quelli della fonte e quelli dei nostri articoli */
   const gia = memoria.flatMap(a => [a.fonteTitolo, a.titolo]).filter(Boolean);
+  const riposoGiorni = Number(config.riposo_giorni) || RIPOSO_GIORNI;
+  const aRiposo = [], giaRaccontate = [];
   const candidate = tutte
     .filter(v => !usate.has(v.url))
-    .filter(v => !gia.some(t => stessaStoria(t, v.titolo)))
+    .filter(v => {
+      const t = gia.find(x => stessaStoria(x, v.titolo));
+      if (t) giaRaccontate.push('"' + v.titolo + '" ~ "' + t + '"');
+      return !t;
+    })
+    .filter(v => {
+      const chi = inRiposo(v.titolo, memoria, oggi, riposoGiorni);
+      if (chi) aRiposo.push('"' + v.titolo + '" → ' + chi.sigla.toUpperCase() + ' già raccontata il ' + chi.data + ' (' + chi.titolo + ')');
+      return !chi;
+    })
     .map(v => ({ v, p: punteggio(v, config.parole_chiave, config.parole_escluse || []) }))
     .filter(x => x.p > 0)
     .sort((a, b) => b.p - a.p)
     .map(x => x.v);
 
+  if (giaRaccontate.length) { dice('Già raccontate (titolo simile a uno vecchio): ' + giaRaccontate.length); giaRaccontate.slice(0, 8).forEach(r => dice('  · ' + r)); }
+  if (aRiposo.length) { dice('A riposo (stessa sigla negli ultimi ' + riposoGiorni + ' giorni): ' + aRiposo.length); aRiposo.forEach(r => dice('  · ' + r)); }
   dice('Candidate mai usate e a tema: ' + candidate.length);
   if (!candidate.length) { dice('Nessuna notizia nuova. Meglio non pubblicare niente che pubblicare per forza.'); return; }
 
@@ -796,6 +885,20 @@ async function main() {
 
     if (art.scarta) { dice('  · scartata dal redattore: ' + (art.perche || '')); continue; }
     if (!art.titolo || !Array.isArray(art.blocchi) || !art.blocchi.length) { dice('  ⚠ risposta incompleta'); continue; }
+
+    /* il titolo che abbiamo scritto NOI somiglia a uno già uscito? Il confronto
+       di prima era fra titoli inglesi delle fonti, che cambiano a ogni comunicato;
+       due titoli italiani gemelli ("FLEX e Sentinel-3C pronti al lancio…" due
+       volte) si riconoscono al volo. Si butta, e la fonte finisce fra gli scartati
+       così domani non si riprova (e non si rispende). */
+    const gemello = memoria.find(a => a && ((a.titolo && stessaStoria(a.titolo, art.titolo)) || (a.fonteTitolo && stessaStoria(a.fonteTitolo, art.titolo))));
+    if (gemello) {
+      dice('  ✘ STESSA STORIA di "' + gemello.titolo + '" (' + (gemello.data || '') + '): articolo buttato, provo con un\'altra notizia');
+      ricordaScartato(indice, { id: oggi + '-' + perUrl(art.titolo), data: oggi, titolo: art.titolo, fonteUrl: voce.url, fonteTitolo: voce.titolo },
+                      'stessa storia di ' + gemello.id);
+      await fs.writeFile(path.join(QUI, 'indice.json'), JSON.stringify(indice, null, 1));
+      continue;
+    }
 
     const sospetti = controllaNumeri(art, testo + ' ' + voce.titolo);
     if (sospetti.length) {
@@ -873,7 +976,7 @@ async function main() {
 
 /* I pezzi si possono provare uno per uno dal banco di prova; il giro completo
    parte da solo soltanto quando il file viene lanciato davvero da riga di comando. */
-export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave,
+export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave, nomiForti, fortiComuni, inRiposo,
          paginaArticolo, paginaIndice, SPOT };
 
 const lanciatoDaSolo = (() => {
