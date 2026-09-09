@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-08T06:21:46.348Z",
+ "aggiornato": "2026-09-09T06:21:45.543Z",
  "articoli": [
+  {
+   "id": "2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti",
+   "data": "2026-09-09",
+   "titolo": "Anak Krakatau: cenere e gas vulcanici osservati dai satelliti",
+   "sottotitolo": "Una lunga eruzione ha disperso materiale nell’atmosfera, con effetti sui voli e sulla qualità dell’aria.",
+   "categoria": "Vulcani",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti-copertina.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
+   "fonteTitolo": "Anak Krakatau Rumbles Again",
+   "file": "articoli/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti.json"
+  },
   {
    "id": "2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la",
    "data": "2026-09-08",

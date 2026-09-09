@@ -1,0 +1,79 @@
+{
+ "id": "2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti",
+ "data": "2026-09-09",
+ "scritto": "2026-09-09T06:21:45.543Z",
+ "titolo": "Anak Krakatau: cenere e gas vulcanici osservati dai satelliti",
+ "sottotitolo": "Una lunga eruzione ha disperso materiale nell’atmosfera, con effetti sui voli e sulla qualità dell’aria.",
+ "categoria": "Vulcani",
+ "copertina": "immagini/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti-copertina.webp",
+ "copertinaAlt": "Il vulcano Anak Krakatau emette una colonna di gas bianco sopra una nube di cenere bruna.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Le eruzioni sono frequenti all’Anak Krakatau, un piccolo vulcano situato fra le isole indonesiane di Giava e Sumatra. Gran parte della sua attività è relativamente debole, ma in alcune occasioni il vulcano produce fenomeni più intensi e pericolosi. All’inizio di settembre, un’eruzione fragorosa durata oltre ventiquattro ore ha immesso gas e cenere in quota nell’atmosfera."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’episodio ha avuto conseguenze anche lontano dal cratere. La cenere vulcanica ha peggiorato la qualità dell’aria in varie zone del Paese, inclusa la capitale Jakarta, e ha interferito con il traffico aereo. La presenza di cenere nell’atmosfera ha portato alla chiusura temporanea di otto aeroporti fra Giava e Sumatra, con quasi tremila voli da e verso l’area coinvolti dalle interruzioni."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Due satelliti per seguire la nube"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I satelliti transitati sopra l’area il 5 settembre hanno ripreso l’attività esplosiva. Una delle immagini è stata acquisita dall’OLI, l’imager operativo per le terre emerse: uno strumento che raccoglie immagini della superficie e dell’atmosfera. OLI si trova a bordo di Landsat 8, un satellite della NASA e dell’ente geologico degli Stati Uniti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nella scena ripresa da Landsat 8, un pennacchio bianco di gas vulcanici si solleva sopra una nube di cenere marrone. La differenza di colore permette di distinguere visivamente le due componenti del materiale emesso. Una seconda immagine, più ampia, è stata raccolta dal VIIRS, uno strumento che osserva la radiazione visibile e infrarossa, installato sul satellite Suomi NPP. Questa vista mostra il materiale vulcanico mentre si disperde su una vasta area."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Vista dall’alto della dispersione di cenere e gas dall’Anak Krakatau sul mare e sulle terre vicine.",
+   "didascalia": "La vista più ampia mostra la dispersione del materiale vulcanico nell’area.",
+   "file": "immagini/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una nube che cambia con il vento"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo l’agenzia meteorologica indonesiana, entro il 6 settembre la cenere aveva raggiunto quote fino a seimila metri a est del vulcano e fino a quindicimila metri a ovest. Le immagini satellitari mostrano infatti pennacchi di cenere e gas trasportati sopra l’Indonesia e l’Oceano Indiano. La distribuzione del materiale nell’atmosfera non è stata quindi uniforme attorno al vulcano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricaduta di cenere ha interessato aree abitate, soprattutto a est dell’Anak Krakatau: fra queste Jakarta e altre parti di Giava occidentale. La cenere vulcanica può irritare le vie respiratorie, gli occhi e la pelle. La piattaforma indonesiana di coordinamento umanitario ha inoltre sottolineato che questo pericolo per la qualità dell’aria non coincide con il fumo prodotto dagli incendi nelle torbiere presenti in altre zone del Paese. Le caratteristiche delle particelle, i modi in cui il materiale si disperde e le misure di protezione non sono gli stessi."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dall’eruzione continua a esplosioni intermittenti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il 6 settembre l’eruzione esplosiva continua si è attenuata, ma il vulcano ha continuato a brontolare. L’attività è tornata a uno schema più tipico di eruzioni stromboliane, caratterizzate da getti intermittenti di cenere e materiale vulcanico. Non si tratta quindi di un’emissione costante: in questo tipo di attività, le esplosioni si alternano a intervalli di minore intensità."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Entro l’8 settembre gli aeroporti avevano ripreso a operare. L’Anak Krakatau, tuttavia, restava al secondo livello di allerta più alto nella scala nazionale, condizione mantenuta dall’inizio di luglio. Le osservazioni da Landsat 8 e Suomi NPP offrono un quadro diretto della nube prodotta durante l’eruzione e della sua propagazione, elementi importanti per seguire un fenomeno che può incidere contemporaneamente sull’aria e sui collegamenti aerei."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "L’eruzione dell’Anak Krakatau è durata oltre ventiquattro ore e ha disperso cenere e gas nell’atmosfera. Otto aeroporti sono stati chiusi temporaneamente e quasi tremila voli sono stati coinvolti. Dopo il 6 settembre l’attività continua si è attenuata, lasciando spazio a esplosioni stromboliane intermittenti."
+  }
+ ],
+ "parole": 565,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "Anak Krakatau Rumbles Again",
+  "url": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
