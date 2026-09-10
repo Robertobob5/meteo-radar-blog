@@ -6,7 +6,7 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { punteggio, testoDaHtml } from './genera.mjs';
+import { punteggio, testoDaHtml, vicinanzaTema, turnoFonti } from './genera.mjs';
 
 const QUI = path.dirname(new URL(import.meta.url).pathname);
 
@@ -65,18 +65,27 @@ for (const f of config.fonti) {
 console.log('\nFonti vive: ' + vive + ' su ' + config.fonti.filter(f => f.attiva !== false).length);
 console.log('Notizie in tutto: ' + tutte.length);
 
-const candidate = tutte
+/* 10 settembre 2026 · lo stesso conto del generatore: parole d'ufficio, vicinanza di tema e turno delle fonti */
+const oggi = new Date().toLocaleDateString('sv-SE', { timeZone: process.env.FUSO || 'Europe/Rome' });
+const perche = turnoFonti(indice, config, oggi);
+const conPunti = tutte
   .filter(v => !usate.has(v.url))
-  .map(v => ({ v, p: punteggio(v, config.parole_chiave) }))
+  .map(v => ({ v, p: punteggio(v, config.parole_chiave, config.parole_escluse || [], config.parole_burocratiche || []) - vicinanzaTema(v.titolo, indice.articoli || []) }))
   .filter(x => x.p > 0)
   .sort((a, b) => b.p - a.p);
+const aRiposo = conPunti.filter(x => perche(x.v));
+const candidate = conPunti.filter(x => !perche(x.v));
 
-console.log('A tema e mai usate: ' + candidate.length + '\n');
+console.log('A tema e mai usate: ' + conPunti.length + (aRiposo.length ? ' (di cui ' + aRiposo.length + ' di fonti in turno di riposo)' : '') + '\n');
 console.log('Le prime cinque che il generatore proverebbe oggi:');
-candidate.slice(0, 5).forEach((x, i) => {
-  console.log('  ' + (i + 1) + ')  [' + String(x.p).padStart(2) + ' punti]  ' + x.v.fonte.nome);
+(candidate.length ? candidate : conPunti).slice(0, 5).forEach((x, i) => {
+  console.log('  ' + (i + 1) + ')  [' + String(x.p).padStart(2) + ' punti]  ' + x.v.fonte.nome + (perche(x.v) ? '  (turno allentato: ' + perche(x.v) + ')' : ''));
   console.log('      ' + x.v.titolo.slice(0, 92));
 });
+if (aRiposo.length) {
+  console.log('\nFonti in turno di riposo oggi:');
+  [...new Set(aRiposo.map(x => perche(x.v)))].forEach(m => console.log('  · ' + m));
+}
 
 if (candidate.length && process.argv.includes('--leggi')) {
   console.log('\nProva di lettura della prima fonte…');
