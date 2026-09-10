@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-09T06:21:45.543Z",
+ "aggiornato": "2026-09-10T06:21:37.844Z",
  "articoli": [
+  {
+   "id": "2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america",
+   "data": "2026-09-10",
+   "titolo": "Un nuovo istituto di ricerca NOAA per il Golfo d’America",
+   "sottotitolo": "La Mississippi State University guiderà un consorzio dedicato agli ecosistemi del Golfo, alle comunità costiere e ai dati ambientali.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america-copertina.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-names-mississippi-state-university-to-host-new-northern-gulf-research-institute",
+   "fonteTitolo": "NOAA names Mississippi State University to host new Northern Gulf research institute",
+   "file": "articoli/2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america.json"
+  },
   {
    "id": "2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti",
    "data": "2026-09-09",
