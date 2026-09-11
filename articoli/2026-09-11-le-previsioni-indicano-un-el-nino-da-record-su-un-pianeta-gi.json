@@ -1,0 +1,79 @@
+{
+ "id": "2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi",
+ "data": "2026-09-11",
+ "scritto": "2026-09-11T06:21:39.363Z",
+ "titolo": "Le previsioni indicano un El Niño da record su un pianeta già più caldo",
+ "sottotitolo": "I modelli stagionali descrivono un evento molto forte, con temperature marine previste oltre i precedenti massimi.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi-copertina.webp",
+ "copertinaAlt": "Illustrazione dell'oceano Pacifico con ampie aree marine rappresentate da tonalità più calde.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un El Niño descritto come il più intenso mai misurato si sta formando mentre il pianeta è già in riscaldamento. Secondo il CMCC, Centro Euro-Mediterraneo sui Cambiamenti Climatici, l’evento potrebbe aumentare fino a 3,6 °C i valori mensili della temperatura superficiale del mare. Le previsioni indicano inoltre la possibilità di temperature record nel 2027 e di conseguenze severe per società umane ed ecosistemi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’attenzione degli scienziati si concentra sia sull’intensità prevista sia sul contesto in cui l’evento si sta sviluppando: un pianeta già in fase di riscaldamento. El Niño è quindi al centro delle valutazioni sui futuri estremi climatici, perché i modelli stagionali stanno convergendo verso uno scenario eccezionale rispetto alle osservazioni disponibili."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un valore superiore ai record precedenti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "All’inizio di agosto, i principali modelli di previsione stagionale indicavano tutti che il prossimo El Niño sarebbe stato molto forte. Le simulazioni collocano il picco dei valori mensili della temperatura superficiale del mare a +3,6 °C. La temperatura superficiale del mare è la temperatura dello strato più alto dell’oceano; in questo caso il dato segnala un forte riscaldamento previsto."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il confronto riportato dal CMCC rende evidente la portata della previsione. Il precedente record, associato a El Niño del 2015–16, era attorno a 2,75 °C: il valore ora atteso è quindi più alto di circa 0,8 °C. Negli ultimi 150 anni, inoltre, la distanza fra il più forte e il quinto El Niño più forte è stata soltanto di circa 0,5 °C. Le attuali proiezioni descrivono perciò un riscaldamento del Pacifico ben al di sopra di quanto osservato finora."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo del Pacifico con una vasta fascia di acque più calde.",
+   "didascalia": "I modelli indicano un forte riscaldamento previsto della superficie marina nel Pacifico.",
+   "file": "immagini/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Modelli che considerano oceano e atmosfera insieme"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il CMCC è fra i pochi centri globali che studiano El Niño con modelli di previsione nei quali le componenti dell’oceano e dell’atmosfera sono pienamente collegate. In altre parole, le simulazioni considerano insieme queste due componenti. Questa settimana, i ricercatori del centro hanno spiegato che il 96% dei modelli di previsione sta descrivendo l’evento come straordinario."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Enrico Scoccimarro, ricercatore del CMCC, afferma: «Ora sappiamo che questo sarà l’evento di El Niño più intenso mai registrato, sia in base alle previsioni per i prossimi mesi — con il 96% dei modelli che mostra che sarà il più forte nella serie moderna di osservazioni — sia, in modo significativo, in termini di valori assoluti della temperatura superficiale»."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Cosa indicano le previsioni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le informazioni disponibili non descrivono soltanto un El Niño molto forte: segnalano un possibile nuovo massimo, con valori previsti oltre il record precedente. Il fatto che quasi tutti i modelli considerati puntino nella stessa direzione rafforza il quadro delineato dal CMCC, pur trattandosi di previsioni per i mesi in arrivo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La prospettiva è quella di un evento che si sovrappone al riscaldamento già in corso del pianeta. Per questo il CMCC collega l’analisi di El Niño ai futuri estremi climatici e ai possibili impatti su società ed ecosistemi. I numeri riportati dai modelli, e il confronto con gli eventi degli ultimi 150 anni, mostrano quanto le previsioni attuali si discostino dai precedenti valori osservati."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "I principali modelli stagionali prevedono un El Niño molto forte, con un picco di +3,6 °C nella temperatura superficiale del mare. Il valore supera di circa 0,8 °C il precedente record. Il 96% dei modelli indica che potrebbe essere l’evento più intenso nella serie moderna di osservazioni."
+  }
+ ],
+ "parole": 544,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CMCC",
+  "titolo": "A record El Niño on a warming planet: What science says about future climate extremes",
+  "url": "https://www.cmcc.it/article/a-record-el-nino-on-a-warming-planet-what-science-says-about-future-climate-extremes",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

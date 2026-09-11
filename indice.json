@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-10T06:21:37.844Z",
+ "aggiornato": "2026-09-11T06:21:39.364Z",
  "articoli": [
+  {
+   "id": "2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi",
+   "data": "2026-09-11",
+   "titolo": "Le previsioni indicano un El Niño da record su un pianeta già più caldo",
+   "sottotitolo": "I modelli stagionali descrivono un evento molto forte, con temperature marine previste oltre i precedenti massimi.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi-copertina.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/a-record-el-nino-on-a-warming-planet-what-science-says-about-future-climate-extremes",
+   "fonteTitolo": "A record El Niño on a warming planet: What science says about future climate extremes",
+   "file": "articoli/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi.json"
+  },
   {
    "id": "2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america",
    "data": "2026-09-10",
