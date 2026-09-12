@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-11T06:21:39.364Z",
+ "aggiornato": "2026-09-12T06:21:40.013Z",
  "articoli": [
+  {
+   "id": "2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental",
+   "data": "2026-09-12",
+   "titolo": "A Taormina due giornate sul patrimonio culturale e ambientale di fronte agli estremi climatici",
+   "sottotitolo": "L’evento del progetto europeo SD-WISHEES riunirà competenze e prospettive per discutere monitoraggio, previsione e resilienza.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental-copertina.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/taormina-sd-wishees",
+   "fonteTitolo": "Taormina ospita l’evento SD-WISHEES dedicato alla protezione del patrimonio culturale e ambientale dai rischi climatici",
+   "file": "articoli/2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental.json"
+  },
   {
    "id": "2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi",
    "data": "2026-09-11",
