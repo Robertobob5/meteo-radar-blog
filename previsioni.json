@@ -1,0 +1,86 @@
+{
+ "versione": 1,
+ "generato": "2026-09-12T22:21:01.029Z",
+ "modello": "Open-Meteo (modello migliore per l'Italia, di solito ICON)",
+ "griglia": "0,5° · 625 punti",
+ "video": [
+  {
+   "id": "temperature",
+   "titolo": "Temperature",
+   "sotto": "ogni 3 ore per 5 giorni · modello Open-Meteo",
+   "file": "previsioni/temperature.mp4",
+   "poster": "previsioni/temperature.jpg",
+   "fotogrammi": 40,
+   "secondi": 8.2,
+   "da": "2026-09-13T00:00",
+   "a": "2026-09-17T21:00",
+   "byte": 317672,
+   "generato": "2026-09-12T22:21:01.029Z"
+  },
+  {
+   "id": "pioggia",
+   "titolo": "Pioggia e temporali",
+   "sotto": "ora per ora per 48 ore · ⚡ dove il modello vede temporali",
+   "file": "previsioni/pioggia.mp4",
+   "poster": "previsioni/pioggia.jpg",
+   "fotogrammi": 48,
+   "secondi": 9.5,
+   "da": "2026-09-13T00:00",
+   "a": "2026-09-14T23:00",
+   "byte": 109392,
+   "generato": "2026-09-12T22:21:01.029Z"
+  },
+  {
+   "id": "vento",
+   "titolo": "Vento e raffiche",
+   "sotto": "raffiche massime ora per ora · sabato 12 e domenica 13",
+   "file": "previsioni/vento.mp4",
+   "poster": "previsioni/vento.jpg",
+   "fotogrammi": 24,
+   "secondi": 5.5,
+   "da": "2026-09-13T00:00",
+   "a": "2026-09-13T23:00",
+   "byte": 185732,
+   "generato": "2026-09-12T22:21:01.029Z"
+  },
+  {
+   "id": "neve",
+   "titolo": "Neve accumulata",
+   "sotto": "centimetri caduti dall'inizio del filmato · 7 giorni",
+   "file": "previsioni/neve.mp4",
+   "poster": "previsioni/neve.jpg",
+   "fotogrammi": 56,
+   "secondi": 10.8,
+   "da": "2026-09-13T00:00",
+   "a": "2026-09-19T21:00",
+   "byte": 48589,
+   "generato": "2026-09-12T22:21:01.029Z"
+  },
+  {
+   "id": "nuvole",
+   "titolo": "Nuvolosità",
+   "sotto": "copertura del cielo ora per ora · domani",
+   "file": "previsioni/nuvole.mp4",
+   "poster": "previsioni/nuvole.jpg",
+   "fotogrammi": 24,
+   "secondi": 5.5,
+   "da": "2026-09-14T00:00",
+   "a": "2026-09-14T23:00",
+   "byte": 128998,
+   "generato": "2026-09-12T22:21:01.029Z"
+  },
+  {
+   "id": "mare",
+   "titolo": "Mare e onde",
+   "sotto": "altezza delle onde ora per ora · 48 ore",
+   "file": "previsioni/mare.mp4",
+   "poster": "previsioni/mare.jpg",
+   "fotogrammi": 48,
+   "secondi": 9.5,
+   "da": "2026-09-13T00:00",
+   "a": "2026-09-14T23:00",
+   "byte": 112411,
+   "generato": "2026-09-12T22:21:01.029Z"
+  }
+ ]
+}
