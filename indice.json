@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-12T06:21:40.013Z",
+ "aggiornato": "2026-09-13T06:21:55.523Z",
  "articoli": [
+  {
+   "id": "2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell",
+   "data": "2026-09-13",
+   "titolo": "Prevedere il biossido di azoto urbano unendo fisica e intelligenza artificiale",
+   "sottotitolo": "Uno studio di ARPA Sicilia applica a Palermo un metodo che combina misure, simulazioni e algoritmi per stimare il NO₂ fino a dodici ore.",
+   "categoria": "Aria",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell-copertina.webp",
+   "fonte": "SNPA · le Arpa d’Italia",
+   "fonteUrl": "https://www.snpambiente.it/notizie/snpa/arpa-sicilia/fisica-e-intelligenza-artificiale-per-prevedere-linquinamento-da-biossido-di-azoto-lo-studio-relizzato-da-arpa-sicilia-pubblicato-sulla-rivista-scientifica-atmosphere-mdpi/?utm_source=rss&utm_medium=rss&utm_campaign=fisica-e-intelligenza-artificiale-per-prevedere-linquinamento-da-biossido-di-azoto-lo-studio-relizzato-da-arpa-sicilia-pubblicato-sulla-rivista-scientifica-atmosphere-mdpi",
+   "fonteTitolo": "Fisica e intelligenza artificiale per prevedere l’inquinamento da biossido di azoto, lo studio relizzato da ARPA Sicilia pubblicato sulla rivista scientifica Atmosphere (MDPI)",
+   "file": "articoli/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell.json"
+  },
   {
    "id": "2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental",
    "data": "2026-09-12",
@@ -409,6 +422,15 @@
    "fonteTitolo": "Drought Intensifies Across Puerto Rico",
    "quando": "2026-09-03T09:57:05.033Z",
    "perche": "stessa fonte di 2026-09-02-la-siccita-si-intensifica-a-porto-rico"
+  },
+  {
+   "id": "2026-09-13-due-squadre-di-controllo-si-preparano-a-gestire-flex-e-senti",
+   "data": "2026-09-13",
+   "titolo": "Due squadre di controllo si preparano a gestire FLEX e Sentinel-3C in parallelo",
+   "fonteUrl": "https://www.esa.int/Enabling_Support/Operations/A_team_of_teams_like_never_before_rehearsing_a_unique_launch_at_ESA_mission_control",
+   "fonteTitolo": "A team of teams like never before: rehearsing a unique launch at ESA mission control",
+   "quando": "2026-09-13T06:21:00.733Z",
+   "perche": "stessa storia di 2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la"
   }
  ]
 }

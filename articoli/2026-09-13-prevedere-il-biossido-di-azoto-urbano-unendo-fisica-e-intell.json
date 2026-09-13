@@ -1,0 +1,87 @@
+{
+ "id": "2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell",
+ "data": "2026-09-13",
+ "scritto": "2026-09-13T06:21:55.523Z",
+ "titolo": "Prevedere il biossido di azoto urbano unendo fisica e intelligenza artificiale",
+ "sottotitolo": "Uno studio di ARPA Sicilia applica a Palermo un metodo che combina misure, simulazioni e algoritmi per stimare il NO₂ fino a dodici ore.",
+ "categoria": "Aria",
+ "copertina": "immagini/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell-copertina.webp",
+ "copertinaAlt": "Illustrazione di una grande strada urbana con traffico, centralina di qualità dell’aria e distribuzione del biossido di azoto.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Le misure raccolte da una centralina possono raccontare molto dell’aria in un punto preciso. Ma per comprendere come un inquinante si distribuisca lungo una strada urbana e nelle aree vicine servono anche strumenti capaci di ricostruire il quadro attorno al punto di misura. È l’obiettivo di uno studio realizzato dal team di ricercatori di ARPA Sicilia, pubblicato sulla rivista scientifica Atmosphere e dedicato al monitoraggio e alla previsione del biossido di azoto, indicato con la formula NO₂."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca riguarda Palermo e, in particolare, viale Regione Siciliana, in prossimità della stazione di monitoraggio della qualità dell’aria di ARPA Sicilia situata in via Di Blasi. Il lavoro propone una metodologia per la previsione a breve termine delle concentrazioni di NO₂: integra modellistica fisica, dati osservativi e tecniche di apprendimento automatico, cioè algoritmi che vengono addestrati usando dati elaborati."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalla dispersione dell’inquinante al traffico"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Al centro della metodologia c’è una catena modellistica, ossia un insieme organizzato di modelli e passaggi di calcolo. Questa unisce la simulazione della dispersione degli inquinanti in ambito urbano al machine learning, termine che indica l’apprendimento automatico. Per simulare la dispersione viene utilizzato SIRANE, un modello sviluppato dall’École Centrale de Lyon: la dispersione è il modo in cui un inquinante si distribuisce nell’aria, influenzato dalle condizioni emissive e meteorologiche."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Uno degli elementi distintivi dello studio è l’uso della modellazione in senso inverso. Normalmente, una simulazione diretta parte dalle emissioni e dalle condizioni meteorologiche per stimare le concentrazioni di un inquinante. In questo caso, invece, le concentrazioni di NO₂ misurate dalla stazione vengono impiegate anche per ricostruire indirettamente le condizioni di traffico veicolare nell’area studiata."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La centralina di qualità dell’aria assume quindi un secondo ruolo: oltre a rilevare il biossido di azoto nell’atmosfera, può funzionare come sensore indiretto del traffico. A partire dalle concentrazioni osservate, il metodo ricava infatti informazioni sui flussi veicolari. Le informazioni ottenute sono state poi utilizzate per addestrare due algoritmi, Random Forest e XGBoost, con lo scopo di prevedere ora per ora le concentrazioni di NO₂ fino a dodici ore."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di una centralina, del traffico e della dispersione di un inquinante lungo strade urbane.",
+   "didascalia": "Il metodo combina le misure della centralina, la simulazione della dispersione e la previsione delle concentrazioni.",
+   "file": "immagini/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una mappa più dettagliata dell’esposizione"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca mira a superare il solo dato disponibile nel punto in cui si trova la stazione di monitoraggio. I risultati evidenziano infatti una significativa variabilità spaziale delle concentrazioni di NO₂: il fenomeno non riguarda soltanto il punto di misura, ma si estende lungo le carreggiate e nelle aree stradali circostanti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nell’area analizzata, le concentrazioni medie stimate superano 50 µg/m³ in corrispondenza della stazione e nelle zone limitrofe. Il dato mette in evidenza livelli di esposizione rilevanti vicino all’asse viario. La possibilità di descrivere la distribuzione dell’inquinante nello spazio, oltre che seguirne l’evoluzione nel tempo, è particolarmente importante nel contesto delle regole europee sulla qualità dell’aria, che prevedono valori e obiettivi più stringenti per la protezione della salute umana."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un metodo adattabile ad altri inquinanti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo lo studio, la metodologia ha caratteristiche di modularità e trasferibilità: può quindi essere applicata ad altri corridoi urbani caratterizzati da flussi di traffico elevati. Può inoltre essere adattata al monitoraggio di altri inquinanti atmosferici, fra cui PM₁₀, PM₂.₅ e ozono. PM₁₀ e PM₂.₅ sono particelle presenti nell’aria, classificate in base alla loro dimensione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un possibile sviluppo consiste nell’integrare dati reali di traffico, per affinare progressivamente le prestazioni previsionali. La combinazione fra modellistica fisica, dati osservativi e intelligenza artificiale apre anche alla realizzazione di sistemi di supporto alle decisioni: strumenti operativi pensati per il monitoraggio e la gestione della qualità dell’aria, soprattutto nelle aree urbane con alta densità di traffico e maggiore pressione emissiva."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Lo studio di ARPA Sicilia applica a Palermo una metodologia per prevedere il NO₂ fino a dodici ore. Le misure della centralina vengono usate sia per analizzare l’inquinante sia per ricostruire indirettamente le condizioni di traffico. L’obiettivo è ottenere informazioni più dettagliate sulla distribuzione dell’inquinante nelle aree urbane."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca è stata finanziata dalla Regione Siciliana – Assessorato del Territorio e dell’Ambiente. Rientra nelle attività del II Stralcio del Centro di Eccellenza per la sostenibilità ambientale, la salute dell’uomo e la tutela della biodiversità, previsto dal Programma Operativo Complementare Sicilia 2014–2020. Il programma comprende attività dedicate ad ambiente e biodiversità, all’integrazione fra dati ambientali e sanitari e allo sviluppo di metodi per l’elaborazione avanzata dei dati e l’impiego dell’intelligenza artificiale."
+  }
+ ],
+ "parole": 699,
+ "minuti": 3,
+ "fonte": {
+  "nome": "SNPA · le Arpa d’Italia",
+  "titolo": "Fisica e intelligenza artificiale per prevedere l’inquinamento da biossido di azoto, lo studio relizzato da ARPA Sicilia pubblicato sulla rivista scientifica Atmosphere (MDPI)",
+  "url": "https://www.snpambiente.it/notizie/snpa/arpa-sicilia/fisica-e-intelligenza-artificiale-per-prevedere-linquinamento-da-biossido-di-azoto-lo-studio-relizzato-da-arpa-sicilia-pubblicato-sulla-rivista-scientifica-atmosphere-mdpi/?utm_source=rss&utm_medium=rss&utm_campaign=fisica-e-intelligenza-artificiale-per-prevedere-linquinamento-da-biossido-di-azoto-lo-studio-relizzato-da-arpa-sicilia-pubblicato-sulla-rivista-scientifica-atmosphere-mdpi",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
