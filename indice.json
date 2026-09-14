@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-13T06:21:55.523Z",
+ "aggiornato": "2026-09-14T06:21:46.895Z",
  "articoli": [
+  {
+   "id": "2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg",
+   "data": "2026-09-14",
+   "titolo": "In Europa aumentano le combinazioni di caldo, siccità e piogge estreme",
+   "sottotitolo": "Uno studio ad alta risoluzione analizza come cinque estremi meteorologici si presentino da soli, in successione o nello stesso luogo e mese.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg-copertina.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/europe-faces-more-frequent-and-intense-combinations-of-heat-drought-heavy-rain-and-fire-weather",
+   "fonteTitolo": "Europe faces more frequent and intense combinations of heat, drought, heavy rain and fire weather",
+   "file": "articoli/2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg.json"
+  },
   {
    "id": "2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell",
    "data": "2026-09-13",
