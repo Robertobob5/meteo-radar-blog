@@ -1,0 +1,83 @@
+{
+ "id": "2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett",
+ "data": "2026-09-16",
+ "scritto": "2026-09-16T06:21:51.209Z",
+ "titolo": "In Val Nervia il monitoraggio delle falde guarda agli effetti del cambiamento climatico",
+ "sottotitolo": "Arpa Liguria avvia campagne tra pozzi e sorgenti per studiare le acque sotterranee dell’entroterra imperiese.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett-copertina.webp",
+ "copertinaAlt": "Schema illustrato di una valle ligure con falde sotterranee, sorgente, pozzo e costa.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Nell’entroterra della provincia di Imperia prosegue il monitoraggio delle acque sotterranee condotto da Arpa Liguria. L’attenzione è rivolta in particolare alla Val Nervia, dove le attività servono ad approfondire la conoscenza delle falde, cioè delle acque sotterranee, e a valutarne la risposta agli effetti del cambiamento climatico."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il lavoro non si limita a raccogliere osservazioni in un singolo momento. Il programma prevede campagne di campionamento distribuite nel tempo, in punti scelti tra pozzi e sorgenti. In questo modo i dati raccolti potranno contribuire a descrivere l’area e a sostenere la gestione delle risorse idriche."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un progetto tra territori di confine"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le attività sono svolte da Arpa Liguria insieme all’Università Côte d’Azur nell’ambito di ECOTERR. Si tratta di un progetto transfrontaliero finanziato dal programma Interreg VI-A Italia-Francia ALCOTRA 2021-2027, dedicato alla tutela delle risorse naturali e alla resilienza dei territori di confine."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel contesto del progetto, il monitoraggio delle falde dell’Imperiese collega quindi due obiettivi indicati: conoscere meglio le acque sotterranee e osservare come queste possano rispondere agli effetti del cambiamento climatico. La Val Nervia è l’area individuata per questa attività di approfondimento."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Illustrazione di una sorgente e di un pozzo in una valle, con una sezione delle acque sotterranee.",
+   "didascalia": "Le campagne previste coinvolgono punti di monitoraggio tra pozzi e sorgenti.",
+   "file": "immagini/2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Ricarica della falda e cuneo salino"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Uno degli scopi del monitoraggio è studiare i meccanismi di ricarica della falda. L’attività punta anche a individuare eventuali fenomeni di intrusione del cuneo salino: con questa espressione si indica la risalita di acqua marina nelle acque sotterranee delle aree vicine alla costa."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca comprende dunque sia la ricarica delle falde sia la possibile presenza del cuneo salino nelle aree costiere. Sono due aspetti esplicitamente previsti dal monitoraggio avviato nell’entroterra imperiese, all’interno del percorso di conoscenza dedicato alle acque sotterranee della Val Nervia."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Quattro campagne in dodici punti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il piano prevede quattro campagne di campionamento in dodici punti tra pozzi e sorgenti. La prima campagna si è svolta a maggio 2026. La seconda è programmata tra la fine di settembre e l’inizio di ottobre, mentre le altre due sono previste nel 2027."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La successione delle campagne consentirà di raccogliere dati nell’arco delle attività previste dal progetto. Il materiale ottenuto sarà utilizzato per realizzare un modello idrogeologico dell’area, cioè un modello dedicato alle acque sotterranee e al contesto in cui si trovano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo quanto indicato da Arpa Liguria, il modello idrogeologico sarà utile a supportare la gestione delle risorse idriche. Il monitoraggio in Val Nervia unisce così campionamenti presso pozzi e sorgenti, studio della ricarica delle falde e attenzione a eventuali intrusioni di acqua marina nelle acque sotterranee prossime alla costa."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Arpa Liguria e Università Côte d’Azur monitorano le acque sotterranee della Val Nervia nell’ambito del progetto ECOTERR. Sono previste quattro campagne in dodici punti tra pozzi e sorgenti. I dati serviranno a studiare la ricarica della falda, a individuare eventuali intrusioni del cuneo salino e a realizzare un modello idrogeologico dell’area."
+  }
+ ],
+ "parole": 460,
+ "minuti": 2,
+ "fonte": {
+  "nome": "SNPA · le Arpa d’Italia",
+  "titolo": "Clima e acque sotterranee, Arpa Liguria monitora le falde dell’Imperiese",
+  "url": "https://www.snpambiente.it/notizie/clima-e-acque-sotterranee-arpa-liguria-monitora-le-falde-dellimperiese/?utm_source=rss&utm_medium=rss&utm_campaign=clima-e-acque-sotterranee-arpa-liguria-monitora-le-falde-dellimperiese",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
