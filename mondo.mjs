@@ -37,7 +37,7 @@ import os from 'os';
 import path from 'path';
 import { execFileSync } from 'child_process';
 import { createCanvas } from 'canvas';
-import { leggiConfini, creaVista, fondoScuro, contorni, Scie } from './confini.mjs';
+import { leggiConfini, creaVista, fondoScuro, contorni, citta, Scie } from './confini.mjs';
 
 const dice = (...a) => console.log(...a);
 
@@ -254,7 +254,7 @@ function racconto(n, oggi) {
       else frase += ' e nei tre giorni resta lì';
     }
     f.push(frase + '.');
-    ev.push('BASSA PRESSIONE SU ' + vicino(n.bassa0.lat, n.bassa0.lon).b);
+    ev.push('BASSA PRESSIONE ' + posto(n.bassa0.lat, n.bassa0.lon).toUpperCase());
   }
   if (n.primaPioggia !== null) {
     f.push('Sull\'Italia la pioggia arriva ' + quandoAParole(n.t[n.primaPioggia], oggi) + '.');
@@ -447,6 +447,7 @@ async function filmatoMondo(o) {
         g.drawImage(colore, 0, 0, W, H);
         g.drawImage(sc.passo(dove, { colore: cap.tipo === 'pioggia' ? 'rgba(255,255,255,.8)' : 'rgba(255,255,255,.5)', spessore: 1 }), 0, 0);
         contorni(g, vista, conf, { costa: 'rgba(195,232,255,.92)', spessore: 1.4, stati: 'rgba(170,200,235,.4)', spessoreStati: .9, alone: 'rgba(0,0,0,.3)' });
+        citta(g, vista, conf, { corpo: 11, minimo: 0 });          /* solo le capitali: sulla mappa larga i nomi piccoli si pesterebbero */
         cornice(g, {
           titolo: cap.titolo, sotto: cap.sotto, quando: orarioBreve(t[k]), edizione,
           evidenza, scorrimento: nf * 1.6, prova: !!o.prova,
