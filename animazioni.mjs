@@ -29,6 +29,8 @@ import path from 'path';
 import os from 'os';
 import { execFileSync } from 'child_process';
 import { createCanvas, loadImage } from 'canvas';
+import { leggiConfini, creaVista, fondoScuro, contorni, mascheraAcqua, Scie } from './confini.mjs';
+import { filmatoMondo, frescoMondo } from './mondo.mjs';
 
 const FUSO = process.env.FUSO || 'Europe/Rome';
 const QUI = path.dirname(new URL(import.meta.url).pathname);
@@ -47,6 +49,14 @@ const daMercX = x => x / MONDO * 360 - 180;
 const X0 = mercX(G.lonMin), X1 = mercX(G.lonMax), Y0 = mercY(G.latMax), Y1 = mercY(G.latMin);
 const W = 544, H = 728;                                           /* dimensioni pari: piacciono a H.264 */
 const CHIAVE_CARTO = 'cb1_25vc_1_c419815e8f7b2b406d15aa41';
+
+/* v73.4 — la vista (gradi → pixel) e i contorni presi da confini.json: coste,
+   laghi e confini degli stati si disegnano SOPRA i colori, così restano ben
+   visibili anche dove la macchia è forte. Prima si perdevano sotto. */
+const VISTA = creaVista({ lonMin: G.lonMin, lonMax: G.lonMax, latMin: G.latMin, latMax: G.latMax, W, H });
+const CONFINI = leggiConfini().italia;
+const CONTORNI_CHIARO = { costa: 'rgba(15,35,65,.85)', spessore: 1.5, stati: 'rgba(30,55,90,.42)', spessoreStati: 1, alone: 'rgba(255,255,255,.55)' };
+const CONTORNI_BUIO   = { costa: 'rgba(190,230,255,.92)', spessore: 1.5, stati: 'rgba(165,195,230,.42)', spessoreStati: .9, alone: 'rgba(0,0,0,.35)' };
 
 function puntiGriglia() {
   const p = [];
@@ -74,7 +84,7 @@ const RETE = {
 };
 
 /* ─────────────── Open-Meteo ─────────────── */
-const VARIABILI = 'temperature_2m,precipitation,weather_code,cape,wind_gusts_10m,wind_direction_10m,snowfall,cloud_cover';
+const VARIABILI = 'temperature_2m,precipitation,weather_code,cape,wind_gusts_10m,wind_speed_10m,wind_direction_10m,snowfall,cloud_cover';
 
 /** Scarica la griglia a pezzi di 125 punti. Torna { time, punti[i]: { lat, lon, elevation, hourly } }. */
 async function scaricaGriglia(rete, tipo) {
@@ -156,6 +166,15 @@ const SCALE = {
   nuvole:      scala([[10, '#ffffff', .0], [50, '#ffffff', .45], [100, '#e2e8f0', .82]]),
   mare:        scala([[0.05, '#e0f7fa', .4], [0.5, '#4dd0e1', .5], [1, '#039be5', .6], [2, '#1e88e5', .7], [3, '#7b1fa2', .8], [4, '#d81b60', .85], [6, '#ffeb3b', .9]])
 };
+/* sul fondo scuro il colore deve reggere da solo: stesse tappe, ma più coprenti */
+const SCALE_BUIO = {
+  vento: scala([[8, '#2e6fb0', .30], [20, '#2fb6c4', .48], [40, '#41c98a', .58], [60, '#e0c93a', .66], [80, '#ef6a3a', .74], [100, '#e0447a', .80], [130, '#a34bd6', .86]]),
+  mare:  scala([[0.05, '#2a6ea8', .32], [0.5, '#2fb0c8', .50], [1, '#2f8fe0', .60], [2, '#5a6ee6', .70], [3, '#a45ad8', .78], [4, '#e04a86', .84], [6, '#f0d24a', .90]])
+};
+const TAPPE_BUIO = {
+  vento: [[8, '#2e6fb0', .30], [20, '#2fb6c4', .48], [40, '#41c98a', .58], [60, '#e0c93a', .66], [80, '#ef6a3a', .74], [100, '#e0447a', .80], [130, '#a34bd6', .86]],
+  mare:  [[0.05, '#2a6ea8', .32], [0.5, '#2fb0c8', .50], [1, '#2f8fe0', .60], [2, '#5a6ee6', .70], [3, '#a45ad8', .78], [4, '#e04a86', .84], [6, '#f0d24a', .90]]
+};
 const LEGENDE = { temperature: '°C', pioggia: 'mm/h', vento: 'km/h', neve: 'cm', nuvole: '%', mare: 'm' };
 
 /* ─────────────── il tempo ─────────────── */
@@ -217,6 +236,13 @@ async function sfondo(rete) {
   return fuori;
 }
 
+/** Il fondo scuro alla Windy per i filmati con le scie (vento e mare): niente
+    tessere da scaricare, lo disegniamo noi dalle coste di confini.json. */
+function sfondoBuio() { return fondoScuro(VISTA, CONFINI); }
+
+let acquaCache = null;
+const ACQUA = () => (acquaCache || (acquaCache = mascheraAcqua(VISTA, CONFINI)));
+
 /** Il colore del campo pixel per pixel (bilineare sulla griglia), come ImageData. */
 function strato(g, matrice, colore, maschera) {
   const img = g.createImageData(W, H), d = img.data;
@@ -238,11 +264,11 @@ function riquadro(g, x, y, w, h, r = 12, fill = 'rgba(255,255,255,.86)') {
   g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath();
   g.fillStyle = fill; g.fill();
 }
-function legenda(g, nome) {
+function legenda(g, nome, buio) {
   /* le tappe della scala sono a distanza uguale fra loro (come nelle legende meteo): così 0,5 e 2 non si pestano */
-  const tappe = TAPPE[nome], sc = SCALE[nome];
+  const tappe = (buio && TAPPE_BUIO[nome]) || TAPPE[nome], sc = (buio && SCALE_BUIO[nome]) || SCALE[nome];
   const x = 16, y = H - 58, w = W - 32, h = 14, n = tappe.length;
-  riquadro(g, x - 6, y - 24, w + 12, 62, 12);
+  riquadro(g, x - 6, y - 24, w + 12, 62, 12, buio ? 'rgba(8,16,30,.78)' : 'rgba(255,255,255,.86)');
   const grad = g.createLinearGradient(x, 0, x + w, 0);
   for (let k = 0; k < n; k++) {
     for (let q = 0; q < 4; q++) {
@@ -253,16 +279,17 @@ function legenda(g, nome) {
     }
   }
   g.fillStyle = grad; g.fillRect(x, y, w, h);
-  g.strokeStyle = 'rgba(0,0,0,.25)'; g.strokeRect(x + .5, y + .5, w - 1, h - 1);
-  g.fillStyle = '#172033'; g.font = 'bold 11px "DejaVu Sans"'; g.textAlign = 'center';
+  g.strokeStyle = buio ? 'rgba(255,255,255,.3)' : 'rgba(0,0,0,.25)'; g.strokeRect(x + .5, y + .5, w - 1, h - 1);
+  g.fillStyle = buio ? '#eaf2ff' : '#172033'; g.font = 'bold 11px "DejaVu Sans"'; g.textAlign = 'center';
   tappe.forEach((t, k) => {
     if (nome === 'pioggia' && k === 0) return;                    /* "0,1" non serve: sotto è trasparente */
     const px = x + k / (n - 1) * w;
     g.fillText(String(t[0]).replace('.', ','), Math.min(x + w - 10, Math.max(x + 10, px)), y + h + 14);
   });
-  g.textAlign = 'left'; g.font = '11px "DejaVu Sans"'; g.fillStyle = '#4a5568';
+  g.textAlign = 'left'; g.font = '11px "DejaVu Sans"'; g.fillStyle = buio ? 'rgba(210,225,245,.85)' : '#4a5568';
   g.fillText(LEGENDE[nome], x, y - 8);
-  g.textAlign = 'right'; g.fillText('Meteo Radar · dati Open-Meteo · mappa © CARTO, © OpenStreetMap', x + w, y - 8);
+  g.textAlign = 'right';
+  g.fillText(buio ? 'Meteo Radar · dati Open-Meteo · coste GSHHS' : 'Meteo Radar · dati Open-Meteo · mappa © CARTO, © OpenStreetMap', x + w, y - 8);
   g.textAlign = 'left';
 }
 function freccia(g, x, y, verso, lunghezza) {
@@ -283,9 +310,14 @@ const px = (lat, lon) => [(mercX(lon) - X0) / (X1 - X0) * W, (mercY(lat) - Y0) /
 function fotogramma(base, nome, matrice, titolo, sotto, quando, extra = {}) {
   const tela = createCanvas(W, H), g = tela.getContext('2d');
   g.drawImage(base, 0, 0);
-  const st = strato(g, matrice, SCALE[nome], extra.maschera);
-  const tmp = createCanvas(W, H); tmp.getContext('2d').putImageData(st, 0, 0);
-  g.drawImage(tmp, 0, 0);
+  if (extra.stratoPronto) g.drawImage(extra.stratoPronto, 0, 0);
+  else {
+    const st = strato(g, matrice, (extra.buio && SCALE_BUIO[nome]) || SCALE[nome], extra.maschera);
+    const tmp = createCanvas(W, H); tmp.getContext('2d').putImageData(st, 0, 0);
+    g.drawImage(tmp, 0, 0);
+  }
+  if (extra.scie) g.drawImage(extra.scie, 0, 0);                 /* i filamenti bianchi del vento */
+  contorni(g, VISTA, CONFINI, extra.buio ? CONTORNI_BUIO : CONTORNI_CHIARO);
   if (extra.frecce) {
     g.strokeStyle = 'rgba(20,30,50,.8)'; g.fillStyle = 'rgba(20,30,50,.8)'; g.lineWidth = 1.5;
     for (let i = 0; i < NLAT; i += 2) for (let j = 0; j < NLON; j += 2) {
@@ -303,16 +335,16 @@ function fotogramma(base, nome, matrice, titolo, sotto, quando, extra = {}) {
     }
   }
   /* titolo, sottotitolo, orario */
-  riquadro(g, 12, 12, W - 24, 64, 14);
-  g.fillStyle = '#172033'; g.font = 'bold 21px "DejaVu Sans"'; g.textAlign = 'left';
+  riquadro(g, 12, 12, W - 24, 64, 14, extra.buio ? 'rgba(8,16,30,.78)' : 'rgba(255,255,255,.86)');
+  g.fillStyle = extra.buio ? '#f2f7ff' : '#172033'; g.font = 'bold 21px "DejaVu Sans"'; g.textAlign = 'left';
   g.fillText(titolo, 24, 40);
-  g.font = 'bold 15px "DejaVu Sans"'; g.fillStyle = '#0878f9'; g.textAlign = 'right';
+  g.font = 'bold 15px "DejaVu Sans"'; g.fillStyle = extra.buio ? '#6bc4ff' : '#0878f9'; g.textAlign = 'right';
   g.fillText(quando, W - 24, 40);
-  g.textAlign = 'left'; g.font = '13px "DejaVu Sans"'; g.fillStyle = '#4a5568';
+  g.textAlign = 'left'; g.font = '13px "DejaVu Sans"'; g.fillStyle = extra.buio ? 'rgba(205,222,245,.9)' : '#4a5568';
   let riga = sotto;
   while (riga.length > 4 && g.measureText(riga).width > W - 48) riga = riga.slice(0, -2).trimEnd() + '…';
   g.fillText(riga, 24, 62);
-  legenda(g, nome);
+  legenda(g, nome, !!extra.buio);
   return tela;
 }
 
@@ -328,8 +360,9 @@ function descrizioni(griglia, mare, fin) {
       matrice: k => campo(griglia, 'precipitation', k),
       extra: k => ({ fulmini: campo(griglia, 'weather_code', k, (v, p) => (v >= 95) || (Number(p.hourly.cape[k]) >= 1200 && Number(p.hourly.precipitation[k]) >= 0.5)) }) });
     elenco.push({ id: 'vento', titolo: 'Vento e raffiche', sotto: 'raffiche massime ora per ora · ' + (fin.weekend ? 'sabato ' + fin.weekend.sabato.slice(8) + ' e domenica ' + fin.weekend.domenica.slice(8) : 'prossime 48 ore'), indici: fin.vento,
+      buio: true, fps: 12, sub: 2,
       matrice: k => campo(griglia, 'wind_gusts_10m', k),
-      extra: k => ({ frecce: { forza: campo(griglia, 'wind_gusts_10m', k), verso: campo(griglia, 'wind_direction_10m', k) } }) });
+      scie: k => ({ forza: campo(griglia, 'wind_speed_10m', k, v => Number.isFinite(v) ? v : NaN), verso: campo(griglia, 'wind_direction_10m', k) }) });
     /* neve: accumulata dall'inizio del filmato */
     const acc = new Map();
     elenco.push({ id: 'neve', titolo: 'Neve accumulata', sotto: 'centimetri caduti dall\'inizio del filmato · 7 giorni', indici: fin.neve,
@@ -346,16 +379,14 @@ function descrizioni(griglia, mare, fin) {
       matrice: k => campo(griglia, 'cloud_cover', k) });
   }
   if (mare) {
-    /* solo il mare: i punti con quota zero della griglia meteo sono acqua */
-    const acqua = new Set();
-    if (griglia) griglia.punti.forEach(p => { if (p && Number.isFinite(p.elevation) && p.elevation <= 0) acqua.add(p.i + ',' + p.j); });
-    const maschera = (lat, lon) => {
-      if (!griglia) return true;
-      const i = Math.round((lat - G.latMin) / G.passo), j = Math.round((lon - G.lonMin) / G.passo);
-      return acqua.has(i + ',' + j);
-    };
+    /* v73.4 — il mare finisce dove finisce il mare: la maschera è disegnata
+       sulle coste vere, non più sui quadretti da mezzo grado della griglia. */
+    const maschera = ACQUA();
     elenco.push({ id: 'mare', titolo: 'Mare e onde', sotto: 'altezza delle onde ora per ora · 48 ore', indici: fin.mare, tempo: mare.time,
+      buio: true, fps: 12, sub: 2,
       matrice: k => campo(mare, 'wave_height', k),
+      /* le scie seguono la direzione delle onde: vanno più veloci dove l'onda è più alta */
+      scie: k => ({ forza: campo(mare, 'wave_height', k, v => Number.isFinite(v) ? 10 + v * 16 : NaN), verso: campo(mare, 'wave_direction', k), maschera }),
       extra: () => ({ maschera }) });
   }
   return elenco;
@@ -364,25 +395,50 @@ function descrizioni(griglia, mare, fin) {
 async function filmato(base, voce, time, cartella, ffmpeg) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'anim-'));
   const tempo = voce.tempo || time;
-  let n = 0;
+  const fps = voce.fps || 6;
+  const sub = Math.max(1, voce.sub || 1);          /* fotogrammi disegnati per ogni ora di dati: le scie scorrono lisce */
+  /* le scie: nascono una volta sola e proseguono da un fotogramma all'altro */
+  const sc = voce.scie ? new Scie({ vista: VISTA, quante: 2000, veloce: 0.075, sbiadisce: 0.07, vita: [40, 110] }) : null;
+  let n = 0, dati = 0;
   for (const k of voce.indici) {
     if (k >= tempo.length) break;
-    const extra = voce.extra ? voce.extra(k) : {};
-    const tela = fotogramma(base, voce.id, voce.matrice(k), voce.titolo, voce.sotto, etichetta(tempo[k]), extra);
-    const png = tela.toBuffer('image/png');
-    fs.writeFileSync(path.join(dir, 'f_' + String(n).padStart(3, '0') + '.png'), png);
-    if (n === Math.floor(voce.indici.length / 3)) fs.writeFileSync(path.join(cartella, voce.id + '.jpg'), tela.toBuffer('image/jpeg', { quality: 0.82 }));
-    n++;
+    const extra = Object.assign({ buio: !!voce.buio }, voce.extra ? voce.extra(k) : {});
+    /* il colore si calcola una volta per ora di dati e si riusa nei sotto-fotogrammi */
+    const stratoTela = createCanvas(W, H);
+    {
+      const sg = stratoTela.getContext('2d');
+      sg.putImageData(strato(sg, voce.matrice(k), (voce.buio && SCALE_BUIO[voce.id]) || SCALE[voce.id], extra.maschera), 0, 0);
+    }
+    extra.stratoPronto = stratoTela;
+    let dove = null;
+    if (sc) {
+      const campi = voce.scie(k);
+      dove = (lat, lon) => {
+        if (campi.maschera && !campi.maschera(lat, lon)) return null;
+        const f = campiona(campi.forza, lat, lon), v = campiona(campi.verso, lat, lon);
+        return (Number.isFinite(f) && Number.isFinite(v)) ? [f, v] : null;
+      };
+    }
+    for (let q = 0; q < sub; q++) {
+      if (sc) extra.scie = sc.passo(dove, { colore: 'rgba(255,255,255,.82)', spessore: 1 });
+      const tela = fotogramma(base, voce.id, voce.matrice(k), voce.titolo, voce.sotto, etichetta(tempo[k]), extra);
+      fs.writeFileSync(path.join(dir, 'f_' + String(n).padStart(4, '0') + '.png'), tela.toBuffer('image/png'));
+      if (n === Math.floor(voce.indici.length * sub / 3)) fs.writeFileSync(path.join(cartella, voce.id + '.jpg'), tela.toBuffer('image/jpeg', { quality: 0.82 }));
+      n++;
+    }
+    dati++;
   }
   if (!n) throw new Error('nessun fotogramma');
   /* l'ultimo fotogramma resta fermo un secondo e mezzo */
-  const ultimo = fs.readFileSync(path.join(dir, 'f_' + String(n - 1).padStart(3, '0') + '.png'));
-  for (let q = 0; q < 9; q++) fs.writeFileSync(path.join(dir, 'f_' + String(n + q).padStart(3, '0') + '.png'), ultimo);
+  const fermo = Math.round(1.5 * fps);
+  const ultimo = fs.readFileSync(path.join(dir, 'f_' + String(n - 1).padStart(4, '0') + '.png'));
+  for (let q = 0; q < fermo; q++) fs.writeFileSync(path.join(dir, 'f_' + String(n + q).padStart(4, '0') + '.png'), ultimo);
   const uscita = path.join(cartella, voce.id + '.mp4');
-  execFileSync(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', '6', '-i', path.join(dir, 'f_%03d.png'),
-    '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '26', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', uscita], { stdio: 'inherit' });
+  /* i filmati con le scie hanno molto movimento fine: con crf 26 pesavano il triplo, con 29 si vedono uguale */
+  execFileSync(ffmpeg, ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', String(fps), '-i', path.join(dir, 'f_%04d.png'),
+    '-c:v', 'libx264', '-preset', voce.scie ? 'fast' : 'veryfast', '-crf', voce.scie ? '30' : '26', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', uscita], { stdio: 'inherit' });
   fs.rmSync(dir, { recursive: true, force: true });
-  return { fotogrammi: n, secondi: Math.round((n + 9) / 6 * 10) / 10, da: tempo[voce.indici[0]], a: tempo[voce.indici[Math.min(voce.indici.length, n) - 1]], byte: fs.statSync(uscita).size };
+  return { fotogrammi: dati, secondi: Math.round((n + fermo) / fps * 10) / 10, da: tempo[voce.indici[0]], a: tempo[voce.indici[Math.min(voce.indici.length, dati) - 1]], byte: fs.statSync(uscita).size };
 }
 
 const TUTTI = ['temperature', 'pioggia', 'vento', 'neve', 'nuvole', 'mare'];
@@ -413,37 +469,52 @@ async function giro(opzioni = {}) {
   const dir = opzioni.dir || process.env.RAMO_DIR || path.join(QUI, 'ramo');
   const ffmpeg = opzioni.ffmpeg || process.env.FFMPEG || 'ffmpeg';
   const minOre = Number(opzioni.minOre != null ? opzioni.minOre : (process.env.MIN_ORE || 5.5));
+  const minOreMondo = Number(opzioni.minOreMondo != null ? opzioni.minOreMondo : (process.env.MIN_ORE_MONDO || 20));
+  const chiave = opzioni.chiave != null ? opzioni.chiave : (process.env.OPENAI_API_KEY || '');
   const forza = opzioni.forza != null ? !!opzioni.forza : /^(1|true|s[iì]|yes)$/i.test(String(process.env.FORZA || ''));
   const cartella = path.join(dir, 'previsioni');
   fs.mkdirSync(cartella, { recursive: true });
   let precedente = { video: [] };
   try { precedente = JSON.parse(fs.readFileSync(path.join(dir, 'previsioni.json'), 'utf8')); } catch {}
 
-  if (!forza && !opzioni.solo && fresche(precedente, dir, adesso, minOre)) {
+  /* Due orologi diversi: i sei filmati dell'Italia si rifanno ogni 5 ore e
+     mezza (quattro volte al giorno), il filmato del giorno su Atlantico ed
+     Europa una volta sola al giorno. Se tutto è fresco non si chiama nessuno. */
+  const seiFresche = fresche(precedente, dir, adesso, minOre);
+  const mondoFresco = frescoMondo(precedente, dir, adesso, minOreMondo);
+  if (!forza && !opzioni.solo && seiFresche && mondoFresco) {
     const quando = new Date(precedente.generato);
     const eta = Math.round((adesso.getTime() - quando.getTime()) / 60000);
     dice('✔ animazioni ancora fresche: fatte ' + eta + ' minuti fa (si rifanno dopo ' + minOre + ' ore). Niente da fare, niente chiamate a Open-Meteo.');
     avvisaWorkflow(false);
     return Object.assign({}, precedente, { saltato: true });
   }
+  const faSei = opzioni.solo ? opzioni.solo.some(x => TUTTI.includes(x)) : (forza || !seiFresche);
+  const faMondo = opzioni.solo ? opzioni.solo.includes('mondo') : (forza || !mondoFresco);
 
-  dice('· sfondo della mappa');
-  const base = await sfondo(rete);
-  let griglia = null, mare = null;
-  try { dice('· griglia meteo (625 punti, 8 giorni)'); griglia = await scaricaGriglia(rete, 'meteo'); }
-  catch (e) { dice('  ✘ griglia meteo non disponibile: ' + e.message); }
-  try { dice('· griglia del mare (625 punti, 3 giorni)'); mare = await scaricaGriglia(rete, 'mare'); }
-  catch (e) { dice('  ✘ griglia del mare non disponibile: ' + e.message); }
-  if (!griglia && !mare) throw new Error('nessun dato: si tiene tutto com\'era');
-
-  const time = (griglia || mare).time;
-  const fin = finestre(time, adesso);
-  if (mare && !griglia) Object.assign(fin, finestre(mare.time, adesso));
-  const elenco = descrizioni(griglia, mare, fin).filter(v => !opzioni.solo || opzioni.solo.includes(v.id));
+  let base = null, buio = null, griglia = null, mare = null, time = null, fin = null;
   const fatti = [];
+  if (faSei) {
+    dice('· sfondo della mappa');
+    base = await sfondo(rete);
+    buio = sfondoBuio();                           /* il fondo scuro alla Windy per vento e mare: disegnato da noi, niente tessere */
+    try { dice('· griglia meteo (625 punti, 8 giorni)'); griglia = await scaricaGriglia(rete, 'meteo'); }
+    catch (e) { dice('  ✘ griglia meteo non disponibile: ' + e.message); }
+    try { dice('· griglia del mare (625 punti, 3 giorni)'); mare = await scaricaGriglia(rete, 'mare'); }
+    catch (e) { dice('  ✘ griglia del mare non disponibile: ' + e.message); }
+    if (!griglia && !mare && !faMondo) throw new Error('nessun dato: si tiene tutto com\'era');
+    if (griglia || mare) {
+      time = (griglia || mare).time;
+      fin = finestre(time, adesso);
+      if (mare && !griglia) Object.assign(fin, finestre(mare.time, adesso));
+    }
+  } else {
+    dice('✔ i sei filmati dell\'Italia sono ancora freschi: si rifà solo il filmato del giorno.');
+  }
+  const elenco = (time ? descrizioni(griglia, mare, fin) : []).filter(v => !opzioni.solo || opzioni.solo.includes(v.id));
   for (const voce of elenco) {
     try {
-      const esito = await filmato(base, voce, time, cartella, ffmpeg);
+      const esito = await filmato(voce.buio ? buio : base, voce, time, cartella, ffmpeg);
       fatti.push({ id: voce.id, titolo: voce.titolo, sotto: voce.sotto, file: 'previsioni/' + voce.id + '.mp4', poster: 'previsioni/' + voce.id + '.jpg',
                    fotogrammi: esito.fotogrammi, secondi: esito.secondi, da: esito.da, a: esito.a, byte: esito.byte, generato: adesso.toISOString() });
       dice('  ✔ ' + voce.titolo + ': ' + esito.fotogrammi + ' fotogrammi, ' + Math.round(esito.byte / 1024) + ' KB');
@@ -458,14 +529,29 @@ async function giro(opzioni = {}) {
     if (!fatti.some(f => f.id === vecchio.id) && fs.existsSync(path.join(dir, vecchio.file))) fatti.push(vecchio);
   }
   fatti.sort((a, b) => TUTTI.indexOf(a.id) - TUTTI.indexOf(b.id));
+
+  /* il filmato del giorno: uno solo, prende il posto di quello di ieri */
+  let mondo = (precedente.mondo && precedente.mondo.file && fs.existsSync(path.join(dir, precedente.mondo.file))) ? precedente.mondo : null;
+  if (faMondo) {
+    try {
+      const v = await filmatoMondo({ rete, adesso, dir, cartella, ffmpeg, fuso: FUSO, chiave });
+      mondo = v;
+      dice('  ✔ ' + v.titolo + ': ' + v.secondi + ' s, ' + Math.round(v.byte / 1024) + ' KB' + (v.parlato ? ', con voce' : ', muto'));
+    } catch (e) {
+      dice('  ✘ filmato del giorno: ' + e.message);
+      if (mondo) dice('    (resta quello di ieri)');
+    }
+  }
+
   const fuori = { versione: 1, generato: adesso.toISOString(), modello: 'Open-Meteo (modello migliore per l\'Italia, di solito ICON)', griglia: '0,5° · ' + (NLAT * NLON) + ' punti', video: fatti };
+  if (mondo) fuori.mondo = mondo;
   fs.writeFileSync(path.join(dir, 'previsioni.json'), JSON.stringify(fuori, null, 1));
-  dice('✔ previsioni.json: ' + fatti.length + ' filmati');
+  dice('✔ previsioni.json: ' + fatti.length + ' filmati' + (mondo ? ' + il filmato del giorno' : ''));
   avvisaWorkflow(true);
   return fuori;
 }
 
-export { giro, fresche, finestre, campiona, campo, scala, SCALE, TAPPE, etichetta, puntiGriglia, fotogramma, sfondo, scaricaGriglia, W, H };
+export { giro, fresche, finestre, campiona, campo, scala, SCALE, TAPPE, etichetta, puntiGriglia, fotogramma, sfondo, sfondoBuio, scaricaGriglia, VISTA, CONFINI, W, H };
 
 const lanciatoDaSolo = (() => {
   try { return process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname); } catch { return false; }
