@@ -1,3 +1,34 @@
+# Le "Previsioni in video": quattro volte al giorno si prende la griglia
+# dell'Italia dal modello di Open-Meteo, si disegnano i fotogrammi sopra la
+# mappa e con ffmpeg escono sei filmati brevi (temperature, pioggia e
+# temporali, vento del weekend, neve, nuvole, mare) con locandina ed elenco
+# in previsioni.json, pubblicati sul ramo "filmati" accanto a video.json.
+#
+# v73.4 — e UNA VOLTA AL GIORNO esce anche il filmato del giorno su
+# Atlantico, Europa e Nord Africa ("Da dove arriva il tempo"), con la
+# cornice da telegiornale e la voce dentro, in previsioni/mondo.mp4. Ha il
+# suo orologio (MIN_ORE_MONDO, 20 ore): la sveglia delle 7 di cron-job.org
+# lo trova vecchio e lo rifà, tutte le altre sveglie lo trovano fresco e non
+# lo toccano. Quello di oggi prende il posto di quello di ieri: il ramo
+# viene rifatto da capo a ogni pubblicazione, quindi il vecchio sparisce da
+# solo. La voce usa la stessa chiave del blog (OPENAI_API_KEY): se manca, il
+# filmato si fa lo stesso, muto, e il racconto resta scritto nell'app.
+#
+# In calendario OGNI MEZZ'ORA (minuti 17 e 47) perché GitHub lascia cadere
+# molti avvii programmati: ma il lavoro vero si fa solo se le animazioni
+# hanno più di 5 ore e mezza (MIN_ORE), cioè circa quattro volte al giorno.
+# Tutti gli altri avvii trovano tutto fresco ed escono in pochi secondi
+# senza chiamare Open-Meteo e senza pubblicare niente. "Run workflow" con
+# la spunta "forza" le rifà comunque.
+#
+# Il lavoro lo fa GitHub una volta sola per tutti: il telefono scarica solo
+# i filmati (qualche centinaio di KB l'uno). Costo Open-Meteo: circa 1.250
+# chiamate per giro, entro il limite gratuito. Se un servizio non risponde,
+# quel filmato resta quello del giro prima e gli altri si fanno lo stesso.
+#
+# Stesso gruppo di concorrenza di video.yml ("filmati"): i due lavori non
+# si sovrappongono mai, e il ramo viene rifatto da capo ogni volta con
+# dentro sia i video di attualità sia le animazioni.
 name: Animazioni delle previsioni
 
 on:
@@ -32,6 +63,7 @@ jobs:
 
       - name: Prepara ffmpeg e il disegno (canvas)
         run: |
+          # sulle macchine di GitHub ffmpeg non è più preinstallato: si mette con apt (mezzo minuto)
           if ! command -v ffmpeg >/dev/null 2>&1; then
             sudo apt-get update -qq
             sudo apt-get install -y -qq ffmpeg >/dev/null
@@ -50,12 +82,14 @@ jobs:
             echo "ramo filmati ancora da creare"
           fi
 
-      - name: Disegna i filmati (solo se quelli di prima hanno più di 5 ore e mezza)
+      - name: Disegna i filmati (i sei dell'Italia dopo 5 ore e mezza, quello del giorno dopo 20)
         id: disegna
         env:
           FUSO: Europe/Rome
           RAMO_DIR: ramo
           MIN_ORE: '5.5'
+          MIN_ORE_MONDO: '20'
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           FORZA: ${{ github.event.inputs.forza == 'true' && '1' || '' }}
         run: node animazioni.mjs
 
