@@ -63,6 +63,7 @@ async function scaricaGriglia(rete, fuso) {
   const risultato = new Array(punti.length);
   let time = null;
   for (let da = 0; da < punti.length; da += 100) {
+    if (da > 0) await new Promise(r => setTimeout(r, 1500));   /* un respiro fra un pezzo e l'altro: non si tempesta il servizio */
     const pezzo = punti.slice(da, da + 100);
     const lat = pezzo.map(p => p.lat.toFixed(2)).join(','), lon = pezzo.map(p => p.lon.toFixed(2)).join(',');
     const url = 'https://api.open-meteo.com/v1/forecast?latitude=' + lat + '&longitude=' + lon +

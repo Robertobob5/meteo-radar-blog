@@ -142,6 +142,29 @@ function contorni(g, vista, gruppo, stile = {}) {
   tratti(gruppo.laghi || [], true);
 }
 
+/** I nomi delle città, come li mette Windy: punto piccolo e scritta chiara, sopra a tutto.
+    livello 0 = città grande (sempre), 1 = città piccola (solo se c'è spazio). */
+function citta(g, vista, gruppo, stile = {}) {
+  const s = Object.assign({ colore: 'rgba(255,255,255,.92)', alone: 'rgba(0,0,0,.75)', punto: 'rgba(255,255,255,.85)', corpo: 11, minimo: 1 }, stile);
+  const lista = (gruppo.citta || []).filter(c => c[3] <= s.minimo);
+  g.textAlign = 'left'; g.textBaseline = 'alphabetic';
+  for (const [nome, lat, lon, livello] of lista) {
+    const [x, y] = vista.px(lat, lon);
+    if (x < 6 || y < 6 || x > vista.W - 6 || y > vista.H - 6) continue;
+    const grande = livello === 0;
+    g.font = (grande ? 'bold ' : '') + (grande ? s.corpo : s.corpo - 1) + 'px "DejaVu Sans"';
+    const r = grande ? 2.6 : 1.9;
+    g.fillStyle = s.alone;
+    g.beginPath(); g.arc(x, y, r + 1.2, 0, 7); g.fill();
+    g.fillStyle = s.punto;
+    g.beginPath(); g.arc(x, y, r, 0, 7); g.fill();
+    g.lineWidth = 3; g.strokeStyle = s.alone; g.lineJoin = 'round';
+    g.strokeText(nome, x + r + 3, y + 3.5);
+    g.fillStyle = s.colore;
+    g.fillText(nome, x + r + 3, y + 3.5);
+  }
+}
+
 /* ─────────────── le scie alla Windy ─────────────── */
 /* Puntini che scorrono sul campo: a ogni fotogramma la coda di prima
    sbiadisce un po' (destination-out) e si disegna il trattino nuovo.
@@ -205,4 +228,4 @@ class Scie {
   }
 }
 
-export { leggiConfini, creaVista, fondoScuro, contorni, mascheraAcqua, Scie, MERC, DAMERC };
+export { leggiConfini, creaVista, fondoScuro, contorni, mascheraAcqua, citta, Scie, MERC, DAMERC };
