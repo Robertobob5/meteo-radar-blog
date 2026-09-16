@@ -40,6 +40,14 @@ import { createCanvas } from 'canvas';
 import { leggiConfini, creaVista, fondoScuro, contorni, citta, Scie } from './confini.mjs';
 
 const dice = (...a) => console.log(...a);
+const QUI = path.dirname(new URL(import.meta.url).pathname);
+
+/* la sigla: sta nel repository accanto a questo file. Se non c'è, il filmato
+   si fa lo stesso con la sola voce. Suona per cinque secondi sopra la mappa
+   già in movimento, poi si abbassa e resta sotto al racconto. */
+const SIGLA = path.join(QUI, 'sigla.mp3');
+const ATTACCO_VOCE = 5.0;      /* al quinto secondo comincia a parlare */
+const CALA_DA = 4.2, CALA_A = 5.8, SOTTO = 0.14, CODA = 1.5;
 
 /* ─────────────── la finestra e la griglia ─────────────── */
 const M = { latMin: 28, latMax: 68, lonMin: -35, lonMax: 35, passo: 2 };
@@ -424,9 +432,9 @@ async function filmatoMondo(o) {
   /* due capitoli dentro allo stesso filmato */
   const capitoli = [
     { titolo: 'Da dove arriva il tempo', sotto: 'le piogge in arrivo e il vento in quota che le porta · prossime 72 ore',
-      ore: oreTutte, sub: 2, tipo: 'pioggia' },
+      ore: oreTutte, sub: 3, tipo: 'pioggia' },
     { titolo: 'Calo termico', sotto: 'la temperatura dell\'aria in quota, a 1.500 metri · prossime 72 ore',
-      ore: oreTutte.filter((_, i) => i % 2 === 0), sub: 2, tipo: 'temperatura' }
+      ore: oreTutte.filter((_, i) => i % 2 === 0), sub: 3, tipo: 'temperatura' }
   ];
 
   for (const cap of capitoli) {
@@ -473,17 +481,41 @@ async function filmatoMondo(o) {
     } catch (e) { dice('  ✘ voce non fatta: ' + e.message); audio = null; }
   } else if (!o.chiave) dice('  · niente chiave OpenAI: filmato muto, il racconto resta scritto');
 
-  /* l'ultimo fotogramma tiene botta finché la voce non ha finito (e almeno un secondo e mezzo) */
+  /* la sigla davanti alla voce: musica piena per cinque secondi sopra la mappa
+     che è già partita, poi cala e resta sotto al racconto fino alla fine. */
   const durataVideo = nf / FPS;
-  const fermo = Math.max(Math.round(1.5 * FPS), Math.ceil((secondiVoce + 0.8 - durataVideo) * FPS));
+  let traccia = audio, secondiAudio = secondiVoce;
+  const conSigla = fs.existsSync(SIGLA);
+  if (conSigla) {
+    try {
+      const mix = path.join(dir, 'audio.mp3');
+      const tot = audio ? ATTACCO_VOCE + secondiVoce + CODA : Math.min(12, durataVideo);
+      const sfuma = Math.max(0.5, tot - CODA);
+      const arg = ['-hide_banner', '-loglevel', 'error', '-y', '-i', SIGLA];
+      if (audio) arg.push('-i', audio);
+      const filtro = audio
+        ? "[0:a]volume='if(lt(t," + CALA_DA + "),1,if(lt(t," + CALA_A + "),1-" + (1 - SOTTO) + "*(t-" + CALA_DA + ")/" + (CALA_A - CALA_DA) + "," + SOTTO + "))':eval=frame[m];" +
+          "[1:a]adelay=" + Math.round(ATTACCO_VOCE * 1000) + "|" + Math.round(ATTACCO_VOCE * 1000) + "[v];" +
+          "[m][v]amix=inputs=2:normalize=0:duration=longest,afade=t=out:st=" + sfuma.toFixed(2) + ":d=" + CODA + ",alimiter=limit=0.95[a]"
+        : "[0:a]afade=t=out:st=" + sfuma.toFixed(2) + ":d=" + CODA + "[a]";
+      arg.push('-filter_complex', filtro, '-map', '[a]', '-t', tot.toFixed(2), '-c:a', 'libmp3lame', '-b:a', '128k', mix);
+      execFileSync(ffmpeg, arg, { stdio: 'inherit' });
+      traccia = mix;
+      secondiAudio = durataAudio(mix, ffmpeg) || tot;
+      dice('  · sigla montata: musica per ' + ATTACCO_VOCE + ' s, poi sotto la voce (' + secondiAudio.toFixed(1) + ' s in tutto)');
+    } catch (e) { dice('  ✘ sigla non montata (' + e.message + '): resta la sola voce'); traccia = audio; secondiAudio = secondiVoce; }
+  }
+
+  /* l'ultimo fotogramma tiene botta finché l'audio non ha finito (e almeno un secondo e mezzo) */
+  const fermo = Math.max(Math.round(1.5 * FPS), Math.ceil((secondiAudio + 0.4 - durataVideo) * FPS));
   const ultimo = fs.readFileSync(path.join(dir, 'f_' + String(nf - 1).padStart(4, '0') + '.png'));
   for (let q = 0; q < fermo; q++) fs.writeFileSync(path.join(dir, 'f_' + String(nf + q).padStart(4, '0') + '.png'), ultimo);
 
   const uscita = path.join(cartella, 'mondo.mp4');
   const arg = ['-hide_banner', '-loglevel', 'error', '-y', '-framerate', String(FPS), '-i', path.join(dir, 'f_%04d.png')];
-  if (audio) arg.push('-i', audio);
+  if (traccia) arg.push('-i', traccia);
   arg.push('-c:v', 'libx264', '-preset', 'slow', '-crf', '30', '-pix_fmt', 'yuv420p');
-  if (audio) arg.push('-c:a', 'aac', '-b:a', '96k', '-shortest');
+  if (traccia) arg.push('-c:a', 'aac', '-b:a', '112k', '-shortest');
   arg.push('-movflags', '+faststart', uscita);
   execFileSync(ffmpeg, arg, { stdio: 'inherit' });
   fs.rmSync(dir, { recursive: true, force: true });
@@ -495,7 +527,7 @@ async function filmatoMondo(o) {
     file: 'previsioni/mondo.mp4', poster: 'previsioni/mondo.jpg',
     secondi, fotogrammi: nf, da: t[inizio], a: t[finoA],
     byte: fs.statSync(uscita).size, generato: adesso.toISOString(),
-    edizione, parlato: !!audio, racconto: r.frasi, evidenza: r.evidenza,
+    edizione, parlato: !!audio, musica: conSigla ? 'krasnoshchok · Pixabay' : null, racconto: r.frasi, evidenza: r.evidenza,
     griglia: M.passo.toFixed(1).replace('.', ',') + '° · ' + (NLAT * NLON) + ' punti',
     finestra: [M.lonMin, M.latMin, M.lonMax, M.latMax]
   };
