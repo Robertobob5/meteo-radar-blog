@@ -15,6 +15,14 @@
 # capo a ogni pubblicazione, quindi il vecchio sparisce da solo. La voce usa
 # la stessa chiave del blog (OPENAI_API_KEY): se manca, il filmato si fa lo
 # stesso, muto, e il racconto resta scritto nell'app.
+# v73.8 — e sempre alle 7 esce "Il video del giorno · Italia" (italia.mjs):
+# Steve, il presentatore (le foto in steve/, animate da steve_foto.mjs),
+# racconta cielo e temperature, pioggia, vento, mare e neve città per città,
+# con la mappa animata del capitolo (i sei filmati già fatti) e i numeri
+# delle città. Due chiamate leggere a Open-Meteo, la stessa voce del mondo.
+# Va in previsioni/italia.mp4 con la voce "italia" in previsioni.json, e
+# segue la stessa regola delle 7. Il disegno di Steve, fotogramma per
+# fotogramma, pesa qualche minuto in più: il limite del lavoro sale a 45.
 #
 # In calendario OGNI MEZZ'ORA (minuti 17 e 47) perché GitHub lascia cadere
 # molti avvii programmati: ma il lavoro vero si fa solo se le animazioni
@@ -53,7 +61,7 @@ concurrency:
 jobs:
   animazioni:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Prendi il repository
         uses: actions/checkout@v5
@@ -84,7 +92,7 @@ jobs:
             echo "ramo filmati ancora da creare"
           fi
 
-      - name: Disegna i filmati (i sei dell'Italia dopo 5 ore e mezza, quello del giorno dopo 20)
+      - name: Disegna i filmati (i sei dell'Italia dopo 5 ore e mezza; quello del giorno e Steve alle 7)
         id: disegna
         env:
           FUSO: Europe/Rome
