@@ -571,13 +571,41 @@ function durataAudio(file, ffmpeg) {
   } catch (e) { return 0; }
 }
 
-/** Il filmato del giorno è ancora fresco? (fatto da meno di minOre, col file al suo posto) */
+/* ─────────────── l'edizione del giorno ───────────────
+   Un filmato al giorno, e il giorno comincia alle 7 (ora italiana): il primo giro
+   che passa dopo le 7 lo rifà, tutti gli altri lo trovano fresco. Prima si andava
+   "a ore" (si rifaceva dopo 20 ore), ma con un giro ogni mezz'ora il filmato si
+   rifaceva ogni 20 ore precise, cioè quattro ore prima ogni giorno: alle 3 di
+   notte, poi alle 23, poi alle 19… La sveglia delle 7 di cron-job.org ora trova
+   l'edizione di ieri e la sostituisce; se GitHub perde quella sveglia, la prende
+   il primo giro dopo (7:17, 7:47…). */
+const FUSO_EDIZIONE = process.env.FUSO || 'Europe/Rome';
+const ORA_EDIZIONE = Number(process.env.ORA_EDIZIONE || 7);
+
+/** L'istante (ms) in cui è cominciata l'edizione in corso: le 7 di oggi, o di ieri se le 7
+ *  non sono ancora passate. Null se il fuso orario non si riesce a leggere. */
+function inizioEdizione(adesso, fuso = FUSO_EDIZIONE, ora = ORA_EDIZIONE) {
+  try {
+    const parti = new Intl.DateTimeFormat('en-GB', { timeZone: fuso, hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' }).formatToParts(adesso);
+    const g = k => Number((parti.find(p => p.type === k) || {}).value);
+    const oraLocale = (g('hour') % 24) + g('minute') / 60 + g('second') / 3600;
+    if (!Number.isFinite(oraLocale)) return null;
+    const daQuanto = ((oraLocale - ora) % 24 + 24) % 24;          /* ore passate dalle 7 più recenti */
+    return adesso.getTime() - Math.round(daQuanto * 3600000);
+  } catch (e) { return null; }
+}
+
+/** Il filmato del giorno è ancora fresco? È dell'edizione in corso (fatto dopo le 7 più recenti),
+ *  non è più vecchio di minOre (la rete di sicurezza: 36 ore nel lavoro GitHub) e i file ci sono. */
 function frescoMondo(precedente, dir, adesso, minOre) {
   const v = precedente && precedente.mondo;
   if (!v || !v.generato || !v.file) return false;
-  const eta = (adesso.getTime() - new Date(v.generato).getTime()) / 3600000;
+  const fatto = new Date(v.generato).getTime();
+  const eta = (adesso.getTime() - fatto) / 3600000;
   if (!(eta >= 0 && eta < minOre)) return false;
+  const inizio = inizioEdizione(adesso);
+  if (inizio !== null && fatto < inizio) return false;             /* è l'edizione di ieri: si rifà */
   return fs.existsSync(path.join(dir, v.file)) && (!v.poster || fs.existsSync(path.join(dir, v.poster)));
 }
 
-export { filmatoMondo, frescoMondo, numeri, racconto, scaricaGriglia, campo, campiona, puntiGriglia, posto, vicino, daDove, quandoAParole, M, W, H, NLAT, NLON };
+export { filmatoMondo, frescoMondo, inizioEdizione, numeri, racconto, scaricaGriglia, campo, campiona, puntiGriglia, posto, vicino, daDove, quandoAParole, M, W, H, NLAT, NLON };

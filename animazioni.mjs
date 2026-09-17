@@ -501,7 +501,7 @@ async function giro(opzioni = {}) {
   const dir = opzioni.dir || process.env.RAMO_DIR || path.join(QUI, 'ramo');
   const ffmpeg = opzioni.ffmpeg || process.env.FFMPEG || 'ffmpeg';
   const minOre = Number(opzioni.minOre != null ? opzioni.minOre : (process.env.MIN_ORE || 5.5));
-  const minOreMondo = Number(opzioni.minOreMondo != null ? opzioni.minOreMondo : (process.env.MIN_ORE_MONDO || 20));
+  const minOreMondo = Number(opzioni.minOreMondo != null ? opzioni.minOreMondo : (process.env.MIN_ORE_MONDO || 36));   /* v73.6: rete di sicurezza; il giorno lo fanno le 7 (mondo.mjs) */
   const chiave = opzioni.chiave != null ? opzioni.chiave : (process.env.OPENAI_API_KEY || '');
   const forza = opzioni.forza != null ? !!opzioni.forza : /^(1|true|s[iì]|yes)$/i.test(String(process.env.FORZA || ''));
   const cartella = path.join(dir, 'previsioni');
