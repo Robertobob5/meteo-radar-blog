@@ -47,6 +47,10 @@ const QUI = path.dirname(new URL(import.meta.url).pathname);
    già in movimento, poi si abbassa e resta sotto al racconto. */
 const SIGLA = path.join(QUI, 'sigla.mp3');
 const ATTACCO_VOCE = 5.0;      /* al quinto secondo comincia a parlare */
+/* La voce: "cedar", scelta il 17 settembre ascoltando sei voci sullo stesso racconto (la prova
+   delle voci, voci.mjs). Fino ad allora era "onyx". Si può cambiare senza toccare il codice:
+   basta la variabile d'ambiente VOCE nel lavoro GitHub. */
+const VOCE = (process.env.VOCE || 'cedar').trim();
 const CALA_DA = 4.2, CALA_A = 5.8, SOTTO = 0.14, CODA = 1.5;
 
 /* ─────────────── la finestra e la griglia ─────────────── */
@@ -250,38 +254,44 @@ function numeri(griglia, indici) {
 }
 
 /** Le frasi del racconto (quelle che legge la voce) e i titoli della striscia. */
-function racconto(n, oggi) {
+function racconto(n, oggi, ora) {
+  /* Le frasi le dice una voce, non le legge un bollettino: si scrivono come si parla,
+     con un saluto in apertura e uno in chiusura. I numeri restano quelli della griglia. */
   const f = [], ev = [];
   const arr = x => Math.round(x);
+  const h = Number.isFinite(Number(ora)) ? Number(ora) : 7;
+  const saluto = h < 12 ? 'Buongiorno' : h < 18 ? 'Buon pomeriggio' : 'Buonasera';
+  f.push(saluto + ' e benvenuti al video del giorno di Meteo Radar News.');
   if (n.bassa0) {
-    let frase = 'La bassa pressione più profonda si trova ' + posto(n.bassa0.lat, n.bassa0.lon);
+    let frase = 'Partiamo dal quadro generale: la bassa pressione più profonda oggi la troviamo ' + posto(n.bassa0.lat, n.bassa0.lon);
     if (n.bassa2) {
       const dLon = n.bassa2.lon - n.bassa0.lon, dLat = n.bassa2.lat - n.bassa0.lat;
       const spostata = Math.hypot(dLon * Math.cos(n.bassa0.lat * Math.PI / 180), dLat) > 4;
-      if (spostata) frase += ' e nei tre giorni si sposta ' + vicino(n.bassa2.lat, n.bassa2.lon).v;
-      else frase += ' e nei tre giorni resta lì';
+      if (spostata) frase += ', e nei prossimi tre giorni si sposta ' + vicino(n.bassa2.lat, n.bassa2.lon).v;
+      else frase += ', e nei prossimi tre giorni resta più o meno lì';
     }
     f.push(frase + '.');
     ev.push('BASSA PRESSIONE ' + posto(n.bassa0.lat, n.bassa0.lon).toUpperCase());
   }
   if (n.primaPioggia !== null) {
-    f.push('Sull\'Italia la pioggia arriva ' + quandoAParole(n.t[n.primaPioggia], oggi) + '.');
+    f.push('Veniamo all\'Italia: la pioggia arriva ' + quandoAParole(n.t[n.primaPioggia], oggi) + '.');
     ev.push('PIOGGIA SULL\'ITALIA ' + quandoAParole(n.t[n.primaPioggia], oggi).toUpperCase());
   } else {
-    f.push('Sull\'Italia, in questi tre giorni, il modello non vede pioggia di rilievo.');
+    f.push('Veniamo all\'Italia: per i prossimi tre giorni di pioggia importante non se ne vede.');
     ev.push('TRE GIORNI SENZA PIOGGIA DI RILIEVO');
   }
   if (Number.isFinite(n.calo) && n.calo >= 2) {
-    f.push('Dietro al fronte entra aria più fredda: in quota, a millecinquecento metri, la temperatura sull\'Italia scende di ' + arr(n.calo) + ' gradi entro ' + quandoAParole(n.t[n.kFreddo], oggi) + '.');
+    f.push('Dietro al fronte entra aria più fresca: in quota, a millecinquecento metri, perdiamo circa ' + arr(n.calo) + ' gradi entro ' + quandoAParole(n.t[n.kFreddo], oggi) + '.');
     ev.push('IN QUOTA ' + arr(n.calo) + ' GRADI IN MENO');
   } else if (Number.isFinite(n.calo)) {
-    f.push('In quota la temperatura sull\'Italia resta più o meno com\'è, senza cali importanti.');
+    f.push('In quota le temperature restano più o meno dove sono: nessun calo di rilievo.');
     ev.push('IN QUOTA NESSUN CALO IMPORTANTE');
   }
   if (Number.isFinite(n.ventoMax) && n.ventoMax >= 40) {
-    f.push('Il vento in quota soffia da ' + daDove(n.versoVento) + ', fino a ' + arr(n.ventoMax) + ' chilometri orari.');
+    f.push('Il vento in quota soffia da ' + daDove(n.versoVento) + ', con punte intorno ai ' + arr(n.ventoMax) + ' chilometri orari.');
     ev.push('VENTO IN QUOTA DA ' + daDove(n.versoVento).toUpperCase() + ' FINO A ' + arr(n.ventoMax) + ' KM/H');
   }
+  f.push('È tutto per oggi: buona giornata da Meteo Radar.');
   return { frasi: f, evidenza: ev };
 }
 
@@ -420,7 +430,7 @@ async function filmatoMondo(o) {
   if (oreTutte.length < 12) throw new Error('la griglia non copre abbastanza ore');
 
   const n = numeri(griglia, oreTutte);
-  const r = racconto(n, oggi);
+  const r = racconto(n, oggi, ora);
   const evidenza = r.evidenza.join('   ●   ') + '   ●   ';
   const edizione = GIORNI3[adesso.getUTCDay()].toUpperCase() + ' ' + Number(oggi.slice(8, 10)) + ' ' + MESI3[Number(oggi.slice(5, 7)) - 1].toUpperCase() + ' · ORE ' + String(ora).padStart(2, '0');
 
@@ -475,7 +485,7 @@ async function filmatoMondo(o) {
   if ((o.chiave || o.parlatore) && r.frasi.length) {
     try {
       audio = path.join(dir, 'voce.mp3');
-      await parlatore(r.frasi.join(' '), audio, o.chiave, o.voce || 'onyx');
+      await parlatore(r.frasi.join(' '), audio, o.chiave, o.voce || VOCE);
       secondiVoce = durataAudio(audio, ffmpeg);
       dice('  · voce: ' + secondiVoce.toFixed(1) + ' s');
     } catch (e) { dice('  ✘ voce non fatta: ' + e.message); audio = null; }
@@ -543,7 +553,7 @@ async function parla(testo, destinazione, chiave, voce) {
       voice: voce,
       input: testo,
       response_format: 'mp3',
-      instructions: 'Parla in italiano, con la calma e la chiarezza di chi legge le previsioni del tempo in televisione. Tono cortese e sicuro, ritmo tranquillo, senza enfasi da pubblicità. Pronuncia i numeri per esteso.'
+      instructions: 'Parla in italiano come un presentatore meteo simpatico che si rivolge al pubblico a braccio, non come chi legge un bollettino. Tono caldo, naturale e colloquiale, un sorriso nella voce, ritmo disinvolto con piccole pause fra una frase e l\'altra. Il saluto iniziale è accogliente, la chiusura è cordiale. Niente enfasi da pubblicità. Pronuncia i numeri per esteso.'
     }),
     signal: AbortSignal.timeout(120000)
   });
