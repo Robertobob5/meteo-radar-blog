@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-16T06:21:51.210Z",
+ "aggiornato": "2026-09-17T06:21:43.744Z",
  "articoli": [
+  {
+   "id": "2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d",
+   "data": "2026-09-17",
+   "titolo": "I ghiacciai più veloci hanno alimentato decenni di perdita di ghiaccio polare",
+   "sottotitolo": "Un nuovo archivio satellitare ricostruisce mezzo secolo di cambiamenti in Groenlandia e Antartide.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d-copertina.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Faster-flowing_glaciers_fuel_decades_of_polar_ice_loss",
+   "fonteTitolo": "Faster-flowing glaciers fuel decades of polar ice loss",
+   "file": "articoli/2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d.json"
+  },
   {
    "id": "2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett",
    "data": "2026-09-16",
