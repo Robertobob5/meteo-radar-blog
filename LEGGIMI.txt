@@ -1,0 +1,8 @@
+Prova delle voci di Meteo Radar News.
+tutte.mp4: le 6 voci una dopo l'altra, ognuna col suo cartello.
+  1 · onyx — quella di oggi
+  2 · marin — nuova (2025), fatta per suonare naturale
+  3 · cedar — nuova (2025), fatta per suonare naturale
+  4 · ash — voce maschile, calda
+  5 · verse — voce espressiva
+  6 · sage — voce femminile, tranquilla

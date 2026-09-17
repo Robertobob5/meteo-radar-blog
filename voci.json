@@ -1,0 +1,57 @@
+{
+ "generato": "2026-09-17T10:00:21.363Z",
+ "modello": "gpt-4o-mini-tts",
+ "testo": "Buongiorno e benvenuti al video del giorno di Meteo Radar News. Partiamo dal quadro generale: la bassa pressione più profonda oggi la troviamo a sud dell'Islanda, e nei prossimi tre giorni si sposta verso la Scandinavia. Veniamo all'Italia: la pioggia arriva domani sera sul Nord, e dietro al fronte entra aria più fresca: in quota, a millecinquecento metri, perdiamo circa sei gradi entro venerdì. Il vento in quota soffia da ovest, con punte intorno ai settanta chilometri orari. È tutto per oggi: buona giornata da Meteo Radar.",
+ "istruzioni": "Parla in italiano come un presentatore meteo simpatico che si rivolge al pubblico a braccio, non come chi legge un bollettino. Tono caldo, naturale e colloquiale, un sorriso nella voce, ritmo disinvolto con piccole pause fra una frase e l'altra. Il saluto iniziale è accogliente, la chiusura è cordiale. Niente enfasi da pubblicità. Pronuncia i numeri per esteso.",
+ "prova": false,
+ "voci": [
+  {
+   "numero": 1,
+   "voce": "onyx",
+   "nota": "quella di oggi",
+   "file": "voce_1_onyx.mp4",
+   "mp3": "mp3/onyx.mp3",
+   "secondi": 41.2
+  },
+  {
+   "numero": 2,
+   "voce": "marin",
+   "nota": "nuova (2025), fatta per suonare naturale",
+   "file": "voce_2_marin.mp4",
+   "mp3": "mp3/marin.mp3",
+   "secondi": 38.4
+  },
+  {
+   "numero": 3,
+   "voce": "cedar",
+   "nota": "nuova (2025), fatta per suonare naturale",
+   "file": "voce_3_cedar.mp4",
+   "mp3": "mp3/cedar.mp3",
+   "secondi": 41.1
+  },
+  {
+   "numero": 4,
+   "voce": "ash",
+   "nota": "voce maschile, calda",
+   "file": "voce_4_ash.mp4",
+   "mp3": "mp3/ash.mp3",
+   "secondi": 42
+  },
+  {
+   "numero": 5,
+   "voce": "verse",
+   "nota": "voce espressiva",
+   "file": "voce_5_verse.mp4",
+   "mp3": "mp3/verse.mp3",
+   "secondi": 40.2
+  },
+  {
+   "numero": 6,
+   "voce": "sage",
+   "nota": "voce femminile, tranquilla",
+   "file": "voce_6_sage.mp4",
+   "mp3": "mp3/sage.mp3",
+   "secondi": 42.1
+  }
+ ]
+}
