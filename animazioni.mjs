@@ -30,7 +30,8 @@ import os from 'os';
 import { execFileSync } from 'child_process';
 import { createCanvas, loadImage } from 'canvas';
 import { leggiConfini, creaVista, fondoScuro, contorni, mascheraAcqua, citta, Scie } from './confini.mjs';
-import { filmatoMondo, frescoMondo } from './mondo.mjs';
+import { filmatoMondo, frescoMondo, inizioEdizione } from './mondo.mjs';
+import { filmatoItalia, frescoItalia } from './italia.mjs';   /* v73.8 · il video del giorno · Italia, con Steve */
 
 const FUSO = process.env.FUSO || 'Europe/Rome';
 const QUI = path.dirname(new URL(import.meta.url).pathname);
@@ -514,7 +515,8 @@ async function giro(opzioni = {}) {
      Europa una volta sola al giorno. Se tutto è fresco non si chiama nessuno. */
   const seiFresche = fresche(precedente, dir, adesso, minOre);
   const mondoFresco = frescoMondo(precedente, dir, adesso, minOreMondo);
-  if (!forza && !opzioni.solo && seiFresche && mondoFresco) {
+  const italiaFresco = opzioni.senzaItalia ? true : frescoItalia(precedente, dir, adesso, inizioEdizione);   /* v73.8 */
+  if (!forza && !opzioni.solo && seiFresche && mondoFresco && italiaFresco) {
     const quando = new Date(precedente.generato);
     const eta = Math.round((adesso.getTime() - quando.getTime()) / 60000);
     dice('✔ animazioni ancora fresche: fatte ' + eta + ' minuti fa (si rifanno dopo ' + minOre + ' ore). Niente da fare, niente chiamate a Open-Meteo.');
@@ -523,6 +525,7 @@ async function giro(opzioni = {}) {
   }
   const faSei = opzioni.solo ? opzioni.solo.some(x => TUTTI.includes(x)) : (forza || !seiFresche);
   const faMondo = opzioni.solo ? opzioni.solo.includes('mondo') : (forza || !mondoFresco);
+  const faItalia = opzioni.senzaItalia ? false : opzioni.solo ? opzioni.solo.includes('italia') : (forza || !italiaFresco);
 
   /* Il filmato del giorno si fa PRIMA dei sei dell'Italia. Open-Meteo conta il
      suo tetto per indirizzo, e le macchine di GitHub hanno indirizzi condivisi:
@@ -578,10 +581,24 @@ async function giro(opzioni = {}) {
   }
   fatti.sort((a, b) => TUTTI.indexOf(a.id) - TUTTI.indexOf(b.id));
 
+  /* v73.8 · il video del giorno · Italia, con Steve: DOPO i sei (usa le loro mappe), due chiamate leggere */
+  let italia = (precedente.italia && precedente.italia.file && fs.existsSync(path.join(dir, precedente.italia.file))) ? precedente.italia : null;
+  if (faItalia) {
+    try {
+      const v = await filmatoItalia({ rete, adesso, dir, cartella, ffmpeg, fuso: FUSO, chiave });
+      italia = v;
+      dice('  ✔ ' + v.titolo + ': ' + v.secondi + ' s, ' + Math.round(v.byte / 1024) + ' KB' + (v.parlato ? ', con Steve e la voce' : ', muto'));
+    } catch (e) {
+      dice('  ✘ video del giorno · Italia: ' + e.message);
+      if (italia) dice('    (resta quello di ieri)');
+    }
+  }
+
   const fuori = { versione: 1, generato: adesso.toISOString(), modello: 'Open-Meteo (modello migliore per l\'Italia, di solito ICON)', griglia: '0,5° · ' + (NLAT * NLON) + ' punti', video: fatti };
   if (mondo) fuori.mondo = mondo;
+  if (italia) fuori.italia = italia;
   fs.writeFileSync(path.join(dir, 'previsioni.json'), JSON.stringify(fuori, null, 1));
-  dice('✔ previsioni.json: ' + fatti.length + ' filmati' + (mondo ? ' + il filmato del giorno' : ''));
+  dice('✔ previsioni.json: ' + fatti.length + ' filmati' + (mondo ? ' + il filmato del giorno' : '') + (italia ? ' + l\'Italia con Steve' : ''));
   avvisaWorkflow(true);
   return fuori;
 }
