@@ -1,0 +1,68 @@
+# La prova delle voci per il filmato del giorno: lo stesso pezzo di
+# racconto letto da sei voci di OpenAI (quella di oggi e cinque nuove),
+# ognuna in un filmatino col suo nome, e tutte in fila in tutte.mp4.
+# Si lancia SOLO a mano ("Run workflow"): nessun calendario. Pubblica sul
+# ramo "voci", rifatto da capo ogni volta. La chiave è la stessa del blog
+# (OPENAI_API_KEY, un segreto del repository): costa meno di cinque
+# centesimi a lancio.
+#
+# Per ascoltare, dal telefono:
+#   https://github.com/Robertobob5/meteo-radar-blog/blob/voci/tutte.mp4
+name: Prova delle voci
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: voci
+  cancel-in-progress: false
+
+jobs:
+  voci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Prendi il repository
+        uses: actions/checkout@v5
+
+      - name: Prepara Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Prepara ffmpeg e il disegno (canvas)
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq ffmpeg >/dev/null
+          fi
+          ffmpeg -version 2>&1 | head -1
+          npm install --no-save --no-audit --no-fund canvas@3
+
+      - name: Dai voce al racconto, sei volte
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          USCITA_DIR: voci_out
+        run: node voci.mjs
+
+      - name: Pubblica sul ramo voci
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd voci_out
+          git init -q
+          git checkout -q --orphan voci
+          git config user.name  "Meteo Radar"
+          git config user.email "video@meteoradar.local"
+          git add -A
+          git commit -q -m "Prova delle voci · $(TZ=Europe/Rome date '+%d/%m/%Y %H:%M')"
+          for i in 1 2 3; do
+            if git push -q --force "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" voci; then
+              echo "pubblicato: https://github.com/${GITHUB_REPOSITORY}/blob/voci/tutte.mp4"; exit 0
+            fi
+            echo "push fallito, riprovo fra 20 secondi ($i)"; sleep 20
+          done
+          exit 1
