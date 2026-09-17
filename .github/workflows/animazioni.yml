@@ -6,13 +6,15 @@
 #
 # v73.4 — e UNA VOLTA AL GIORNO esce anche il filmato del giorno su
 # Atlantico, Europa e Nord Africa ("Da dove arriva il tempo"), con la
-# cornice da telegiornale e la voce dentro, in previsioni/mondo.mp4. Ha il
-# suo orologio (MIN_ORE_MONDO, 20 ore): la sveglia delle 7 di cron-job.org
-# lo trova vecchio e lo rifà, tutte le altre sveglie lo trovano fresco e non
-# lo toccano. Quello di oggi prende il posto di quello di ieri: il ramo
-# viene rifatto da capo a ogni pubblicazione, quindi il vecchio sparisce da
-# solo. La voce usa la stessa chiave del blog (OPENAI_API_KEY): se manca, il
-# filmato si fa lo stesso, muto, e il racconto resta scritto nell'app.
+# cornice da telegiornale e la voce dentro, in previsioni/mondo.mp4.
+# v73.6 — il suo giorno comincia alle 7 (ora italiana, ORA_EDIZIONE): il
+# primo giro che passa dopo le 7 lo rifà (la sveglia delle 7 di cron-job.org,
+# o il giro delle 7:17 se GitHub la perde), tutti gli altri lo trovano fresco
+# e non lo toccano. MIN_ORE_MONDO (36 ore) è solo una rete di sicurezza.
+# Quello di oggi prende il posto di quello di ieri: il ramo viene rifatto da
+# capo a ogni pubblicazione, quindi il vecchio sparisce da solo. La voce usa
+# la stessa chiave del blog (OPENAI_API_KEY): se manca, il filmato si fa lo
+# stesso, muto, e il racconto resta scritto nell'app.
 #
 # In calendario OGNI MEZZ'ORA (minuti 17 e 47) perché GitHub lascia cadere
 # molti avvii programmati: ma il lavoro vero si fa solo se le animazioni
@@ -88,7 +90,8 @@ jobs:
           FUSO: Europe/Rome
           RAMO_DIR: ramo
           MIN_ORE: '5.5'
-          MIN_ORE_MONDO: '20'
+          MIN_ORE_MONDO: '36'
+          ORA_EDIZIONE: '7'
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           FORZA: ${{ github.event.inputs.forza == 'true' && '1' || '' }}
         run: node animazioni.mjs
