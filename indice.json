@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-17T06:21:43.744Z",
+ "aggiornato": "2026-09-18T06:21:33.551Z",
  "articoli": [
+  {
+   "id": "2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d",
+   "data": "2026-09-18",
+   "titolo": "NOAA affida a Tomorrow.io il supporto per un nuovo sistema di previsione",
+   "sottotitolo": "Il contratto sostiene EPIC e l’integrazione di un modello che punta a unire atmosfera, oceano e terre emerse.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d-copertina.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-selects-tomorrowio-to-help-advance-us-weather-forecasting",
+   "fonteTitolo": "NOAA selects Tomorrow.io to help advance U.S. weather forecasting",
+   "file": "articoli/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d.json"
+  },
   {
    "id": "2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d",
    "data": "2026-09-17",

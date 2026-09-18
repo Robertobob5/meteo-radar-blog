@@ -1,0 +1,79 @@
+{
+ "id": "2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d",
+ "data": "2026-09-18",
+ "scritto": "2026-09-18T06:21:33.550Z",
+ "titolo": "NOAA affida a Tomorrow.io il supporto per un nuovo sistema di previsione",
+ "sottotitolo": "Il contratto sostiene EPIC e l’integrazione di un modello che punta a unire atmosfera, oceano e terre emerse.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d-copertina.webp",
+ "copertinaAlt": "Illustrazione di un sistema che collega atmosfera, oceano e terre emerse per le previsioni.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "La NOAA ha selezionato Tomorrow.io per fornire supporto contrattuale all’Earth Prediction Innovation Center, noto come EPIC. Il programma è alla base della suite di modelli meteorologici operativi della NOAA, cioè dell’insieme di strumenti usati per elaborare previsioni. L’accordo rientra nel lavoro dell’agenzia per accelerare lo sviluppo del suo sistema di modellazione terrestre di prossima generazione, l’Unified Forecast System."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’Unified Forecast System, o UFS, è un sistema unico di modellazione: una struttura flessibile pensata per integrare le diverse componenti del pianeta che influenzano le previsioni, fra cui atmosfera, oceano e terre emerse. L’obiettivo è sostituire numerosi modelli operativi separati con un quadro comune, in grado di migliorare la previsione del tempo e del clima su diverse scale temporali."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il ruolo di EPIC"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Istituito nel 2019, EPIC mette a disposizione infrastrutture per la modellazione e occasioni di collaborazione con la più ampia comunità della ricerca meteorologica. Questa rete comprende università, agenzie pubbliche e settore privato. Il programma mira a far arrivare in modo più efficiente le innovazioni della ricerca nei modelli previsionali operativi utilizzati dal National Weather Service della NOAA."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "EPIC segue attività di gestione e pianificazione, innovazione scientifica e altri progetti collegati. Il partner contrattuale, invece, avrà responsabilità per l’infrastruttura software, l’ingegneria e i servizi di assistenza agli utenti. Tomorrow.io condividerà inoltre il compito di coinvolgere la comunità che lavora sull’UFS e di collaborare alle iniziative di calcolo ad alte prestazioni, cioè all’impiego di sistemi informatici progettati per eseguire grandi quantità di calcoli."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di atmosfera, oceano e suolo collegati a un sistema di calcolo per le previsioni.",
+   "didascalia": "L’UFS punta a riunire componenti oggi trattate da modelli distinti.",
+   "file": "immagini/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un motore per descrivere i movimenti dell’atmosfera"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Con il nuovo contratto, Tomorrow.io fornirà infrastrutture essenziali per la modellazione e sostegno al coinvolgimento della comunità mentre la NOAA integra nell’UFS il Model for Prediction Across Scales, abbreviato MPAS. Si tratta del nucleo computazionale del sistema meteorologico di prossima generazione dell’agenzia."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dopo l’integrazione nell’UFS, MPAS dovrebbe diventare il motore principale per prevedere i movimenti atmosferici. Il suo campo di applicazione comprende temporali locali e tornado, uragani tropicali, correnti a getto e grandi configurazioni meteorologiche globali. Le correnti a getto sono fasce di venti molto veloci presenti nell’atmosfera, importanti per l’evoluzione del tempo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per la NOAA, il passaggio è parte del percorso verso un modello del sistema terrestre pienamente accoppiato: un modello, cioè, in cui le componenti del pianeta vengono considerate insieme e nelle loro interazioni. L’agenzia collega questo sviluppo alla trasformazione del National Weather Service e alla necessità di essere pronti, reattivi e resilienti davanti a eventi meteorologici e legati all’acqua di carattere estremo."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalla ricerca alle operazioni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il progetto si basa sull’idea di scienza aperta e di sviluppo condiviso. L’intento è sfruttare il contributo dei settori pubblico, privato e accademico per portare più rapidamente la ricerca scientifica nelle attività operative. Tomorrow.io indica fra le proprie competenze la modellazione con intelligenza artificiale e le osservazioni satellitari, dichiarando di voler contribuire al rafforzamento dei modelli previsionali, delle infrastrutture e dei sistemi di allerta precoce."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La NOAA ha scelto Tomorrow.io per sostenere EPIC, il programma che favorisce la collaborazione attorno ai modelli meteorologici. Il lavoro accompagnerà l’integrazione di MPAS nell’UFS, un sistema unico destinato a collegare atmosfera, oceano e terre emerse e a rendere più rapido il passaggio dalle innovazioni scientifiche alle previsioni operative."
+  }
+ ],
+ "parole": 522,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "NOAA selects Tomorrow.io to help advance U.S. weather forecasting",
+  "url": "https://www.noaa.gov/news-release/noaa-selects-tomorrowio-to-help-advance-us-weather-forecasting",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
