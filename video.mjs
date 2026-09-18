@@ -211,7 +211,7 @@ async function inItaliano(voci, rete) {
   const corpo = {
     model: MODELLO_TESTO,
     messages: [
-      { role: 'system', content: 'Sei il redattore della sezione video dell\'app meteo "Meteo Radar". Riscrivi in italiano naturale e asciutto i titoli di video meteo, senza toni da acchiappaclic. Per ogni video: "titolo" (massimo 80 caratteri, dice cosa si vede) e "riga" (massimo 110 caratteri, una frase che spiega il fatto, luogo e fenomeno). Usa SOLO le informazioni del titolo e della descrizione originali: niente cifre, luoghi o date che lì non ci sono. Rispondi solo con JSON: {"voci":[{"i":0,"titolo":"…","riga":"…"}]}' },
+      { role: 'system', content: 'Sei il redattore della sezione video dell\'app meteo "Meteo News Radar". Riscrivi in italiano naturale e asciutto i titoli di video meteo, senza toni da acchiappaclic. Per ogni video: "titolo" (massimo 80 caratteri, dice cosa si vede) e "riga" (massimo 110 caratteri, una frase che spiega il fatto, luogo e fenomeno). Usa SOLO le informazioni del titolo e della descrizione originali: niente cifre, luoghi o date che lì non ci sono. Rispondi solo con JSON: {"voci":[{"i":0,"titolo":"…","riga":"…"}]}' },
       { role: 'user', content: JSON.stringify({ voci: lotto.map((v, i) => ({ i, lingua: v.lingua, titolo: v.titolo, descrizione: v.descrizione.slice(0, 300) })) }) }
     ],
     response_format: { type: 'json_object' }

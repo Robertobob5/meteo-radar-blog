@@ -1,5 +1,5 @@
 /* ============================================================
-   animazioni.mjs — le "Previsioni in video" fatte da Meteo Radar
+   animazioni.mjs — le "Previsioni in video" fatte da Meteo News Radar
 
    Come fa Meteored con le sue animazioni a pagamento, ma gratis per
    tutti: si prende la griglia dell'Italia (0,5° · 625 punti) dal
@@ -321,7 +321,7 @@ function legenda(g, nome, buio) {
   g.textAlign = 'left'; g.font = '11px "DejaVu Sans"'; g.fillStyle = buio ? 'rgba(210,225,245,.85)' : '#4a5568';
   g.fillText(LEGENDE[nome], x, y - 8);
   g.textAlign = 'right';
-  g.fillText(buio ? 'Meteo Radar · dati Open-Meteo · coste GSHHS' : 'Meteo Radar · dati Open-Meteo · mappa © CARTO, © OpenStreetMap', x + w, y - 8);
+  g.fillText(buio ? 'Meteo News Radar · dati Open-Meteo · coste GSHHS' : 'Meteo News Radar · dati Open-Meteo · mappa © CARTO, © OpenStreetMap', x + w, y - 8);
   g.textAlign = 'left';
 }
 function freccia(g, x, y, verso, lunghezza) {

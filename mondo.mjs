@@ -261,7 +261,7 @@ function racconto(n, oggi, ora) {
   const arr = x => Math.round(x);
   const h = Number.isFinite(Number(ora)) ? Number(ora) : 7;
   const saluto = h < 12 ? 'Buongiorno' : h < 18 ? 'Buon pomeriggio' : 'Buonasera';
-  f.push(saluto + ' e benvenuti al video del giorno di Meteo Radar News.');
+  f.push(saluto + ' e benvenuti al video del giorno di Meteo News Radar.');
   if (n.bassa0) {
     let frase = 'Partiamo dal quadro generale: la bassa pressione più profonda oggi la troviamo ' + posto(n.bassa0.lat, n.bassa0.lon);
     if (n.bassa2) {
@@ -291,7 +291,7 @@ function racconto(n, oggi, ora) {
     f.push('Il vento in quota soffia da ' + daDove(n.versoVento) + ', con punte intorno ai ' + arr(n.ventoMax) + ' chilometri orari.');
     ev.push('VENTO IN QUOTA DA ' + daDove(n.versoVento).toUpperCase() + ' FINO A ' + arr(n.ventoMax) + ' KM/H');
   }
-  f.push('È tutto per oggi: buona giornata da Meteo Radar.');
+  f.push('È tutto per oggi: buona giornata da Meteo News Radar.');
   return { frasi: f, evidenza: ev };
 }
 
@@ -327,11 +327,11 @@ function cornice(g, o) {
   const grad = g.createLinearGradient(0, 0, W, 0);
   grad.addColorStop(0, '#08182e'); grad.addColorStop(1, '#153561');
   g.fillStyle = grad; g.fillRect(0, 0, W, barra);
-  g.fillStyle = '#c8102e'; g.fillRect(11, 8, 30, 18);
+  g.fillStyle = '#c8102e'; g.fillRect(11, 8, 40, 18);
   g.fillStyle = '#fff'; g.font = 'bold 12px "DejaVu Sans"'; g.textAlign = 'center';
-  g.fillText('MR', 26, 21);
+  g.fillText('MNR', 31, 21);
   g.textAlign = 'left'; g.font = 'bold 14px "DejaVu Sans"';
-  g.fillText('METEO RADAR NEWS', 50, 22);
+  g.fillText('METEO NEWS RADAR', 60, 22);
   g.textAlign = 'right'; g.font = 'bold 11px "DejaVu Sans"'; g.fillStyle = 'rgba(255,255,255,.78)';
   g.fillText(o.edizione, W - 12, 21);
   g.textAlign = 'left';

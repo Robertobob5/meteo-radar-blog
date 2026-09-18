@@ -134,7 +134,7 @@ export function raccontoItalia(n, adesso, ora) {
   const cap = [];
   /* 1 · apertura */
   cap.push({ id: 'apertura', titolo: 'Il tempo di oggi sull\'Italia', film: 'temperature',
-    frasi: [saluto + ', sono Steve di Meteo Radar News: ecco il tempo di oggi sull\'Italia, città per città.'], numeri: [] });
+    frasi: [saluto + ', sono Steve di Meteo News Radar: ecco il tempo di oggi sull\'Italia, città per città.'], numeri: [] });
   /* 2 · cielo e temperature per area */
   const frasiCielo = [];
   for (const a of n.aree) {
@@ -197,7 +197,8 @@ export function raccontoItalia(n, adesso, ora) {
     cap.push({ id: 'neve', titolo: 'Neve', film: 'neve', frasi: frasiN, numeri: (a ? [{ n: 'Quota neve Alpi', v: quota !== null ? quota + ' m' : '—', sub: 'zero termico ' + (Number.isFinite(a.zeroTermico) ? arr(a.zeroTermico) + ' m' : '—') }] : []) });
   }
   /* 7 · chiusura */
-  cap.push({ id: 'chiusura', titolo: 'A domani', film: 'nuvole', frasi: ['È tutto per oggi. Buona giornata da Meteo Radar News, e a domani.'], numeri: [] });
+  const commiato = h < 12 ? 'Buona giornata' : h < 18 ? 'Buon proseguimento' : 'Buona serata';   /* v73.9 · di sera non si augura "buona giornata" */
+  cap.push({ id: 'chiusura', titolo: 'A domani', film: 'nuvole', frasi: ['È tutto per oggi. ' + commiato + ' da Meteo News Radar, e a domani.'], numeri: [] });
   return cap;
 }
 
@@ -294,9 +295,9 @@ function disegnaFotogramma(g, o) {
   /* la cornice da telegiornale: barra rossa, marchio, edizione, striscia in basso */
   g.fillStyle = '#c8102e'; g.fillRect(0, 0, W, 6);
   g.fillStyle = 'rgba(8,24,46,0.85)'; g.fillRect(0, 6, W, 24);
-  g.fillStyle = '#c8102e'; tondo(g, 10, 10, 28, 16, 3); g.fill();
-  g.fillStyle = '#fff'; g.font = 'bold 10px DejaVu Sans, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('MR', 24, 18);
-  g.textAlign = 'left'; g.font = 'bold 11px DejaVu Sans, sans-serif'; g.fillText('METEO RADAR NEWS · IL VIDEO DEL GIORNO · ITALIA', 46, 18);
+  g.fillStyle = '#c8102e'; tondo(g, 10, 10, 36, 16, 3); g.fill();
+  g.fillStyle = '#fff'; g.font = 'bold 10px DejaVu Sans, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText('MNR', 28, 18);
+  g.textAlign = 'left'; g.font = 'bold 11px DejaVu Sans, sans-serif'; g.fillText('METEO NEWS RADAR · IL VIDEO DEL GIORNO · ITALIA', 54, 18);
   g.textAlign = 'right'; g.fillStyle = 'rgba(255,255,255,0.75)'; g.font = 'bold 10px DejaVu Sans, sans-serif'; g.fillText(o.edizione, W - 12, 18);
   g.textBaseline = 'alphabetic';
   /* la striscia del capitolo */

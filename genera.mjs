@@ -1,5 +1,5 @@
 /* ============================================================
-   Meteo Radar · il blog che si scrive da solo
+   Meteo News Radar · il blog che si scrive da solo
    ------------------------------------------------------------
    Una volta al giorno: legge i feed degli istituti di ricerca,
    sceglie una notizia che non è già stata usata, si scarica il
@@ -33,27 +33,6 @@
    · dopo la scrittura si confronta anche il NOSTRO titolo italiano con
      i nostri titoli vecchi: se è un gemello, l'articolo si butta, la
      fonte finisce fra gli scartati e si passa al candidato dopo.
-
-   10 settembre 2026 · VARIETÀ. In due settimane erano usciti quattro
-   pezzi dalla NOAA (contratti, laboratori, istituti: comunicati d'ufficio,
-   non scienza), tre su MTG-I2, due su Sentinel-3. Tre difese:
-   · TURNO DELLE FONTI: chi ha firmato ieri o l'altro ieri oggi non firma,
-     e nessun ente firma più di due articoli in sette giorni ("ente" in
-     fonti.json raggruppa i feed dello stesso istituto: i tre feed NOAA
-     contano come NOAA). Se il turno lascia il blog senza candidate, si
-     allenta e lo si dice.
-   · PAROLE D'UFFICIO: nomine, contratti, istituti, cerimonie, inviti
-     stampa, dirette e repliche tolgono punti (−4 l'una, fino a −12), e un
-     titolo che comincia col nome dell'ente ("NOAA names…", "NOAA to
-     rebuild…") ne perde altri tre: una notizia che vive solo di quelle
-     parole scende a zero e non passa.
-   · VICINANZA DI TEMA: un titolo che condivide due o più parole (o una
-     sigla) con uno degli ultimi dieci articoli perde tre punti per ognuno
-     (fino a nove):
-     il terzo pezzo sul lancio di un satellite arriva dopo qualunque
-     notizia nuova, non prima.
-   Ogni fonte può avere un "peso" in fonti.json (positivo o negativo), che
-   si somma al punteggio: il feed generale della NOAA parte da −3.
    ============================================================ */
 
 import fs from 'node:fs/promises';
@@ -122,7 +101,7 @@ function collegamento(blocco) {
 async function prendi(url, opzioni = {}) {
   const r = await fetch(url, {
     ...opzioni,
-    headers: { 'user-agent': 'MeteoRadarBlog/1.0 (+blog dell\'app Meteo Radar)', ...(opzioni.headers || {}) },
+    headers: { 'user-agent': 'MeteoNewsRadarBlog/1.0 (+blog dell\'app Meteo News Radar)', ...(opzioni.headers || {}) },
     signal: AbortSignal.timeout(Number(process.env.TIMEOUT || 30000))
   });
   if (!r.ok) throw new Error('HTTP ' + r.status + ' su ' + url);
@@ -133,11 +112,9 @@ async function scaricaFeed(fonte) {
   try {
     const xml = await (await prendi(fonte.url)).text();
     const voci = [...pezzi(xml, 'item'), ...pezzi(xml, 'entry')];
-    /* 10 settembre 2026 · alcuni feed (NCEI) scrivono i collegamenti relativi ("/news/…"): si completano con l'indirizzo del feed */
-    const assoluto = u => { try { return new URL(u, fonte.url).href; } catch { return u; } };
     return voci.map(v => ({
       titolo: campo(v, 'title'),
-      url: assoluto(collegamento(v)),
+      url: collegamento(v),
       sommario: campo(v, 'description') || campo(v, 'summary') || campo(v, 'content:encoded'),
       quando: campo(v, 'pubDate') || campo(v, 'published') || campo(v, 'updated') || campo(v, 'dc:date'),
       fonte
@@ -285,73 +262,18 @@ function inRiposo(titoloCandidato, memoria, oggi, giorni = RIPOSO_GIORNI){
   return null;
 }
 
-/* VICINANZA DI TEMA (10 settembre 2026): non è la stessa storia, ma è lo
-   stesso argomento di uno degli ultimi articoli (il terzo comunicato sul
-   lancio di un satellite, il secondo ghiacciaio in una settimana). Due parole
-   in comune con un articolo recente costano tre punti; con tre articoli, nove.
-   Non boccia: fa passare avanti le notizie nuove. */
-const TEMA_RECENTI = 10;
-function vicinanzaTema(titolo, recenti){
-  const T = paroleChiave(titolo);
-  if (T.size < 2) return 0;
-  let pena = 0;
-  for (const a of (recenti || []).slice(0, TEMA_RECENTI)) {
-    if (!a) continue;
-    const A = new Set([...paroleChiave(a.titolo || ''), ...paroleChiave(a.fonteTitolo || '')]);
-    let comuni = 0;
-    T.forEach(x => { if (A.has(x)) comuni += conNumero(x) ? 2 : 1; });   /* una sigla in comune (MTG-I2) vale da sola */
-    if (comuni >= 2) pena += 3;
-  }
-  return Math.min(9, pena);
-}
-
-/* TURNO DELLE FONTI (10 settembre 2026): chi ha firmato ieri o l'altro ieri
-   oggi non firma; nessun ente più di due articoli in sette giorni. L'"ente"
-   raggruppa i feed dello stesso istituto (in fonti.json; se manca vale il
-   nome della fonte). Torna una funzione che dice, per ogni notizia, perché
-   la sua fonte oggi riposa — oppure null se può passare. */
-const TURNO_GIORNI = 2, MAX_PER_ENTE_SETTIMANA = 2;
-function turnoFonti(indice, config, oggi){
-  const fonti = (config && config.fonti) || [];
-  const enteDi = nome => { const f = fonti.find(x => x.nome === nome); return String((f && f.ente) || nome || ''); };
-  const turno = Number(config && config.turno_giorni) || TURNO_GIORNI;
-  const massimo = Number(config && config.max_per_ente_settimana) || MAX_PER_ENTE_SETTIMANA;
-  const recenti = (indice.articoli || []).filter(a => a && a.data && giorniFra(a.data, oggi) <= 7);
-  const ultimi = new Map(), settimana = new Map();
-  recenti.forEach(a => {
-    const e = enteDi(a.fonte);
-    settimana.set(e, (settimana.get(e) || 0) + 1);
-    if (giorniFra(a.data, oggi) <= turno) ultimi.set(e, a);        /* ieri o l'altro ieri: oggi riposa */
-  });
-  return function perche(voce){
-    const e = enteDi(voce.fonte && voce.fonte.nome);
-    const u = ultimi.get(e);
-    if (u) return e + ' ha firmato il ' + u.data + ' ("' + String(u.titolo).slice(0, 50) + '…"): oggi riposa';
-    if ((settimana.get(e) || 0) >= massimo) return e + ' ha già firmato ' + settimana.get(e) + ' articoli negli ultimi sette giorni';
-    return null;
-  };
-}
-
 /* ─────────────── scelta della notizia ───────────────
    Il tema conta PRIMA della freschezza: una notizia senza nemmeno una parola
    a tema vale zero, per quanto fresca e lunga sia (il 3 settembre 2026 è
    passato un comunicato sulla filiera ittica americana solo perché era di
    giornata e aveva un riassunto lungo). Le parole "escluse" (pesca, appalti,
    nomine…) bocciano la notizia anche se una parola a tema c'è. */
-const ENTE_IN_TESTA = /^(noaa|nasa|esa|ingv|cnr|cmcc|ispra|eumetsat|ecmwf|wmo|usgs)('s)?\b/i;
-function punteggio(voce, chiavi, escluse = [], burocratiche = []) {
+function punteggio(voce, chiavi, escluse = []) {
   const t = (voce.titolo + ' ' + voce.sommario).toLowerCase();
   if (escluse.some(k => k && t.includes(String(k).toLowerCase()))) return -100;
   let p = 0;
   chiavi.forEach(k => { if (t.includes(k)) p += 3; });
   if (p === 0) return 0;                            /* fuori tema: la freschezza non lo salva */
-  /* 10 settembre 2026 · le parole d'ufficio (nomine, contratti, istituti, inviti stampa, dirette)
-     tolgono punti: un comunicato che vive solo di quelle non arriva a uno */
-  let ufficio = 0;
-  burocratiche.forEach(k => { if (k && t.includes(String(k).toLowerCase())) ufficio += 4; });
-  p -= Math.min(12, ufficio);
-  if (ENTE_IN_TESTA.test(String(voce.titolo).trim())) p -= 3;   /* "NOAA names…", "NOAA to rebuild…": parla di sé */
-  p += Number(voce.fonte && voce.fonte.peso) || 0;               /* il peso della fonte, se dichiarato */
   const q = Date.parse(voce.quando);
   if (Number.isFinite(q)) {
     const giorni = (Date.now() - q) / 86400000;
@@ -478,7 +400,7 @@ async function openai(percorso, corpo) {
   return JSON.parse(t);
 }
 
-const ISTRUZIONI = `Sei il redattore del blog dell'app meteo "Meteo Radar". Scrivi in italiano, per lettori curiosi ma non addetti ai lavori.
+const ISTRUZIONI = `Sei il redattore del blog dell'app meteo "Meteo News Radar". Scrivi in italiano, per lettori curiosi ma non addetti ai lavori.
 
 REGOLE NON NEGOZIABILI
 1. Puoi scrivere SOLO ciò che è contenuto nel TESTO DELLA FONTE che ti viene dato. Non aggiungere fatti, cifre, date, nomi, luoghi o citazioni che lì non ci sono, nemmeno se li conosci.
@@ -702,7 +624,7 @@ const APK = process.env.APK || 'https://drive.google.com/drive/folders/12S14HNl9
 const SPOT = () => `<div class="ad">
 <div class="mk2">\u25c9</div>
 <b>Il meteo spiegato, non solo previsto</b>
-<p>Questo articolo l'hai letto sul blog di <strong>Meteo Radar</strong>: un'app che ti mostra da dove
+<p>Questo articolo l'hai letto sul blog di <strong>Meteo News Radar</strong>: un'app che ti mostra da dove
 vengono i numeri, invece di limitarsi a dartelo. E ogni mattina ne trovi uno nuovo come questo.</p>
 <div class="cose"><span>Radar della pioggia</span><span>Allerte Protezione Civile</span>
 <span>Qualit\u00e0 dell'aria</span><span>Mare e onde</span><span>Pollini</span></div>
@@ -713,7 +635,7 @@ tutte le app che non passano dallo store.</small>
 </div>`;
 
 const TESTATA_WEB = (attiva) =>
-  '<div class="tt"><div class="mk">\u25c9</div><div><b>Meteo Radar</b><small>il blog</small></div>' +
+  '<div class="tt"><div class="mk">\u25c9</div><div><b>Meteo News Radar</b><small>il blog</small></div>' +
   (attiva ? '<a href="../">Tutti gli articoli</a>' : '') + '</div>';
 
 function paginaArticolo(a, sito) {
@@ -736,13 +658,13 @@ function paginaArticolo(a, sito) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${scappa(a.titolo)} · Meteo Radar</title>
+<title>${scappa(a.titolo)} · Meteo News Radar</title>
 <meta name="description" content="${scappa(a.sottotitolo || a.titolo)}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="${scappa(a.titolo)}">
 <meta property="og:description" content="${scappa(a.sottotitolo || '')}">
 ${img ? '<meta property="og:image" content="' + scappa(img) + '">' : ''}
-<meta property="og:site_name" content="Meteo Radar · il blog">
+<meta property="og:site_name" content="Meteo News Radar · il blog">
 <meta property="article:published_time" content="${scappa(a.data)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0878f9">
@@ -780,9 +702,9 @@ function paginaIndice(indice) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Meteo Radar \u00b7 il blog</title>
+<title>Meteo News Radar \u00b7 il blog</title>
 <meta name="description" content="Un articolo al giorno su meteo, clima, atmosfera e terremoti, scritto a partire dai comunicati degli istituti di ricerca.">
-<meta property="og:title" content="Meteo Radar \u00b7 il blog">
+<meta property="og:title" content="Meteo News Radar \u00b7 il blog">
 <meta property="og:description" content="Un articolo al giorno su meteo, clima, atmosfera e terremoti.">
 <meta name="theme-color" content="#0878f9">
 <style>${STILE_WEB}</style>
@@ -925,10 +847,8 @@ async function main() {
   /* i titoli già raccontati: quelli della fonte e quelli dei nostri articoli */
   const gia = memoria.flatMap(a => [a.fonteTitolo, a.titolo]).filter(Boolean);
   const riposoGiorni = Number(config.riposo_giorni) || RIPOSO_GIORNI;
-  const aRiposo = [], giaRaccontate = [], inTurno = [];
-  const perche = turnoFonti(indice, config, oggi);
-  const burocratiche = config.parole_burocratiche || [];
-  const nuove = tutte
+  const aRiposo = [], giaRaccontate = [];
+  const candidate = tutte
     .filter(v => !usate.has(v.url))
     .filter(v => {
       const t = gia.find(x => stessaStoria(x, v.titolo));
@@ -940,19 +860,14 @@ async function main() {
       if (chi) aRiposo.push('"' + v.titolo + '" → ' + chi.sigla.toUpperCase() + ' già raccontata il ' + chi.data + ' (' + chi.titolo + ')');
       return !chi;
     })
-    /* il punteggio: tema, freschezza, sostanza; meno le parole d'ufficio, meno la vicinanza a quanto già scritto */
-    .map(v => ({ v, p: punteggio(v, config.parole_chiave, config.parole_escluse || [], burocratiche) - vicinanzaTema(v.titolo, indice.articoli) }))
+    .map(v => ({ v, p: punteggio(v, config.parole_chiave, config.parole_escluse || []) }))
     .filter(x => x.p > 0)
-    .sort((a, b) => b.p - a.p);
-  /* il turno delle fonti: chi ha firmato di recente oggi riposa (se resta qualcun altro) */
-  const conTurno = nuove.filter(x => { const m = perche(x.v); if (m) inTurno.push('"' + x.v.titolo.slice(0, 60) + '" → ' + m); return !m; });
-  const allentato = !conTurno.length && nuove.length > 0;
-  const candidate = (allentato ? nuove : conTurno).map(x => x.v);
+    .sort((a, b) => b.p - a.p)
+    .map(x => x.v);
 
   if (giaRaccontate.length) { dice('Già raccontate (titolo simile a uno vecchio): ' + giaRaccontate.length); giaRaccontate.slice(0, 8).forEach(r => dice('  · ' + r)); }
   if (aRiposo.length) { dice('A riposo (stessa sigla negli ultimi ' + riposoGiorni + ' giorni): ' + aRiposo.length); aRiposo.forEach(r => dice('  · ' + r)); }
-  if (inTurno.length) { dice('Fonti in turno di riposo: ' + inTurno.length + (allentato ? ' (tutte: il turno si allenta, oggi vale il punteggio e basta)' : '')); inTurno.slice(0, 8).forEach(r => dice('  · ' + r)); }
-  dice('Candidate mai usate e a tema: ' + candidate.length + (candidate.length ? ' — in testa: ' + candidate.slice(0, 3).map(v => v.fonte.nome + ' · "' + v.titolo.slice(0, 50) + '"').join(' | ') : ''));
+  dice('Candidate mai usate e a tema: ' + candidate.length);
   if (!candidate.length) { dice('Nessuna notizia nuova. Meglio non pubblicare niente che pubblicare per forza.'); return; }
 
   for (let t = 0; t < Math.min(MAX_TENTATIVI, candidate.length); t++) {
@@ -963,7 +878,7 @@ async function main() {
     if (testo.length < 700) { dice('  · fonte troppo magra (' + testo.length + ' caratteri): passo oltre'); continue; }
     dice('  · testo della fonte: ' + testo.length + ' caratteri');
 
-    voce.giaFatti = indice.articoli.slice(0, 20).map(a => a.titolo);
+    voce.giaFatti = indice.articoli.slice(0, 12).map(a => a.titolo);
     let art;
     try { art = await scriviArticolo(voce, testo); }
     catch (e) { dice('  ⚠ scrittura fallita: ' + e.message); continue; }
@@ -1062,7 +977,7 @@ async function main() {
 /* I pezzi si possono provare uno per uno dal banco di prova; il giro completo
    parte da solo soltanto quando il file viene lanciato davvero da riga di comando. */
 export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave, nomiForti, fortiComuni, inRiposo,
-         vicinanzaTema, turnoFonti, paginaArticolo, paginaIndice, SPOT };
+         paginaArticolo, paginaIndice, SPOT };
 
 const lanciatoDaSolo = (() => {
   try {
