@@ -1,6 +1,19 @@
 {
- "aggiornato": "2026-09-18T06:21:33.551Z",
+ "aggiornato": "2026-09-19T06:21:46.201Z",
  "articoli": [
+  {
+   "id": "2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica",
+   "data": "2026-09-19",
+   "titolo": "VT-CLAIM studia i legami tra clima, vulcani e tettonica",
+   "sottotitolo": "Il progetto dell’INGV integra dati satellitari, misure sul campo, modelli e intelligenza artificiale per osservare processi finora analizzati separatamente.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica-copertina.webp",
+   "fonte": "INGV Vulcani",
+   "fonteUrl": "https://ingvvulcani.com/2026/09/17/clima-vulcani-e-tettonica-perche-studiarli-insieme/",
+   "fonteTitolo": "Clima, vulcani e tettonica: perché studiarli insieme",
+   "file": "articoli/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica.json"
+  },
   {
    "id": "2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d",
    "data": "2026-09-18",

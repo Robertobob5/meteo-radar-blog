@@ -1,0 +1,91 @@
+{
+ "id": "2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica",
+ "data": "2026-09-19",
+ "scritto": "2026-09-19T06:21:46.200Z",
+ "titolo": "VT-CLAIM studia i legami tra clima, vulcani e tettonica",
+ "sottotitolo": "Il progetto dell’INGV integra dati satellitari, misure sul campo, modelli e intelligenza artificiale per osservare processi finora analizzati separatamente.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica-copertina.webp",
+ "copertinaAlt": "Illustrazione di un vulcano, piogge, processi sotterranei e osservazioni satellitari collegati tra loro.",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Piogge intense, siccità, deformazioni del suolo, terremoti, circolazione di fluidi nel sottosuolo ed eruzioni vulcaniche possono sembrare fenomeni lontani. Il progetto VT-CLAIM dell’Istituto Nazionale di Geofisica e Vulcanologia, INGV, nasce proprio per studiarne le possibili connessioni. L’idea è considerare clima, attività vulcanica e processi tettonici come parti di un sistema Terra complesso e interconnesso, anziché come ambiti separati."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I processi che regolano la dinamica del pianeta agiscono infatti su scale temporali e spaziali molto differenti, ma possono interagire attraverso meccanismi fisici comuni. Le variazioni climatiche, comprese le oscillazioni della temperatura, le precipitazioni estreme e i periodi di siccità, modificano quantità e distribuzione delle acque in superficie. Possono anche cambiare la pressione dell’acqua nei pori delle rocce e la facilità con cui l’acqua circola nei sistemi idrotermali sotterranei, cioè negli ambienti dove fluidi caldi circolano nel sottosuolo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questi cambiamenti possono influenzare lo stato di stress della crosta, ossia le forze che agiscono sulle rocce, e la risposta meccanica dei sistemi tettonici e vulcanici. Anche il rapporto può procedere nell’altra direzione: l’attività vulcanica può alterare l’equilibrio energetico dell’atmosfera emettendo aerosol ricchi di anidride solforosa e particolato solido, come ceneri vulcaniche e polveri sottili. Gli effetti sul clima possono essere a breve, medio e, occasionalmente, lungo termine."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati diversi per osservare gli stessi legami"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per comprendere interazioni tanto diverse, VT-CLAIM integra osservazioni satellitari, misure sul campo, modelli fisico-matematici e tecniche di intelligenza artificiale. Le osservazioni dallo spazio hanno un ruolo fondamentale. Le immagini SAR, ottenute con radar ad apertura sintetica, permettono di misurare le deformazioni della superficie terrestre. Le immagini termiche e multispettrali possono invece aiutare a individuare variazioni e anomalie legate ai fluidi o a cambiamenti della temperatura delle superfici."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Analisi altimetriche e gravimetriche, dedicate rispettivamente alle quote e alle variazioni della gravità, possono rilevare cambiamenti di massa: per esempio quelli associati al ritiro dei ghiacciai o alla dinamica dei bacini idrici. A questi dati si affiancano le reti di monitoraggio a terra. Le reti geofisiche registrano la sismicità e il tremore vulcanico, oltre a fenomeni locali di sollevamento e abbassamento del suolo. Questi ultimi possono essere legati ai movimenti sotterranei di magma o fluidi e sono chiamati inflazione e deflazione."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di un paesaggio vulcanico con deformazioni del terreno, fluidi sotterranei e osservazioni satellitari.",
+   "didascalia": "Osservazioni satellitari e reti a terra consentono di seguire segnali diversi, dalla deformazione del suolo alla circolazione dei fluidi.",
+   "file": "immagini/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica-1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le reti geochimiche misurano i flussi di gas dei pennacchi vulcanici e le concentrazioni in atmosfera di specie come anidride carbonica e anidride solforosa. Le reti meteorologiche e oceanografiche aiutano poi a collocare tutti questi segnali nel contesto delle condizioni ambientali. La modellistica numerica serve a interpretare i dati e simulare processi fisici e chimici nel sottosuolo e nell’atmosfera: i modelli termo-meccanici descrivono la risposta della litosfera, lo strato rigido più esterno della Terra, alle variazioni di carico e temperatura; i modelli idrotermali ricostruiscono invece la circolazione dei fluidi."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il ruolo dell’intelligenza artificiale e le difficoltà"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’intelligenza artificiale non sostituisce i modelli fisici, ma può ampliarne le capacità di analisi. Algoritmi di apprendimento automatico e apprendimento profondo possono integrare grandi quantità di dati eterogenei, cercare correlazioni difficili da riconoscere con metodi tradizionali ed estrarre schemi ricorrenti nello spazio e nel tempo. Le relazioni individuate devono poi essere verificate attraverso osservazioni, simulazioni, modelli fisici ed esperimenti sul campo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca affronta però difficoltà rilevanti. I processi naturali sono non lineari: una risposta della crosta o di un sistema vulcanico a un cambiamento esterno non è necessariamente proporzionale al cambiamento stesso. Può essere amplificata, attenuata oppure arrivare con ritardo. Inoltre, i dati disponibili possono riferirsi a scale temporali e spaziali molto diverse. C’è poi il rumore, il disturbo di fondo dei segnali causato da fluttuazioni casuali: oscillazioni naturali, variazioni stagionali e segnali locali possono mascherare o imitare processi più profondi."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "VT-CLAIM combina dati satellitari e misure sul campo con modelli fisici e intelligenza artificiale. Lo scopo è studiare possibili relazioni tra variazioni climatiche, attività vulcanica e processi tettonici, validando le ipotesi attraverso osservazioni e simulazioni."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Quando i rischi si sovrappongono"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le cosiddette pericolosità composite emergono quando processi climatici, vulcanici e tettonici interagiscono, amplificando l’impatto complessivo di un evento naturale. Un caso citato è la destabilizzazione di versanti vulcanici dopo precipitazioni estreme: piogge intense possono favorire frane o collassi in aree già indebolite dall’attività magmatica o dalle deformazioni della crosta. Un fenomeno di questo tipo si è verificato sull’Isola di Stromboli nell’agosto del 2022."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nei contesti glaciali, la sismicità può aumentare in risposta alle variazioni di carico dovute al ritiro o all’accumulo del ghiaccio. Le grandi eruzioni esplosive, d’altra parte, possono modificare temporaneamente il clima e modulare gli effetti di altri fenomeni atmosferici. Studiare insieme questi aspetti serve quindi a descrivere più realisticamente il funzionamento del sistema Terra e a sviluppare strumenti per la ricerca e per lo studio dei rischi naturali."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Avviato nell’ambito del programma Pianeta Dinamico 2026-2029, VT-CLAIM riunisce ricercatori e istituzioni partner in Italia, Francia, Regno Unito, Islanda e Australia. Le attività riguarderanno l’Islanda, la regione mediterranea con Etna e Isole Eolie, e le regioni polari. In Islanda il ritiro glaciale modifica il carico superficiale e la pressione litostatica, la pressione esercitata dalle rocce sovrastanti, influenzando dinamica magmatica e sismicità indotta. All’Etna e alle Isole Eolie, tettonica attiva, sistemi vulcanici, dinamiche climatiche e marine interagiscono con la circolazione dei fluidi, il degassamento e la risposta meccanica dei vulcani. Nelle regioni polari, infine, la criosfera risponde rapidamente alle variazioni climatiche, offrendo condizioni favorevoli per osservare processi accoppiati."
+  }
+ ],
+ "parole": 875,
+ "minuti": 4,
+ "fonte": {
+  "nome": "INGV Vulcani",
+  "titolo": "Clima, vulcani e tettonica: perché studiarli insieme",
+  "url": "https://ingvvulcani.com/2026/09/17/clima-vulcani-e-tettonica-perche-studiarli-insieme/",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
