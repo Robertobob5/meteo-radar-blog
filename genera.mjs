@@ -482,6 +482,62 @@ async function generaImmagine(prompt, destinazione) {
   }
 }
 
+/* ─────────────── v75 · le miniature per gli elenchi ───────────────
+   L'app mostrava nell'elenco la copertina intera (1024×1024, il file del
+   lettore): lenta da scaricare riga per riga. Qui, accanto a ogni
+   copertina, esce una miniatura 320×200 in WebP (una decina di KB) e
+   l'indice la elenca come "miniatura": l'app la usa nelle liste e la
+   pre-carica. Serve "sharp" (lo installa il workflow); senza, si va
+   avanti senza miniature e l'app usa la copertina come prima. Gli
+   articoli già pubblicati la ricevono al primo giro utile. */
+const MINI_LARGA = 320, MINI_ALTA = 200, MINI_QUALITA = 72;
+let sharpCaricato = null;
+async function caricaSharp() {
+  if (sharpCaricato !== null) return sharpCaricato;
+  try { sharpCaricato = (await import('sharp')).default; }
+  catch (e) { sharpCaricato = false; dice('  ⚠ sharp non disponibile: niente miniature (' + (e && e.message || e).split('\n')[0] + ')'); }
+  return sharpCaricato;
+}
+/** dalla copertina (nome relativo) alla miniatura: torna il nome relativo, o '' se non si può */
+async function miniaturaDi(copertina, id) {
+  if (!copertina) return '';
+  const sharp = await caricaSharp();
+  if (!sharp) return '';
+  const nome = 'immagini/' + id + '-mini.webp';
+  try {
+    await sharp(path.join(QUI, copertina)).resize(MINI_LARGA, MINI_ALTA, { fit: 'cover', position: 'attention' }).webp({ quality: MINI_QUALITA }).toFile(path.join(QUI, nome));
+    return nome;
+  } catch (e) {
+    dice('  ⚠ miniatura non fatta per ' + id + ': ' + (e && e.message || e));
+    return '';
+  }
+}
+/** gli articoli già pubblicati senza miniatura la ricevono adesso (la copertina deve esserci su disco) */
+async function rattoppaMiniature(indice) {
+  let fatte = 0;
+  for (const a of indice.articoli || []) {
+    if (a.miniatura || !a.copertina) continue;
+    try { await fs.access(path.join(QUI, a.copertina)); } catch { continue; }
+    const m = await miniaturaDi(a.copertina, a.id);
+    if (!m) { if (sharpCaricato === false) break; continue; }
+    a.miniatura = m; fatte++;
+    /* anche nel file dell'articolo, così chi lo legge da lì la trova */
+    try {
+      const f = path.join(QUI, a.file || ('articoli/' + a.id + '.json'));
+      const art = JSON.parse(await fs.readFile(f, 'utf8'));
+      art.miniatura = m;
+      await fs.writeFile(f, JSON.stringify(art, null, 1));
+    } catch { /* l'indice basta */ }
+  }
+  if (fatte) {
+    indice.aggiornato = new Date().toISOString();
+    await fs.writeFile(path.join(QUI, 'indice.json'), JSON.stringify(indice, null, 1));
+    await fs.writeFile(path.join(QUI, 'index.html'), paginaIndice(indice));
+    dice('Miniature: fatte ' + fatte + ' per gli articoli di prima');
+  }
+  return fatte;
+}
+
 /* ─────────────── le pagine da leggere sul web ───────────────
    Gli stessi articoli, ma come pagine vere: servono per CONDIVIDERE.
    Un file JSON non si può mandare a nessuno; questa pagina invece si
@@ -694,7 +750,7 @@ ${VOCE_WEB(scappa((a.fonte && a.fonte.nome) || 'la fonte citata').replace(/'/g, 
 function paginaIndice(indice) {
   const righe = indice.articoli.map(a =>
     '<a class="rg" href="p/' + scappa(a.id) + '.html">' +
-     (a.copertina ? '<img src="' + scappa(a.copertina) + '" alt="" loading="lazy">' : '<div></div>') +
+     (a.copertina ? '<img src="' + scappa(a.miniatura || a.copertina) + '" alt="" loading="lazy">' : '<div></div>') +
      '<div><b>' + scappa(a.titolo) + '</b><small>' + scappa(a.categoria || '') + ' \u00b7 ' +
        scappa(String(a.minuti || 3)) + ' min \u00b7 ' + scappa(a.fonte || '') + '</small></div></a>').join('\n');
   return `<!doctype html>
@@ -765,6 +821,7 @@ async function ripulisciDoppioni(indice){
     await butta(a.file || ('articoli/' + a.id + '.json'));
     await butta('p/' + a.id + '.html');
     if (a.copertina) await butta(a.copertina);
+    if (a.miniatura) await butta(a.miniatura);                                     /* v75 */
     /* le immagini interne portano il nome dell'articolo con un numero in coda */
     for (let n = 1; n <= 4; n++) await butta('immagini/' + a.id + '-' + n + '.webp');
     ricordaScartato(indice, a, 'stessa fonte di ' + gemello.id);
@@ -818,6 +875,7 @@ async function main() {
      il doppione è proprio quello di oggi il posto si libera e l'articolo
      del giorno viene scritto da una notizia nuova. */
   const puliti = await ripulisciDoppioni(indice);
+  await rattoppaMiniature(indice);                                   /* v75 */
 
   if (!FORZA && indice.articoli.some(a => a.data === oggi)) {
     dice('L\'articolo di oggi (' + oggi + ') c\'è già. Niente da fare.');
@@ -917,6 +975,7 @@ async function main() {
     const id = oggi + '-' + perUrl(art.titolo);
     const nomeCop = 'immagini/' + id + '-copertina.webp';
     const okCop = await generaImmagine(art.copertina || art.titolo, path.join(QUI, nomeCop));
+    const miniatura = okCop ? await miniaturaDi(nomeCop, id) : '';                 /* v75 */
     let quante = 0;
     for (const b of art.blocchi) {
       if (b.tipo !== 'immagine') continue;
@@ -927,7 +986,7 @@ async function main() {
       delete b.prompt;
     }
     art.blocchi = art.blocchi.filter(b => !b.salta);
-    dice('  · immagini: copertina ' + (okCop ? 'sì' : 'no') + ', interne ' + quante);
+    dice('  · immagini: copertina ' + (okCop ? 'sì' : 'no') + ', miniatura ' + (miniatura ? 'sì' : 'no') + ', interne ' + quante);
 
     /* ---- salvataggio ---- */
     const parole = art.blocchi.filter(b => b.testo).map(b => b.testo).join(' ').split(/\s+/).length;
@@ -936,6 +995,7 @@ async function main() {
       titolo: art.titolo, sottotitolo: art.sottotitolo || '',
       categoria: art.categoria || 'Ricerca',
       copertina: okCop ? nomeCop : '', copertinaAlt: art.copertinaAlt || art.titolo,
+      miniatura,                                                                     /* v75 */
       blocchi: art.blocchi, parole, minuti: Math.max(2, Math.round(parole / 200)),
       fonte: { nome: voce.fonte.nome, titolo: voce.titolo, url: voce.url, lingua: voce.fonte.lingua },
       generato: { testo: PROVA ? 'prova' : MODELLO_TESTO, immagini: PROVA ? 'prova' : MODELLO_IMMAGINI }
@@ -947,6 +1007,7 @@ async function main() {
     indice.articoli.unshift({
       id, data: articolo.data, titolo: articolo.titolo, sottotitolo: articolo.sottotitolo,
       categoria: articolo.categoria, minuti: articolo.minuti, copertina: articolo.copertina,
+      miniatura: articolo.miniatura || undefined,                                    /* v75 */
       fonte: voce.fonte.nome, fonteUrl: voce.url, fonteTitolo: voce.titolo,
       file: 'articoli/' + id + '.json'
     });
@@ -977,7 +1038,7 @@ async function main() {
 /* I pezzi si possono provare uno per uno dal banco di prova; il giro completo
    parte da solo soltanto quando il file viene lanciato davvero da riga di comando. */
 export { main, controllaNumeri, punteggio, testoDaHtml, numeriDi, normalizza, perUrl, stessaStoria, paroleChiave, nomiForti, fortiComuni, inRiposo,
-         paginaArticolo, paginaIndice, SPOT };
+         paginaArticolo, paginaIndice, SPOT, miniaturaDi, rattoppaMiniature };
 
 const lanciatoDaSolo = (() => {
   try {
