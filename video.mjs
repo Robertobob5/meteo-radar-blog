@@ -220,11 +220,81 @@ async function feedDailymotion(fonte, rete) {
 function setaccio(voce, config, fonte) {
   fonte = fonte || {};
   const titolo = normalizza(voce.titolo);
-  if ((config.parole_escluse || []).some(p => contiene(titolo, p))) return -1;
+  /* v5 · l'eccezione dell'IMMINENTE GRAVE: un uragano/tifone/ciclone con evacuazioni o allerta
+     massima è una notizia anche prima di toccare terra, e i suoi titoli sono al futuro
+     ("Typhoon to hit Japan, millions told to evacuate"), che le parole escluse buttavano via.
+     Per questi, e solo per questi, valgono le sole parole escluse DURE (podcast, promo,
+     tutorial, dirette, sport…): le previsioni normali restano fuori come prima. */
+  const imminente = imminenteGrave(titolo, config);
+  const escluse = imminente ? (config.parole_escluse_dure || []) : (config.parole_escluse || []);
+  if (escluse.some(p => contiene(titolo, p))) return -1;
   const elenco = fonte.generalista ? (config.parole_chiave_generaliste || config.parole_chiave) : config.parole_chiave;
   const prese = (elenco || []).filter(p => contiene(titolo, p)).length;
   if (fonte.fidato) return Math.max(1, prese);
   return prese;
+}
+
+/* ─────────────── v5 · gravità, evento, paese ─────────────── */
+/** il titolo parla di un ciclone tropicale (uragano, tifone, ciclone, medicane)? */
+function ciclone(titolo, config) {
+  return (config.parole_ciclone || []).some(p => contiene(titolo, p));
+}
+/** imminente grave: un ciclone tropicale + evacuazioni / allerta massima / stato d'emergenza */
+function imminenteGrave(titolo, config) {
+  if (!ciclone(titolo, config)) return false;
+  return (config.parole_imminente || []).some(p => contiene(titolo, p));
+}
+/** quanto è grave: vittime, evacuati, case distrutte, record, stato d'emergenza (ogni parola pesa 2) */
+function gravita(titolo, config) {
+  const t = normalizza(titolo);
+  return (config.parole_gravita || []).filter(p => contiene(t, p)).length * 2;
+}
+/** il luogo di cui parla il titolo: il paese (per il tetto "non più di 3 dallo stesso paese")
+ *  e la parola che l'ha fatto riconoscere (per la firma dell'evento: Genova e la Sicilia sono
+ *  due alluvioni diverse, anche se sono tutte e due in Italia). */
+function luogoDi(titolo, config) {
+  const t = normalizza(titolo);
+  const mappa = (config && config.paesi) || {};
+  for (const paese of Object.keys(mappa)) {
+    const p = (mappa[paese] || []).find(x => contiene(t, x));
+    if (p) return { paese, luogo: normalizza(p) };
+  }
+  return { paese: '', luogo: '' };
+}
+function paeseDi(titolo, config) { return luogoDi(titolo, config).paese; }
+/** parole che seguono "typhoon/uragano…" ma NON sono il nome della tempesta */
+const NON_NOMI = ['tropicale', 'tropical', 'extratropicale', 'mediterraneo', 'atlantico', 'pacifico', 'caraibi', 'nord', 'sud', 'est', 'ovest',
+  'season', 'stagione', 'warning', 'warnings', 'watch', 'alert', 'alerts', 'update', 'live', 'news', 'season', 'forecast', 'track', 'path',
+  'hits', 'hit', 'slams', 'slam', 'batters', 'batter', 'leaves', 'leave', 'kills', 'kill', 'makes', 'make', 'brings', 'bring', 'lashes',
+  'nears', 'near', 'approaches', 'approach', 'strikes', 'strike', 'forces', 'force', 'triggers', 'causes', 'cause', 'sweeps', 'sweep',
+  'barrels', 'arrives', 'arrive', 'could', 'may', 'will', 'set', 'takes', 'rips', 'tears', 'floods', 'flood', 'damage', 'damages',
+  'colpisce', 'arriva', 'devasta', 'travolge', 'sfiora', 'passa', 'minaccia', 'spazza', 'flagella', 'in', 'a', 'su', 'di', 'da', 'the', 'of'];
+/** il nome proprio della tempesta: la parola MAIUSCOLA subito dopo "uragano/tifone/ciclone/tempesta…"
+ *  ("Typhoon Ragasa", "Uragano Milton", "Tempesta Boris"). '' se non c'è. */
+function nomeTempesta(titoloOriginale) {
+  const t = String(titoloOriginale || '');
+  const re = /(hurricane|typhoon|super typhoon|cyclone|tropical storm|uragano|tifone|supertifone|ciclone|tempesta|borrasca|huracan|huracán|tifon|tifón|ciclon|ciclón)\s+([A-Za-zÀ-ÿ]{3,15})/gi;
+  let m;
+  while ((m = re.exec(t)) !== null) {
+    const parola = m[2];
+    if (!/^[A-ZÀ-Þ]/.test(parola)) continue;               /* il nome proprio comincia per maiuscola */
+    if (parola === parola.toUpperCase() && parola.length > 3 && /^[A-Z]+$/.test(parola) && t === t.toUpperCase()) { /* titolo tutto maiuscolo: va bene lo stesso */ }
+    const nome = normalizza(parola);
+    if (NON_NOMI.includes(nome)) continue;
+    return nome;
+  }
+  return '';
+}
+/** la firma dell'evento: due video con la stessa firma raccontano lo stesso fatto e se ne tiene uno solo.
+ *  Nome della tempesta se c'è (vale in tutto il mondo e per più giorni), altrimenti tema + paese + giorno.
+ *  Senza paese riconosciuto non si accorpa niente: meglio un doppione che una notizia persa. */
+function firmaEvento(voce, config, fuso) {
+  const nome = nomeTempesta(voce.titolo);
+  if (nome) return 'tempesta:' + nome;
+  const l = luogoDi(voce.titolo, config);
+  if (!l.luogo) return '';
+  const tema = temaDelVideo(voce.titolo, voce.riga);
+  return tema + '@' + l.luogo + '@' + giornoIn(voce.data, fuso || FUSO);
 }
 
 /* ─────────────── i titoli in italiano ─────────────── */
@@ -268,6 +338,9 @@ async function giro(opzioni = {}) {
   const config = opzioni.config || JSON.parse(fs.readFileSync(path.join(QUI, 'video-fonti.json'), 'utf8'));
   const precedente = opzioni.precedente || { video: [], canali: {} };
   const tetto = Number(config.tetto_giorno) || 12, perCanale = Number(config.per_canale) || 4, giorni = Number(config.giorni) || 7;
+  const perPaese = Number(config.per_paese) || 99;                               /* v5 · quanti video al giorno dallo stesso paese */
+  const perGeneralista = Number(config.per_canale_generalista) || perCanale;     /* v5 · i telegiornali pubblicano tanto: tetto più basso */
+  const maxDiFonte = f => Number(f && f.max_giorno) || (f && f.generalista ? perGeneralista : perCanale);
   const giorniStorico = Math.max(giorni, Number(config.giorni_storico) || 30);
   const limite = adesso.getTime() - giorni * 86400000;
   const limiteStorico = adesso.getTime() - giorniStorico * 86400000;
@@ -295,7 +368,7 @@ async function giro(opzioni = {}) {
       const f = fonteDiNome(v.canale);
       if (!f || setaccio({ titolo: v.titolo, descrizione: '' }, config, f) <= 0) return false;
       const g = giornoIn(v.data, FUSO), k = g + '|' + v.canale;
-      if ((contaG[g] || 0) >= tetto || (contaC[k] || 0) >= (Number(f.max_giorno) || perCanale)) return false;
+      if ((contaG[g] || 0) >= tetto || (contaC[k] || 0) >= maxDiFonte(f)) return false;
       contaG[g] = (contaG[g] || 0) + 1; contaC[k] = (contaC[k] || 0) + 1;
       return true;
     });
@@ -326,7 +399,12 @@ async function giro(opzioni = {}) {
         const p = setaccio(v, config, fonte);
         if (p <= 0) { fuori++; continue; }
         aTema++;
-        candidati.push(Object.assign(v, { fonte, punti: p * (Number(fonte.peso) || 1), id: (fonte.tipo === 'dailymotion' ? 'dm:' : 'yt:') + v.chiave, lingua: fonte.lingua || 'it' }));
+        /* v5 · il punteggio: parole a tema × peso del canale + gravità (vittime, evacuati, distrutto, record) */
+        const grave = gravita(v.titolo, config);
+        candidati.push(Object.assign(v, { fonte, punti: p * (Number(fonte.peso) || 1) + grave, gravita: grave,
+          imminente: imminenteGrave(normalizza(v.titolo), config),
+          paese: paeseDi(v.titolo, config), firma: firmaEvento(v, config, FUSO),
+          id: (fonte.tipo === 'dailymotion' ? 'dm:' : 'yt:') + v.chiave, lingua: fonte.lingua || 'it' }));
       }
       esiti.push(fonte.nome + (canale && normalizza(canale) !== normalizza(fonte.nome) ? ' (canale "' + canale + '")' : '') + ': ' + voci.length + ' nel feed, ' + fresche + ' fresche, ' + aTema + ' a tema, ' + fuori + ' scartate');
     } catch (e) {
@@ -335,26 +413,42 @@ async function giro(opzioni = {}) {
   }
   esiti.forEach(r => dice('  · ' + r));
 
-  /* 3 · doppioni: contro quelli già tenuti e fra di loro */
+  /* 3 · doppioni: contro quelli già tenuti e fra di loro; e v5 · UN VIDEO PER EVENTO
+     (sei telegiornali che riprendono lo stesso tifone sono sei doppioni con parole diverse:
+     stessoFilmato non li vede, la firma dell'evento sì. Vince il punteggio più alto.) */
   const nuovi = [];
+  const firmeTenute = new Set();
+  for (const t of vecchi) { const f = firmaEvento(t, config, FUSO); if (f) firmeTenute.add(f); }
   candidati.sort((a, b) => b.punti - a.punti || new Date(b.data) - new Date(a.data));
+  let doppiEvento = 0;
   for (const c of candidati) {
     if (gia.has(c.id)) continue;
     if (tenuti.some(t => stessoFilmato(t.titolo, c.titolo)) || nuovi.some(n => stessoFilmato(n.titolo, c.titolo))) continue;
+    if (c.firma && firmeTenute.has(c.firma)) { doppiEvento++; continue; }
+    if (c.firma) firmeTenute.add(c.firma);
     nuovi.push(c);
   }
+  if (doppiEvento) dice('· stesso evento raccontato da più canali: ' + doppiEvento + ' video in meno (si tiene il migliore)');
 
   /* 4 · il tetto: per giorno di pubblicazione e per canale nello stesso giorno */
-  const contaGiorno = {}, contaCanale = {};
+  const contaGiorno = {}, contaCanale = {}, contaPaese = {};
   const chiaveG = v => giornoIn(v.data, FUSO);
-  for (const t of tenuti) { const g = chiaveG(t); contaGiorno[g] = (contaGiorno[g] || 0) + 1; const k = g + '|' + t.canale; contaCanale[k] = (contaCanale[k] || 0) + 1; }
+  for (const t of tenuti) {
+    const g = chiaveG(t); contaGiorno[g] = (contaGiorno[g] || 0) + 1;
+    const k = g + '|' + t.canale; contaCanale[k] = (contaCanale[k] || 0) + 1;
+    const pz = t.paese || paeseDi(t.titolo, config);
+    if (pz) { const kp = g + '|' + pz; contaPaese[kp] = (contaPaese[kp] || 0) + 1; }
+  }
   const scelti = [];
   let oltreTetto = 0, vietati = 0, incerti = 0;
   const statiIncerti = {};
+  let oltrePaese = 0;
   for (const c of nuovi) {
-    const g = chiaveG(c), k = g + '|' + c.fonte.nome;
+    const g = chiaveG(c), k = g + '|' + c.fonte.nome, kp = c.paese ? g + '|' + c.paese : '';
     if ((contaGiorno[g] || 0) >= tetto) { oltreTetto++; continue; }
-    if ((contaCanale[k] || 0) >= (Number(c.fonte.max_giorno) || perCanale)) { oltreTetto++; continue; }
+    if ((contaCanale[k] || 0) >= maxDiFonte(c.fonte)) { oltreTetto++; continue; }
+    /* v5 · non più di così dallo stesso paese nello stesso giorno: se no il mondo diventa solo America */
+    if (kp && (contaPaese[kp] || 0) >= perPaese) { oltrePaese++; continue; }
     /* 5 · si può incorporare? (Dailymotion lo dice nel feed; YouTube lo si chiede) */
     if (c.fonte.tipo === 'dailymotion') { if (c.incorporabile === false) { vietati++; continue; } }
     else {
@@ -365,8 +459,10 @@ async function giro(opzioni = {}) {
       if (e.canale && !c.canale) c.canale = e.canale;
     }
     contaGiorno[g] = (contaGiorno[g] || 0) + 1; contaCanale[k] = (contaCanale[k] || 0) + 1;
+    if (kp) contaPaese[kp] = (contaPaese[kp] || 0) + 1;
     scelti.push(c);
   }
+  if (oltrePaese) dice('· fermati dal tetto per paese (' + perPaese + " al giorno): " + oltrePaese);
   dice('· candidati nuovi ' + nuovi.length + ': scelti ' + scelti.length + ', oltre il tetto ' + oltreTetto + ', incorporazione vietata ' + vietati + ', incerti ' + incerti +
        (incerti ? ' (' + Object.entries(statiIncerti).map(([s, n]) => n + '× ' + s).join(', ') + ')' : ''));
 
@@ -386,7 +482,8 @@ async function giro(opzioni = {}) {
     canale: c.fonte.nome, canaleNome: c.canale || c.fonte.nome, lingua: c.lingua,
     data: new Date(c.data).toISOString(), durata: c.durata || undefined,
     anteprima: c.anteprima || undefined, url: c.url,
-    tema: temaDelVideo(c.titoloIt || c.titolo, c.riga)                                   /* v5 */
+    tema: temaDelVideo(c.titoloIt || c.titolo, c.riga),                                  /* v5 */
+    paese: c.paese || undefined, gravita: c.gravita || undefined                         /* v5 · facoltativi: l'app li ignora */
   }));
   /* v5 · anche i video già in memoria prendono il tema, se non ce l'hanno (una volta sola) */
   vecchi.forEach(v => { if (!v.tema) v.tema = temaDelVideo(v.titoloIt || v.titolo, v.riga); });
@@ -413,7 +510,8 @@ async function main() {
   dice('scritto ' + file + ' e ' + fileStorico);
 }
 
-export { giro, setaccio, leggiAtom, stessoFilmato, contiene, normalizza, feedYoutube, feedDailymotion, inItaliano, idCanaleDallaPagina, nomeDelFeed, temaDelVideo, TEMI };
+export { giro, setaccio, leggiAtom, stessoFilmato, contiene, normalizza, feedYoutube, feedDailymotion, inItaliano, idCanaleDallaPagina, nomeDelFeed, temaDelVideo, TEMI,
+         gravita, paeseDi, luogoDi, nomeTempesta, firmaEvento, imminenteGrave, ciclone };
 
 const lanciatoDaSolo = (() => {
   try { return process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname); } catch { return false; }
