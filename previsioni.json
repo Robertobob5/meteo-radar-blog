@@ -1,0 +1,182 @@
+{
+ "versione": 1,
+ "generato": "2026-09-19T16:49:09.518Z",
+ "modello": "Open-Meteo (modello migliore per l'Italia, di solito ICON)",
+ "griglia": "0,5° · 625 punti",
+ "video": [
+  {
+   "id": "temperature",
+   "titolo": "Temperature",
+   "sotto": "ogni 3 ore per 5 giorni · modello Open-Meteo",
+   "file": "previsioni/temperature.mp4",
+   "poster": "previsioni/temperature.jpg",
+   "fotogrammi": 40,
+   "secondi": 8.2,
+   "da": "2026-09-19T18:00",
+   "a": "2026-09-24T15:00",
+   "byte": 309692,
+   "generato": "2026-09-19T16:49:09.518Z"
+  },
+  {
+   "id": "pioggia",
+   "titolo": "Pioggia e temporali",
+   "sotto": "ora per ora per 48 ore · i fulmini dove il modello vede temporali",
+   "file": "previsioni/pioggia.mp4",
+   "poster": "previsioni/pioggia.jpg",
+   "fotogrammi": 48,
+   "secondi": 9.5,
+   "da": "2026-09-19T18:00",
+   "a": "2026-09-21T17:00",
+   "byte": 228239,
+   "generato": "2026-09-19T16:49:09.518Z"
+  },
+  {
+   "id": "vento",
+   "titolo": "Vento e raffiche",
+   "sotto": "raffiche massime ora per ora · sabato 19 e domenica 20",
+   "file": "previsioni/vento.mp4",
+   "poster": "previsioni/vento.jpg",
+   "fotogrammi": 30,
+   "secondi": 6.5,
+   "da": "2026-09-19T18:00",
+   "a": "2026-09-20T23:00",
+   "byte": 520569,
+   "generato": "2026-09-19T16:49:09.518Z"
+  },
+  {
+   "id": "neve",
+   "titolo": "Neve accumulata",
+   "sotto": "centimetri caduti dall'inizio del filmato · 7 giorni",
+   "file": "previsioni/neve.mp4",
+   "poster": "previsioni/neve.jpg",
+   "fotogrammi": 56,
+   "secondi": 10.8,
+   "da": "2026-09-19T18:00",
+   "a": "2026-09-26T15:00",
+   "byte": 45241,
+   "generato": "2026-09-19T16:49:09.518Z"
+  },
+  {
+   "id": "nuvole",
+   "titolo": "Nuvolosità",
+   "sotto": "copertura del cielo ora per ora · domani",
+   "file": "previsioni/nuvole.mp4",
+   "poster": "previsioni/nuvole.jpg",
+   "fotogrammi": 24,
+   "secondi": 5.5,
+   "da": "2026-09-20T00:00",
+   "a": "2026-09-20T23:00",
+   "byte": 267033,
+   "generato": "2026-09-19T16:49:09.518Z"
+  },
+  {
+   "id": "mare",
+   "titolo": "Mare e onde",
+   "sotto": "altezza delle onde ora per ora · 48 ore",
+   "file": "previsioni/mare.mp4",
+   "poster": "previsioni/mare.jpg",
+   "fotogrammi": 48,
+   "secondi": 9.5,
+   "da": "2026-09-19T18:00",
+   "a": "2026-09-21T17:00",
+   "byte": 835882,
+   "generato": "2026-09-19T16:49:09.518Z"
+  }
+ ],
+ "mondo": {
+  "id": "mondo",
+  "titolo": "Da dove arriva il tempo",
+  "sotto": "Atlantico, Europa e Nord Africa · vento in quota, piogge e calo termico · 72 ore",
+  "file": "previsioni/mondo.mp4",
+  "poster": "previsioni/mondo.jpg",
+  "secondi": 38.5,
+  "fotogrammi": 330,
+  "da": "2026-09-19T07:00",
+  "a": "2026-09-22T07:00",
+  "byte": 3156734,
+  "generato": "2026-09-19T05:01:41.909Z",
+  "edizione": "SAB 19 SET · ORE 07",
+  "parlato": true,
+  "musica": "krasnoshchok · Pixabay",
+  "racconto": [
+   "Buongiorno e benvenuti al video del giorno di Meteo News Radar.",
+   "Partiamo dal quadro generale: la bassa pressione più profonda oggi la troviamo a sud dell'Islanda, e nei prossimi tre giorni si sposta verso l'Islanda.",
+   "Veniamo all'Italia: la pioggia arriva oggi nel pomeriggio.",
+   "In quota le temperature restano più o meno dove sono: nessun calo di rilievo.",
+   "Il vento in quota soffia da sud, con punte intorno ai 59 chilometri orari.",
+   "È tutto per oggi: buona giornata da Meteo News Radar."
+  ],
+  "evidenza": [
+   "BASSA PRESSIONE A SUD DELL'ISLANDA",
+   "PIOGGIA SULL'ITALIA OGGI NEL POMERIGGIO",
+   "IN QUOTA NESSUN CALO IMPORTANTE",
+   "VENTO IN QUOTA DA SUD FINO A 59 KM/H"
+  ],
+  "griglia": "2,0° · 756 punti",
+  "finestra": [
+   -35,
+   28,
+   35,
+   68
+  ]
+ },
+ "italia": {
+  "id": "italia",
+  "titolo": "Il video del giorno · Italia",
+  "sotto": "Steve racconta cielo, temperature, pioggia, vento, mare e neve, città per città",
+  "file": "previsioni/italia.mp4",
+  "poster": "previsioni/italia.jpg",
+  "secondi": 67.1,
+  "fotogrammi": 1678,
+  "byte": 2212333,
+  "generato": "2026-09-19T05:01:41.909Z",
+  "edizione": "SAB 19 SET · ORE 07",
+  "parlato": true,
+  "presentatore": "Steve",
+  "capitoli": [
+   {
+    "id": "apertura",
+    "titolo": "Il tempo di oggi sull'Italia",
+    "da": 5
+   },
+   {
+    "id": "cielo",
+    "titolo": "Cielo e temperature",
+    "da": 12.9
+   },
+   {
+    "id": "pioggia",
+    "titolo": "Pioggia e temporali",
+    "da": 32.6
+   },
+   {
+    "id": "vento",
+    "titolo": "Vento",
+    "da": 49.7
+   },
+   {
+    "id": "mare",
+    "titolo": "Mare",
+    "da": 55.9
+   },
+   {
+    "id": "chiusura",
+    "titolo": "A domani",
+    "da": 60.4
+   }
+  ],
+  "racconto": [
+   "Buongiorno, sono Steve di Meteo News Radar: ecco il tempo di oggi sull'Italia, città per città.",
+   "Al Nord cielo coperto, massime fra 25 e 28 gradi.",
+   "Al Centro nebbia, massime fra 24 e 28 gradi.",
+   "Al Sud pioggia, massime fra 26 e 29 gradi.",
+   "Sulle isole temporali, massime fra 28 e 30 gradi.",
+   "Pioggia oggi su Roma, Napoli, Bari e Palermo dalla notte, abbondante su Roma con 11 millimetri.",
+   "Attenzione ai temporali su Roma e Palermo.",
+   "Domani pioggia su Bari, Reggio Calabria e Palermo nella notte.",
+   "Vento forte su Cagliari, con raffiche fino a 43 chilometri orari a Cagliari.",
+   "Mari calmi o poco mossi su tutte le coste.",
+   "È tutto per oggi. Buona giornata da Meteo News Radar, e a domani."
+  ]
+ }
+}
