@@ -25,6 +25,11 @@
    due fonti sullo stesso canale = la seconda viene saltata; accanto a
    video.json (7 giorni) esce video-storico.json (30 giorni) per la
    pagina "Tutti i video" dell'app.
+   v5 (app v75) · ogni video ha un "tema" (tornado, alluvioni, temporali,
+   neve, caldo, mare, clima, curiosita), ricavato dalle parole del
+   titolo (in italiano se c'è, se no in originale) e della riga: le
+   stesse liste stanno nell'app (blocco v75) per i video vecchi senza
+   tema. Niente chiamate in più: sono liste di parole, non il modello.
 
    Uso:   node video.mjs                (RAMO_DIR = cartella del ramo filmati, default "ramo")
    Prove: import { giro } from './video.mjs' con una rete finta.
@@ -64,6 +69,24 @@ function contiene(testo, parola) {
   if (!p) return false;
   if (intera || (p.length <= 5 && !p.includes(' '))) return new RegExp('(^|[^a-z0-9])' + p.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '($|[^a-z0-9])').test(t);
   return t.includes(p);
+}
+
+/* ─────────────── v5 · il tema di un video (le stesse liste del blocco v75 dell'app) ───────────────
+   Il primo tema che prende una parola vince; una parola con lo spazio davanti vale solo a inizio parola
+   (" vento" non prende "evento"). Senza nessuna parola: "curiosita". */
+const TEMI = [
+  { id: 'tornado',   parole: ['tornado', 'tromba', 'downburst', 'derecho', 'uragan', 'hurricane', 'tifone', 'typhoon', 'ciclone', 'cyclone', 'medicane', 'raffic', ' vento', ' venti ', 'wind', 'bufera', 'burrasca', ' storm'] },
+  { id: 'alluvioni', parole: ['alluvion', 'inunda', 'flood', 'nubifrag', "bomba d'acqua", 'esond', ' piena', 'allag', 'frana', 'smottament', ' fiume', 'torrente', ' dana ', 'gota fria', 'sottopass'] },
+  { id: 'temporali', parole: ['temporal', 'grandin', 'hail', 'granizo', 'fulmin', 'lightning', 'thunder', 'tormenta', 'supercell', 'shelf', 'rovesc', 'maltempo', 'orage', 'pioggia', 'piogge', ' rain'] },
+  { id: 'neve',      parole: [' neve', 'nevic', 'nevon', ' gelo', 'gelat', 'ghiaccio', 'ghiacciat', 'snow', 'blizzard', 'valang', 'nieve', 'brina', 'freddo', 'polare', ' ice '] },
+  { id: 'caldo',     parole: ['caldo', 'calore', 'heat', ' afa ', 'canicul', 'incend', 'wildfire', 'fuego', 'fiamm', 'siccit', 'drought', ' rogh', 'sequia'] },
+  { id: 'mare',      parole: ['mareggiat', ' onde', ' onda', ' mare', 'tsunami', 'surge', 'oleaje', 'lungomare', 'spiaggia', ' costa', ' porto '] },
+  { id: 'clima',     parole: ['clima', 'climat', 'riscaldamento', 'ghiacciai', 'glacier', 'co2', 'emission', 'record', 'nino', 'nina', 'artico', 'antartide', 'livello del mare'] }
+];
+function temaDelVideo(titolo, riga) {
+  const t = ' ' + normalizza(titolo) + ' ' + normalizza(riga || '') + ' ';
+  for (const x of TEMI) { if (x.parole.some(p => t.includes(senzaAccenti(p).toLowerCase()))) return x.id; }   /* la parola NON si taglia: lo spazio davanti conta */
+  return 'curiosita';
 }
 
 /* le parole "di sostanza" di un titolo, per riconoscere lo stesso filmato ricaricato da due canali */
@@ -362,8 +385,11 @@ async function giro(opzioni = {}) {
     titolo: c.titolo, titoloIt: c.titoloIt || undefined, riga: c.riga || undefined,
     canale: c.fonte.nome, canaleNome: c.canale || c.fonte.nome, lingua: c.lingua,
     data: new Date(c.data).toISOString(), durata: c.durata || undefined,
-    anteprima: c.anteprima || undefined, url: c.url
+    anteprima: c.anteprima || undefined, url: c.url,
+    tema: temaDelVideo(c.titoloIt || c.titolo, c.riga)                                   /* v5 */
   }));
+  /* v5 · anche i video già in memoria prendono il tema, se non ce l'hanno (una volta sola) */
+  vecchi.forEach(v => { if (!v.tema) v.tema = temaDelVideo(v.titoloIt || v.titolo, v.riga); });
   const storico = vecchi.concat(nuoveVoci).sort((a, b) => new Date(b.data) - new Date(a.data)).slice(0, tetto * giorniStorico);
   const video = storico.filter(v => new Date(v.data).getTime() >= limite).slice(0, tetto * giorni);
 
@@ -387,7 +413,7 @@ async function main() {
   dice('scritto ' + file + ' e ' + fileStorico);
 }
 
-export { giro, setaccio, leggiAtom, stessoFilmato, contiene, normalizza, feedYoutube, feedDailymotion, inItaliano, idCanaleDallaPagina, nomeDelFeed };
+export { giro, setaccio, leggiAtom, stessoFilmato, contiene, normalizza, feedYoutube, feedDailymotion, inItaliano, idCanaleDallaPagina, nomeDelFeed, temaDelVideo, TEMI };
 
 const lanciatoDaSolo = (() => {
   try { return process.argv[1] && path.resolve(process.argv[1]) === path.resolve(new URL(import.meta.url).pathname); } catch { return false; }
