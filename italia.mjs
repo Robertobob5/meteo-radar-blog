@@ -135,7 +135,9 @@ export function raccontoItalia(n, adesso, ora) {
   const cap = [];
   /* 1 · apertura */
   cap.push({ id: 'apertura', titolo: 'Il tempo di oggi sull\'Italia', film: 'temperature',
-    frasi: [saluto + ', sono Steve di Meteo News Radar: ecco il tempo di oggi sull\'Italia, città per città.'], numeri: [] });
+    /* v77 · Steve si presenta per quello che è: un presentatore fatto con l'intelligenza artificiale.
+       Lo dice lui, con parole sue, nella prima frase: così chi guarda lo sa dal primo secondo. */
+    frasi: [saluto + ', sono Steve, il tuo meteorologo virtuale di Meteo News Radar: ecco il tempo di oggi sull\'Italia, città per città.'], numeri: [] });
   /* 2 · cielo e temperature per area */
   const frasiCielo = [];
   for (const a of n.aree) {
