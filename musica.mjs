@@ -1,5 +1,5 @@
 /* musica.mjs — v76 · LA MUSICA DEI VIDEO DELLA FOTOCAMERA
-   Sei brani liberi (CC0: dominio pubblico, niente diritti né obblighi),
+   Dodici brani liberi (CC0: dominio pubblico, niente diritti né obblighi),
    presi da OpenGameArt, tagliati a 60 secondi con dissolvenza in entrata e
    in uscita, portati allo stesso volume e salvati in MP3 leggero (96 kbps,
    ~700 KB l'uno) nella cartella musica/ del ramo main, con l'elenco in
@@ -40,7 +40,26 @@ export const BRANI = [
     fonte: 'https://opengameart.org/content/a-legend-will-rise-orchestral', licenza: 'CC0 1.0' },
   { id: 'sera', titolo: 'Crickets', autore: 'SpringySpringo', umore: 'Sera', nota: 'piano calmo', da: 0,
     url: 'https://opengameart.org/sites/default/files/crickets_3.mp3',
-    fonte: 'https://opengameart.org/content/crickets-general-calm-ambient-music', licenza: 'CC0 1.0 (l\'autore la offre anche come CC-BY 3.0)' }
+    fonte: 'https://opengameart.org/content/crickets-general-calm-ambient-music', licenza: 'CC0 1.0 (l\'autore la offre anche come CC-BY 3.0)' },
+  /* v77 · sei brani in più, sempre CC0, con umori che mancavano: la tempesta, la tensione, il sereno, il sospeso, l'energia, il mare */
+  { id: 'tempesta', titolo: 'Eye of the Storm', autore: 'Joth', umore: 'Tempesta', nota: 'cupa, incalzante', da: 0,
+    url: 'https://opengameart.org/sites/default/files/Eye%20of%20the%20Storm.mp3',
+    fonte: 'https://opengameart.org/content/eye-of-the-storm', licenza: 'CC0 1.0' },
+  { id: 'tensione', titolo: 'Determined Pursuit', autore: 'Emma_MA', umore: 'Tensione', nota: 'orchestra che corre', da: 0,
+    url: 'https://opengameart.org/sites/default/files/determined_pursuit_loop.wav',
+    fonte: 'https://opengameart.org/content/determined-pursuit-epic-orchestra-loop', licenza: 'CC0 1.0' },
+  { id: 'sole', titolo: 'New Sunrise', autore: 'nene', umore: 'Sereno', nota: 'luminosa, apre', da: 0,
+    url: 'https://opengameart.org/sites/default/files/new_sunrise_V2_0.wav',
+    fonte: 'https://opengameart.org/content/new-sunrise', licenza: 'CC0 1.0' },
+  { id: 'spazio', titolo: 'Magic Space', autore: 'CodeManu', umore: 'Sospesa', nota: 'ampia, da cielo grande', da: 0,
+    url: 'https://opengameart.org/sites/default/files/magic%20space.mp3',
+    fonte: 'https://opengameart.org/content/magic-space', licenza: 'CC0 1.0' },
+  { id: 'energia', titolo: 'We Are Prophet', autore: 'TinyWorlds', umore: 'Energica', nota: 'ritmata, allegra', da: 0,
+    url: 'https://opengameart.org/sites/default/files/bu-offensive-birds.mp3',
+    fonte: 'https://opengameart.org/content/we-are-prophet-happy-energetic-tune', licenza: 'CC0 1.0' },
+  { id: 'mare', titolo: 'Pacific Ocean', autore: 'josepharaoh99', umore: 'Mare', nota: 'onde e archi', da: 0,
+    url: 'https://opengameart.org/sites/default/files/Pacific%20Ocean_0.mp3',
+    fonte: 'https://opengameart.org/content/pacific-ocean', licenza: 'CC0 1.0' }
 ];
 
 const dice = (...a) => console.log(...a);
