@@ -1,6 +1,6 @@
 {
  "versione": 1,
- "generato": "2026-09-19T10:58:48.519Z",
+ "generato": "2026-09-19T12:51:08.968Z",
  "secondi": 60,
  "licenza": "CC0 1.0 · dominio pubblico (opengameart.org)",
  "brani": [
@@ -75,6 +75,78 @@
    "secondi": 60,
    "licenza": "CC0 1.0 (l'autore la offre anche come CC-BY 3.0)",
    "fonte": "https://opengameart.org/content/crickets-general-calm-ambient-music"
+  },
+  {
+   "id": "tempesta",
+   "titolo": "Eye of the Storm",
+   "autore": "Joth",
+   "umore": "Tempesta",
+   "nota": "cupa, incalzante",
+   "file": "musica/tempesta.mp3",
+   "byte": 720904,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/eye-of-the-storm"
+  },
+  {
+   "id": "tensione",
+   "titolo": "Determined Pursuit",
+   "autore": "Emma_MA",
+   "umore": "Tensione",
+   "nota": "orchestra che corre",
+   "file": "musica/tensione.mp3",
+   "byte": 720953,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/determined-pursuit-epic-orchestra-loop"
+  },
+  {
+   "id": "sole",
+   "titolo": "New Sunrise",
+   "autore": "nene",
+   "umore": "Sereno",
+   "nota": "luminosa, apre",
+   "file": "musica/sole.mp3",
+   "byte": 720889,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/new-sunrise"
+  },
+  {
+   "id": "spazio",
+   "titolo": "Magic Space",
+   "autore": "CodeManu",
+   "umore": "Sospesa",
+   "nota": "ampia, da cielo grande",
+   "file": "musica/spazio.mp3",
+   "byte": 720941,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/magic-space"
+  },
+  {
+   "id": "energia",
+   "titolo": "We Are Prophet",
+   "autore": "TinyWorlds",
+   "umore": "Energica",
+   "nota": "ritmata, allegra",
+   "file": "musica/energia.mp3",
+   "byte": 720946,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/we-are-prophet-happy-energetic-tune"
+  },
+  {
+   "id": "mare",
+   "titolo": "Pacific Ocean",
+   "autore": "josepharaoh99",
+   "umore": "Mare",
+   "nota": "onde e archi",
+   "file": "musica/mare.mp3",
+   "byte": 720904,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/pacific-ocean"
   }
  ]
 }
