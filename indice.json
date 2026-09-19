@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-19T06:21:46.201Z",
+ "aggiornato": "2026-09-19T10:57:52.284Z",
  "articoli": [
   {
    "id": "2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica",
@@ -12,7 +12,8 @@
    "fonte": "INGV Vulcani",
    "fonteUrl": "https://ingvvulcani.com/2026/09/17/clima-vulcani-e-tettonica-perche-studiarli-insieme/",
    "fonteTitolo": "Clima, vulcani e tettonica: perché studiarli insieme",
-   "file": "articoli/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica.json"
+   "file": "articoli/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica.json",
+   "miniatura": "immagini/2026-09-19-vt-claim-studia-i-legami-tra-clima-vulcani-e-tettonica-mini.webp"
   },
   {
    "id": "2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d",
@@ -25,7 +26,8 @@
    "fonte": "NOAA",
    "fonteUrl": "https://www.noaa.gov/news-release/noaa-selects-tomorrowio-to-help-advance-us-weather-forecasting",
    "fonteTitolo": "NOAA selects Tomorrow.io to help advance U.S. weather forecasting",
-   "file": "articoli/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d.json"
+   "file": "articoli/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d.json",
+   "miniatura": "immagini/2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d-mini.webp"
   },
   {
    "id": "2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d",
@@ -38,7 +40,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Faster-flowing_glaciers_fuel_decades_of_polar_ice_loss",
    "fonteTitolo": "Faster-flowing glaciers fuel decades of polar ice loss",
-   "file": "articoli/2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d.json"
+   "file": "articoli/2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d.json",
+   "miniatura": "immagini/2026-09-17-i-ghiacciai-piu-veloci-hanno-alimentato-decenni-di-perdita-d-mini.webp"
   },
   {
    "id": "2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett",
@@ -51,7 +54,8 @@
    "fonte": "SNPA · le Arpa d’Italia",
    "fonteUrl": "https://www.snpambiente.it/notizie/clima-e-acque-sotterranee-arpa-liguria-monitora-le-falde-dellimperiese/?utm_source=rss&utm_medium=rss&utm_campaign=clima-e-acque-sotterranee-arpa-liguria-monitora-le-falde-dellimperiese",
    "fonteTitolo": "Clima e acque sotterranee, Arpa Liguria monitora le falde dell’Imperiese",
-   "file": "articoli/2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett.json"
+   "file": "articoli/2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett.json",
+   "miniatura": "immagini/2026-09-16-in-val-nervia-il-monitoraggio-delle-falde-guarda-agli-effett-mini.webp"
   },
   {
    "id": "2026-09-15-palmi-ottiene-il-riconoscimento-unesco-tsunami-ready",
@@ -64,7 +68,8 @@
    "fonte": "INGV Terremoti",
    "fonteUrl": "https://ingvterremoti.com/2026/09/13/palmi-tsunami-ready-il-comune-calabrese-ottiene-il-prestigioso-riconoscimento-unesco/",
    "fonteTitolo": "Palmi “Tsunami Ready”: il comune calabrese ottiene il prestigioso riconoscimento UNESCO",
-   "file": "articoli/2026-09-15-palmi-ottiene-il-riconoscimento-unesco-tsunami-ready.json"
+   "file": "articoli/2026-09-15-palmi-ottiene-il-riconoscimento-unesco-tsunami-ready.json",
+   "miniatura": "immagini/2026-09-15-palmi-ottiene-il-riconoscimento-unesco-tsunami-ready-mini.webp"
   },
   {
    "id": "2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg",
@@ -77,7 +82,8 @@
    "fonte": "CMCC",
    "fonteUrl": "https://www.cmcc.it/article/europe-faces-more-frequent-and-intense-combinations-of-heat-drought-heavy-rain-and-fire-weather",
    "fonteTitolo": "Europe faces more frequent and intense combinations of heat, drought, heavy rain and fire weather",
-   "file": "articoli/2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg.json"
+   "file": "articoli/2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg.json",
+   "miniatura": "immagini/2026-09-14-in-europa-aumentano-le-combinazioni-di-caldo-siccita-e-piogg-mini.webp"
   },
   {
    "id": "2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell",
@@ -90,7 +96,8 @@
    "fonte": "SNPA · le Arpa d’Italia",
    "fonteUrl": "https://www.snpambiente.it/notizie/snpa/arpa-sicilia/fisica-e-intelligenza-artificiale-per-prevedere-linquinamento-da-biossido-di-azoto-lo-studio-relizzato-da-arpa-sicilia-pubblicato-sulla-rivista-scientifica-atmosphere-mdpi/?utm_source=rss&utm_medium=rss&utm_campaign=fisica-e-intelligenza-artificiale-per-prevedere-linquinamento-da-biossido-di-azoto-lo-studio-relizzato-da-arpa-sicilia-pubblicato-sulla-rivista-scientifica-atmosphere-mdpi",
    "fonteTitolo": "Fisica e intelligenza artificiale per prevedere l’inquinamento da biossido di azoto, lo studio relizzato da ARPA Sicilia pubblicato sulla rivista scientifica Atmosphere (MDPI)",
-   "file": "articoli/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell.json"
+   "file": "articoli/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell.json",
+   "miniatura": "immagini/2026-09-13-prevedere-il-biossido-di-azoto-urbano-unendo-fisica-e-intell-mini.webp"
   },
   {
    "id": "2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental",
@@ -103,7 +110,8 @@
    "fonte": "ISPRA",
    "fonteUrl": "https://www.isprambiente.gov.it/it/news/taormina-sd-wishees",
    "fonteTitolo": "Taormina ospita l’evento SD-WISHEES dedicato alla protezione del patrimonio culturale e ambientale dai rischi climatici",
-   "file": "articoli/2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental.json"
+   "file": "articoli/2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental.json",
+   "miniatura": "immagini/2026-09-12-a-taormina-due-giornate-sul-patrimonio-culturale-e-ambiental-mini.webp"
   },
   {
    "id": "2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi",
@@ -116,7 +124,8 @@
    "fonte": "CMCC",
    "fonteUrl": "https://www.cmcc.it/article/a-record-el-nino-on-a-warming-planet-what-science-says-about-future-climate-extremes",
    "fonteTitolo": "A record El Niño on a warming planet: What science says about future climate extremes",
-   "file": "articoli/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi.json"
+   "file": "articoli/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi.json",
+   "miniatura": "immagini/2026-09-11-le-previsioni-indicano-un-el-nino-da-record-su-un-pianeta-gi-mini.webp"
   },
   {
    "id": "2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america",
@@ -129,7 +138,8 @@
    "fonte": "NOAA",
    "fonteUrl": "https://www.noaa.gov/news-release/noaa-names-mississippi-state-university-to-host-new-northern-gulf-research-institute",
    "fonteTitolo": "NOAA names Mississippi State University to host new Northern Gulf research institute",
-   "file": "articoli/2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america.json"
+   "file": "articoli/2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america.json",
+   "miniatura": "immagini/2026-09-10-un-nuovo-istituto-di-ricerca-noaa-per-il-golfo-d-america-mini.webp"
   },
   {
    "id": "2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti",
@@ -142,7 +152,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
    "fonteTitolo": "Anak Krakatau Rumbles Again",
-   "file": "articoli/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti.json"
+   "file": "articoli/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti.json",
+   "miniatura": "immagini/2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti-mini.webp"
   },
   {
    "id": "2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la",
@@ -155,7 +166,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Newsroom/Press_Releases/FLEX_and_Sentinel-3C_launch_re-watch_event_on_15_September_at_ESA_s_Space_Operations_Centre",
    "fonteTitolo": "FLEX and Sentinel-3C launch re-watch event on 15 September at ESA's Space Operations Centre",
-   "file": "articoli/2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la.json"
+   "file": "articoli/2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la.json",
+   "miniatura": "immagini/2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la-mini.webp"
   },
   {
    "id": "2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall",
@@ -168,7 +180,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/a-bright-spot-at-mount-michael/",
    "fonteTitolo": "A Bright Spot at Mount Michael",
-   "file": "articoli/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall.json"
+   "file": "articoli/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall.json",
+   "miniatura": "immagini/2026-09-07-il-lago-di-lava-persistente-del-mount-michael-osservato-dall-mini.webp"
   },
   {
    "id": "2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla",
@@ -181,7 +194,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/iceberg-from-petermann-glacier-speeds-away/",
    "fonteTitolo": "Ice Island Survives Run-In With Joe Island",
-   "file": "articoli/2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla.json"
+   "file": "articoli/2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla.json",
+   "miniatura": "immagini/2026-09-06-l-isola-di-ghiaccio-del-petermann-supera-l-urto-con-joe-isla-mini.webp"
   },
   {
    "id": "2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p",
@@ -194,7 +208,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/How_Sentinel-3_tracks_climate_change",
    "fonteTitolo": "How Sentinel-3 tracks climate change",
-   "file": "articoli/2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p.json"
+   "file": "articoli/2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p.json",
+   "miniatura": "immagini/2026-09-05-sentinel-3-osserva-oceani-ghiacci-terre-emerse-e-atmosfera-p-mini.webp"
   },
   {
    "id": "2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne",
@@ -207,7 +222,8 @@
    "fonte": "INGV Terremoti",
    "fonteUrl": "https://ingvterremoti.com/2026/09/02/la-sequenza-sismica-nellitalia-centrale-dalla-faglia-del-monte-vettore-monte-bove-allidentificazione-geologica-di-faglie-attive-silenti/",
    "fonteTitolo": "Faglie attive silenti riconosciute con dati geologici come lacune sismiche dell’Appennino centrale",
-   "file": "articoli/2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne.json"
+   "file": "articoli/2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne.json",
+   "miniatura": "immagini/2026-09-04-le-faglie-silenti-dell-appennino-centrale-lasciano-tracce-ne-mini.webp"
   },
   {
    "id": "2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo",
@@ -220,7 +236,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/Watch_live_MTG-I2_set_for_liftoff",
    "fonteTitolo": "Watch live: MTG-I2 set for liftoff",
-   "file": "articoli/2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo.json"
+   "file": "articoli/2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo.json",
+   "miniatura": "immagini/2026-09-03-mtg-i2-pronto-al-lancio-per-rafforzare-le-osservazioni-meteo-mini.webp"
   },
   {
    "id": "2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera-",
@@ -233,7 +250,8 @@
    "fonte": "NOAA",
    "fonteUrl": "https://www.noaa.gov/news-release/noaa-announces-priorities-to-promote-science-based-american-seafood-dominance",
    "fonteTitolo": "NOAA announces priorities to promote science-based American seafood dominance",
-   "file": "articoli/2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera-.json"
+   "file": "articoli/2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera-.json",
+   "miniatura": "immagini/2026-09-03-noaa-fisheries-indica-le-priorita-per-rafforzare-la-filiera--mini.webp"
   },
   {
    "id": "2026-09-02-la-siccita-si-intensifica-a-porto-rico",
@@ -246,7 +264,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
    "fonteTitolo": "Drought Intensifies Across Puerto Rico",
-   "file": "articoli/2026-09-02-la-siccita-si-intensifica-a-porto-rico.json"
+   "file": "articoli/2026-09-02-la-siccita-si-intensifica-a-porto-rico.json",
+   "miniatura": "immagini/2026-09-02-la-siccita-si-intensifica-a-porto-rico-mini.webp"
   },
   {
    "id": "2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione",
@@ -259,7 +278,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2/Nepal_flash_flood_imaged_by_satellites",
    "fonteTitolo": "Nepal flash flood imaged by satellites",
-   "file": "articoli/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione.json"
+   "file": "articoli/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione.json",
+   "miniatura": "immagini/2026-09-01-le-immagini-satellitari-mostrano-l-estensione-dell-alluvione-mini.webp"
   },
   {
    "id": "2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di",
@@ -272,7 +292,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/pasterze-hangs-on-as-austrias-largest-glacier/",
    "fonteTitolo": "Pasterze Hangs on as Austria’s Largest Glacier",
-   "file": "articoli/2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di.json"
+   "file": "articoli/2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di.json",
+   "miniatura": "immagini/2026-08-31-il-ghiacciaio-pasterze-resta-unito-da-una-stretta-cascata-di-mini.webp"
   },
   {
    "id": "2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e-",
@@ -285,7 +306,8 @@
    "fonte": "INGV Ambiente",
    "fonteUrl": "https://ingvambiente.com/2026/07/28/posidonia-oceanica-un-alleato-del-clima-in-un-mediterraneo-sempre-piu-caldo/",
    "fonteTitolo": "Posidonia oceanica: un alleato del clima in un Mediterraneo sempre più caldo",
-   "file": "articoli/2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e-.json"
+   "file": "articoli/2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e-.json",
+   "miniatura": "immagini/2026-08-30-posidonia-oceanica-una-prateria-marina-che-protegge-coste-e--mini.webp"
   },
   {
    "id": "2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe",
@@ -298,7 +320,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-1/Sentinel-1_captures_major_ice_loss_from_Greenland_glacier",
    "fonteTitolo": "Sentinel-1 captures major ice loss from Greenland glacier",
-   "file": "articoli/2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe.json"
+   "file": "articoli/2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe.json",
+   "miniatura": "immagini/2026-08-30-un-grande-iceberg-si-stacca-dal-ghiacciaio-petermann-in-groe-mini.webp"
   },
   {
    "id": "2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana",
@@ -311,7 +334,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/meteosat_third_generation/MTG-I2_ready_for_launch_on_Ariane_6",
    "fonteTitolo": "MTG-I2 ready for launch on Ariane 6",
-   "file": "articoli/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana.json"
+   "file": "articoli/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana.json",
+   "miniatura": "immagini/2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana-mini.webp"
   },
   {
    "id": "2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi",
@@ -324,7 +348,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Newsroom/Press_Releases/Media_invitation_FLEX_and_Copernicus_Sentinel-3C_online_media_briefings",
    "fonteTitolo": "Media invitation: FLEX and Copernicus Sentinel-3C online media briefings",
-   "file": "articoli/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi.json"
+   "file": "articoli/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi.json",
+   "miniatura": "immagini/2026-08-29-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-pi-mini.webp"
   },
   {
    "id": "2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort",
@@ -337,7 +362,8 @@
    "fonte": "NOAA",
    "fonteUrl": "https://www.noaa.gov/news-release/noaa-to-rebuild-historic-science-lab-in-beaufort-north-carolina",
    "fonteTitolo": "NOAA to rebuild historic science lab in Beaufort, North Carolina",
-   "file": "articoli/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort.json"
+   "file": "articoli/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort.json",
+   "miniatura": "immagini/2026-08-28-noaa-ricostruira-lo-storico-laboratorio-marino-di-beaufort-mini.webp"
   },
   {
    "id": "2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr",
@@ -350,7 +376,8 @@
    "fonte": "NOAA",
    "fonteUrl": "https://www.noaa.gov/news-release/noaa-boosts-weather-data-collection-capabilities-with-new-mesonet-contract",
    "fonteTitolo": "NOAA boosts weather data collection capabilities with new Mesonet contract",
-   "file": "articoli/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr.json"
+   "file": "articoli/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr.json",
+   "miniatura": "immagini/2026-08-27-noaa-amplia-la-rete-di-osservazioni-meteo-con-un-nuovo-contr-mini.webp"
   },
   {
    "id": "2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost",
@@ -363,7 +390,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/rare-widespread-snow-in-the-atacama-desert/",
    "fonteTitolo": "Rare, Widespread Snow in the Atacama Desert",
-   "file": "articoli/2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost.json"
+   "file": "articoli/2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost.json",
+   "miniatura": "immagini/2026-08-27-neve-estesa-nel-deserto-di-atacama-dopo-le-tempeste-di-agost-mini.webp"
   },
   {
    "id": "2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg",
@@ -376,7 +404,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/MTG-I1_captures_eclipse_path_of_totality_over_Europe",
    "fonteTitolo": "MTG-I1 captures eclipse path of totality over Europe",
-   "file": "articoli/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg.json"
+   "file": "articoli/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg.json",
+   "miniatura": "immagini/2026-08-26-l-ombra-della-luna-attraversa-l-europa-nelle-immagini-di-mtg-mini.webp"
   },
   {
    "id": "2026-08-26-una-story-map-ripercorre-la-sequenza-sismica-del-2016-17-e-l",
@@ -389,7 +418,8 @@
    "fonte": "INGV Terremoti",
    "fonteUrl": "https://ingvterremoti.com/2026/08/20/una-story-map-per-raccontare-la-lunga-sequenza-sismica-in-italia-centrale-del-2016-17-e-la-risposta-dellingv/",
    "fonteTitolo": "Una story map per raccontare la lunga sequenza sismica in Italia centrale del 2016-17 e la risposta dell’INGV",
-   "file": "articoli/2026-08-26-una-story-map-ripercorre-la-sequenza-sismica-del-2016-17-e-l.json"
+   "file": "articoli/2026-08-26-una-story-map-ripercorre-la-sequenza-sismica-del-2016-17-e-l.json",
+   "miniatura": "immagini/2026-08-26-una-story-map-ripercorre-la-sequenza-sismica-del-2016-17-e-l-mini.webp"
   },
   {
    "id": "2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i",
@@ -402,7 +432,8 @@
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
    "fonteTitolo": "A Changing World for Emperor Penguins",
-   "file": "articoli/2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i.json"
+   "file": "articoli/2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i.json",
+   "miniatura": "immagini/2026-08-26-i-pinguini-imperatore-cambiano-sito-di-riproduzione-quando-i-mini.webp"
   },
   {
    "id": "2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ",
@@ -415,7 +446,8 @@
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3_provides_faster_data_for_Europe_fires",
    "fonteTitolo": "Sentinel-3 provides faster data for Europe fires",
-   "file": "articoli/2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ.json"
+   "file": "articoli/2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ.json",
+   "miniatura": "immagini/2026-08-25-sentinel-3-accelera-l-arrivo-dei-dati-sugli-incendi-in-europ-mini.webp"
   },
   {
    "id": "2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d",
@@ -428,7 +460,8 @@
    "fonte": "INGV Vulcani",
    "fonteUrl": "https://ingvvulcani.com/2026/07/31/lintrusione-magmatica-del-13-maggio-2008-un-evento-chiave-per-interpretare-le-eruzioni-laterali-delletna/",
    "fonteTitolo": "L’intrusione magmatica del 13 maggio 2008: un evento chiave per interpretare le eruzioni laterali dell’Etna",
-   "file": "articoli/2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d.json"
+   "file": "articoli/2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d.json",
+   "miniatura": "immagini/2026-08-25-etna-l-intrusione-del-2008-che-ha-mostrato-l-arresto-di-un-d-mini.webp"
   },
   {
    "id": "2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-",
@@ -440,7 +473,8 @@
    "copertina": "immagini/2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza--copertina.webp",
    "fonte": "INGV Terremoti",
    "fonteUrl": "https://ingvterremoti.com/2026/08/24/dieci-anni-dalla-sequenza-in-italia-centrale-cosa-abbiamo-imparato-dalla-scienza/",
-   "file": "articoli/2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-.json"
+   "file": "articoli/2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza-.json",
+   "miniatura": "immagini/2026-08-25-dieci-anni-dalla-sequenza-del-2016-le-lezioni-della-scienza--mini.webp"
   },
   {
    "id": "2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille-",
@@ -452,7 +486,8 @@
    "copertina": "immagini/2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille--copertina.webp",
    "fonte": "INGV Vulcani",
    "fonteUrl": "https://ingvvulcani.com/2026/08/24/campi-flegrei-il-terremoto-md-4-7-del-31-luglio-e-lo-sciame-sismico-che-hanno-scosso-la-caldera-flegrea-una-nuova-foto-della-sismicita/",
-   "file": "articoli/2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille-.json"
+   "file": "articoli/2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille-.json",
+   "miniatura": "immagini/2026-08-25-campi-flegrei-lo-sciame-del-31-luglio-visto-con-oltre-mille--mini.webp"
   },
   {
    "id": "2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab",
@@ -464,7 +499,8 @@
    "copertina": "immagini/2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab-copertina.webp",
    "fonte": "NASA Science",
    "fonteUrl": "https://science.nasa.gov/photojournal/maia-air-sensor-at-work-in-addis-ababa/",
-   "file": "articoli/2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab.json"
+   "file": "articoli/2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab.json",
+   "miniatura": "immagini/2026-08-25-un-sensore-sul-tetto-osserva-il-particolato-fine-ad-addis-ab-mini.webp"
   },
   {
    "id": "2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-",
@@ -476,7 +512,8 @@
    "copertina": "immagini/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull--copertina.webp",
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/ESA_Multimedia/Videos/2026/08/Replay_MTG-I2_pre-launch_media_briefing",
-   "file": "articoli/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-.json"
+   "file": "articoli/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull-.json",
+   "miniatura": "immagini/2026-08-25-mtg-i2-completa-la-costellazione-per-le-immagini-meteo-sull--mini.webp"
   },
   {
    "id": "2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio",
@@ -488,7 +525,8 @@
    "copertina": "immagini/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio-copertina.webp",
    "fonte": "ESA Observing the Earth",
    "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026",
-   "file": "articoli/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio.json"
+   "file": "articoli/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio.json",
+   "miniatura": "immagini/2026-08-25-caldo-estremo-siccita-e-incendi-il-monitoraggio-dallo-spazio-mini.webp"
   }
  ],
  "scartati": [
