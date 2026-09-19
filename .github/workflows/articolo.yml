@@ -65,14 +65,33 @@ jobs:
           APK: ${{ vars.APK || 'https://drive.google.com/drive/folders/12S14HNl9zudUCuLCyeIYXtYYD1Sf6I07' }}
         run: node genera.mjs ${{ inputs.forza && '--forza' || '' }}
 
+      # v77.1 — il controllo "c'è qualcosa di nuovo?" guarda SOLO i file del blog.
+      # Prima guardava tutta la cartella, e da quando il lavoro installa "sharp"
+      # (per le miniature) la cartella node_modules la sporcava sempre: i dieci
+      # tentativi dopo il primo non uscivano più in silenzio, provavano a fare un
+      # commit vuoto e fallivano — una mail di errore per ognuno. L'articolo però
+      # usciva lo stesso: falliva solo chi arrivava dopo, a lavoro già fatto.
       - name: Pubblica
         run: |
-          if [ -z "$(git status --porcelain)" ]; then
+          CONTENUTO="articoli immagini p indice.json index.html .nojekyll"
+          if [ -z "$(git status --porcelain -- $CONTENUTO 2>/dev/null)" ]; then
             echo "Niente di nuovo: oggi il blog resta com'è."
             exit 0
           fi
           git config user.name  "Meteo Radar"
           git config user.email "blog@meteoradar.local"
-          git add -A articoli immagini p indice.json index.html .nojekyll 2>/dev/null || git add -A
+          for f in $CONTENUTO; do [ -e "$f" ] && git add -A "$f"; done
+          if git diff --cached --quiet; then
+            echo "Niente da pubblicare."
+            exit 0
+          fi
           git commit -m "Articolo del $(TZ=Europe/Rome date +%d/%m/%Y)"
-          git push
+          # se nel frattempo è arrivato un altro commit (un file caricato a mano,
+          # un altro lavoro), si riallinea e riprova invece di fallire
+          for i in 1 2 3; do
+            if git push; then echo "pubblicato"; exit 0; fi
+            echo "push rifiutato, mi riallineo e riprovo ($i)"
+            git pull --rebase --autostash || true
+            sleep 10
+          done
+          exit 1
