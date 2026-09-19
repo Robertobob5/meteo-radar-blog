@@ -1,0 +1,80 @@
+{
+ "versione": 1,
+ "generato": "2026-09-19T10:58:48.519Z",
+ "secondi": 60,
+ "licenza": "CC0 1.0 · dominio pubblico (opengameart.org)",
+ "brani": [
+  {
+   "id": "alba",
+   "titolo": "First Light Particles",
+   "autore": "Yoiyami",
+   "umore": "Rilassata",
+   "nota": "piano e tappeti, calmo",
+   "file": "musica/alba.mp3",
+   "byte": 721012,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/first-light-particles-%E2%80%93-cc0-atmospheric-pianoambient-track"
+  },
+  {
+   "id": "tramonto",
+   "titolo": "Sunset Plains",
+   "autore": "Yoiyami",
+   "umore": "Calma",
+   "nota": "chitarra e tappeti, new age",
+   "file": "musica/tramonto.mp3",
+   "byte": 720898,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/sunset-plains"
+  },
+  {
+   "id": "autunno",
+   "titolo": "Aimless Autumn",
+   "autore": "Icerider007",
+   "umore": "Allegra",
+   "nota": "leggera, a ciclo",
+   "file": "musica/autunno.mp3",
+   "byte": 720362,
+   "secondi": 60,
+   "licenza": "CC0 1.0 (l'autore la offre anche come OGA-BY 4.0)",
+   "fonte": "https://opengameart.org/content/aimless-autumn"
+  },
+  {
+   "id": "neve",
+   "titolo": "November Snow",
+   "autore": "cynicmusic",
+   "umore": "Inverno",
+   "nota": "lenta, di neve",
+   "file": "musica/neve.mp3",
+   "byte": 720901,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/november-snow"
+  },
+  {
+   "id": "epica",
+   "titolo": "A Legend Will Rise",
+   "autore": "CodeManu",
+   "umore": "Epica",
+   "nota": "orchestra, da temporale",
+   "file": "musica/epica.mp3",
+   "byte": 720984,
+   "secondi": 60,
+   "licenza": "CC0 1.0",
+   "fonte": "https://opengameart.org/content/a-legend-will-rise-orchestral"
+  },
+  {
+   "id": "sera",
+   "titolo": "Crickets",
+   "autore": "SpringySpringo",
+   "umore": "Sera",
+   "nota": "piano calmo",
+   "file": "musica/sera.mp3",
+   "byte": 721026,
+   "secondi": 60,
+   "licenza": "CC0 1.0 (l'autore la offre anche come CC-BY 3.0)",
+   "fonte": "https://opengameart.org/content/crickets-general-calm-ambient-music"
+  }
+ ]
+}
