@@ -28,6 +28,7 @@ const VOCE = (process.env.VOCE || 'cedar').trim();
 const ATTACCO_VOCE = 5.0, CALA_DA = 4.2, CALA_A = 5.8, SOTTO = 0.14, CODA = 1.5;
 const W = 768, H = 432, FPS = 25;
 const PAUSA = 0.55;                     /* secondi di respiro fra un capitolo e l'altro */
+const POSTER_APERTURA = 0.45;           /* v76 · la locandina: bocca aperta almeno così (Steve che parla) */
 
 /* ─────────────── le città e i mari ─────────────── */
 const CITTA = [
@@ -392,16 +393,22 @@ export async function filmatoItalia(o) {
   const fine = inizio[capitoli.length - 1] + durate[capitoli.length - 1] + CODA;
   const nf = Math.ceil(fine * FPS);
   const tela = createCanvas(W, H), g = tela.getContext('2d');
-  let poster = false;
+  let poster = false, posterA = null;
+  /* v76 · la locandina da un fotogramma in cui Steve PARLA (bocca aperta, dopo la sigla), non dal secondo 1,2 con la bocca chiusa:
+     il primo fotogramma dopo l'attacco della voce con l'apertura oltre POSTER_APERTURA; se in quattro secondi non arriva (filmato muto), quello */
+  const posterDa = ATTACCO_VOCE + 0.8;
   for (let f = 0; f < nf; f++) {
     const t = f / FPS;
     let indice = 0; for (let i = 0; i < capitoli.length; i++) if (t >= inizio[i]) indice = i;
     const cap = capitoli[indice];
     const tCap = Math.max(0, t - inizio[indice]);
     const mappa = await mappaA(cap.film, tCap);
-    disegnaFotogramma(g, { mappa, capitolo: cap, capitoli, indice, steve, stato: statoA(f), t, edizione });
+    const stato = statoA(f);
+    disegnaFotogramma(g, { mappa, capitolo: cap, capitoli, indice, steve, stato, t, edizione });
     fs.writeFileSync(path.join(dir, 'f_' + String(f).padStart(5, '0') + '.png'), tela.toBuffer('image/png'));
-    if (!poster && t >= 1.2) { fs.writeFileSync(path.join(cartella, 'italia.jpg'), tela.toBuffer('image/jpeg', { quality: 0.84 })); poster = true; }
+    if (!poster && t >= posterDa && ((stato.apertura || 0) >= POSTER_APERTURA || t >= posterDa + 4 || f === nf - 1)) {
+      fs.writeFileSync(path.join(cartella, 'italia.jpg'), tela.toBuffer('image/jpeg', { quality: 0.84 })); poster = true; posterA = Math.round(t * 100) / 100;
+    }
   }
 
   /* 6 · l'audio: sigla piena per cinque secondi, poi sotto la voce */
@@ -435,7 +442,7 @@ export async function filmatoItalia(o) {
 
   return {
     id: 'italia', titolo: 'Il video del giorno · Italia', sotto: 'Steve racconta cielo, temperature, pioggia, vento, mare e neve, città per città',
-    file: 'previsioni/italia.mp4', poster: 'previsioni/italia.jpg', secondi: Math.round(fine * 10) / 10, fotogrammi: nf,
+    file: 'previsioni/italia.mp4', poster: 'previsioni/italia.jpg', posterA, secondi: Math.round(fine * 10) / 10, fotogrammi: nf,
     byte: fs.statSync(uscita).size, generato: adesso.toISOString(), edizione, parlato, presentatore: 'Steve',
     capitoli: capitoli.map((c, i) => ({ id: c.id, titolo: c.titolo, da: Math.round(inizio[i] * 10) / 10 })),
     racconto: capitoli.flatMap(c => c.frasi)
