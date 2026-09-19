@@ -49,6 +49,11 @@ jobs:
         with:
           node-version: '22'
 
+      # v75 · "sharp" fa le miniature degli articoli (320×200 WebP) per gli
+      # elenchi dell'app: senza, lo script va avanti lo stesso senza miniature.
+      - name: Prepara sharp (le miniature)
+        run: npm install --no-save --no-audit --no-fund sharp@0.34
+
       - name: Scrivi l'articolo
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
