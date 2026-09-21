@@ -1,0 +1,6 @@
+{
+ "attivo": true,
+ "url": "https://hidden-smoke-a1dbsteve-voce.videopromo2000.workers.dev",
+ "raggio_km": 20,
+ "nota": "Portiere della voce di Steve (Cloudflare Worker di Roberto). Per spegnere la voce vera e tornare a quella del telefono: attivo = false. Per allargare o stringere la zona: raggio_km."
+}
