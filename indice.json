@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-20T06:21:31.193Z",
+ "aggiornato": "2026-09-21T06:21:49.073Z",
  "articoli": [
+  {
+   "id": "2026-09-21-a-roma-il-caldo-estremo-diventa-un-segnale-sempre-piu-misura",
+   "data": "2026-09-21",
+   "titolo": "A Roma il caldo estremo diventa un segnale sempre più misurabile",
+   "sottotitolo": "Il secondo Rapporto di monitoraggio climatico del CMCC descrive temperature elevate, notti tropicali e ondate di calore nella capitale.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-21-a-roma-il-caldo-estremo-diventa-un-segnale-sempre-piu-misura-copertina.webp",
+   "miniatura": "immagini/2026-09-21-a-roma-il-caldo-estremo-diventa-un-segnale-sempre-piu-misura-mini.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/measuring-heatwaves-in-rome-new-data-to-helps-address-extreme-temperatures-today-and-in-the-future",
+   "fonteTitolo": "Measuring heatwaves in Rome: New data to helps address extreme temperatures today and in the future",
+   "file": "articoli/2026-09-21-a-roma-il-caldo-estremo-diventa-un-segnale-sempre-piu-misura.json"
+  },
   {
    "id": "2026-09-20-cnr-isp-e-awi-rinnovano-la-collaborazione-per-lo-studio-dell",
    "data": "2026-09-20",
