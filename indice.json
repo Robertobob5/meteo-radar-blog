@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-21T06:21:49.073Z",
+ "aggiornato": "2026-09-22T06:21:53.166Z",
  "articoli": [
+  {
+   "id": "2026-09-22-regno-unito-inizio-settimana-caldo-poi-attenzione-a-piogge-e",
+   "data": "2026-09-22",
+   "titolo": "Regno Unito: inizio settimana caldo, poi attenzione a piogge e vento",
+   "sottotitolo": "L’alta pressione porta sole e temperature miti, ma da mercoledì il tempo potrebbe diventare più variabile.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-22-regno-unito-inizio-settimana-caldo-poi-attenzione-a-piogge-e-copertina.webp",
+   "miniatura": "immagini/2026-09-22-regno-unito-inizio-settimana-caldo-poi-attenzione-a-piogge-e-mini.webp",
+   "fonte": "Met Office",
+   "fonteUrl": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/a-warm-week-ahead-with-watchpoints-for-rain-and-wind-",
+   "fonteTitolo": "A warm week ahead with watchpoints for rain and wind",
+   "file": "articoli/2026-09-22-regno-unito-inizio-settimana-caldo-poi-attenzione-a-piogge-e.json"
+  },
   {
    "id": "2026-09-21-a-roma-il-caldo-estremo-diventa-un-segnale-sempre-piu-misura",
    "data": "2026-09-21",
