@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-22T06:21:53.166Z",
+ "aggiornato": "2026-09-23T06:21:54.235Z",
  "articoli": [
+  {
+   "id": "2026-09-23-scienze-della-vita-a-roma-il-confronto-su-ricerca-telemedici",
+   "data": "2026-09-23",
+   "titolo": "Scienze della vita: a Roma il confronto su ricerca, telemedicina e investimenti",
+   "sottotitolo": "Meet in Italy for Life Sciences riunirà ricerca, imprese, istituzioni e investitori attorno alle strategie per l’Italia e l’Europa.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-23-scienze-della-vita-a-roma-il-confronto-su-ricerca-telemedici-copertina.webp",
+   "miniatura": "immagini/2026-09-23-scienze-della-vita-a-roma-il-confronto-su-ricerca-telemedici-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14640/meet-in-italy-for-life-sciences-le-nuove-sfide-per-le-scienze-della-vita-in-italia-e-in-europa",
+   "fonteTitolo": "Meet in Italy for Life Sciences: le nuove sfide per le scienze della vita in Italia e in Europa",
+   "file": "articoli/2026-09-23-scienze-della-vita-a-roma-il-confronto-su-ricerca-telemedici.json"
+  },
   {
    "id": "2026-09-22-regno-unito-inizio-settimana-caldo-poi-attenzione-a-piogge-e",
    "data": "2026-09-22",
