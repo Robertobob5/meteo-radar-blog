@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-23T06:21:54.235Z",
+ "aggiornato": "2026-09-24T06:22:04.153Z",
  "articoli": [
+  {
+   "id": "2026-09-24-villa-paganini-diventa-un-parco-sentinella-per-aria-e-microc",
+   "data": "2026-09-24",
+   "titolo": "Villa Paganini diventa un parco sentinella per aria e microclima urbano",
+   "sottotitolo": "Nel parco romano un progetto unisce sensori, muschi e osservazioni sulle foglie per studiare inquinanti, caldo e ruolo della vegetazione.",
+   "categoria": "Aria",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-24-villa-paganini-diventa-un-parco-sentinella-per-aria-e-microc-copertina.webp",
+   "miniatura": "immagini/2026-09-24-villa-paganini-diventa-un-parco-sentinella-per-aria-e-microc-mini.webp",
+   "fonte": "SNPA · le Arpa d’Italia",
+   "fonteUrl": "https://www.snpambiente.it/notizie/villa-paganini-un-parco-urbano-nellantropocene/?utm_source=rss&utm_medium=rss&utm_campaign=villa-paganini-un-parco-urbano-nellantropocene",
+   "fonteTitolo": "Villa Paganini, un parco urbano nell’Antropocene",
+   "file": "articoli/2026-09-24-villa-paganini-diventa-un-parco-sentinella-per-aria-e-microc.json"
+  },
   {
    "id": "2026-09-23-scienze-della-vita-a-roma-il-confronto-su-ricerca-telemedici",
    "data": "2026-09-23",
