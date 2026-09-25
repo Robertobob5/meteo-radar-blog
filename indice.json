@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-24T06:22:04.153Z",
+ "aggiornato": "2026-09-25T06:21:36.700Z",
  "articoli": [
+  {
+   "id": "2026-09-25-le-mappe-noaa-delle-inondazioni-fluviali-arrivano-a-quasi-tu",
+   "data": "2026-09-25",
+   "titolo": "Le mappe NOAA delle inondazioni fluviali arrivano a quasi tutta la popolazione degli Stati Uniti",
+   "sottotitolo": "Lo strumento sperimentale mostra, su scala di quartiere, le aree che potrebbero essere coperte dall’acqua nei giorni successivi.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-25-le-mappe-noaa-delle-inondazioni-fluviali-arrivano-a-quasi-tu-copertina.webp",
+   "miniatura": "immagini/2026-09-25-le-mappe-noaa-delle-inondazioni-fluviali-arrivano-a-quasi-tu-mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-flood-mapping-tool-now-covers-nearly-100-of-us",
+   "fonteTitolo": "NOAA’s flood mapping tool now covers nearly 100% of U.S.",
+   "file": "articoli/2026-09-25-le-mappe-noaa-delle-inondazioni-fluviali-arrivano-a-quasi-tu.json"
+  },
   {
    "id": "2026-09-24-villa-paganini-diventa-un-parco-sentinella-per-aria-e-microc",
    "data": "2026-09-24",
