@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-25T06:21:36.700Z",
+ "aggiornato": "2026-09-26T06:21:45.228Z",
  "articoli": [
+  {
+   "id": "2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e-",
+   "data": "2026-09-26",
+   "titolo": "Nor’easter in arrivo sul Nord-Est degli Stati Uniti: vento e allagamenti costieri attesi nel weekend",
+   "sottotitolo": "Il Servizio meteorologico nazionale statunitense monitora una perturbazione costiera in rapido approfondimento lungo la costa orientale.",
+   "categoria": "Atmosfera",
+   "minuti": 2,
+   "copertina": "immagini/2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e--copertina.webp",
+   "miniatura": "immagini/2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e--mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news/weekend-noreaster-likely-to-bring-damaging-winds-coastal-flooding",
+   "fonteTitolo": "Weekend nor’easter likely to bring damaging winds, coastal flooding",
+   "file": "articoli/2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e-.json"
+  },
   {
    "id": "2026-09-25-le-mappe-noaa-delle-inondazioni-fluviali-arrivano-a-quasi-tu",
    "data": "2026-09-25",

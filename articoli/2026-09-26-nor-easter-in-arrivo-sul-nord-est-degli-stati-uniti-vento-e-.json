@@ -1,0 +1,80 @@
+{
+ "id": "2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e-",
+ "data": "2026-09-26",
+ "scritto": "2026-09-26T06:21:45.228Z",
+ "titolo": "Nor’easter in arrivo sul Nord-Est degli Stati Uniti: vento e allagamenti costieri attesi nel weekend",
+ "sottotitolo": "Il Servizio meteorologico nazionale statunitense monitora una perturbazione costiera in rapido approfondimento lungo la costa orientale.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e--copertina.webp",
+ "copertinaAlt": "Illustrazione di una forte perturbazione costiera con onde alte, pioggia e vento lungo una costa.",
+ "miniatura": "immagini/2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e--mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "I previsori del Servizio meteorologico nazionale degli Stati Uniti, parte della NOAA, stanno monitorando un potente nor’easter atteso nel fine settimana sul Nord-Est del Paese. Con questo nome si indica una forte perturbazione costiera: in questo caso, il sistema dovrebbe portare raffiche di vento dannose e inondazioni costiere pericolose."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La perturbazione si sta approfondendo rapidamente lungo la costa orientale. Secondo le previsioni riportate dalla NOAA, tra sabato e domenica potrebbe produrre vento molto rafficato, piogge intense e allagamenti costieri lungo il corridoio della I-95, dal Medio Atlantico fino al New England."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le zone più esposte"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’area metropolitana di New York e il New Jersey potrebbero essere particolarmente interessati dalla tempesta. Le raffiche più forti e le inondazioni costiere più diffuse sono considerate più probabili in prossimità del fronte mare e delle coste del New Jersey, di New York City e di Long Island."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il momento più critico per gli allagamenti è atteso durante i cicli di alta marea diurni di sabato e domenica. L’alta marea è la fase in cui il livello del mare raggiunge i suoi valori più elevati nel ciclo delle maree. In una situazione di vento, pioggia e mare agitato, gli effetti lungo il litorale possono quindi risultare più rilevanti."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di onde, alta marea e acqua che raggiunge una baia e un fiume soggetto alle maree.",
+   "didascalia": "Gli allagamenti previsti non riguardano soltanto il bordo immediato della costa.",
+   "file": "immagini/2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e--1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Allagamenti anche verso l’interno"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La NOAA segnala che le inondazioni potranno estendersi verso l’interno a partire dalle zone sul lungomare, lungo fiumi e baie soggetti alle maree. Si tratta di corsi d’acqua e insenature nei quali il livello dell’acqua risente del ciclo delle maree. Per questo l’attenzione non è rivolta esclusivamente alle spiagge e alle rive direttamente affacciate sull’oceano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il quadro previsto riunisce più elementi: piogge intense, vento molto rafficato e innalzamento dell’acqua nelle aree costiere durante l’alta marea. Le indicazioni diffuse dalla NOAA concentrano l’attenzione sulle fasce prossime al mare e sul possibile prolungamento degli allagamenti lungo fiumi e baie."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Seguire gli aggiornamenti locali"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La NOAA invita a consultare le informazioni di previsione più recenti sul sito weather.gov, inserendo il proprio codice postale oppure città e Stato. In questo modo è possibile accedere agli avvisi per condizioni meteorologiche pericolose e alle previsioni dell’ufficio locale del Servizio meteorologico nazionale."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per i messaggi aggiornati sulla perturbazione e sui suoi impatti, la NOAA rimanda anche al proprio Centro per le previsioni meteorologiche. Il Servizio meteorologico nazionale pubblica inoltre aggiornamenti attraverso i suoi canali social e invita a seguire anche l’ufficio previsionale locale di riferimento."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La NOAA raccomanda di prepararsi prima dell’arrivo della tempesta, avendo a disposizione cibo, acqua, medicinali e altre necessità di base per sé, per la famiglia e per gli animali domestici, così da affrontare il passaggio della perturbazione e le sue conseguenze."
+  }
+ ],
+ "parole": 436,
+ "minuti": 2,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "Weekend nor’easter likely to bring damaging winds, coastal flooding",
+  "url": "https://www.noaa.gov/news/weekend-noreaster-likely-to-bring-damaging-winds-coastal-flooding",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
