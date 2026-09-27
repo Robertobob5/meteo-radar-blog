@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-26T06:21:45.228Z",
+ "aggiornato": "2026-09-27T06:21:42.043Z",
  "articoli": [
+  {
+   "id": "2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann",
+   "data": "2026-09-27",
+   "titolo": "La castagna d’acqua aiuta a leggere lo stato del lago di Annone",
+   "sottotitolo": "Le misure sulle piante galleggianti servono a collegare le osservazioni sul lago con quelle dei satelliti.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann-copertina.webp",
+   "miniatura": "immagini/2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14652/lago-di-annone-quando-una-pianta-diventa-un-indicatore-ambientale",
+   "fonteTitolo": "Lago di Annone, quando una pianta diventa un indicatore ambientale",
+   "file": "articoli/2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann.json"
+  },
   {
    "id": "2026-09-26-nor-easter-in-arrivo-sul-nord-est-degli-stati-uniti-vento-e-",
    "data": "2026-09-26",

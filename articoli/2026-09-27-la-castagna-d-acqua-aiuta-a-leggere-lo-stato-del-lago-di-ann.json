@@ -1,0 +1,96 @@
+{
+ "id": "2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann",
+ "data": "2026-09-27",
+ "scritto": "2026-09-27T06:21:42.043Z",
+ "titolo": "La castagna d’acqua aiuta a leggere lo stato del lago di Annone",
+ "sottotitolo": "Le misure sulle piante galleggianti servono a collegare le osservazioni sul lago con quelle dei satelliti.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann-copertina.webp",
+ "copertinaAlt": "Piante galleggianti di castagna d’acqua e una piattaforma di monitoraggio sul lago.",
+ "miniatura": "immagini/2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Sul lago di Annone, in provincia di Lecco, una pianta acquatica viene osservata per capire meglio le condizioni del lago e per rendere più accurate le letture effettuate dai satelliti. La specie al centro del lavoro è la castagna d’acqua, il cui nome scientifico è Trapa natans: una pianta autoctona, cioè originaria del territorio, diffusa nei laghi di Annone."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dal 2021 i ricercatori dell’Istituto per il Rilevamento Elettromagnetico dell’Ambiente del Cnr monitorano alcune piante acquatiche. L’obiettivo è seguirne lo stato di salute e sviluppare metodi utili a interpretare con crescente precisione le osservazioni satellitari. Il lavoro riunisce misure automatiche, controlli direttamente sul lago e dati raccolti durante i passaggi di un satellite."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una pianta che galleggia e crea habitat"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La castagna d’acqua è una pianta flottante, cioè vive e si sviluppa sulla superficie dell’acqua. Nelle zone dove le correnti sono più deboli può formare tappeti galleggianti estesi. Queste aree sono un habitat importante: offrono riparo ai pesci più piccoli e contribuiscono agli equilibri dell’ecosistema del lago."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La sua utilità per il monitoraggio dipende dalla sensibilità alle condizioni della colonna d’acqua, ovvero dell’acqua presente tra la superficie e il fondo. Inoltre, il suo stato fisiologico può essere seguito attraverso la risposta spettrale: il modo in cui la pianta riflette la luce alle diverse lunghezze d’onda. Per questo la castagna d’acqua può funzionare come indicatore ambientale, un elemento osservabile che fornisce informazioni sullo stato di salute del lago."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "La luce riflessa dalle foglie"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "All’inizio dell’estate è stata posizionata sul lago una piattaforma galleggiante dotata di spettroradiometro. È uno strumento che misura la luce riflessa dalla vegetazione, chiamata riflettanza. Durante le ore diurne lo strumento effettua automaticamente una misura ogni cinque minuti, costruendo così una serie di osservazioni nel tempo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La riflettanza racconta come una pianta interagisce con la radiazione solare. Nelle bande del visibile, cioè nelle parti della luce che possiamo vedere, è strettamente collegata alla presenza e alla quantità di pigmenti coinvolti nella fotosintesi, come la clorofilla. Quando la pianta entra in senescenza, la fase conclusiva del suo ciclo vegetativo, il contenuto di clorofilla diminuisce e cambiano i pigmenti: anche la risposta spettrale si modifica."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di una piattaforma che misura la luce riflessa dalle piante acquatiche.",
+   "didascalia": "La riflettanza della vegetazione viene misurata automaticamente dalla piattaforma galleggiante.",
+   "file": "immagini/2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Misure automatiche e controlli sul posto"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le misure della piattaforma non sono le sole. Durante le campagne sul lago, i ricercatori usano anche uno strumento portatile con maggiore risoluzione spettrale e radiometrica, cioè capace di distinguere in modo più dettagliato le componenti della luce e di misurarne l’intensità. I dati raccolti in questo modo sono un riferimento per le misure della boa e consentono di estendere nello spazio le informazioni ottenute dalla serie automatica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per capire davvero che cosa indica lo spettro, però, non basta osservare la luce riflessa. Il gruppo raccoglie anche altri parametri: il contenuto di clorofilla nelle foglie, misurato con un piccolo strumento portatile, e la densità della canopy vegetale. Con canopy si intende qui la copertura formata dalla vegetazione sulla superficie dell’acqua."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "L’incontro con le osservazioni dal satellite"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I dati raccolti sul lago sono importanti anche per confrontare le osservazioni effettuate dallo spazio. Durante la campagna di settembre era previsto un passaggio del satellite PRISMA dell’Agenzia Spaziale Italiana, programmato con settimane di anticipo. L’intento era eseguire misure direttamente sul posto vicino al momento dell’acquisizione satellitare, per metterle a confronto e integrarle con i dati del satellite."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "In prossimità dell’orario previsto, però, il cielo si è coperto progressivamente. La pioggia ha impedito per alcune ore di continuare le attività in barca. Quando le condizioni sono migliorate, è stato possibile completare le misure sulla vegetazione e svolgere la manutenzione della piattaforma. Il caso mostra un aspetto concreto della ricerca sul campo: preparare le attività non elimina l’influenza delle condizioni meteorologiche, e anche l’attesa può entrare a far parte della misura."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La castagna d’acqua dei laghi di Annone viene studiata come indicatore delle condizioni ambientali. Una piattaforma galleggiante misura la luce riflessa dalle piante durante il giorno, mentre le campagne sul lago aggiungono controlli più dettagliati su riflettanza, clorofilla e copertura vegetale. I dati possono essere confrontati con le osservazioni del satellite PRISMA."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Quella di settembre è una delle ultime campagne della stagione. Con l’arrivo dell’autunno la castagna d’acqua completa il proprio ciclo vegetativo e, dopo poche settimane, questo tipo di osservazioni non sarà più possibile. Le attività riprenderanno nella successiva stagione vegetativa."
+  }
+ ],
+ "parole": 708,
+ "minuti": 4,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Lago di Annone, quando una pianta diventa un indicatore ambientale",
+  "url": "https://www.cnr.it/it/news/14652/lago-di-annone-quando-una-pianta-diventa-un-indicatore-ambientale",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
