@@ -1,0 +1,76 @@
+{
+ "id": "2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle-",
+ "data": "2026-09-28",
+ "scritto": "2026-09-28T06:21:41.764Z",
+ "titolo": "Laboratori su insetti, città e biodiversità alla Notte delle Ricercatrici e dei Ricercatori",
+ "sottotitolo": "I Centri di Educazione alla Sostenibilità dell’Emilia-Romagna partecipano con attività aperte al pubblico a Piacenza e Cesena.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle--copertina.webp",
+ "copertinaAlt": "Illustrazione di attività scientifiche su insetti e soluzioni verdi in un contesto urbano.",
+ "miniatura": "immagini/2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle--mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "La Notte delle Ricercatrici e dei Ricercatori 2026 coinvolge anche i Centri di Educazione alla Sostenibilità, chiamati Ceas, della rete dell’Emilia-Romagna. La proposta comprende laboratori e attività aperte al pubblico, rivolte a cittadini di tutte le età e dedicate ad ambiente, clima e biodiversità: la varietà degli esseri viventi e degli ecosistemi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A Piacenza, al Laboratorio Aperto nell’ex Chiesa del Carmine, il Ceas Infoambiente propone per l’intera giornata tre laboratori interattivi. Il primo è dedicato alle zanzare: l’osservazione delle larve serve a comprendere il ciclo biologico dell’insetto, il suo ruolo come vettore di virus, cioè organismo che può trasmetterli, e le pratiche di contrasto indicate."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Insetti da osservare e città da ripensare"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un secondo percorso a Piacenza guarda alla città attraverso una mostra e visite guidate. A condurle sono studenti formati nel percorso sulla crisi climatica e sulle città resilienti, insieme alla coordinatrice di Infoambiente. Una città resiliente è capace di affrontare e adattarsi agli effetti della crisi climatica. Le attività illustrano le soluzioni basate sulla natura, indicate anche con la sigla NBS: interventi che usano o valorizzano elementi naturali per rispondere a problemi ambientali."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra i temi affrontati c’è anche il drenaggio sostenibile, abbreviato SUDS. Si tratta di sistemi pensati per gestire l’acqua attraverso soluzioni sostenibili. Il laboratorio presenta queste pratiche nel quadro delle risposte alla crisi climatica e mette al centro il modo in cui gli spazi urbani possono essere progettati."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di acqua piovana che attraversa superfici permeabili e aree verdi in città.",
+   "didascalia": "Le attività di Piacenza presentano soluzioni basate sulla natura e drenaggio sostenibile.",
+   "file": "immagini/2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle--1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il terzo laboratorio piacentino è dedicato alle api osmie e alle formiche. Attraverso l’osservazione, l’iniziativa analizza il ruolo ecologico degli insetti solitari e sociali. Partecipano anche ragazzi delle scuole primarie. Il confronto tra questi insetti offre quindi un’occasione per avvicinarsi alla biodiversità partendo dall’osservazione diretta."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "A Cesena una ricerca partecipata sulla bellezza urbana"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A Cesena, Coop Controvento propone un laboratorio di ricerca partecipata realizzato con l’Università di Bologna nell’ambito del progetto “La scuola è la città”. L’appuntamento è venerdì 25 settembre 2026, dalle ore 19, alla Biblioteca Malatestiana, nello Spazio Fumetti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’attività invita a esplorare la bellezza urbana osservando luoghi, gesti e pratiche quotidiane. I partecipanti saranno guidati sia a riconoscere il valore di questa dimensione della città sia a sperimentare sul campo i metodi della ricerca. In questo caso, la ricerca partecipata porta l’osservazione fuori da un percorso solo teorico e coinvolge direttamente chi prende parte al laboratorio."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La Notte europea delle Ricercatrici e dei Ricercatori è promossa dalla Commissione europea fin dal 2005. Ogni anno coinvolge migliaia di ricercatrici e ricercatori di istituzioni di ricerca nei Paesi europei. Si svolge l’ultimo venerdì di settembre in tutta Europa e nei Paesi limitrofi, per creare incontri informali tra ricerca e cittadini, diffondere la cultura scientifica e far conoscere le professioni della ricerca."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le iniziative dei Ceas dell’Emilia-Romagna si inseriscono in questo obiettivo con attività diverse ma unite dalla possibilità di osservare, fare domande e sperimentare. Dalle larve di zanzara alle api osmie, dalle formiche alle pratiche quotidiane negli spazi urbani, i laboratori propongono modi concreti per avvicinarsi ai temi ambientali, climatici e della biodiversità."
+  }
+ ],
+ "parole": 497,
+ "minuti": 2,
+ "fonte": {
+  "nome": "Arpae Emilia-Romagna",
+  "titolo": "I Ceas dell'Emilia-Romagna alla Notte dei Ricercatori 2026",
+  "url": "https://www.arpae.it/it/notizie/i-ceas-dellemilia-romagna-alla-notte-dei-ricercatori-2026",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

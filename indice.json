@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-27T06:21:42.043Z",
+ "aggiornato": "2026-09-28T06:21:41.764Z",
  "articoli": [
+  {
+   "id": "2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle-",
+   "data": "2026-09-28",
+   "titolo": "Laboratori su insetti, città e biodiversità alla Notte delle Ricercatrici e dei Ricercatori",
+   "sottotitolo": "I Centri di Educazione alla Sostenibilità dell’Emilia-Romagna partecipano con attività aperte al pubblico a Piacenza e Cesena.",
+   "categoria": "Ricerca",
+   "minuti": 2,
+   "copertina": "immagini/2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle--copertina.webp",
+   "miniatura": "immagini/2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle--mini.webp",
+   "fonte": "Arpae Emilia-Romagna",
+   "fonteUrl": "https://www.arpae.it/it/notizie/i-ceas-dellemilia-romagna-alla-notte-dei-ricercatori-2026",
+   "fonteTitolo": "I Ceas dell'Emilia-Romagna alla Notte dei Ricercatori 2026",
+   "file": "articoli/2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle-.json"
+  },
   {
    "id": "2026-09-27-la-castagna-d-acqua-aiuta-a-leggere-lo-stato-del-lago-di-ann",
    "data": "2026-09-27",
