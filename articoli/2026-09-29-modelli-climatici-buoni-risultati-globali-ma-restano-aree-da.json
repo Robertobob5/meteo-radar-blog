@@ -1,0 +1,80 @@
+{
+ "id": "2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da",
+ "data": "2026-09-29",
+ "scritto": "2026-09-29T06:21:57.646Z",
+ "titolo": "Modelli climatici: buoni risultati globali, ma restano aree da migliorare",
+ "sottotitolo": "Un nuovo studio confronta le simulazioni climatiche con le osservazioni storiche e individua punti di forza e discrepanze.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da-copertina.webp",
+ "copertinaAlt": "Illustrazione del pianeta con schemi delle temperature e della circolazione atmosferica e oceanica.",
+ "miniatura": "immagini/2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Con l’accelerazione del cambiamento climatico, gli scienziati stanno verificando con attenzione quanto i modelli climatici riescano a restare aderenti a ciò che accade nel mondo reale. I modelli climatici sono strumenti che simulano il comportamento del clima e permettono di elaborare proiezioni, cioè stime di come potrebbe evolvere in futuro."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un nuovo studio ha messo a confronto le simulazioni con le osservazioni storiche, ossia i dati rilevati nel tempo. Il risultato offre un quadro doppio: i modelli hanno riprodotto con successo molte tendenze del riscaldamento globale, ma presentano ancora limiti importanti in alcune aree."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le tendenze che i modelli riescono a cogliere"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra gli aspetti che le simulazioni hanno rappresentato bene ci sono l’aumento delle temperature e gli acquazzoni più intensi durante le tempeste estreme. Si tratta di segnali rilevanti perché fanno parte delle tendenze associate al riscaldamento globale osservate su scala planetaria."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Lo studio non presenta quindi i modelli come strumenti da scartare. Al contrario, mostra che sono riusciti a catturare molti cambiamenti climatici globali. Ma evidenzia anche che questi strumenti restano in evoluzione e richiedono verifiche continue attraverso il confronto con i dati osservati."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo del confronto tra dati climatici osservati e simulazioni su scala globale.",
+   "didascalia": "Il confronto tra osservazioni e simulazioni aiuta a individuare dove i modelli descrivono bene le tendenze climatiche e dove restano differenze.",
+   "file": "immagini/2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le differenze nel Pacifico tropicale e nell’Oceano Meridionale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le discrepanze più persistenti emergono soprattutto nel Pacifico tropicale e nell’Oceano Meridionale. In queste regioni, i modelli spesso rappresentano in modo non accurato gli andamenti di lungo periodo delle temperature e della circolazione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per circolazione si intende il movimento su larga scala che riguarda il clima in queste regioni. Quando le simulazioni e i dati osservati non coincidono su temperature e circolazione nel lungo periodo, diminuisce l’accuratezza con cui alcuni effetti climatici futuri possono essere previsti."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Perché queste differenze contano"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le differenze non sono soltanto un dettaglio tecnico. Possono influire sulla capacità di prevedere gli impatti futuri del cambiamento climatico, dalle variazioni nei percorsi delle tempeste all’intensificazione delle ondate di calore."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Lo studio, pubblicato su Science Advances, richiama quindi l’importanza di valutare i modelli rispetto alle osservazioni. Il messaggio principale è che le simulazioni hanno già mostrato di saper descrivere molte tendenze del riscaldamento globale, mentre le differenze che restano in alcune regioni indicano dove il lavoro di miglioramento è ancora necessario."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "I modelli climatici hanno riprodotto molte tendenze globali, tra cui temperature in aumento e acquazzoni più intensi nelle tempeste estreme. Restano però discrepanze, in particolare nel Pacifico tropicale e nell’Oceano Meridionale, per le temperature e la circolazione di lungo periodo. Queste differenze possono incidere sulle previsioni degli impatti climatici futuri."
+  }
+ ],
+ "parole": 406,
+ "minuti": 2,
+ "fonte": {
+  "nome": "NOAA Climate.gov",
+  "titolo": "Confronting climate models with observations: a global assessment of simulated and historical climate trends",
+  "url": "https://www.climate.gov/news-features/feed/confronting-climate-models-observations-global-assessment-simulated-and",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

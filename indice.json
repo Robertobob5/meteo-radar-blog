@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-28T06:21:41.764Z",
+ "aggiornato": "2026-09-29T06:21:57.647Z",
  "articoli": [
+  {
+   "id": "2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da",
+   "data": "2026-09-29",
+   "titolo": "Modelli climatici: buoni risultati globali, ma restano aree da migliorare",
+   "sottotitolo": "Un nuovo studio confronta le simulazioni climatiche con le osservazioni storiche e individua punti di forza e discrepanze.",
+   "categoria": "Clima",
+   "minuti": 2,
+   "copertina": "immagini/2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da-copertina.webp",
+   "miniatura": "immagini/2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da-mini.webp",
+   "fonte": "NOAA Climate.gov",
+   "fonteUrl": "https://www.climate.gov/news-features/feed/confronting-climate-models-observations-global-assessment-simulated-and",
+   "fonteTitolo": "Confronting climate models with observations: a global assessment of simulated and historical climate trends",
+   "file": "articoli/2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da.json"
+  },
   {
    "id": "2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle-",
    "data": "2026-09-28",
