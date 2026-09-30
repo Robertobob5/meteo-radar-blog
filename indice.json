@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-29T06:21:57.647Z",
+ "aggiornato": "2026-09-30T06:21:52.648Z",
  "articoli": [
+  {
+   "id": "2026-09-30-cibo-finanza-e-dati-climatici-le-domande-al-centro-della-cli",
+   "data": "2026-09-30",
+   "titolo": "Cibo, finanza e dati climatici: le domande al centro della Climate Week NYC",
+   "sottotitolo": "Quattro incontri online del CMCC esplorano come la conoscenza sul clima possa sostenere decisioni concrete.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-09-30-cibo-finanza-e-dati-climatici-le-domande-al-centro-della-cli-copertina.webp",
+   "miniatura": "immagini/2026-09-30-cibo-finanza-e-dati-climatici-le-domande-al-centro-della-cli-mini.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/food-finance-futures-key-insights-from-climate-week-nyc",
+   "fonteTitolo": "Food, finance, futures: key insights from Climate Week NYC",
+   "file": "articoli/2026-09-30-cibo-finanza-e-dati-climatici-le-domande-al-centro-della-cli.json"
+  },
   {
    "id": "2026-09-29-modelli-climatici-buoni-risultati-globali-ma-restano-aree-da",
    "data": "2026-09-29",
