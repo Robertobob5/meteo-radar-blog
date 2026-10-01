@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-09-30T06:21:52.648Z",
+ "aggiornato": "2026-10-01T06:21:45.592Z",
  "articoli": [
+  {
+   "id": "2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor",
+   "data": "2026-10-01",
+   "titolo": "Linosa, una nuova campagna per mappare vulcani sommersi e coralli profondi",
+   "sottotitolo": "La nave Gaia Blu studia per dieci giorni i fondali dell’isola, dai coni vulcanici ai canyon sottomarini.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor-copertina.webp",
+   "miniatura": "immagini/2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14662/vulcani-sommersi-e-coralli-profondi-la-nave-gaia-blu-del-cnr-esplora-i-fondali-di-linosa",
+   "fonteTitolo": "Vulcani sommersi e coralli profondi: la nave Gaia Blu del Cnr esplora i fondali di Linosa",
+   "file": "articoli/2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor.json"
+  },
   {
    "id": "2026-09-30-cibo-finanza-e-dati-climatici-le-domande-al-centro-della-cli",
    "data": "2026-09-30",

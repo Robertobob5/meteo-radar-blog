@@ -1,0 +1,88 @@
+{
+ "id": "2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor",
+ "data": "2026-10-01",
+ "scritto": "2026-10-01T06:21:45.591Z",
+ "titolo": "Linosa, una nuova campagna per mappare vulcani sommersi e coralli profondi",
+ "sottotitolo": "La nave Gaia Blu studia per dieci giorni i fondali dell’isola, dai coni vulcanici ai canyon sottomarini.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor-copertina.webp",
+ "copertinaAlt": "Illustrazione dei fondali di un’isola vulcanica con coni sommersi, canyon e coralli profondi.",
+ "miniatura": "immagini/2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "La nave da ricerca Gaia Blu del Consiglio nazionale delle ricerche è partita dal porto di Catania per una campagna oceanografica dedicata ai fondali di Linosa. La missione, chiamata BioGeoLin, dura dieci giorni e punta a studiare insieme biodiversità e geodiversità: cioè la varietà delle forme e dei materiali che compongono il fondale, oltre alle comunità viventi che lo abitano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’obiettivo è costruire una mappa completa degli habitat marini attorno all’isola. Le esplorazioni riguarderanno coni vulcanici sommersi, canyon sottomarini ancora poco conosciuti e comunità di coralli profondi. I dati raccolti dovranno descrivere un ambiente che va dalle acque più superficiali, illuminate dal sole, fino alle profondità maggiori."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un’isola vulcanica in un’area protetta"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Linosa è un’isola vulcanica nel Canale di Sicilia. Insieme a Lampedusa e Lampione forma l’arcipelago delle Isole Pelagie e rientra nell’omonima Area Marina Protetta. Pur trovandosi in una parte del Mediterraneo fortemente interessata dalle attività umane, l’isola risente di una pressione antropica contenuta: ha pochi abitanti, traffico marittimo limitato e attività di pesca e turismo ridotte."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Queste condizioni rendono Linosa un sito relativamente incontaminato, indicato per studiare e tutelare habitat marini di grande valore. La campagna si inserisce inoltre nelle ricerche condotte negli ultimi anni nelle sue acque dal Cnr-Ismar, in collaborazione con l’Area Marina Protetta delle Isole Pelagie e con il Comune di Lampedusa e Linosa."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gli studi già realizzati e pubblicati su riviste scientifiche internazionali hanno permesso di ricostruire per la prima volta la complessità morfologica, ossia delle forme del fondale, e la ricchezza biologica dell’area. BioGeoLin prosegue questo lavoro con una ricognizione estesa all’intero fondale che circonda l’isola."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dove si concentreranno le ricerche"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Due settori saranno al centro delle attività. A nord-ovest dell’isola si trovano oltre venti coni vulcanici sommersi. A est e nord-est, invece, il fondale è attraversato da canyon sottomarini poco esplorati. L’indagine metterà in relazione le caratteristiche geologiche, come sedimenti, vulcani sommersi e canyon, con quelle biologiche."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra queste ultime rientrano habitat esclusivi, il coralligeno e le comunità di corallo profondo. Il coralligeno è un habitat marino presente tra gli elementi biologici che la campagna intende cartografare. Particolare attenzione sarà dedicata anche ai banchi di coralligeno individuati recentemente a sud di Linosa."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un robot sottomarino osserva un habitat di coralli profondi sul fondale.",
+   "didascalia": "Il robot sottomarino effettuerà riprese video lungo percorsi pianificati, anche sui banchi di coralligeno a sud di Linosa.",
+   "file": "immagini/2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Strumenti per vedere il fondale e i suoi strati"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A bordo della Gaia Blu, ecoscandagli multifascio di ultima generazione ricostruiranno nel dettaglio la forma dei fondali. I profili sismici ad alta risoluzione permetteranno invece di osservare gli strati di sedimento che si trovano sotto il fondo marino."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le riprese video saranno affidate al ROV Vector, un robot sottomarino filoguidato gestito dalla società SubseaLED. Il mezzo percorrerà traiettorie pianificate e servirà in particolare a osservare le aree di coralligeno. A completare il lavoro ci saranno i campioni prelevati dal fondale con un box corer, uno strumento usato per raccogliere materiale dal fondo marino."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’analisi dei campioni consentirà di studiare le caratteristiche dei sedimenti e la fauna che li popola, comprese specie di interesse per la conservazione. In questo modo le immagini, le misure del rilievo sottomarino e i campionamenti potranno contribuire a una lettura complessiva dell’ambiente marino di Linosa."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La campagna BioGeoLin riunisce personale del Cnr-Ismar, dell’Università degli Studi di Milano-Bicocca, della Stazione Zoologica Anton Dohrn di Napoli e il personale tecnico di SubseaLED per le operazioni del ROV. A bordo è presente anche una studentessa dell’Università di Milano-Bicocca. I risultati attesi comprendono mappe quantitative degli habitat, utili alla gestione sostenibile dell’Area Marina Protetta delle Isole Pelagie e alla conservazione della biodiversità in un Mediterraneo in rapido cambiamento."
+  }
+ ],
+ "parole": 577,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Vulcani sommersi e coralli profondi: la nave Gaia Blu del Cnr esplora i fondali di Linosa",
+  "url": "https://www.cnr.it/it/news/14662/vulcani-sommersi-e-coralli-profondi-la-nave-gaia-blu-del-cnr-esplora-i-fondali-di-linosa",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
