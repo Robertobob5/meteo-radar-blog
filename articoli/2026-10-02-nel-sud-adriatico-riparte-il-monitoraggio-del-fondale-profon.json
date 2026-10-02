@@ -1,0 +1,84 @@
+{
+ "id": "2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon",
+ "data": "2026-10-02",
+ "scritto": "2026-10-02T06:22:02.983Z",
+ "titolo": "Nel Sud Adriatico riparte il monitoraggio del fondale profondo",
+ "sottotitolo": "La campagna sulla nave Gaia Blu ha effettuato la manutenzione di un ancoraggio osservativo e raccolto nuove misure nella Fossa Sud Adriatica.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon-copertina.webp",
+ "copertinaAlt": "Una nave da ricerca sopra un ancoraggio strumentale immerso fino al fondale profondo.",
+ "miniatura": "immagini/2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Si è conclusa a bordo della nave da ricerca Gaia Blu la campagna EMSO-SA 2026-09, dedicata alla manutenzione degli ancoraggi profondi nel Mare Adriatico meridionale. Gli ancoraggi sono piattaforme osservative sommerse, mantenute in una posizione per raccogliere dati sull’ambiente marino nel tempo. La missione annuale rientra nelle attività della rete europea EMSO-ERIC, impegnata nel monitoraggio continuo degli oceani."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La campagna è stata realizzata dall’Istituto di Scienze Polari del Cnr e dall’Istituto Nazionale di Oceanografia e di Geofisica Sperimentale, Ogs, che coordina il sito regionale del Sud Adriatico. Partita da Catania, Gaia Blu ha lavorato nello Stretto di Otranto e nella Fossa Sud Adriatica, l’area più profonda dell’Adriatico. Questa zona si trova tra Bari e le coste montenegrine, con un fondale che raggiunge i 1.200 metri di profondità."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Manutenzione e nuovo rilascio dell’ancoraggio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il team scientifico Cnr-Ogs, con il supporto del personale tecnico di bordo, ha recuperato l’ancoraggio profondo EMSO-E2M3A e lo ha sottoposto a manutenzione. Le attività hanno riguardato il controllo e il riposizionamento di strumenti pensati per osservare aspetti diversi dell’ambiente marino. Al termine delle operazioni, l’ancoraggio è stato rilasciato nuovamente nella stessa posizione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Fra gli strumenti controllati ci sono le trappole di sedimento, utilizzate per raccogliere il materiale che si deposita nell’acqua; i correntometri, che misurano le correnti; i sensori per il pH e per i gas disciolti; gli idrofoni, strumenti per rilevare i suoni sott’acqua; e le boe. La loro presenza permette di proseguire una raccolta di dati quasi ininterrotta dal 2006."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di un ancoraggio profondo con gli strumenti disposti nella colonna d’acqua.",
+   "didascalia": "L’ancoraggio ospita strumenti diversi per seguire le condizioni dell’ambiente marino.",
+   "file": "immagini/2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Misure nella colonna d’acqua"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La missione non ha riguardato soltanto l’ancoraggio. Sono state effettuate anche misurazioni dirette nella colonna d’acqua, cioè nella massa d’acqua compresa tra la superficie e il fondale. Per queste osservazioni è stata usata una rosetta-CTD: uno strumento che rileva conducibilità, temperatura e profondità e consente di eseguire misure a diverse profondità."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel corso della campagna sono stati raccolti campioni che saranno analizzati in laboratorio. Le analisi riguarderanno, tra gli altri parametri, l’ossigeno, il pH e gli inquinanti. In questo modo alle osservazioni svolte direttamente in mare si aggiungeranno dati ottenuti sui campioni prelevati lungo la colonna d’acqua."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un segnale nelle acque vicine al fondale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Una prima analisi dei dati raccolti conferma un trend di aumento della temperatura e della salinità nelle acque prossime al fondale. La salinità indica la presenza di sali disciolti nell’acqua. Il segnale viene osservato in un ambiente profondo e fragile, nel quale i cambiamenti possono essere graduali ma avere effetti duraturi sull’ecosistema."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo quanto riportato dalla campagna, le trasformazioni rilevate nel Sud Adriatico possono anche riflettere cambiamenti più ampi alla scala dell’intero Mediterraneo. In un mare sempre più esposto agli effetti della crisi climatica, mantenere attive serie storiche di dati è considerato essenziale per comprendere l’evoluzione del sistema marino e le relazioni fra le sue diverse componenti."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La campagna EMSO-SA 2026-09 ha recuperato, controllato e riposizionato l’ancoraggio profondo EMSO-E2M3A nella Fossa Sud Adriatica. Oltre alla manutenzione degli strumenti, sono state raccolte misure e campioni nella colonna d’acqua. Una prima analisi indica un aumento di temperatura e salinità vicino al fondale."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La rete EMSO rende disponibili alla comunità scientifica dati standardizzati e difficili da ottenere. La continuità delle osservazioni consente di seguire nel tempo le condizioni del mare profondo, contribuendo alla conoscenza dei mari e degli oceani e al loro orientamento verso la tutela."
+  }
+ ],
+ "parole": 546,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Conclusa la campagna \"EMSO-SA 2026-09\" a bordo di Gaia Blu",
+  "url": "https://www.cnr.it/it/news/14658/conclusa-la-campagna-emso-sa-2026-09-a-bordo-di-gaia-blu",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

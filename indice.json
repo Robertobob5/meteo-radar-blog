@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-01T06:21:45.592Z",
+ "aggiornato": "2026-10-02T06:22:02.984Z",
  "articoli": [
+  {
+   "id": "2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon",
+   "data": "2026-10-02",
+   "titolo": "Nel Sud Adriatico riparte il monitoraggio del fondale profondo",
+   "sottotitolo": "La campagna sulla nave Gaia Blu ha effettuato la manutenzione di un ancoraggio osservativo e raccolto nuove misure nella Fossa Sud Adriatica.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon-copertina.webp",
+   "miniatura": "immagini/2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14658/conclusa-la-campagna-emso-sa-2026-09-a-bordo-di-gaia-blu",
+   "fonteTitolo": "Conclusa la campagna \"EMSO-SA 2026-09\" a bordo di Gaia Blu",
+   "file": "articoli/2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon.json"
+  },
   {
    "id": "2026-10-01-linosa-una-nuova-campagna-per-mappare-vulcani-sommersi-e-cor",
    "data": "2026-10-01",
@@ -715,6 +729,15 @@
    "fonteTitolo": "A team of teams like never before: rehearsing a unique launch at ESA mission control",
    "quando": "2026-09-13T06:21:00.733Z",
    "perche": "stessa storia di 2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la"
+  },
+  {
+   "id": "2026-10-02-earthcare-osserva-il-pennacchio-di-anak-krakatau-e-aiuta-la-",
+   "data": "2026-10-02",
+   "titolo": "EarthCARE osserva il pennacchio di Anak Krakatau e aiuta la sicurezza dei voli",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/FutureEO/EarthCARE/EarthCARE_s_view_of_volcanic_plume_boosts_air_safety",
+   "fonteTitolo": "EarthCARE’s view of volcanic plume boosts air safety",
+   "quando": "2026-10-02T06:21:09.560Z",
+   "perche": "stessa storia di 2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti"
   }
  ]
 }
