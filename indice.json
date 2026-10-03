@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-02T06:22:02.984Z",
+ "aggiornato": "2026-10-03T06:21:23.049Z",
  "articoli": [
+  {
+   "id": "2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p",
+   "data": "2026-10-03",
+   "titolo": "Reti fantasma: il progetto Strong SEA LIFE rimuove attrezzi persi dal Mediterraneo",
+   "sottotitolo": "Il documentario “The Phantom Catch” racconta cinque anni di recuperi e analisi sugli attrezzi da pesca dispersi in mare.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p-copertina.webp",
+   "miniatura": "immagini/2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/progetto-life-strong-sea",
+   "fonteTitolo": "Progetto LIFE STRONG SEA",
+   "file": "articoli/2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p.json"
+  },
   {
    "id": "2026-10-02-nel-sud-adriatico-riparte-il-monitoraggio-del-fondale-profon",
    "data": "2026-10-02",

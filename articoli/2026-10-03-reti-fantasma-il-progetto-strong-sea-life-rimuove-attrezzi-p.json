@@ -1,0 +1,76 @@
+{
+ "id": "2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p",
+ "data": "2026-10-03",
+ "scritto": "2026-10-03T06:21:23.048Z",
+ "titolo": "Reti fantasma: il progetto Strong SEA LIFE rimuove attrezzi persi dal Mediterraneo",
+ "sottotitolo": "Il documentario “The Phantom Catch” racconta cinque anni di recuperi e analisi sugli attrezzi da pesca dispersi in mare.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p-copertina.webp",
+ "copertinaAlt": "Un fondale mediterraneo con prateria marina, rete da pesca dispersa e sommozzatori sullo sfondo.",
+ "miniatura": "immagini/2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Una rete da pesca persa in mare non è soltanto un rifiuto da rimuovere. Può continuare a esercitare una pressione sugli ecosistemi marini e restare nascosta sui fondali. È da questo problema che parte Strong SEA LIFE, progetto coordinato da ISPRA e finanziato dal Programma LIFE Natura e Biodiversità dell’Unione Europea. I suoi risultati saranno presentati al Salone Nautico di Genova attraverso il documentario “The Phantom Catch - Il grande problema delle reti fantasma”, diretto da Igor D’India."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il film ripercorre un viaggio durato cinque anni, con ricercatori e sommozzatori impegnati a liberare il Mediterraneo dagli attrezzi da pesca persi in mare. Le reti fantasma, in questo contesto, sono proprio gli attrezzi dispersi che rimangono in ambiente marino. Il progetto ha raccolto più di 180 segnalazioni e ha portato a 24 azioni di recupero. Sono stati rimossi 156 attrezzi da pesca, per oltre 22 tonnellate di materiale recuperato."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "La tutela di praterie e habitat coralligeni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’obiettivo principale di Strong SEA LIFE è proteggere e migliorare lo stato di conservazione di habitat marini prioritari: le praterie di Posidonia oceanica e gli habitat coralligeni. Entrambi sono inclusi nella Direttiva Habitat e nella rete europea dei Siti Natura 2000. Gli interventi hanno quindi riguardato fondali dove questi ambienti sono presenti e dove gli attrezzi dispersi possono rappresentare una fonte di pressione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le operazioni hanno interessato diverse tipologie di attrezzi da pesca: reti da posta, reti a strascico, nasse e palangari. Gli oggetti sono stati individuati tra 8 e 40 metri di profondità. Il recupero, però, è solo una parte del lavoro: gli attrezzi rimossi sono stati anche analizzati scientificamente per capire che cosa vi fosse cresciuto o insediato nel tempo."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Una rete recuperata con piccoli crostacei, alghe e organismi incrostanti aderenti alle fibre.",
+   "didascalia": "Le analisi sugli attrezzi recuperati mostrano la colonizzazione biologica che avviene nel tempo.",
+   "file": "immagini/2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Gli organismi che colonizzano gli attrezzi dispersi"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le analisi hanno identificato 89 specie appartenenti a 50 taxa. I taxa sono gruppi di organismi viventi classificati in base a caratteristiche comuni. Tra gli organismi rilevati, i crostacei rappresentano il 30%; seguono alghe e organismi incrostanti, cioè organismi che aderiscono alle superfici. Il dato testimonia un processo di progressiva colonizzazione biologica degli attrezzi dispersi nel mare."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questa presenza di specie sugli attrezzi recuperati restituisce anche un’immagine di ciò che può restare invisibile sotto la superficie. Il documentario presentato a Genova si propone infatti di mostrare il problema delle reti fantasma insieme ai risultati raggiunti dal progetto, rendendo più vicino al pubblico un tema complesso legato alla tutela degli ecosistemi marini."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Strong SEA LIFE ha ricevuto più di 180 segnalazioni, svolto 24 azioni di recupero e rimosso 156 attrezzi da pesca per oltre 22 tonnellate. Il progetto punta a tutelare praterie di Posidonia oceanica e habitat coralligeni, analizzando anche gli organismi che colonizzano gli attrezzi dispersi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Maria Alessandra Gallone, Presidente ISPRA e SNPA, sottolinea il significato della presentazione in un luogo dove il mare è al centro di attività diverse. “Rimuovere una rete fantasma significa fare molto più che eliminare un rifiuto dal mare; significa ridurre una fonte di pressione sugli ecosistemi, recuperare materiali, prevenire ulteriori danni e costruire una maggiore consapevolezza sul valore della prevenzione.”"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nelle parole della Presidente, il documentario aiuta a rendere visibile ciò che spesso resta nascosto e a stimolare una maggiore consapevolezza. La tutela del mare viene così descritta come una sfida collettiva, che riguarda non soltanto istituzioni ed esperti ma anche le scelte quotidiane di ciascuno."
+  }
+ ],
+ "parole": 546,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Progetto LIFE STRONG SEA",
+  "url": "https://www.isprambiente.gov.it/it/news/progetto-life-strong-sea",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
