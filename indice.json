@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-03T06:21:23.049Z",
+ "aggiornato": "2026-10-04T06:21:41.130Z",
  "articoli": [
+  {
+   "id": "2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw",
+   "data": "2026-10-04",
+   "titolo": "Due spin-off del CNR in finale all’Italian Master Startup Award 2026",
+   "sottotitolo": "Highsensetech e PlantBit portano in gara sensori per strutture e piante, nati dalla ricerca del CNR.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw-copertina.webp",
+   "miniatura": "immagini/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14665/premio-italian-master-startup-award-2026-in-finale-due-spin-off-del-cnr",
+   "fonteTitolo": "Premio \"Italian Master Startup Award\" 2026: in finale due Spin-off del CNR",
+   "file": "articoli/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw.json"
+  },
   {
    "id": "2026-10-03-reti-fantasma-il-progetto-strong-sea-life-rimuove-attrezzi-p",
    "data": "2026-10-03",

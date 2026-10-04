@@ -1,0 +1,86 @@
+{
+ "id": "2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw",
+ "data": "2026-10-04",
+ "scritto": "2026-10-04T06:21:41.130Z",
+ "titolo": "Due spin-off del CNR in finale all’Italian Master Startup Award 2026",
+ "sottotitolo": "Highsensetech e PlantBit portano in gara sensori per strutture e piante, nati dalla ricerca del CNR.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw-copertina.webp",
+ "copertinaAlt": "Un sensore su una struttura meccanica e un biosensore inserito nel fusto di una pianta coltivata.",
+ "miniatura": "immagini/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Due società spin-off del CNR sono tra le finaliste dell’Italian Master Startup Award 2026: Highsensetech, spin-off del CNR-IMM, e PlantBit, spin-off del CNR-IMEM. La competizione nazionale premia giovani startup innovative ad alto contenuto di conoscenza nate nelle università e negli enti pubblici di ricerca del network PNICube, di cui il CNR fa parte."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ventesima edizione del premio si terrà a Torino giovedì 8 ottobre, nell’ambito della Tech Conference WAVE by Vento. L’iniziativa è promossa da PNICube e organizzata con la collaborazione di I3P, incubatore di imprese innovative del Politecnico di Torino. In gara ci sono startup deep-tech, cioè realtà che sviluppano innovazioni fondate su conoscenze scientifiche e tecnologiche avanzate, attive nei campi delle scienze della vita e delle tecnologie mediche, delle tecnologie pulite e dell’energia, dell’informatica e dell’industria."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Le finaliste si contendono il titolo assoluto IMSA 2026, accompagnato da un premio in denaro complessivo di 10 mila euro. In questa edizione saranno assegnati per la prima volta anche premi dedicati ai singoli settori, oltre ad altri riconoscimenti e menzioni speciali."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Sensori di precisione per componenti e strutture"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Highsensetech sviluppa sensori MEMS, dispositivi miniaturizzati che integrano elementi meccanici ed elettronici, destinati a misurare deformazioni e grandezze fisiche quali forza, coppia, pressione e peso. La società utilizza una tecnologia proprietaria chiamata HRSS, che raggiunge una risoluzione fino a mille volte superiore rispetto agli estensimetri tradizionali: strumenti impiegati per rilevare quanto un materiale si allunga o si deforma."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo quanto indicato dalla società, la tecnologia mantiene un’elevata banda, cioè la capacità di seguire variazioni del segnale, e permette misure precise e non invasive direttamente sulla superficie di componenti e strutture. Sensori, elettronica, firmware, software e algoritmi vengono integrati per trasformare componenti meccanici tradizionali in sistemi intelligenti e connessi. Questi sistemi possono generare dati, controllare il proprio funzionamento e rendere possibili nuovi servizi di diagnostica e manutenzione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le applicazioni indicate spaziano dall’industria alla robotica e al monitoraggio dello stato di salute delle strutture, chiamato Structural Health Monitoring. In questo ambito, i dati raccolti dai sensori servono a seguire il comportamento di componenti e strutture nel tempo."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un piccolo sensore applicato alla superficie di un componente meccanico per rilevarne le deformazioni.",
+   "didascalia": "Highsensetech sviluppa sensori per misurare deformazioni e altre grandezze fisiche su componenti e strutture.",
+   "file": "immagini/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un biosensore che osserva direttamente la pianta"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "PlantBit ha sviluppato BIORISTOR, un biosensore brevettato progettato per il monitoraggio diretto e in tempo reale della fisiologia delle piante. Il dispositivo viene inserito nel fusto e rileva i segnali ionici, cioè segnali legati alla presenza e al movimento di particelle elettricamente cariche, insieme al movimento della linfa."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le informazioni raccolte descrivono lo stato idrico, nutrizionale e fisiologico della coltura. I dati possono aiutare a ottimizzare irrigazione e fertilizzazione e a individuare precocemente condizioni di stress: secondo la fonte, oltre 48 ore prima che queste siano visibili. La particolarità del sistema è che non osserva soltanto il suolo e le condizioni climatiche, ma misura ciò che avviene direttamente nella pianta."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La piattaforma diagnostica può inoltre essere impiegata per la fenotipizzazione, ossia l’osservazione delle caratteristiche delle piante, per la selezione varietale, per lo studio dei biostimolanti e nelle coltivazioni in ambienti estremi. In questo modo il sensore è pensato sia per seguire le condizioni della coltura sia per supportare attività di studio e selezione."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Una pianta coltivata con un piccolo biosensore inserito nel fusto e segnali che rappresentano il flusso della linfa.",
+   "didascalia": "BIORISTOR rileva nel fusto segnali ionici e movimento della linfa per seguire lo stato della coltura.",
+   "file": "immagini/2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw-2.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le due finaliste rappresentano ambiti diversi dell’innovazione nata dalla ricerca: da una parte la misura di deformazioni e il monitoraggio di componenti e strutture, dall’altra l’osservazione diretta delle condizioni fisiologiche delle piante. La loro presenza in finale, secondo il CNR, conferma i risultati delle azioni dell’Ente per valorizzare la ricerca attraverso la generazione di imprese innovative e il contributo delle startup alla creazione di valore per la crescita economica e lo sviluppo sociale."
+  }
+ ],
+ "parole": 586,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Premio \"Italian Master Startup Award\" 2026: in finale due Spin-off del CNR",
+  "url": "https://www.cnr.it/it/news/14665/premio-italian-master-startup-award-2026-in-finale-due-spin-off-del-cnr",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
