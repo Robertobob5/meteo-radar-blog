@@ -1,0 +1,84 @@
+{
+ "id": "2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita",
+ "data": "2026-10-05",
+ "scritto": "2026-10-05T06:21:42.499Z",
+ "titolo": "Una nanosfera di vetro intrecciata con la luce in una cavità ottica",
+ "sottotitolo": "Un esperimento ha osservato un legame quantistico stabile tra il moto di una particella sospesa nel vuoto e la luce che esce da una cavità.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita-copertina.webp",
+ "copertinaAlt": "Illustrazione di una minuscola sfera di vetro sospesa fra due specchi e attraversata da fasci di luce.",
+ "miniatura": "immagini/2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Una nanosfera di vetro sospesa nel vuoto, grande circa 100 nanometri di diametro, è stata messa in relazione quantistica con la luce che attraversa una cavità ottica. Il risultato riguarda l’entanglement, cioè un legame della meccanica quantistica nel quale gli stati di due o più sistemi risultano correlati: misurando lo stato di uno si determina istantaneamente quello dell’altro, anche a grandissima distanza."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’osservazione è stata realizzata da un gruppo del Dipartimento di Fisica e Astronomia dell’Università di Firenze e dell’Istituto Nazionale di Ottica del CNR, con il sostegno dell’Istituto Nazionale di Fisica Nucleare e del Laboratorio europeo di spettroscopia non lineare. Lo studio, pubblicato su Science, descrive un entanglement stazionario tra il movimento della nanosfera e la luce trasmessa da una cavità ottica."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una particella sospesa da un fascio laser"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’esperimento appartiene al campo dell’optomeccanica quantistica, che studia le interazioni tra la luce e il movimento di oggetti materiali. Generare un legame quantistico fra un campo luminoso e il moto di un oggetto è uno degli obiettivi di questa ricerca, perché la luce può propagarsi nello spazio mentre l’oggetto resta localizzato."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La sfera viene mantenuta sospesa nel vuoto da una pinzetta ottica: è un fascio laser fortemente focalizzato, capace di trattenere la particella. Il sistema si trova all’interno di una cavità ottica, formata da una coppia di specchi, e funziona a temperatura ambiente. Due laser hanno compiti distinti: uno raffredda e stabilizza il moto della nanosfera, l’altro produce le correlazioni quantistiche alla base dell’entanglement."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di una nanosfera sospesa tra due specchi, con fasci laser e luce in uscita.",
+   "didascalia": "La nanosfera è trattenuta nel vuoto da una pinzetta ottica e collocata fra due specchi.",
+   "file": "immagini/2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le correlazioni escono dalla cavità insieme alla luce"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un elemento centrale dell’esperimento è che le correlazioni non restano confinate nella cavità. Vengono trasferite alla luce in uscita, che si propaga nello spazio. In questo modo il movimento della nanosfera, un sistema quantistico localizzato, risulta collegato a un campo luminoso che può trasportare informazione verso un altro luogo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La verifica del legame è arrivata dall’analisi del parametro di separabilità, una misura usata per distinguere le correlazioni quantistiche da quelle classiche. Per correlazioni classiche questo parametro non può scendere sotto l’unità. Nell’esperimento ha invece raggiunto un valore minimo di 0,918 ± 0,029, indicato come conferma della natura quantistica del legame osservato."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il fenomeno ha inoltre mostrato stabilità su una banda di frequenza superiore a 40 kilohertz. Il fatto che il sistema operi in regime stazionario, cioè in condizioni mantenute nel tempo, e a temperatura ambiente è un aspetto rilevante della ricerca: non sono infatti necessarie complesse condizioni criogeniche, basate su temperature estremamente basse."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Verso memorie e reti quantistiche"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo i ricercatori, i sistemi optomeccanici levitati possono essere promettenti per trasferire e immagazzinare stati quantistici. Il moto della nanosfera potrebbe fungere da memoria quantistica, ossia da sistema capace di immagazzinare l’informazione trasportata dalla luce e rilasciarla in seguito. Questa possibilità viene indicata in relazione ai futuri computer quantistici e alle reti quantistiche."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Oltre alle possibili applicazioni tecnologiche, il risultato permette di controllare stati quantistici in oggetti massicci a temperatura ambiente. Questo offre un terreno per esplorare il confine tra il microcosmo quantistico e il mondo macroscopico, con la prospettiva di futuri test sulla gravità quantistica."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Una nanosfera di vetro è stata sospesa nel vuoto con un laser all’interno di una cavità ottica. Il suo movimento è risultato intrecciato quantisticamente con la luce trasmessa dalla cavità. L’esperimento opera a temperatura ambiente e in regime stazionario, senza richiedere condizioni criogeniche."
+  }
+ ],
+ "parole": 549,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Dalla polvere di vetro al computer quantistico: una nanosfera sospesa nella luce si \"intreccia\" con un campo ottico",
+  "url": "https://www.cnr.it/it/news/14670/dalla-polvere-di-vetro-al-computer-quantistico-una-nanosfera-sospesa-nella-luce-si-intreccia-con-un-campo-ottico",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

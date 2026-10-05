@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-04T06:21:41.130Z",
+ "aggiornato": "2026-10-05T06:21:42.500Z",
  "articoli": [
+  {
+   "id": "2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita",
+   "data": "2026-10-05",
+   "titolo": "Una nanosfera di vetro intrecciata con la luce in una cavità ottica",
+   "sottotitolo": "Un esperimento ha osservato un legame quantistico stabile tra il moto di una particella sospesa nel vuoto e la luce che esce da una cavità.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita-copertina.webp",
+   "miniatura": "immagini/2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14670/dalla-polvere-di-vetro-al-computer-quantistico-una-nanosfera-sospesa-nella-luce-si-intreccia-con-un-campo-ottico",
+   "fonteTitolo": "Dalla polvere di vetro al computer quantistico: una nanosfera sospesa nella luce si \"intreccia\" con un campo ottico",
+   "file": "articoli/2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita.json"
+  },
   {
    "id": "2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw",
    "data": "2026-10-04",
