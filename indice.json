@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-05T06:21:42.500Z",
+ "aggiornato": "2026-10-06T06:21:39.732Z",
  "articoli": [
+  {
+   "id": "2026-10-06-nel-regno-unito-la-primavera-arriva-prima-per-alberi-farfall",
+   "data": "2026-10-06",
+   "titolo": "Nel Regno Unito la primavera arriva prima per alberi, farfalle e fiori",
+   "sottotitolo": "Un progetto pilota nei parchi nazionali misura come temperature più alte stiano modificando il calendario della natura.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-10-06-nel-regno-unito-la-primavera-arriva-prima-per-alberi-farfall-copertina.webp",
+   "miniatura": "immagini/2026-10-06-nel-regno-unito-la-primavera-arriva-prima-per-alberi-farfall-mini.webp",
+   "fonte": "Met Office",
+   "fonteUrl": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/earlier-spring-in-the-uk-how-nature-is-responding-to-rising-temperatures",
+   "fonteTitolo": "Earlier spring in the UK: How nature is responding to rising temperatures",
+   "file": "articoli/2026-10-06-nel-regno-unito-la-primavera-arriva-prima-per-alberi-farfall.json"
+  },
   {
    "id": "2026-10-05-una-nanosfera-di-vetro-intrecciata-con-la-luce-in-una-cavita",
    "data": "2026-10-05",
