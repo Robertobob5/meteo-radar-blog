@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-06T06:21:39.732Z",
+ "aggiornato": "2026-10-07T06:21:36.738Z",
  "articoli": [
+  {
+   "id": "2026-10-07-settant-anni-di-osservazioni-sulla-neve-e-sul-rischio-valang",
+   "data": "2026-10-07",
+   "titolo": "Settant’anni di osservazioni sulla neve e sul rischio valanghe in Lombardia",
+   "sottotitolo": "Il Centro Regionale Neve e Valanghe di Arpa Lombardia celebra il suo anniversario raccontando monitoraggi, bollettini e studi sui ghiacciai.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-10-07-settant-anni-di-osservazioni-sulla-neve-e-sul-rischio-valang-copertina.webp",
+   "miniatura": "immagini/2026-10-07-settant-anni-di-osservazioni-sulla-neve-e-sul-rischio-valang-mini.webp",
+   "fonte": "SNPA · le Arpa d’Italia",
+   "fonteUrl": "https://www.snpambiente.it/notizie/temi/montagna/centro-regionale-neve-e-valanghe-di-arpa-lombardia-da-70-anni-segue-le-nostre-montagne/?utm_source=rss&utm_medium=rss&utm_campaign=centro-regionale-neve-e-valanghe-di-arpa-lombardia-da-70-anni-segue-le-nostre-montagne",
+   "fonteTitolo": "Centro Regionale Neve e Valanghe di Arpa Lombardia da 70 anni “segue” le nostre montagne",
+   "file": "articoli/2026-10-07-settant-anni-di-osservazioni-sulla-neve-e-sul-rischio-valang.json"
+  },
   {
    "id": "2026-10-06-nel-regno-unito-la-primavera-arriva-prima-per-alberi-farfall",
    "data": "2026-10-06",
