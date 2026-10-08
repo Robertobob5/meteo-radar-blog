@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-07T06:21:36.738Z",
+ "aggiornato": "2026-10-08T06:21:31.135Z",
  "articoli": [
+  {
+   "id": "2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu",
+   "data": "2026-10-08",
+   "titolo": "Online la bozza del Piano Nazionale di Ripristino della Natura",
+   "sottotitolo": "Il documento è stato trasmesso alla Commissione europea e avvia una fase di valutazione e affinamento.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu-copertina.webp",
+   "miniatura": "immagini/2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/online-la-bozza-del-piano-nazionale-di-ripristino-della-natura-trasmessa-alla-commissione-europea",
+   "fonteTitolo": "Online la bozza del Piano Nazionale di Ripristino della Natura trasmessa alla Commissione europea",
+   "file": "articoli/2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu.json"
+  },
   {
    "id": "2026-10-07-settant-anni-di-osservazioni-sulla-neve-e-sul-rischio-valang",
    "data": "2026-10-07",

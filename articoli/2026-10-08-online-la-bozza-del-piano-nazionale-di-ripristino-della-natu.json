@@ -1,0 +1,80 @@
+{
+ "id": "2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu",
+ "data": "2026-10-08",
+ "scritto": "2026-10-08T06:21:31.134Z",
+ "titolo": "Online la bozza del Piano Nazionale di Ripristino della Natura",
+ "sottotitolo": "Il documento è stato trasmesso alla Commissione europea e avvia una fase di valutazione e affinamento.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu-copertina.webp",
+ "copertinaAlt": "Un paesaggio naturale con aree diverse collegate tra loro, simbolo del ripristino della natura.",
+ "miniatura": "immagini/2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "La bozza del Piano Nazionale di Ripristino della Natura, indicato con l’acronimo PNR, è disponibile online sul sito del Ministero dell’Ambiente e della Sicurezza Energetica. Il documento è stato trasmesso alla Commissione europea nell’ambito dell’attuazione del Regolamento (UE) 2024/1991 sul ripristino della natura."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La pubblicazione non comprende soltanto il testo della bozza del Piano. È disponibile anche una tabella di sintesi delle misure previste, preparata per rendere più semplice la consultazione dei contenuti e degli interventi individuati. L’obiettivo dichiarato è offrire informazioni accessibili e favorirne la condivisione durante tutte le fasi del percorso."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Ora la valutazione della Commissione europea"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Con la trasmissione del documento si apre una nuova fase. La Commissione europea esaminerà la bozza nei prossimi sei mesi e potrà formulare osservazioni e indicazioni. Gli esiti della valutazione contribuiranno al successivo lavoro sul Piano, che dovrà essere affinato e completato prima della definizione della sua versione finale."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il fatto che sia stata pubblicata una bozza chiarisce quindi il punto del percorso: il Piano non è ancora nella sua forma conclusiva. La documentazione resa disponibile permette però di consultare il testo trasmesso e il quadro sintetico delle misure previste, mentre prosegue il confronto istituzionale che accompagnerà il completamento del documento."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Uno schema visivo con ambienti naturali collegati e documenti di pianificazione.",
+   "didascalia": "La bozza del Piano è accompagnata da una tabella di sintesi delle misure previste.",
+   "file": "immagini/2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Recuperare ecosistemi e rafforzare la biodiversità"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Piano Nazionale di Ripristino della Natura viene indicato come uno strumento strategico per recuperare gli ecosistemi degradati, cioè gli ecosistemi che il Piano punta a recuperare. Tra le sue finalità ci sono anche la tutela e il rafforzamento della biodiversità, vale a dire la varietà della vita naturale, e l’aumento della resilienza del territorio: la capacità di affrontare anche gli effetti dei cambiamenti climatici."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel testo diffuso da ISPRA, il ripristino della natura è presentato insieme alla resilienza ambientale e alla qualità del territorio. L’approccio indicato è coordinato e fondato sulla collaborazione. Il percorso coinvolge istituzioni, comunità scientifica, territori e portatori di interesse, cioè i soggetti interessati dalle scelte e dagli interventi previsti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La presidente dell’ISPRA Maria Alessandra Gallone ha dichiarato: “Il Piano nazionale di ripristino della natura rappresenta una grande occasione per l’Italia. Dobbiamo raccontarlo e soprattutto attuarlo per ciò che può realmente costituire: non un insieme di vincoli stabiliti senza confronto, ma un progetto di rigenerazione del nostro patrimonio naturale e, insieme, dei nostri territori, delle nostre economie e delle nostre comunità. Ripristinare la natura significa investire nel futuro”."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gallone ha aggiunto che la sostenibilità è autentica quando integra le dimensioni ambientali, economiche e sociali, ponendo al centro le persone e i loro bisogni. Ha inoltre descritto il lavoro svolto dall’Istituto come un percorso destinato a proseguire nel presente e nel futuro, richiamando una “grande alleanza per la natura e per lo sviluppo sostenibile”."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo la presidente dell’ISPRA, Stato, Regioni, Comuni, Sistema nazionale per la Protezione dell’ambiente, mondo scientifico e della ricerca, imprese, agricoltori, pescatori, associazioni e cittadini devono essere protagonisti di un percorso condiviso. È questa la dimensione di collaborazione richiamata dalla bozza: un Piano rivolto alla natura e ai territori, con il coinvolgimento di soggetti diversi."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La bozza del PNR e una tabella di sintesi delle misure sono online sul sito del Ministero dell’Ambiente e della Sicurezza Energetica. La Commissione europea valuterà il documento nei prossimi sei mesi e potrà inviare osservazioni e indicazioni. I risultati di questa fase serviranno per affinare e completare il Piano prima della versione finale."
+  }
+ ],
+ "parole": 551,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Online la bozza del Piano Nazionale di Ripristino della Natura trasmessa alla Commissione europea",
+  "url": "https://www.isprambiente.gov.it/it/news/online-la-bozza-del-piano-nazionale-di-ripristino-della-natura-trasmessa-alla-commissione-europea",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
