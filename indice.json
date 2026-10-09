@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-08T06:21:31.135Z",
+ "aggiornato": "2026-10-09T06:22:10.721Z",
  "articoli": [
+  {
+   "id": "2026-10-09-quattro-tecniche-per-rimuovere-i-grandi-rifiuti-da-oceani-e-",
+   "data": "2026-10-09",
+   "titolo": "Quattro tecniche per rimuovere i grandi rifiuti da oceani e Grandi Laghi",
+   "sottotitolo": "Dalle reti impigliate sui fondali alle imbarcazioni abbandonate, le operazioni richiedono strumenti e strategie diverse.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-09-quattro-tecniche-per-rimuovere-i-grandi-rifiuti-da-oceani-e--copertina.webp",
+   "miniatura": "immagini/2026-10-09-quattro-tecniche-per-rimuovere-i-grandi-rifiuti-da-oceani-e--mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/stories/large-scale-marine-debris-4-ways-to-clean-up-big-stuff",
+   "fonteTitolo": "Large-scale marine debris: 4 ways to clean up the big stuff",
+   "file": "articoli/2026-10-09-quattro-tecniche-per-rimuovere-i-grandi-rifiuti-da-oceani-e-.json"
+  },
   {
    "id": "2026-10-08-online-la-bozza-del-piano-nazionale-di-ripristino-della-natu",
    "data": "2026-10-08",
@@ -822,6 +836,15 @@
    "fonteTitolo": "EarthCARE’s view of volcanic plume boosts air safety",
    "quando": "2026-10-02T06:21:09.560Z",
    "perche": "stessa storia di 2026-09-09-anak-krakatau-cenere-e-gas-vulcanici-osservati-dai-satelliti"
+  },
+  {
+   "id": "2026-10-09-sentinel-3c-invia-le-prime-immagini-e-misure-della-terra",
+   "data": "2026-10-09",
+   "titolo": "Sentinel-3C invia le prime immagini e misure della Terra",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-3/Sentinel-3C_returns_its_first_views_of_Earth",
+   "fonteTitolo": "Sentinel-3C returns its first views of Earth",
+   "quando": "2026-10-09T06:21:04.538Z",
+   "perche": "stessa storia di 2026-09-08-flex-e-sentinel-3c-pronti-al-lancio-insieme-per-osservare-la"
   }
  ]
 }
