@@ -18,7 +18,7 @@ permissions:
 
 jobs:
   ripristina:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Prendi il repository con tutta la cronologia
         uses: actions/checkout@v5

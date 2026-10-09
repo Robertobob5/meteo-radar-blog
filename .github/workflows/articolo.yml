@@ -39,7 +39,7 @@ concurrency:
 
 jobs:
   scrivi:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Prendi il repository
         uses: actions/checkout@v5
