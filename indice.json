@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-09T06:22:10.721Z",
+ "aggiornato": "2026-10-10T06:21:39.422Z",
  "articoli": [
+  {
+   "id": "2026-10-10-emso-evolve-prepara-una-rete-europea-per-osservare-l-oceano-",
+   "data": "2026-10-10",
+   "titolo": "EMSO EVOLVE prepara una rete europea per osservare l’oceano in profondità",
+   "sottotitolo": "A Roma prende avvio il progetto che punta a rafforzare le osservazioni dal fondale marino alla superficie.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-10-emso-evolve-prepara-una-rete-europea-per-osservare-l-oceano--copertina.webp",
+   "miniatura": "immagini/2026-10-10-emso-evolve-prepara-una-rete-europea-per-osservare-l-oceano--mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14698/gli-osservatori-oceanografici-europei-di-profondita-progettano-il-prossimo-decennio-a-roma-il-kick-off-meeting-di-emso-evolve",
+   "fonteTitolo": "Gli osservatori oceanografici europei di profondità progettano il prossimo decennio: a Roma il kick-off meeting di EMSO EVOLVE",
+   "file": "articoli/2026-10-10-emso-evolve-prepara-una-rete-europea-per-osservare-l-oceano-.json"
+  },
   {
    "id": "2026-10-09-quattro-tecniche-per-rimuovere-i-grandi-rifiuti-da-oceani-e-",
    "data": "2026-10-09",
