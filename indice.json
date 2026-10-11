@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-10T06:21:39.422Z",
+ "aggiornato": "2026-10-11T06:21:37.309Z",
  "articoli": [
+  {
+   "id": "2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i",
+   "data": "2026-10-11",
+   "titolo": "RISEnergy apre il quinto bando per l’accesso gratuito alle infrastrutture di ricerca",
+   "sottotitolo": "Ricercatori e professionisti dell’industria possono candidarsi per usare strutture europee dedicate alle tecnologie energetiche.",
+   "categoria": "Ricerca",
+   "minuti": 2,
+   "copertina": "immagini/2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i-copertina.webp",
+   "miniatura": "immagini/2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14684/risenergy-launches-its-5th-call-for-transnational-access-to-research-infrastructures",
+   "fonteTitolo": "RISEnergy launches its 5th Call for Transnational Access to Research Infrastructures",
+   "file": "articoli/2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i.json"
+  },
   {
    "id": "2026-10-10-emso-evolve-prepara-una-rete-europea-per-osservare-l-oceano-",
    "data": "2026-10-10",

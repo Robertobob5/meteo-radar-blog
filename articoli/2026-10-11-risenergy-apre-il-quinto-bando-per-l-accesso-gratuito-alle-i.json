@@ -1,0 +1,76 @@
+{
+ "id": "2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i",
+ "data": "2026-10-11",
+ "scritto": "2026-10-11T06:21:37.308Z",
+ "titolo": "RISEnergy apre il quinto bando per l’accesso gratuito alle infrastrutture di ricerca",
+ "sottotitolo": "Ricercatori e professionisti dell’industria possono candidarsi per usare strutture europee dedicate alle tecnologie energetiche.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i-copertina.webp",
+ "copertinaAlt": "Illustrazione di diverse tecnologie energetiche collegate in una rete di ricerca europea.",
+ "miniatura": "immagini/2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "È aperto il quinto bando di RISEnergy per l’accesso transnazionale gratuito alle infrastrutture di ricerca. Per accesso transnazionale si intende la possibilità di utilizzare una rete di strutture di ricerca europee, anche oltre il proprio contesto nazionale. L’iniziativa si rivolge a ricercatori del mondo accademico e dell’industria che lavorano nei settori coperti dal progetto."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le infrastrutture messe in rete riguardano numerosi ambiti dell’energia: fotovoltaico, sistemi solari a concentrazione e produzione solare termoelettrica, idrogeno, biocarburanti, energia eolica, energia oceanica, reti integrate e accumulo di energia. Il programma comprende inoltre la ricerca sui materiali e le tecnologie dell’informazione e della comunicazione, indicate anche con la sigla ICT."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’accesso offerto da RISEnergy può sostenere ricercatori e imprese nelle fasi di prova e validazione di tecnologie innovative. Le strutture possono essere usate anche per sviluppare nuove soluzioni e per dimostrarne le prestazioni in ambienti realistici o operativi. La candidatura richiede quindi di individuare la struttura più adatta alle proprie necessità di ricerca."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le infrastrutture del CNR disponibili"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Fra le infrastrutture accessibili figurano diverse strutture del Consiglio nazionale delle ricerche. Sono disponibili il laboratorio CNR I-ZEB e DEC, contrassegnato come TA21; la vasca di tenuta al mare “Emilio Castagneto” del CNR, TA19; e la vasca navale “Umberto Pugliese” del CNR, TA23. Queste ultime due infrastrutture sono indicate rispettivamente come Seakeeping Tank e Towing Tank."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nell’ambito dei materiali sono inclusi il laboratorio CNR IMA1 per materiali intelligenti e per l’energia solare, denominato S2EMA Lab e identificato come TA20.1; i laboratori per materiali strutturali e funzionali CNR IMA2, TA20.2; i DiaTHEMA Labs dell’ISM, CNR IMA3, TA20.3; e il laboratorio per la caratterizzazione e lo sviluppo di materiali per fotonica e optoelettronica, CNR IMA4, TA20.4."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di laboratori e impianti per la ricerca su materiali, accumulo termico, idrogeno, energia solare e marina.",
+   "didascalia": "Il bando comprende infrastrutture dedicate a materiali, accumulo e conversione dell’energia, idrogeno e tecnologie marine.",
+   "file": "immagini/2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i-1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il bando comprende anche il CNR Test Centre, dedicato alle tecnologie di accumulo e conversione dell’energia termica e identificato come TA22. Completa l’elenco il Centro Prove ITAE – Green-H2 Laboratories del CNR, indicato come TA24 e rivolto ai laboratori Green-H2. L’insieme delle strutture disponibili permette di collegare attività di ricerca su fonti, materiali, conversione, accumulo e reti energetiche."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Chi può candidarsi e come avviene la selezione"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Possono presentare domanda ricercatori provenienti sia dall’università e dalla ricerca sia dall’industria, purché operino nelle aree comprese nel progetto RISEnergy. Il bando incoraggia in particolare le candidature di donne e di ricercatori appartenenti a gruppi sottorappresentati nella ricerca energetica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le domande devono essere inviate esclusivamente attraverso lo strumento ufficiale di RISEnergy entro il 18 novembre 2026, alle 23:59 CET. Le candidature trasmesse dopo questa scadenza non saranno prese in considerazione. Tutte le proposte che risulteranno ammissibili saranno valutate da un comitato di selezione indipendente, che individuerà le candidature più promettenti secondo la procedura di valutazione prevista da RISEnergy."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il quinto bando RISEnergy offre accesso transnazionale gratuito a infrastrutture di ricerca europee. La candidatura è aperta a ricercatori dell’accademia e dell’industria nei campi dei biocarburanti, solare a concentrazione, accumulo, idrogeno, ICT, reti integrate, materiali per l’energia, energia oceanica, eolico offshore e fotovoltaico. La scadenza è fissata al 18 novembre 2026 alle 23:59 CET."
+  }
+ ],
+ "parole": 495,
+ "minuti": 2,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "RISEnergy launches its 5th Call for Transnational Access to Research Infrastructures",
+  "url": "https://www.cnr.it/it/news/14684/risenergy-launches-its-5th-call-for-transnational-access-to-research-infrastructures",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
