@@ -1,0 +1,72 @@
+{
+ "id": "2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta",
+ "data": "2026-10-12",
+ "scritto": "2026-10-12T06:21:38.494Z",
+ "titolo": "ISPRA: i Poli sono sentinelle dei cambiamenti del pianeta",
+ "sottotitolo": "Dalle spedizioni polari al monitoraggio di clima, neve e permafrost sui ghiacciai alpini, il contributo di ISPRA e SNPA alla conoscenza ambientale.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta-copertina.webp",
+ "copertinaAlt": "Paesaggio polare collegato visivamente a un ghiacciaio alpino con strumenti di monitoraggio.",
+ "miniatura": "immagini/2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "I Poli sono sentinelle dei cambiamenti del pianeta. È il messaggio espresso da Maria Alessandra Gallone, Presidente di ISPRA e del Sistema Nazionale per la Protezione dell’Ambiente, nel contesto della Conferenza Nazionale Polare del CNR. Gli ambienti estremi del pianeta non vengono descritti come territori isolati: sono invece nodi centrali del sistema climatico globale e termometri particolarmente sensibili dello stato di salute della Terra."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "In questa prospettiva, ciò che accade nelle aree polari non resta confinato nelle aree polari. Osservare questi ambienti significa quindi contribuire a leggere cambiamenti che riguardano il pianeta nel suo insieme. La loro funzione di sentinelle sta proprio nella sensibilità con cui mostrano le trasformazioni dello stato ambientale e climatico."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati scientifici per le decisioni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il contributo di ISPRA e del Sistema Nazionale per la Protezione dell’Ambiente risiede nella produzione di un quadro conoscitivo ufficiale e certificato sullo stato dell’ambiente. Il lavoro parte dai dati scientifici e li traduce in indicatori omogenei, cioè elementi costruiti in modo coerente per descrivere lo stato dell’ambiente, e in raccomandazioni operative a supporto delle decisioni di governo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questa funzione collega la ricerca e l’osservazione alla possibilità di disporre di informazioni utilizzabili nelle decisioni. Un quadro conoscitivo ufficiale e certificato serve infatti a rendere comparabili i dati attraverso indicatori omogenei e a mettere a disposizione raccomandazioni operative. Nel caso dei Poli, questa attività assume rilievo perché questi ambienti sono indicati come nodi del sistema climatico globale."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Ghiacciaio alpino con neve, terreno congelato e strumenti di osservazione ambientale.",
+   "didascalia": "Il monitoraggio riguarda clima, neve e permafrost sui ghiacciai alpini.",
+   "file": "immagini/2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalle spedizioni ai ghiacciai alpini"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’impegno comprende la partecipazione alle spedizioni in Antartide, nell’ambito del Programma Nazionale di Ricerche in Antartide, e le attività del Programma di Ricerche in Artico. A queste si affiancano le collaborazioni internazionali. La presenza nei contesti polari si unisce così alla ricerca sul campo, cioè all’attività svolta direttamente negli ambienti osservati."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca sul campo è accompagnata dal monitoraggio costante del clima, della neve e del permafrost sui ghiacciai alpini. Il permafrost è il terreno che rimane congelato. Sul territorio, questo monitoraggio è garantito dalle ARPA e dalle APPA, le agenzie regionali e provinciali per la protezione dell’ambiente."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il collegamento tra spedizioni, collaborazioni internazionali e osservazioni sui ghiacciai alpini delinea un’attività che tiene insieme ambienti estremi e monitoraggio sul territorio. ISPRA e SNPA indicano nei dati scientifici, negli indicatori omogenei e nelle raccomandazioni operative gli strumenti per trasformare le osservazioni sullo stato dell’ambiente in conoscenza a supporto delle decisioni."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Per ISPRA e SNPA, i Poli sono sentinelle dei cambiamenti del pianeta e nodi centrali del sistema climatico globale. L’impegno comprende spedizioni in Antartide, ricerche in Artico, collaborazioni internazionali e il monitoraggio di clima, neve e permafrost sui ghiacciai alpini, garantito da ARPA e APPA."
+  }
+ ],
+ "parole": 434,
+ "minuti": 2,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Conferenza Nazionale Polare del CNR",
+  "url": "https://www.isprambiente.gov.it/it/news/conferenza-nazionale-polare-del-cnr",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

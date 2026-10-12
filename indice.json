@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-11T06:21:37.309Z",
+ "aggiornato": "2026-10-12T06:21:38.495Z",
  "articoli": [
+  {
+   "id": "2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta",
+   "data": "2026-10-12",
+   "titolo": "ISPRA: i Poli sono sentinelle dei cambiamenti del pianeta",
+   "sottotitolo": "Dalle spedizioni polari al monitoraggio di clima, neve e permafrost sui ghiacciai alpini, il contributo di ISPRA e SNPA alla conoscenza ambientale.",
+   "categoria": "Clima",
+   "minuti": 2,
+   "copertina": "immagini/2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta-copertina.webp",
+   "miniatura": "immagini/2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/conferenza-nazionale-polare-del-cnr",
+   "fonteTitolo": "Conferenza Nazionale Polare del CNR",
+   "file": "articoli/2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta.json"
+  },
   {
    "id": "2026-10-11-risenergy-apre-il-quinto-bando-per-l-accesso-gratuito-alle-i",
    "data": "2026-10-11",
