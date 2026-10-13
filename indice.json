@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-12T06:21:38.495Z",
+ "aggiornato": "2026-10-13T06:21:44.376Z",
  "articoli": [
+  {
+   "id": "2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell",
+   "data": "2026-10-13",
+   "titolo": "Una carta d’identità geologica per leggere la fragilità delle città",
+   "sottotitolo": "Il nuovo metodo di ISPRA riunisce in un punteggio le interazioni tra sottosuolo, clima e tessuto urbano.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell-copertina.webp",
+   "miniatura": "immagini/2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/citta-ora-sappiamo-quanto-e-fragile-il-sottosuolo-su-cui-sorgono",
+   "fonteTitolo": "Città, ora sappiamo quanto è fragile il sottosuolo su cui sorgono",
+   "file": "articoli/2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell.json"
+  },
   {
    "id": "2026-10-12-ispra-i-poli-sono-sentinelle-dei-cambiamenti-del-pianeta",
    "data": "2026-10-12",

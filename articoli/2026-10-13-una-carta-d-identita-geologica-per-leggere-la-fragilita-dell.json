@@ -1,0 +1,88 @@
+{
+ "id": "2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell",
+ "data": "2026-10-13",
+ "scritto": "2026-10-13T06:21:44.376Z",
+ "titolo": "Una carta d’identità geologica per leggere la fragilità delle città",
+ "sottotitolo": "Il nuovo metodo di ISPRA riunisce in un punteggio le interazioni tra sottosuolo, clima e tessuto urbano.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell-copertina.webp",
+ "copertinaAlt": "Una città mostrata insieme agli strati di terreno e alle acque sotterranee sotto le sue strade.",
+ "miniatura": "immagini/2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Le città non sorgono tutte sullo stesso tipo di territorio, né affrontano le medesime pressioni legate al clima, al sottosuolo e alle attività umane. Per rendere questa relazione più leggibile, ISPRA ha messo a punto l’Urban Geo-climate Footprint, indicato con la sigla UGF: un metodo che misura il livello di interazione fra il contesto geologico-climatico e il tessuto urbano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’obiettivo è offrire una risposta immediata alla domanda su quanto sia fragile il sottosuolo su cui sorge una città. Il metodo analizza fattori geologici, climatici e attività umane e li sintetizza in un valore unico. Non si tratta quindi soltanto di descrivere ciò che si trova sotto le strade e gli edifici, ma di leggere il rapporto complessivo tra quel territorio e la città che vi si è sviluppata."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un punteggio per orientarsi"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’UGF utilizza le informazioni disponibili nelle banche dati pubbliche e assegna un punteggio da 0 a 500, pensato per esprimere il potenziale impatto dei fenomeni geologici e climatici sull’area urbana. Un punteggio più alto indica che il contesto geologico e climatico condiziona maggiormente lo sviluppo e il funzionamento della città."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il valore non sostituisce le informazioni che lo compongono, ma le riunisce in una lettura più immediata. In questo modo, dati che riguardano aspetti diversi possono contribuire a delineare un profilo unitario dell’area urbana e a mettere in evidenza dove il rapporto fra territorio e città richiede maggiore attenzione."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un’illustrazione schematica mostra città con diversi contesti di terreno, acque sotterranee e condizioni climatiche.",
+   "didascalia": "Il metodo riunisce informazioni geologiche, climatiche e legate alle attività umane.",
+   "file": "immagini/2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Differenze tra i capoluoghi italiani"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "ISPRA ha già applicato il metodo a diverse città europee e a tutti i capoluoghi di regione e di provincia autonoma italiani. I risultati nazionali evidenziano differenze significative. Trento registra 94 punti, mentre Napoli raggiunge 359 punti. Fra i valori più elevati figurano anche Genova con 304 punti, Palermo con 265, Bari con 255 e Catanzaro con 250."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra i punteggi più contenuti si trovano invece Bolzano, con 144 punti, Milano con 155, Aosta con 160 e Trieste con 162. La varietà dei risultati mostra come il profilo geologico-climatico cambi da una città all’altra e come le condizioni del territorio possano incidere in modo diverso sul funzionamento delle aree urbane."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "La carta d’identità del territorio urbano"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dallo stesso metodo nasce anche il CITY GEO Factsheet, la Carta d’identità geologica dell’area urbana. Il documento raccoglie le informazioni essenziali che definiscono il profilo geologico-climatico della città, con un approccio che non guarda solo alle criticità ma anche ai punti di forza e alle risorse disponibili."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La carta considera il terreno su cui è costruita la città, le acque sotterranee, cioè l’acqua presente nel sottosuolo, le pressioni climatiche e antropiche sul terreno e i fenomeni di pericolosità geologica. Offre inoltre un quadro delle risorse del territorio e degli aspetti che richiedono un’attenzione maggiore. L’intento è fornire una lettura semplice e immediata del legame tra territorio e tessuto urbano."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "L’Urban Geo-climate Footprint di ISPRA sintetizza dati pubblici su geologia, clima e attività umane in un punteggio da 0 a 500. Più il valore è alto, più il contesto geologico e climatico condiziona la città. La Carta d’identità geologica completa il quadro con informazioni su terreno, acque sotterranee, pressioni, pericolosità e risorse."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo Maria Alessandra Gallone, presidente ISPRA SNPA, “Sapere cosa c’è sotto i nostri piedi aiuta a decidere cosa fare sopra”. Lo strumento punta a facilitare il passaggio dai dati e dalle competenze scientifiche a soluzioni concrete per chi deve scegliere, programmare e agire, mettendo la conoscenza al servizio della prevenzione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il portale ISPRA rende disponibili il tool, la guida al suo utilizzo, alcuni esempi di applicazione e un documentario esplicativo. Sono materiali che accompagnano un metodo pensato per rendere più accessibile la conoscenza del territorio su cui le città poggiano e con cui interagiscono ogni giorno."
+  }
+ ],
+ "parole": 609,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Città, ora sappiamo quanto è fragile il sottosuolo su cui sorgono",
+  "url": "https://www.isprambiente.gov.it/it/news/citta-ora-sappiamo-quanto-e-fragile-il-sottosuolo-su-cui-sorgono",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
