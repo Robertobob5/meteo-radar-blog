@@ -1,0 +1,84 @@
+{
+ "id": "2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i",
+ "data": "2026-10-14",
+ "scritto": "2026-10-14T06:21:30.373Z",
+ "titolo": "Quattro veicoli a vela seguiranno l’Antartide per misurare il carbonio dell’oceano",
+ "sottotitolo": "Una missione di cinque anni nel Mar Glaciale Antartico punta a colmare le osservazioni invernali sullo scambio di anidride carbonica.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i-copertina.webp",
+ "copertinaAlt": "Un veicolo autonomo a vela naviga tra onde alte nelle acque attorno all’Antartide.",
+ "miniatura": "immagini/2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Mar Glaciale Antartico è fra le aree marine più difficili e pericolose da raggiungere, ma è anche essenziale per comprendere il sistema climatico globale. Le grandi distanze e le condizioni severe hanno finora limitato le campagne condotte con navi da ricerca, in particolare durante l’inverno. Ora un progetto internazionale vuole affidare una parte decisiva di queste osservazioni a una piccola flotta di veicoli di superficie senza equipaggio, capaci di navigare per lunghi periodi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il primo di quattro Saildrone Explorer, veicoli di superficie senza equipaggio dotati di strumenti scientifici, è partito da Hobart, in Tasmania, il 19 settembre 2026. È l’avvio di una missione prevista per cinque anni. Il progetto, chiamato COCO2, è guidato da ricercatori della NOAA, della Columbia University e dell’organizzazione australiana CSIRO. Nel corso del 2027 saranno messi in mare altri tre veicoli, con partenze ogni tre mesi."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Seguire le zone più importanti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La flotta compirà ripetutamente il giro dell’Antartide, raccogliendo dati lungo rotte individuate da modelli che combinano oceano e atmosfera e usano l’intelligenza artificiale. L’obiettivo è attraversare aree considerate particolarmente utili per le misure. Ogni circumnavigazione coprirà approssimativamente 12.000 miglia: al termine, ciascun veicolo tornerà in porto per riparazioni e revisione, prima di ripartire per un nuovo viaggio attorno al Polo Sud."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I Saildrone sono piattaforme mobili di ricerca controllate a distanza e spinte dal vento. I sistemi a bordo sono alimentati dal sole: una caratteristica che permette loro di operare a lungo in acque remote e di inviare dati quasi in tempo reale. In un ambiente dove le spedizioni navali sono difficili, questa autonomia può rendere disponibili osservazioni che altrimenti mancherebbero."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di un veicolo a vela senza equipaggio con strumenti rivolti verso aria e mare.",
+   "didascalia": "I veicoli registreranno continuamente condizioni dell’atmosfera e della superficie oceanica.",
+   "file": "immagini/2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Misurare lo scambio fra aria e mare"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gli strumenti installati sui veicoli effettueranno misure dirette e continue dell’anidride carbonica scambiata fra atmosfera e oceano. Registreranno inoltre velocità e direzione del vento, pressione atmosferica, radiazione solare, umidità relativa, temperatura dell’aria, temperatura della superficie del mare, salinità, clorofilla e ossigeno disciolto. La salinità indica la concentrazione di sale nell’acqua; l’ossigeno disciolto è invece l’ossigeno presente nell’acqua marina."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’oceano immagazzina circa un terzo dell’anidride carbonica assorbita ogni anno dall’atmosfera. Secondo le stime riportate dal progetto, il Mar Glaciale Antartico rappresenta il 40% del totale. Per questo capire con maggiore precisione quanto carbonio venga assorbito in queste acque è importante. I dati raccolti dovrebbero aiutare gli scienziati a elaborare stime più affidabili, soprattutto in una regione dove le osservazioni dirette sono state molto limitate."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "L’incognita dell’inverno"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il tratto distintivo del Mar Glaciale Antartico è che non è delimitato dai continenti, ma da una corrente: la Corrente Circumpolare Antartica. È un confine invisibile in costante movimento, che favorisce un enorme scambio di calore e carbonio tra atmosfera e profondità oceaniche. Cambiamenti nei venti e nella circolazione attorno all’Antartide possono modificare la capacità dell’oceano di assorbire anidride carbonica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per anni si è ritenuto che queste acque assorbissero in modo costante grandi quantità di anidride carbonica. Una missione Saildrone del 2019, che completò la prima circumnavigazione antartica effettuata da un veicolo di questo tipo, ha però mostrato che in condizioni invernali l’acqua profonda ricca di anidride carbonica può risalire in superficie e rilasciarla, invece di assorbirla. La stessa missione ha dimostrato che un Saildrone può resistere e raccogliere dati scientifici di elevata qualità in condizioni molto dure."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La missione COCO2 impiegherà quattro veicoli a vela senza equipaggio per cinque anni attorno all’Antartide. Le misure continue, comprese quelle invernali, serviranno a chiarire il bilancio del carbonio del Mar Glaciale Antartico: la differenza tra l’anidride carbonica che l’oceano assorbe e quella che può rilasciare."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I dati inviati dai veicoli arriveranno al laboratorio ambientale marino del Pacifico della NOAA. Processi automatizzati li inoltreranno agli utenti della ricerca e al sistema globale di telecomunicazioni dell’Organizzazione meteorologica mondiale, dove potranno essere impiegati nei modelli meteorologici globali. La campagna estesa con più veicoli punta così a offrire una copertura di regioni che in inverno non possono essere raggiunte dalle navi da ricerca o dalle navi commerciali."
+  }
+ ],
+ "parole": 650,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "Saildrone research fleet to circle Antarctica for 5 years",
+  "url": "https://www.noaa.gov/news/saildrone-research-fleet-to-circle-antarctica-for-5-years",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

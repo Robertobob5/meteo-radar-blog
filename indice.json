@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-13T06:21:44.376Z",
+ "aggiornato": "2026-10-14T06:21:30.374Z",
  "articoli": [
+  {
+   "id": "2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i",
+   "data": "2026-10-14",
+   "titolo": "Quattro veicoli a vela seguiranno l’Antartide per misurare il carbonio dell’oceano",
+   "sottotitolo": "Una missione di cinque anni nel Mar Glaciale Antartico punta a colmare le osservazioni invernali sullo scambio di anidride carbonica.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i-copertina.webp",
+   "miniatura": "immagini/2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i-mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news/saildrone-research-fleet-to-circle-antarctica-for-5-years",
+   "fonteTitolo": "Saildrone research fleet to circle Antarctica for 5 years",
+   "file": "articoli/2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i.json"
+  },
   {
    "id": "2026-10-13-una-carta-d-identita-geologica-per-leggere-la-fragilita-dell",
    "data": "2026-10-13",
