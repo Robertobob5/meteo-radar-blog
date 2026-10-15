@@ -1,0 +1,90 @@
+{
+ "id": "2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf",
+ "data": "2026-10-15",
+ "scritto": "2026-10-15T06:21:46.838Z",
+ "titolo": "L’uragano Simon e le onde che ha spinto fino all’alta atmosfera",
+ "sottotitolo": "Le immagini satellitari mostrano il ciclone al largo della costa pacifica messicana e increspature luminose nella mesosfera.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf-copertina.webp",
+ "copertinaAlt": "Illustrazione satellitare di un uragano sul Pacifico vicino a una costa montuosa.",
+ "miniatura": "immagini/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "L’uragano Simon ha percorso il Pacifico orientale restando al largo della costa messicana, ma i suoi effetti hanno raggiunto le aree costiere con vento forte, piogge intense e allagamenti. L’evento è stato osservato dai satelliti anche in un modo meno consueto: nelle ore notturne sono state rilevate onde atmosferiche che dal ciclone si sono propagate verso quote molto elevate, lasciando disegni a increspature nella debole luminosità dell’alta atmosfera."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’11 ottobre 2026 Simon è passato vicino alla costa come uragano di categoria 4, una classificazione che indica un ciclone tropicale di grande intensità. I venti sostenuti hanno raggiunto i 250 chilometri orari mentre il sistema avanzava lentamente verso nord-nordovest. Quando il satellite Suomi NPP ha acquisito un’immagine nel pomeriggio locale, l’occhio dell’uragano si trovava al largo, tra Manzanillo e Puerto Vallarta. In quel momento i venti sostenuti erano attorno ai 210 chilometri orari e il nucleo interno della tempesta sfiorava la costa."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una tempesta condizionata dai rilievi"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo il National Hurricane Center, la topografia della Sierra Madre sembrava attenuare in parte l’intensità di Simon e ridurre l’estensione della sua area dei venti. Questo non ha però evitato conseguenze rilevanti lungo la costa: l’uragano ha portato forti piogge e inondazioni, compresa l’area della città portuale di Manzanillo. Nelle zone montuose, inoltre, le precipitazioni hanno aumentato il rischio di frane di fango."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’immagine diurna che documenta il vortice è stata ottenuta dallo strumento VIIRS, a bordo del satellite Suomi NPP. VIIRS è un radiometro che misura la radiazione visibile e infrarossa e consente di osservare la Terra, comprese le strutture nuvolose dei cicloni. Dall’alto, Simon appare come un grande sistema spiraliforme sul Pacifico, con l’occhio vicino alla costa e dense fasce di nubi che ruotano attorno al centro."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un ciclone tropicale osservato dall’alto con l’occhio vicino a una costa montuosa.",
+   "didascalia": "La posizione ravvicinata alla costa e i rilievi hanno reso particolarmente complessa l’evoluzione del sistema.",
+   "file": "immagini/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le increspature osservate nella notte"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nelle prime ore dell’11 ottobre, un’altra osservazione satellitare ha rivelato che gli effetti della tempesta non si limitavano alle nubi e alle piogge più basse. Il satellite NOAA-21, dotato dello stesso strumento VIIRS, ha registrato onde di gravità atmosferiche che si irradiavano dall’uragano. Non si tratta delle onde marine: sono perturbazioni dell’aria che possono propagarsi nell’atmosfera."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel caso di Simon, queste onde si sono formate quando il calore latente liberato vicino alla parete dell’occhio del ciclone ha alimentato una forte convezione. Il calore latente è l’energia rilasciata quando il vapore acqueo condensa in gocce nelle nubi. La convezione è invece il movimento verticale dell’aria, qui così vigoroso da costruire cumulonembi molto alti. Le correnti ascensionali all’interno di queste nubi possono inviare onde nella stratosfera e nella mesosfera, due strati superiori dell’atmosfera."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le onde non sono sempre visibili dai satelliti. I venti alle alte quote possono disperderle prima che arrivino nella mesosfera. Quando riescono a raggiungerla, possono comparire come ondulazioni dell’airglow, una tenue luce emessa dai gas presenti a quelle altitudini. La banda giorno-notte di VIIRS è sensibile a questo segnale, ma registra anche la luce lunare riflessa, che può renderlo meno distinguibile. Nella notte dell’osservazione, la scarsa illuminazione della Luna ha invece favorito la visibilità delle increspature."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Increspature luminose dell’alta atmosfera sopra un ciclone osservato di notte.",
+   "didascalia": "Le onde di gravità atmosferiche possono diventare visibili come leggere ondulazioni nella luminosità dell’alta atmosfera.",
+   "file": "immagini/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf-2.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una traiettoria ancora difficile da definire"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Al mattino del 13 ottobre, le previsioni sull’intensità e sul percorso di Simon erano considerate a confidenza molto bassa: l’evoluzione dell’uragano continuava a non seguire le attese dei meteorologi. Tra gli scenari indicati vi era una deviazione verso nord, con possibile ingresso nel Golfo di California prima dell’approdo sulla terraferma."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per i giorni successivi erano attese grandi onde lungo tratti della costa sud-occidentale e centro-occidentale del Messico, con condizioni pericolose vicino alla riva. Le osservazioni raccolte dai satelliti raccontano quindi due aspetti dello stesso fenomeno: da una parte un uragano capace di portare rischio di inondazioni e frane lungo la costa; dall’altra l’impronta, più difficile da cogliere, che una tempesta intensa può lasciare fino agli strati alti dell’atmosfera."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Simon è passato vicino alla costa pacifica messicana l’11 ottobre 2026 come uragano di categoria 4. I satelliti hanno osservato sia la struttura del ciclone sia onde di gravità atmosferiche visibili nell’airglow notturno. I rilievi della Sierra Madre hanno contribuito a modificare l’intensità e l’estensione dei venti, mentre piogge e allagamenti hanno interessato le aree costiere."
+  }
+ ],
+ "parole": 677,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "Hurricane Simon Lurks Off the Mexican Coast",
+  "url": "https://science.nasa.gov/earth/earth-observatory/hurricane-simon-lurks-off-the-mexican-coast/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

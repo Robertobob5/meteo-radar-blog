@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-14T06:21:30.374Z",
+ "aggiornato": "2026-10-15T06:21:46.839Z",
  "articoli": [
+  {
+   "id": "2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf",
+   "data": "2026-10-15",
+   "titolo": "L’uragano Simon e le onde che ha spinto fino all’alta atmosfera",
+   "sottotitolo": "Le immagini satellitari mostrano il ciclone al largo della costa pacifica messicana e increspature luminose nella mesosfera.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf-copertina.webp",
+   "miniatura": "immagini/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/hurricane-simon-lurks-off-the-mexican-coast/",
+   "fonteTitolo": "Hurricane Simon Lurks Off the Mexican Coast",
+   "file": "articoli/2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf.json"
+  },
   {
    "id": "2026-10-14-quattro-veicoli-a-vela-seguiranno-l-antartide-per-misurare-i",
    "data": "2026-10-14",
