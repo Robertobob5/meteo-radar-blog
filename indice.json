@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-15T06:21:46.839Z",
+ "aggiornato": "2026-10-16T06:21:57.306Z",
  "articoli": [
+  {
+   "id": "2026-10-16-el-nino-orienta-l-inverno-negli-stati-uniti-piu-mite-al-nord",
+   "data": "2026-10-16",
+   "titolo": "El Niño orienta l’inverno negli Stati Uniti: più mite al Nord, più umido al Sud e a Est",
+   "sottotitolo": "Le prospettive stagionali NOAA per dicembre 2026-febbraio 2027 indicano il probabile effetto di un El Niño molto forte.",
+   "categoria": "Atmosfera",
+   "minuti": 4,
+   "copertina": "immagini/2026-10-16-el-nino-orienta-l-inverno-negli-stati-uniti-piu-mite-al-nord-copertina.webp",
+   "miniatura": "immagini/2026-10-16-el-nino-orienta-l-inverno-negli-stati-uniti-piu-mite-al-nord-mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/el-nino-looms-large-over-us-winter-outlook",
+   "fonteTitolo": "El Nino looms large over U.S. Winter Outlook",
+   "file": "articoli/2026-10-16-el-nino-orienta-l-inverno-negli-stati-uniti-piu-mite-al-nord.json"
+  },
   {
    "id": "2026-10-15-l-uragano-simon-e-le-onde-che-ha-spinto-fino-all-alta-atmosf",
    "data": "2026-10-15",
