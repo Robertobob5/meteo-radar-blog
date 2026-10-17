@@ -1,0 +1,92 @@
+{
+ "id": "2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa",
+ "data": "2026-10-17",
+ "scritto": "2026-10-17T06:21:37.104Z",
+ "titolo": "Un nuovo radar meteorologico di Arpa Lombardia sarà installato all’Università di Pavia",
+ "sottotitolo": "L’impianto rafforzerà l’osservazione delle precipitazioni nel sud-ovest lombardo e il supporto alla Protezione civile.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa-copertina.webp",
+ "copertinaAlt": "Un radar protetto da una cupola sul tetto di un edificio universitario, con nuvole di pioggia sullo sfondo.",
+ "miniatura": "immagini/2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un nuovo radar meteorologico di Arpa Lombardia sarà installato presso la Facoltà di Ingegneria dell’Università di Pavia. L’impianto avrà il compito di rafforzare l’osservazione delle precipitazioni, migliorare il monitoraggio degli eventi meteorologici estremi e contribuire alla prevenzione dei rischi naturali. Il radar entrerà nel sistema di monitoraggio idrometeorologico regionale: un insieme di strumenti dedicati all’osservazione di fenomeni legati a atmosfera e acqua."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’investimento supera 1,17 milioni di euro ed è finanziato dal Ministero dell’Ambiente e della Sicurezza Energetica nell’ambito del Piano nazionale di ripresa e resilienza. Le spese di installazione saranno a carico del Ministero, mentre Arpa Lombardia sosterrà la gestione futura dello strumento. La realizzazione è prevista nei prossimi giorni."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Perché la posizione scelta è utile"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il radar sarà collocato sul tetto del vano scale dell’edificio 34 del Campus di via Ferrata. Il sito è stato scelto perché offre una posizione favorevole per monitorare le precipitazioni nell’area pavese e milanese, una buona visibilità dell’orizzonte e le infrastrutture necessarie per l’alimentazione elettrica e la trasmissione dei dati."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nella scelta hanno contato anche aspetti strutturali, logistici e sanitari. Il tetto è ritenuto adatto a sostenere il radar e le strutture accessorie, permettendo di limitare l’altezza del traliccio e di organizzare in sicurezza gli accessi per installazione e manutenzione. La collocazione nell’Università evita inoltre la costruzione di un nuovo traliccio di grandi dimensioni, contenendo interventi infrastrutturali e relativi costi economici e ambientali. È stata considerata con particolare attenzione anche l’esposizione ai campi elettromagnetici a radiofrequenza."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Come osserva la pioggia un radar"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un radar meteorologico invia impulsi di onde elettromagnetiche nell’atmosfera e riceve i segnali che vengono riflessi dalle idrometeore, cioè particelle d’acqua o ghiaccio nell’aria come gocce di pioggia e grandine. Elaborando questi echi di ritorno, il sistema può ricavare la distanza delle precipitazioni, la loro intensità e informazioni sul tipo di idrometeore osservate."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’antenna ruota continuamente e compie scansioni a diverse elevazioni. Per il modello WR-JL400-SX indicato per l’installazione, la scansione completa del volume atmosferico richiede circa due minuti. Il sistema opera in banda X, utilizza un’antenna a doppia polarizzazione di 2 metri e ha un’ampiezza del fascio di 1,2 gradi. Il radar sarà racchiuso in un radome, un involucro radio-trasparente che protegge la struttura."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di un radar sul tetto che effettua scansioni verso nuvole con pioggia e grandine.",
+   "didascalia": "Il radar rileva gli echi prodotti da pioggia e grandine per osservare distribuzione e intensità delle precipitazioni.",
+   "file": "immagini/2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un’integrazione alla rete già presente"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Arpa Lombardia dispone già di una rete composta da 318 stazioni meteorologiche, 70 stazioni idrometriche e 46 stazioni nivometriche, oltre a tre radar meteorologici in banda X. Le stazioni idrometriche osservano i livelli dell’acqua, mentre quelle nivometriche sono dedicate alla neve. La rete radar dell’Agenzia comprende gli impianti di Desio, Flero e Bormio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il potenziamento risponde anche ai limiti dei soli pluviometri, gli strumenti che misurano la pioggia nel punto in cui sono installati. Durante la stagione estiva, i temporali possono produrre precipitazioni intense e molto localizzate. In queste situazioni, il radar permette di osservare a distanza come le piogge sono distribuite e con quale intensità, fornendo dati complementari a quelli delle stazioni al suolo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’impianto di Pavia punta quindi a migliorare la copertura radar ad alta risoluzione spaziale e temporale del sud-ovest lombardo, a integrare il monitoraggio dell’area di Milano e della Brianza e a rafforzare la rete regionale e nazionale usata anzitutto dal sistema di Protezione civile. Le informazioni possono contribuire al servizio di allerta precoce attraverso l’app RadarLOM, che segnala l’avvicinarsi di temporali intensi e la possibile presenza di grandine."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati per monitoraggio, ricerca e formazione"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La presenza dello strumento nel Campus potrà favorire collaborazioni didattiche e scientifiche tra Arpa Lombardia e Università di Pavia. I dati ad alta risoluzione raccolti dal radar potranno essere impiegati in progetti su idrologia, gestione del rischio idraulico, telerilevamento ed elaborazione dei segnali, oltre a offrire agli studenti dati reali per tesi di laurea."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il radar sarà installato sul Campus di via Ferrata dell’Università di Pavia. Osserverà le precipitazioni nel sud-ovest della Lombardia e integrerà la rete di Arpa Lombardia, già formata da stazioni al suolo e tre radar in banda X. L’obiettivo è disporre di dati più completi e tempestivi per il monitoraggio delle piogge, la prevenzione e la protezione del territorio."
+  }
+ ],
+ "parole": 671,
+ "minuti": 3,
+ "fonte": {
+  "nome": "SNPA · le Arpa d’Italia",
+  "titolo": "La Facoltà di Ingegneria dell’Università di Pavia ospiterà un nuovo radar meteorologico di Arpa Lombardia",
+  "url": "https://www.snpambiente.it/notizie/snpa/arpa-lombardia/la-facolta-di-ingegneria-delluniversita-di-pavia-ospitera-un-nuovo-radar-meteorologico-di-arpa-lombardia/?utm_source=rss&utm_medium=rss&utm_campaign=la-facolta-di-ingegneria-delluniversita-di-pavia-ospitera-un-nuovo-radar-meteorologico-di-arpa-lombardia",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

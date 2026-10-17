@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-16T06:21:57.306Z",
+ "aggiornato": "2026-10-17T06:21:37.104Z",
  "articoli": [
+  {
+   "id": "2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa",
+   "data": "2026-10-17",
+   "titolo": "Un nuovo radar meteorologico di Arpa Lombardia sarà installato all’Università di Pavia",
+   "sottotitolo": "L’impianto rafforzerà l’osservazione delle precipitazioni nel sud-ovest lombardo e il supporto alla Protezione civile.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa-copertina.webp",
+   "miniatura": "immagini/2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa-mini.webp",
+   "fonte": "SNPA · le Arpa d’Italia",
+   "fonteUrl": "https://www.snpambiente.it/notizie/snpa/arpa-lombardia/la-facolta-di-ingegneria-delluniversita-di-pavia-ospitera-un-nuovo-radar-meteorologico-di-arpa-lombardia/?utm_source=rss&utm_medium=rss&utm_campaign=la-facolta-di-ingegneria-delluniversita-di-pavia-ospitera-un-nuovo-radar-meteorologico-di-arpa-lombardia",
+   "fonteTitolo": "La Facoltà di Ingegneria dell’Università di Pavia ospiterà un nuovo radar meteorologico di Arpa Lombardia",
+   "file": "articoli/2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa.json"
+  },
   {
    "id": "2026-10-16-el-nino-orienta-l-inverno-negli-stati-uniti-piu-mite-al-nord",
    "data": "2026-10-16",
