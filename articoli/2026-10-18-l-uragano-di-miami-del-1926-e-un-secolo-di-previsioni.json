@@ -1,0 +1,72 @@
+{
+ "id": "2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni",
+ "data": "2026-10-18",
+ "scritto": "2026-10-18T06:21:21.661Z",
+ "titolo": "L’uragano di Miami del 1926 e un secolo di previsioni",
+ "sottotitolo": "Una presentazione NOAA ripercorre le difficoltà di prevedere e comunicare gli eventi estremi prima degli strumenti moderni.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni-copertina.webp",
+ "copertinaAlt": "Un ciclone sull’oceano rappresentato tra una mappa meteorologica storica e un’osservazione satellitare moderna.",
+ "miniatura": "immagini/2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Prevedere un evento meteorologico estremo e avvisare la popolazione non è sempre stato possibile con gli strumenti disponibili oggi. Satelliti, ricognizioni aeree, modelli al computer, radio, televisione e internet hanno cambiato profondamente il modo in cui si osserva il tempo e si diffondono gli avvisi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La NOAA dedica una presentazione all’uragano che colpì Miami nel 1926, usando questo evento per raccontare lo stato delle conoscenze meteorologiche e delle previsioni di allora. L’incontro considera anche gli effetti dell’uragano, ciò che fu appreso dopo l’evento e i progressi compiuti nel secolo successivo."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Quando osservare il tempo era più difficile"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Prima della disponibilità delle tecnologie moderne, seguire l’evoluzione di un fenomeno intenso e comunicarne il pericolo al pubblico era molto più difficile. La differenza non riguarda soltanto la previsione in sé: contano anche la capacità di raccogliere osservazioni, di elaborarle e di far arrivare gli avvisi alle persone."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra gli strumenti indicati dalla NOAA figurano i satelliti, che permettono di osservare dall’alto l’atmosfera; la ricognizione aerea, cioè l’osservazione effettuata da velivoli; e i modelli al computer, programmi che elaborano dati meteorologici per descrivere l’evoluzione del tempo. A questi si aggiungono i mezzi di comunicazione, dalla radio alla televisione fino a internet."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un confronto illustrato tra strumenti meteorologici del passato e sistemi moderni di osservazione di una tempesta.",
+   "didascalia": "Le osservazioni e gli strumenti di comunicazione sono al centro dell’evoluzione raccontata dalla NOAA.",
+   "file": "immagini/2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un evento storico come punto di partenza"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La presentazione non propone soltanto uno sguardo al passato. L’uragano di Miami del 1926 diventa il punto di partenza per confrontare due epoche: da una parte la comprensione del tempo e le possibilità previsionali disponibili allora, dall’altra gli avanzamenti maturati nel secolo seguente."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il filo conduttore è semplice: per affrontare gli eventi estremi servono sia conoscenze sul tempo atmosferico sia strumenti capaci di osservare, analizzare e comunicare. La NOAA richiama proprio questa trasformazione, collegando le difficoltà del passato alle risorse oggi disponibili per la previsione e gli avvisi al pubblico."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La NOAA presenta un approfondimento sull’uragano di Miami del 1926. Il tema è l’evoluzione delle previsioni meteorologiche e degli avvisi alla popolazione, dai limiti precedenti a satelliti, ricognizioni aeree, modelli al computer e moderni mezzi di comunicazione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’incontro fa parte della serie di interventi della NOAA Heritage Week 2026 ed è affidato a Sim Aberson e Jack Beven. L’obiettivo dichiarato è ripercorrere un secolo di cambiamenti nella ricerca e nella previsione degli uragani, a partire da un evento che appartiene alla storia della meteorologia."
+  }
+ ],
+ "parole": 379,
+ "minuti": 2,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "The Great Miami Hurricane of 1926: 100 Years of Hurricane Forecasting and Research",
+  "url": "https://www.noaa.gov/heritage/multimedia/video/great-miami-hurricane-of-1926-100-years-of-hurricane-forecasting-and-research",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

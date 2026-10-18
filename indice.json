@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-17T06:21:37.104Z",
+ "aggiornato": "2026-10-18T06:21:21.662Z",
  "articoli": [
+  {
+   "id": "2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni",
+   "data": "2026-10-18",
+   "titolo": "L’uragano di Miami del 1926 e un secolo di previsioni",
+   "sottotitolo": "Una presentazione NOAA ripercorre le difficoltà di prevedere e comunicare gli eventi estremi prima degli strumenti moderni.",
+   "categoria": "Atmosfera",
+   "minuti": 2,
+   "copertina": "immagini/2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni-copertina.webp",
+   "miniatura": "immagini/2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni-mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/heritage/multimedia/video/great-miami-hurricane-of-1926-100-years-of-hurricane-forecasting-and-research",
+   "fonteTitolo": "The Great Miami Hurricane of 1926: 100 Years of Hurricane Forecasting and Research",
+   "file": "articoli/2026-10-18-l-uragano-di-miami-del-1926-e-un-secolo-di-previsioni.json"
+  },
   {
    "id": "2026-10-17-un-nuovo-radar-meteorologico-di-arpa-lombardia-sara-installa",
    "data": "2026-10-17",
