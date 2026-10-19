@@ -1,0 +1,84 @@
+{
+ "id": "2026-10-19-perche-le-previsioni-di-el-nino-in-primavera-possono-essere-",
+ "data": "2026-10-19",
+ "scritto": "2026-10-19T06:21:37.802Z",
+ "titolo": "Perché le previsioni di El Niño in primavera possono essere troppo sicure",
+ "sottotitolo": "Uno studio individua un punto debole dei modelli climatici tra marzo e maggio: l’eccessivo peso dato ai segnali del Pacifico tropicale.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-10-19-perche-le-previsioni-di-el-nino-in-primavera-possono-essere--copertina.webp",
+ "copertinaAlt": "Illustrazione del Pacifico tropicale con variazioni di temperatura della superficie marina.",
+ "miniatura": "immagini/2026-10-19-perche-le-previsioni-di-el-nino-in-primavera-possono-essere--mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "El Niño può avere effetti molto estesi sul tempo atmosferico globale, sull’agricoltura e sulle economie. Per questo, formulare previsioni affidabili su questo fenomeno è importante. Un nuovo studio mette però in evidenza una difficoltà persistente: tra marzo e maggio, i modelli climatici usati per prevedere El Niño possono mostrare una sicurezza maggiore di quella giustificata dai risultati."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il lavoro prende in esame quella che viene chiamata barriera alla prevedibilità primaverile, cioè un periodo storicamente difficile per le previsioni. In primavera, infatti, i modelli spesso producono previsioni di El Niño con un alto livello di confidenza. Tuttavia, secondo lo studio, queste indicazioni ad alta confidenza frequentemente non trovano conferma."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il problema della sicurezza eccessiva"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il punto centrale non è soltanto la difficoltà di prevedere El Niño nei mesi primaverili. I ricercatori segnalano soprattutto un problema di sovraconfidenza: i modelli possono comunicare una previsione come molto solida proprio in una fase in cui la previsione è storicamente complessa. Quando questa sicurezza non è accompagnata da un risultato corretto, il rischio è che chi deve usare le informazioni previsionali si trovi meno preparato."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Lo studio è stato firmato da Aaron Levine dell’Università di Washington e da Michelle L’Heureux e Caihong Wen del Centro di previsione climatica della NOAA. La ricerca è stata pubblicata su una rivista scientifica e si concentra su un limite preciso del modo in cui i modelli affrontano la previsione di El Niño durante la primavera."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato del Pacifico tropicale e delle influenze che arrivano da fuori dai tropici.",
+   "didascalia": "Lo studio indica che i segnali del Pacifico tropicale non bastano sempre a costruire previsioni affidabili in primavera.",
+   "file": "immagini/2026-10-19-perche-le-previsioni-di-el-nino-in-primavera-possono-essere--1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Non conta solo il Pacifico tropicale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo gli autori, l’origine del problema sta nel peso eccessivo assegnato dai modelli ai segnali del Pacifico tropicale. Le temperature dell’oceano Pacifico tropicale offrono indizi sulle condizioni legate a El Niño, ma i modelli possono basarsi troppo su questi segnali quando elaborano le previsioni fra marzo e maggio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questa attenzione concentrata sui tropici può far perdere di vista influenze importanti che arrivano da fuori dai tropici. È qui che si apre il punto debole individuato dalla ricerca: se alcuni fattori rilevanti non vengono considerati a sufficienza, la previsione può diventare inaccurata anche quando il modello la presenta con grande confidenza."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il risultato dello studio non suggerisce che le previsioni di El Niño siano sempre sbagliate in primavera. Evidenzia invece che, in questa fase dell’anno, l’alta confidenza espressa dai modelli merita particolare attenzione. La barriera alla prevedibilità primaverile resta infatti una difficoltà nota, e l’analisi mostra perché una previsione apparentemente sicura possa non tradursi nel risultato atteso."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una questione utile per chi prende decisioni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Quando una previsione di El Niño non è accurata, le conseguenze possono arrivare anche a chi deve prendere decisioni basandosi sulle informazioni climatiche. Poiché gli eventi di El Niño hanno impatti sul tempo nel mondo, sull’agricoltura e sulle economie, una previsione che dia troppa sicurezza può lasciare i decisori impreparati."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca indica quindi una direzione chiara: per comprendere meglio le previsioni primaverili di El Niño occorre guardare oltre i soli segnali del Pacifico tropicale. Riconoscere i limiti dei modelli in questo periodo non elimina la difficoltà della previsione, ma aiuta a leggere con maggiore cautela le indicazioni ad alta confidenza che vengono prodotte tra marzo e maggio."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Tra marzo e maggio, i modelli climatici spesso emettono previsioni di El Niño molto sicure che non sempre si rivelano corrette. Lo studio attribuisce questo limite al peso eccessivo dato ai segnali del Pacifico tropicale e alla possibile omissione di influenze provenienti da fuori dai tropici."
+  }
+ ],
+ "parole": 559,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NOAA Climate.gov",
+  "titolo": "New research offers insights into why climate models often get spring El Niño forecasts wrong",
+  "url": "https://www.climate.gov/news-features/feed/new-research-offers-insights-why-climate-models-often-get-spring-el-nino",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
