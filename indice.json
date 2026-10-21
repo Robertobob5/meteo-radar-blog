@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-20T06:22:00.577Z",
+ "aggiornato": "2026-10-21T06:21:56.700Z",
  "articoli": [
+  {
+   "id": "2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic",
+   "data": "2026-10-21",
+   "titolo": "Dall’uragano Isaias a un profondo ciclone extratropicale vicino all’Islanda",
+   "sottotitolo": "I resti del sistema tropicale hanno attraversato il Nord Atlantico, intensificandosi rapidamente e portando vento, pioggia, nevischio e neve.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic-copertina.webp",
+   "miniatura": "immagini/2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/extratropical-cyclone-whips-past-iceland/",
+   "fonteTitolo": "Extratropical Cyclone Whips Past Iceland",
+   "file": "articoli/2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic.json"
+  },
   {
    "id": "2026-10-20-una-nuova-stazione-alla-spezia-per-osservare-la-ionosfera",
    "data": "2026-10-20",
@@ -1008,6 +1022,15 @@
    "fonteTitolo": "The “Romeo Bassoli” Prize 2026 goes to Daniele Moretti and AFP.",
    "quando": "2026-10-20T06:21:10.950Z",
    "perche": "stessa storia di 2026-10-04-due-spin-off-del-cnr-in-finale-all-italian-master-startup-aw"
+  },
+  {
+   "id": "2026-10-21-il-satellite-metop-sg-b1-e-arrivato-nella-guyana-francese-pe",
+   "data": "2026-10-21",
+   "titolo": "Il satellite MetOp-SG-B1 è arrivato nella Guyana francese per il lancio",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Meteorological_missions/MetOp_Second_Generation/MetOp-SG-B1_weather_satellite_arrives_at_Europe_s_Spaceport",
+   "fonteTitolo": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
+   "quando": "2026-10-21T06:21:09.896Z",
+   "perche": "stessa storia di 2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana"
   }
  ]
 }

@@ -1,0 +1,80 @@
+{
+ "id": "2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic",
+ "data": "2026-10-21",
+ "scritto": "2026-10-21T06:21:56.697Z",
+ "titolo": "Dall’uragano Isaias a un profondo ciclone extratropicale vicino all’Islanda",
+ "sottotitolo": "I resti del sistema tropicale hanno attraversato il Nord Atlantico, intensificandosi rapidamente e portando vento, pioggia, nevischio e neve.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic-copertina.webp",
+ "copertinaAlt": "Un grande vortice nuvoloso a forma di virgola sul Nord Atlantico, vicino all’Islanda.",
+ "miniatura": "immagini/2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un sistema di bassa pressione molto intenso ha sfiorato l’Islanda dopo un lungo percorso sull’Atlantico settentrionale. La sua storia era iniziata come uragano Isaias, l’unico uragano atlantico della stagione fino a quel momento. Dopo l’approdo in Florida come uragano di categoria 2 il 9 ottobre, Isaias aveva portato pioggia e vento sulla costa del Golfo degli Stati Uniti e aveva bagnato ampie zone della costa orientale. Ma il sistema non si è esaurito lì: trasportati verso est dalla corrente a getto, i suoi resti hanno dato origine a una potente tempesta di tipo diverso."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Che cos’è un ciclone extratropicale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La tempesta divenuta visibile vicino all’Islanda è un ciclone extratropicale: un sistema di bassa pressione che si forma alle medie latitudini, cioè fuori dalle regioni tropicali. Questi cicloni mostrano spesso una disposizione delle nubi asimmetrica e arcuata, simile a una virgola. Possono essere associati a venti della forza di un uragano, piogge e condizioni paragonabili a una bufera di neve."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’immagine satellitare del sistema è stata acquisita nel pomeriggio del 14 ottobre dallo strumento VIIRS a bordo del satellite NOAA-21. VIIRS è un radiometro per il visibile e l’infrarosso: osserva la Terra nelle diverse lunghezze d’onda della luce e permette di distinguere strutture nuvolose molto estese. Nella scena, il ciclone passa a ridosso dell’Islanda, con la tipica spirale irregolare di nubi che avvolge il centro della bassa pressione."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo della trasformazione da sistema tropicale a ciclone extratropicale sull’oceano.",
+   "didascalia": "I resti di Isaias, trasportati dalla corrente a getto, si sono evoluti in una vasta depressione extratropicale.",
+   "file": "immagini/2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un’intensificazione molto rapida"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel viaggio attraverso l’Atlantico, la pressione atmosferica del sistema è diminuita di oltre 50 ettopascal in 24 ore, secondo i resoconti citati dalla NASA. Un ettopascal è un’unità usata per misurare la pressione dell’aria. Un calo così marcato è circa doppio rispetto al criterio indicato per la ciclogenesi esplosiva, detta anche bombogenesi: una rapida intensificazione di un ciclone, riconoscibile proprio da una veloce diminuzione della pressione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Alcuni meteorologi ritengono che la tempesta possa avere stabilito in Islanda un nuovo minimo di pressione atmosferica per ottobre, dopo la correzione per l’altitudine. Se confermato, il valore supererebbe un record in vigore dal 1963. La pressione al livello del mare, o corretta per quota, serve a confrontare in modo più uniforme le misure raccolte in località poste ad altitudini diverse."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Vento intenso lungo le coste"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Mentre il ciclone lambiva la costa islandese, ha portato venti molto forti. Vicino al vulcano Eyjafjallajökull, nel sud del Paese, è stata rilevata una raffica di 205 chilometri orari. Su una piccola isola appena al largo, il vento sostenuto ha raggiunto 150 chilometri orari. A differenza delle raffiche, che sono aumenti brevi e improvvisi dell’intensità del vento, il vento sostenuto indica una velocità mantenuta nel tempo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I venti dannosi si sono estesi anche alle zone settentrionali dell’Islanda, dove la popolazione si è preparata ad affrontare nevischio e neve. Più a est, attraverso l’Atlantico, la Scozia nord-occidentale ha registrato raffiche fino a 90 chilometri orari il 14 ottobre. Secondo le notizie riportate nella fonte, il maltempo ha causato cancellazioni su diverse tratte di traghetti."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Isaias è approdato in Florida il 9 ottobre come uragano di categoria 2. I suoi resti hanno poi attraversato il Nord Atlantico lungo la corrente a getto e si sono trasformati in un ciclone extratropicale. Il sistema ha sfiorato l’Islanda il 14 ottobre, con un rapido calo della pressione e venti molto intensi."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La vicenda mostra come un sistema meteorologico possa cambiare natura durante il suo percorso. L’uragano iniziale e il ciclone extratropicale successivo non sono lo stesso tipo di tempesta, ma i resti del primo possono fornire il punto di partenza per il secondo. Nel caso osservato dal satellite NOAA-21, questa evoluzione ha prodotto una depressione profonda, con una struttura nuvolosa estesa e impatti avvertiti dall’Islanda fino alla Scozia nord-occidentale."
+  }
+ ],
+ "parole": 606,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "Extratropical Cyclone Whips Past Iceland",
+  "url": "https://science.nasa.gov/earth/earth-observatory/extratropical-cyclone-whips-past-iceland/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
