@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-21T06:21:56.700Z",
+ "aggiornato": "2026-10-22T06:21:32.459Z",
  "articoli": [
+  {
+   "id": "2026-10-22-ispra-stima-emissioni-in-calo-nel-2026-mentre-cresce-il-pil",
+   "data": "2026-10-22",
+   "titolo": "ISPRA stima emissioni in calo nel 2026 mentre cresce il PIL",
+   "sottotitolo": "La stima trimestrale indica una diminuzione dell’1,5% delle emissioni di gas serra e un aumento dello 0,8% del PIL rispetto al 2025.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-22-ispra-stima-emissioni-in-calo-nel-2026-mentre-cresce-il-pil-copertina.webp",
+   "miniatura": "immagini/2026-10-22-ispra-stima-emissioni-in-calo-nel-2026-mentre-cresce-il-pil-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/emissioni-gas-serra-calano-nel-2026",
+   "fonteTitolo": "Emissioni gas serra: calano dell’1,5% nel 2026 mentre cresce il PIL",
+   "file": "articoli/2026-10-22-ispra-stima-emissioni-in-calo-nel-2026-mentre-cresce-il-pil.json"
+  },
   {
    "id": "2026-10-21-dall-uragano-isaias-a-un-profondo-ciclone-extratropicale-vic",
    "data": "2026-10-21",
