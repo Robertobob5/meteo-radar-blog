@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-22T06:21:32.459Z",
+ "aggiornato": "2026-10-23T06:21:26.694Z",
  "articoli": [
+  {
+   "id": "2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca",
+   "data": "2026-10-23",
+   "titolo": "Terremoto di magnitudo ML 3.8 localizzato in provincia di Catania",
+   "sottotitolo": "L’evento del 21 ottobre 2026 è stato localizzato a ovest di Milo e a nord-ovest di Zafferana Etnea, a 4 chilometri di profondità.",
+   "categoria": "Terremoti",
+   "minuti": 2,
+   "copertina": "immagini/2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca-copertina.webp",
+   "miniatura": "immagini/2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca-mini.webp",
+   "fonte": "INGV Terremoti",
+   "fonteUrl": "https://ingvterremoti.com/2026/10/21/evento-sismico-in-provincia-di-catania-ml-3-8-21-ottobre-2026/",
+   "fonteTitolo": "Evento sismico in provincia di Catania, ML 3.8, 21 ottobre 2026",
+   "file": "articoli/2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca.json"
+  },
   {
    "id": "2026-10-22-ispra-stima-emissioni-in-calo-nel-2026-mentre-cresce-il-pil",
    "data": "2026-10-22",

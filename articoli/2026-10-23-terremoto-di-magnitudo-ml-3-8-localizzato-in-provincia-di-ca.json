@@ -1,0 +1,68 @@
+{
+ "id": "2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca",
+ "data": "2026-10-23",
+ "scritto": "2026-10-23T06:21:26.694Z",
+ "titolo": "Terremoto di magnitudo ML 3.8 localizzato in provincia di Catania",
+ "sottotitolo": "L’evento del 21 ottobre 2026 è stato localizzato a ovest di Milo e a nord-ovest di Zafferana Etnea, a 4 chilometri di profondità.",
+ "categoria": "Terremoti",
+ "copertina": "immagini/2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca-copertina.webp",
+ "copertinaAlt": "Illustrazione di un paesaggio montuoso con onde sismiche stilizzate nel terreno e uno strumento di rilevazione.",
+ "miniatura": "immagini/2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un terremoto di magnitudo Richter ML 3.8 è stato localizzato dalla Rete Sismica Nazionale alle 8:49 italiane del 21 ottobre 2026, in provincia di Catania. La sigla ML accompagna nella comunicazione la stima di magnitudo Richter dell’evento."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La localizzazione indicata è a 7.1 chilometri a ovest di Milo e a 7.9 chilometri a nord-ovest di Zafferana Etnea. La profondità riportata è di 4 chilometri. Catania si trova a circa 27 chilometri a sud dell’epicentro indicato."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di un evento sismico poco profondo sotto un paesaggio collinare.",
+   "didascalia": "L’evento è stato localizzato a una profondità di 4 chilometri.",
+   "file": "immagini/2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "L’area e gli eventi del passato"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo quanto riportato, l’evento odierno ricade in un’area dove storicamente non sono avvenuti terremoti molto forti. Il quadro è diverso da quello indicato per i settori orientale e meridionale, per i quali sono riportati eventi molto forti in passato."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nella stessa area sono comunque riportati numerosi terremoti con magnitudo inferiore a 5. Il terremoto del 21 ottobre si inserisce quindi in una zona nella quale sono documentati diversi eventi di magnitudo più bassa, pur senza la presenza storica di eventi molto forti descritta per altri settori."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Segnalazioni dalla provincia di Catania e da parte di Messina"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "In base ai dati arrivati finora, il terremoto è stato risentito nella provincia di Catania e in parte di quella di Messina. Le segnalazioni disponibili trovano riscontro nella mappa dei risentimenti macrosismici, cioè la mappa ricavata dai questionari inviati al sito indicato dalla fonte."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La mappa è stata elaborata sulla base di oltre 77 questionari ed è in continuo aggiornamento. Questo significa che il quadro dei risentimenti riportati può essere aggiornato con l’arrivo di ulteriori questionari."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il terremoto è avvenuto il 21 ottobre 2026 alle 8:49 italiane ed è stato localizzato dalla Rete Sismica Nazionale. Magnitudo Richter ML 3.8, profondità di 4 chilometri, localizzazione a ovest di Milo e a nord-ovest di Zafferana Etnea. I dati finora disponibili indicano risentimenti nella provincia di Catania e in parte di quella di Messina."
+  }
+ ],
+ "parole": 308,
+ "minuti": 2,
+ "fonte": {
+  "nome": "INGV Terremoti",
+  "titolo": "Evento sismico in provincia di Catania, ML 3.8, 21 ottobre 2026",
+  "url": "https://ingvterremoti.com/2026/10/21/evento-sismico-in-provincia-di-catania-ml-3-8-21-ottobre-2026/",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
