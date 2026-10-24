@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-23T06:21:26.694Z",
+ "aggiornato": "2026-10-24T06:21:29.374Z",
  "articoli": [
+  {
+   "id": "2026-10-24-due-nuove-stazioni-in-alta-quota-rafforzano-il-monitoraggio-",
+   "data": "2026-10-24",
+   "titolo": "Due nuove stazioni in alta quota rafforzano il monitoraggio dei ghiacciai lombardi",
+   "sottotitolo": "Le installazioni di Valfurva e Lanzada ampliano la rete di Arpa Lombardia e raccolgono dati utili per studiare clima, ghiacciai e risorse idriche.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-24-due-nuove-stazioni-in-alta-quota-rafforzano-il-monitoraggio--copertina.webp",
+   "miniatura": "immagini/2026-10-24-due-nuove-stazioni-in-alta-quota-rafforzano-il-monitoraggio--mini.webp",
+   "fonte": "SNPA · le Arpa d’Italia",
+   "fonteUrl": "https://www.snpambiente.it/notizie/temi/montagna/monitoraggio-ghiacciai-la-rete-di-arpa-lombardia-si-arricchisce-di-due-nuove-stazioni-nivometeorologiche/?utm_source=rss&utm_medium=rss&utm_campaign=monitoraggio-ghiacciai-la-rete-di-arpa-lombardia-si-arricchisce-di-due-nuove-stazioni-nivometeorologiche",
+   "fonteTitolo": "Monitoraggio ghiacciai: la rete di Arpa Lombardia si arricchisce di due nuove stazioni nivometeorologiche",
+   "file": "articoli/2026-10-24-due-nuove-stazioni-in-alta-quota-rafforzano-il-monitoraggio-.json"
+  },
   {
    "id": "2026-10-23-terremoto-di-magnitudo-ml-3-8-localizzato-in-provincia-di-ca",
    "data": "2026-10-23",
