@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-24T06:21:29.374Z",
+ "aggiornato": "2026-10-25T07:21:24.788Z",
  "articoli": [
+  {
+   "id": "2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto",
+   "data": "2026-10-25",
+   "titolo": "Heathrow rinnova il supporto meteorologico in aeroporto",
+   "sottotitolo": "Il Met Office proseguirà con previsioni specialistiche, osservazioni e assistenza operativa dedicata allo scalo.",
+   "categoria": "Aria",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto-copertina.webp",
+   "miniatura": "immagini/2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto-mini.webp",
+   "fonte": "Met Office",
+   "fonteUrl": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/corporate-news/2026/met-office-renews-contract-with-heathrow-airport-",
+   "fonteTitolo": "Met Office renews contract with Heathrow Airport",
+   "file": "articoli/2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto.json"
+  },
   {
    "id": "2026-10-24-due-nuove-stazioni-in-alta-quota-rafforzano-il-monitoraggio-",
    "data": "2026-10-24",

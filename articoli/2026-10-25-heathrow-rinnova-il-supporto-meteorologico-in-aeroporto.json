@@ -1,0 +1,84 @@
+{
+ "id": "2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto",
+ "data": "2026-10-25",
+ "scritto": "2026-10-25T07:21:24.787Z",
+ "titolo": "Heathrow rinnova il supporto meteorologico in aeroporto",
+ "sottotitolo": "Il Met Office proseguirà con previsioni specialistiche, osservazioni e assistenza operativa dedicata allo scalo.",
+ "categoria": "Aria",
+ "copertina": "immagini/2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto-copertina.webp",
+ "copertinaAlt": "Illustrazione di un aeroporto con piste, strumenti meteorologici e diverse condizioni del tempo.",
+ "miniatura": "immagini/2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Met Office ha rinnovato il proprio contratto con l’aeroporto di Heathrow, proseguendo una collaborazione che dura da quindici anni. L’accordo mantiene nello scalo un servizio meteorologico specialistico in presenza: previsioni dedicate e supporto operativo pensati per aiutare l’aeroporto a prepararsi alle condizioni difficili e a rispondere quando si verificano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per un aeroporto, il tempo non è soltanto un’informazione generale sulle condizioni attese. È un elemento che entra nelle decisioni operative. Nebbia, neve, vento forte, piogge intense e temperature elevate sono fra i fenomeni per cui il servizio continuerà a fornire indicazioni specifiche a Heathrow, l’aeroporto più trafficato del Regno Unito."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un servizio integrato nelle operazioni"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il nuovo contratto ha una durata di cinque anni e riunisce due componenti. Da una parte ci sono i servizi commerciali di previsione; dall’altra restano i servizi meteorologici regolamentati per l’aviazione, forniti dal Met Office per conto dell’Autorità per l’aviazione civile. Questi servizi sostengono la sicurezza del trasporto aereo nell’intero settore dell’aviazione del Regno Unito."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A Heathrow opera un gruppo di meteorologi inseriti direttamente nell’ambiente aeroportuale. Il team fornisce consulenza su misura al centro operativo dell’aeroporto ed è disponibile senza interruzioni, tutti i giorni dell’anno. Le informazioni sono rivolte ai responsabili delle principali attività aeroportuali: le operazioni lato pista, quelle nelle aree accessibili ai passeggeri, il traffico aereo e le compagnie aeree."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Strumenti meteorologici vicino a una pista con nebbia sullo sfondo.",
+   "didascalia": "Le osservazioni locali sono usate anche per le previsioni di nebbia e visibilità ridotta.",
+   "file": "immagini/2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Osservare la nebbia, stimare la visibilità"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’accordo prevede inoltre la continuità delle osservazioni meteorologiche a Heathrow e nei siti di rilevamento attorno all’aeroporto. Queste misurazioni sostengono le previsioni dedicate alla nebbia e alla bassa visibilità. La visibilità è la distanza entro cui si possono distinguere gli elementi nell’aria: quando diminuisce, diventa una variabile importante per le operazioni aeroportuali."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Al lavoro dei meteorologi si affiancherà MAVIS, il servizio di visualizzazione aeronautica del Met Office. Lo strumento consentirà a tutti i membri dei team aeroportuali un accesso più ampio a una serie di strumenti regolamentati per le previsioni destinate all’aviazione. In questo modo, la consulenza operativa e gli strumenti previsionali saranno disponibili insieme a chi deve pianificare le attività dell’aeroporto."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalle decisioni quotidiane alla resilienza futura"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il ruolo del servizio non riguarda soltanto la gestione giornaliera. I dati climatici e le competenze del Met Office continueranno infatti a contribuire alla pianificazione di più lungo periodo e alle valutazioni sulla resilienza futura. Per resilienza si intende la capacità di prepararsi agli impatti, affrontarli e mantenere le attività operative."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo il Met Office, lavorare fianco a fianco con i team di Heathrow permette ai meteorologi di fornire elementi utili per anticipare gli impatti del tempo, limitare le perturbazioni operative e sostenere operazioni sicure ed efficienti. Heathrow ha indicato che il partner meteorologico ha avuto un ruolo rilevante nel mantenere l’aeroporto in condizioni di operare in sicurezza nel corso della collaborazione."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il contratto rinnovato mantiene a Heathrow meteorologi dedicati, osservazioni nell’aeroporto e nelle aree circostanti, previsioni per fenomeni come nebbia, neve, vento forte e piogge intense, oltre all’accesso a strumenti meteorologici regolamentati per l’aviazione. I dati climatici contribuiranno anche alla pianificazione futura."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il Met Office fornisce servizi al settore dell’aviazione anche per aeroporti, compagnie aeree, organizzazioni che gestiscono il traffico aereo e autorità di regolazione nel Regno Unito. L’obiettivo indicato è aiutare questi soggetti a gestire gli effetti del tempo, migliorare l’efficienza operativa e sostenere la sicurezza dei viaggi aerei."
+  }
+ ],
+ "parole": 543,
+ "minuti": 3,
+ "fonte": {
+  "nome": "Met Office",
+  "titolo": "Met Office renews contract with Heathrow Airport",
+  "url": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/corporate-news/2026/met-office-renews-contract-with-heathrow-airport-",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
