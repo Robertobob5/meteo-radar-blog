@@ -1,0 +1,88 @@
+{
+ "id": "2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace",
+ "data": "2026-10-26",
+ "scritto": "2026-10-26T07:21:57.122Z",
+ "titolo": "Le foglie rosse viste ogni giorno dal satellite PACE",
+ "sottotitolo": "Le misure dei pigmenti vegetali mostrano come i colori autunnali si spostano verso sud e aiutano a studiare lo stato della vegetazione.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace-copertina.webp",
+ "copertinaAlt": "Illustrazione della Terra con fasce di vegetazione autunnale verdi, gialle e rosse osservate da un satellite.",
+ "miniatura": "immagini/2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Osservare le foglie d’autunno è una tradizione antica, ma oggi può essere seguita anche dallo spazio. Il satellite PACE della NASA misura ogni giorno i colori della vegetazione e permette di seguire, su scala globale, l’avanzata stagionale delle tonalità rosse, gialle e arancioni. Le mappe elaborate con questi dati non mostrano soltanto dove il paesaggio appare più colorato: descrivono i cambiamenti nei pigmenti delle foglie, cioè nelle sostanze che danno loro il colore."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra la fine di settembre e l’inizio di ottobre, le aree con la vegetazione più rossa erano particolarmente estese nell’Alaska settentrionale, nel Canada settentrionale e in zone della Russia settentrionale e orientale. Nella settimana successiva, le aree più intense si sono spostate verso l’equatore: il colore è comparso maggiormente nel Medio Atlantico degli Stati Uniti, nel Sud-Est del Paese, nella Russia meridionale, in Cina e in Mongolia. Iniziň Nuova Inghilterra e nello stato di New York, invece, il segnale di arrossamento iniziava già a diminuire mentre si diffondeva in buona parte del Midwest e del Medio Atlantico."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Come il satellite distingue i colori delle foglie"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Lo strumento OCI, a bordo di PACE, è iperspettrale: osserva la luce in molte fasce molto ristrette dello spettro, così da riconoscere variazioni sottili nei pigmenti vegetali. Lo strumento effettua osservazioni di oceani e vegetazione in 286 bande spettrali, cioè intervalli di lunghezze d’onda della luce. Alcuni gruppi di queste lunghezze d’onda consentono di seguire tre pigmenti importanti per i colori autunnali: le antocianine, associate ai rossi; i carotenoidi, che contribuiscono ai gialli e agli arancioni; e le clorofille, responsabili del verde."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gli scienziati confrontano nel tempo quanto rosso, arancione e giallo mostrano le foreste rispetto al verde. Questo rapporto indica dove le foglie stanno cambiando e quando il colore raggiunge il suo massimo. Nelle mappe, il verde corrisponde a valori vicini a 1: il satellite rileva all’incirca tanto rosso quanto verde e gran parte delle foglie non ha ancora cambiato colore. Le tonalità dal giallo chiaro al rosso indicano invece quantità via via maggiori di pigmento rosso rispetto al verde."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema a due pannelli che mostra lo spostamento delle aree di vegetazione rossa verso sud.",
+   "didascalia": "Le osservazioni in periodi successivi mostrano il cambiamento e lo spostamento stagionale delle aree più rosse.",
+   "file": "immagini/2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Perché in autunno il verde lascia spazio agli altri pigmenti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "In autunno le foglie cambiano colore perché perdono clorofilla, una molecola verde che le piante usano per sintetizzare il cibo. La clorofilla non è stabile e deve essere prodotta continuamente, un processo che richiede luce solare abbondante e temperature calde. Quando le giornate si accorciano e le temperature scendono, i suoi livelli diminuiscono. Il verde quindi si attenua e diventano visibili carotenoidi e antocianine."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Alcune delle zone più rosse comprendono gli Adirondack nello stato di New York, le Green Mountains nel Vermont e le White Mountains nel New Hampshire. Qui sono diffusi l’acero da zucchero e l’acero rosso, alberi decidui che in autunno assumono un intenso cremisi. Nelle aree di tundra paludosa dell’Alaska settentrionale, del Canada e della Russia potrebbero contribuire al rosso intenso anche mirtilli, mirtilli neri, carici, muschi ed erbe."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un’altra osservazione, ottenuta il 3 ottobre con lo strumento OLI del satellite Landsat 9, ha mostrato fogliame intensamente rosso attorno a Ripton, nel Vermont, in prossimità del massimo arrossamento regionale. Sui rilievi boscosi del Vermont centrale dominavano rosso e arancione, mentre le valli fluviali e le aree a quota più bassa restavano verdi."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalle mappe satellitari alle fotografie da terra"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "PACE è il primo satellite capace di misurare tutti e tre questi pigmenti chiave sull’intero pianeta ogni giorno o due. Altri satelliti dotati di sensori iperspettrali possono compiere misure simili, ma su aree più limitate e meno frequentemente. La successione delle osservazioni nel tempo permette così di individuare i picchi di rosso e di giallo in qualunque parte della Terra."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nell’ambito della campagna nordamericana sulla fenologia, lo studio dei tempi dei fenomeni stagionali, il programma GLOBE pubblica ogni settimana mappe dell’arrossamento della vegetazione. Le mappe mostrano ondate di rosso che emergono alle alte latitudini in agosto e si spostano verso l’equatore in settembre e ottobre. Il gruppo di PACE chiede inoltre al pubblico di inviare fotografie del fogliame autunnale: le immagini raccolte al suolo servono a verificare le osservazioni satellitari e a comprendere meglio i fattori che influenzano il colore della vegetazione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il rosso rilevato dal satellite non indica sempre i normali colori d’autunno. In alcune aree agricole, per esempio, le colture possono mostrare alti livelli di antocianine quando invecchiano o dopo il raccolto. Anche la siccità o i danni causati dagli insetti possono modificare i pigmenti. Questi fattori potrebbero spiegare perché PACE misura livelli elevati di rosso in regioni agricole di Brasile, Australia e Canada che non seguono da vicino il più ampio andamento stagionale. Le nuvole, inoltre, possono produrre apparenti vuoti nella vegetazione sulle mappe."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Le fotografie da terra possono aiutare a rendere più precise le misure del colore della vegetazione effettuate da PACE. I dati potrebbero sostenere studi sui cambiamenti nei tempi del rinverdimento primaverile e della senescenza autunnale, cioè il progressivo declino stagionale dell’attività delle piante; sugli effetti della vegetazione sul ciclo globale del carbonio; e sull’influenza del colore delle foglie sul rischio di incendi. Gli scienziati vogliono anche capire se queste osservazioni possano individuare segnali precoci di siccità, infestazioni di insetti e malattie delle piante."
+  }
+ ],
+ "parole": 851,
+ "minuti": 4,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "Hunting Red Leaves with Satellites",
+  "url": "https://science.nasa.gov/earth/earth-observatory/hunting-red-leaves-with-satellites/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

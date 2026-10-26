@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-25T07:21:24.788Z",
+ "aggiornato": "2026-10-26T07:21:57.122Z",
  "articoli": [
+  {
+   "id": "2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace",
+   "data": "2026-10-26",
+   "titolo": "Le foglie rosse viste ogni giorno dal satellite PACE",
+   "sottotitolo": "Le misure dei pigmenti vegetali mostrano come i colori autunnali si spostano verso sud e aiutano a studiare lo stato della vegetazione.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace-copertina.webp",
+   "miniatura": "immagini/2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/hunting-red-leaves-with-satellites/",
+   "fonteTitolo": "Hunting Red Leaves with Satellites",
+   "file": "articoli/2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace.json"
+  },
   {
    "id": "2026-10-25-heathrow-rinnova-il-supporto-meteorologico-in-aeroporto",
    "data": "2026-10-25",
@@ -1087,6 +1101,15 @@
    "fonteTitolo": "MetOp-SG-B1 weather satellite arrives at Europe’s Spaceport",
    "quando": "2026-10-21T06:21:09.896Z",
    "perche": "stessa storia di 2026-08-29-mtg-i2-e-sul-lanciatore-ariane-6-per-il-decollo-dalla-guyana"
+  },
+  {
+   "id": "2026-10-26-flex-osservera-il-debole-bagliore-emesso-dalle-piante-dallo-",
+   "data": "2026-10-26",
+   "titolo": "FLEX osserverà il debole bagliore emesso dalle piante dallo spazio",
+   "fonteUrl": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/ESA_s_FLEX_mission_reveals_the_secret_glow_of_plants",
+   "fonteTitolo": "ESA’s FLEX mission reveals the secret glow of plants",
+   "quando": "2026-10-26T07:20:57.002Z",
+   "perche": "stessa storia di 2026-10-20-una-nuova-stazione-alla-spezia-per-osservare-la-ionosfera"
   }
  ]
 }
