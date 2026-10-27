@@ -1,0 +1,94 @@
+{
+ "id": "2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz",
+ "data": "2026-10-27",
+ "scritto": "2026-10-27T07:21:40.977Z",
+ "titolo": "CRISTAL completa l’assemblaggio e prepara i test per lo spazio",
+ "sottotitolo": "Il satellite europeo dedicato ai ghiacci polari ha provato l’apertura dei pannelli solari e il sistema di separazione dal razzo.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz-copertina.webp",
+ "copertinaAlt": "Illustrazione di un satellite per l’osservazione dei ghiacci con i pannelli solari aperti.",
+ "miniatura": "immagini/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "CRISTAL, il nuovo satellite europeo progettato per monitorare i ghiacci, ha concluso una fase importante del suo percorso verso il lancio. Dopo l’integrazione dei pannelli solari e il completamento dell’assemblaggio, il veicolo sta passando alle prove che dovranno dimostrare la sua capacità di affrontare il decollo e la vita in orbita."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A settembre, presso le strutture Airbus di Friedrichshafen, in Germania, gli ingegneri hanno terminato l’assemblaggio del satellite. Da quel momento il lavoro si è concentrato sui suoi sistemi: una serie di verifiche necessarie per controllare che componenti, meccanismi e procedure funzionino insieme come previsto."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "La prova delle ali solari"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra i test già svolti spicca la prima prova di apertura dei pannelli solari. Questi pannelli, una volta dispiegati, forniranno energia al satellite nello spazio. La verifica serve a controllare sia i meccanismi fisici di apertura sia le sequenze software che li comandano: due elementi che dovranno agire correttamente quando CRISTAL sarà in orbita."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un satellite durante una prova di apertura dei pannelli solari in un ambiente tecnico.",
+   "didascalia": "La prova verifica che pannelli solari, meccanismi e software operino in modo coordinato.",
+   "file": "immagini/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz-1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un’altra verifica è stata condotta con AVIO, il fornitore del servizio di lancio. CRISTAL è stato controllato sul suo adattatore di lancio, il componente che lo mantiene fissato al razzo. Non basta infatti che il satellite sia compatibile con questo elemento: occorre verificare anche il meccanismo che dovrà liberarlo dal razzo e consentirne l’immissione in orbita."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Parallelamente alle attività sul satellite, il progetto ha svolto una revisione intermedia dello stato di qualifica. La revisione ha esaminato lo stato di qualifica e verifica delle apparecchiature, degli strumenti e dei sottosistemi prima delle prove di qualifica sull’intero satellite. Secondo il responsabile del progetto CRISTAL dell’ESA, Kristof Gantois, i test sono stati superati con successo e costituiscono un passaggio verso la fase successiva."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "In arrivo le prove ambientali"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il satellite sarà trasferito da Friedrichshafen a una sede dell’Agenzia spaziale europea nei Paesi Bassi. Qui trascorrerà la maggior parte del prossimo anno sottoposto a rigorosi test ambientali. Lo scopo è verificare che possa resistere sia al lancio sia alle condizioni difficili dell’ambiente spaziale."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il lancio è previsto tra la fine del 2027 e l’inizio del 2028. Quando raggiungerà l’orbita, CRISTAL dovrebbe diventare la prima missione di espansione Copernicus Sentinel a essere lanciata. Il suo nome è l’acronimo di Copernicus Polar Ice and Snow Topography Altimeter: una missione dedicata alla topografia, cioè alla misura della forma e dell’altezza, dei ghiacci e della neve polari."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Che cosa misurerà CRISTAL"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A bordo ci saranno il primo altimetro radar a doppia frequenza e un radiometro a microonde. Un altimetro radar misura le distanze inviando segnali radar verso la superficie e analizzandone il ritorno; il radiometro a microonde rileva invece segnali nella banda delle microonde. Insieme, questi strumenti serviranno a misurare e monitorare i cambiamenti dello spessore del ghiaccio marino, della profondità della neve che lo ricopre e dell’elevazione delle calotte glaciali."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un satellite osserva dall’orbita il ghiaccio marino e una calotta glaciale.",
+   "didascalia": "La missione misurerà spessore del ghiaccio marino, neve sovrastante ed elevazione delle calotte.",
+   "file": "immagini/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz-2.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "CRISTAL proseguirà per almeno i prossimi due decenni le serie di osservazioni radar dell’elevazione dei ghiacci e dei cambiamenti topografici, raccogliendo l’eredità di missioni precedenti, tra cui CryoSat dell’ESA. È inoltre previsto un satellite CRISTAL-B verso la fine della vita operativa di CRISTAL-A, con l’obiettivo di mantenere continue le osservazioni della missione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Come missione operativa, CRISTAL fornirà dati utili alle attività marittime negli oceani polari, alle applicazioni legate alle acque costiere e interne e al monitoraggio della topografia oceanica. Le misure precise del ghiaccio, indicato come una delle parti più vulnerabili del sistema terrestre, contribuiranno anche a comprendere meglio i processi climatici e i loro effetti."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "CRISTAL ha completato l’assemblaggio e ha superato le prime prove dei pannelli solari e dell’adattatore di lancio. La prossima grande fase sarà dedicata ai test ambientali nei Paesi Bassi. Il lancio è programmato tra la fine del 2027 e l’inizio del 2028."
+  }
+ ],
+ "parole": 605,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ESA Observing the Earth",
+  "titolo": "Ice mission CRISTAL opens its wings",
+  "url": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

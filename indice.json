@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-26T07:21:57.122Z",
+ "aggiornato": "2026-10-27T07:21:40.978Z",
  "articoli": [
+  {
+   "id": "2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz",
+   "data": "2026-10-27",
+   "titolo": "CRISTAL completa l’assemblaggio e prepara i test per lo spazio",
+   "sottotitolo": "Il satellite europeo dedicato ai ghiacci polari ha provato l’apertura dei pannelli solari e il sistema di separazione dal razzo.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz-copertina.webp",
+   "miniatura": "immagini/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz-mini.webp",
+   "fonte": "ESA Observing the Earth",
+   "fonteUrl": "https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Ice_mission_CRISTAL_opens_its_wings",
+   "fonteTitolo": "Ice mission CRISTAL opens its wings",
+   "file": "articoli/2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz.json"
+  },
   {
    "id": "2026-10-26-le-foglie-rosse-viste-ogni-giorno-dal-satellite-pace",
    "data": "2026-10-26",
