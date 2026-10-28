@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-27T07:21:40.978Z",
+ "aggiornato": "2026-10-28T07:21:33.562Z",
  "articoli": [
+  {
+   "id": "2026-10-28-dopo-il-caldo-estremo-i-giovani-seguono-di-piu-gli-avvisi-me",
+   "data": "2026-10-28",
+   "titolo": "Dopo il caldo estremo, i giovani seguono di più gli avvisi meteo",
+   "sottotitolo": "Un’indagine del Met Office rileva che, tra le fasce d’età considerate, i giovani adulti sono i più propensi a cambiare abitudini davanti alle allerte.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-28-dopo-il-caldo-estremo-i-giovani-seguono-di-piu-gli-avvisi-me-copertina.webp",
+   "miniatura": "immagini/2026-10-28-dopo-il-caldo-estremo-i-giovani-seguono-di-piu-gli-avvisi-me-mini.webp",
+   "fonte": "Met Office",
+   "fonteUrl": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/young-people-most-likely-to-act-on-weather-warnings-after-record-summer-",
+   "fonteTitolo": "Young people most likely to act on weather warnings after record summer",
+   "file": "articoli/2026-10-28-dopo-il-caldo-estremo-i-giovani-seguono-di-piu-gli-avvisi-me.json"
+  },
   {
    "id": "2026-10-27-cristal-completa-l-assemblaggio-e-prepara-i-test-per-lo-spaz",
    "data": "2026-10-27",
