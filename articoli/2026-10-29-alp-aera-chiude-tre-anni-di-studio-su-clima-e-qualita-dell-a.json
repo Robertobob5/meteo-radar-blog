@@ -1,0 +1,96 @@
+{
+ "id": "2026-10-29-alp-aera-chiude-tre-anni-di-studio-su-clima-e-qualita-dell-a",
+ "data": "2026-10-29",
+ "scritto": "2026-10-29T07:21:33.219Z",
+ "titolo": "ALP’AERA chiude tre anni di studio su clima e qualità dell’aria nelle Alpi",
+ "sottotitolo": "Il progetto transfrontaliero mette insieme misure, emissioni e scenari fino al 2070 per le valli alpine.",
+ "categoria": "Aria",
+ "copertina": "immagini/2026-10-29-alp-aera-chiude-tre-anni-di-studio-su-clima-e-qualita-dell-a-copertina.webp",
+ "copertinaAlt": "Illustrazione di una valle alpina con correnti d’aria che attraversano i valichi montani.",
+ "miniatura": "immagini/2026-10-29-alp-aera-chiude-tre-anni-di-studio-su-clima-e-qualita-dell-a-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "L’aria non si ferma ai confini amministrativi, e nelle Alpi questo è particolarmente evidente: le masse d’aria attraversano i valichi e possono trasportare inquinanti da una regione all’altra. Da questa consapevolezza nasce ALP’AERA, progetto europeo dedicato agli effetti dei cambiamenti climatici sulla qualità dell’aria nelle valli alpine. Il percorso si è concluso a Monêtier-les-Bains, in Francia, con la presentazione dei risultati di tre anni di lavoro comune."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’incontro finale ha riunito AtmoSud, capofila del progetto, Atmo Auvergne-Rhône-Alpes, ARPA Valle d’Aosta, ARPA Piemonte e ARPA Liguria. In una conferenza-dibattito aperta al pubblico si è parlato delle principali tendenze climatiche nelle regioni alpine e dell’evoluzione attesa della qualità dell’aria verso il 2050 e il 2070. La giornata successiva è stata invece dedicata alla presentazione dei risultati dei partner e al confronto con il pubblico, anche in videoconferenza."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un ambiente in cambiamento"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le Alpi stanno affrontando temperature record da oltre vent’anni, uno zero termico — la quota alla quale la temperatura raggiunge zero gradi — sempre più elevato, ghiacciai in arretramento e fenomeni estremi più frequenti. Questi cambiamenti non riguardano soltanto neve, ghiaccio e temperature: influenzano anche l’aria nelle valli alpine."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo le proiezioni elaborate nel progetto, rispetto alla media del periodo 1991-2020 la temperatura media aumenterebbe di 1-2 °C già al 2050, con un incremento più marcato al 2070. È inoltre prevista una diminuzione generale dei giorni di gelo, soprattutto nelle zone montane. Sono scenari costruiti per osservare insieme l’evoluzione del clima e quella dell’inquinamento atmosferico su un territorio che comprende entrambi i lati delle Alpi."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Strumenti per il monitoraggio dell’aria in una valle alpina, con un drone in volo.",
+   "didascalia": "Il progetto ha affiancato alle misure esistenti nuove campagne e strumenti di monitoraggio.",
+   "file": "immagini/2026-10-29-alp-aera-chiude-tre-anni-di-studio-su-clima-e-qualita-dell-a-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Misure, emissioni e modelli"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "ALP’AERA si è sviluppato lungo tre assi. Il primo è stato il monitoraggio: le misure raccolte dai partner sono state messe in comune e ampliate con nuove campagne in aree ancora poco conosciute. L’attenzione ha riguardato anche inquinanti emergenti, fra cui il carbonio nero, o black carbon, e le particelle ultrafini, cioè particelle di dimensioni molto ridotte. Per le osservazioni sono stati usati anche sensori a basso costo e droni, accanto alla strumentazione impiegata abitualmente."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il secondo asse ha riguardato le emissioni, cioè le quantità di sostanze rilasciate nell’aria dalle diverse attività. Gli inventari regionali sono confluiti in una base comune e armonizzata per l’intera area ALCOTRA. A partire da questa base è stata stimata l’evoluzione delle emissioni fino al 2050 e al 2070."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il terzo asse è quello degli scenari della qualità dell’aria. ARPA Piemonte ha sviluppato una catena integrata di modelli, alimentata dalle proiezioni climatiche del Centro Euro-Mediterraneo sui Cambiamenti Climatici. Un modello è uno strumento che usa dati e relazioni fisiche per simulare possibili evoluzioni future. In questo caso, le simulazioni ad alta risoluzione hanno riguardato tutto il territorio transfrontaliero."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Particolato e biossido di azoto in calo, attenzione all’ozono"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per la qualità dell’aria, il quadro indicato dagli scenari è in parte favorevole. Le concentrazioni di particolato, indicato con le sigle PM10 e PM2,5, e di biossido di azoto sono destinate a diminuire sull’intero territorio. Il particolato è l’insieme di particelle sospese nell’aria; PM10 e PM2,5 identificano particelle di dimensioni diverse. La riduzione prevista è legata soprattutto al calo delle emissioni prodotte dai trasporti e dal riscaldamento civile."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’ozono resta invece la principale criticità. Le concentrazioni mediane, cioè i valori centrali della distribuzione delle osservazioni, tendono ad aumentare, in particolare nelle aree urbane. All’orizzonte 2050 rimane inoltre un rischio residuo di superamento dei nuovi limiti giornalieri previsti dalla direttiva europea 2024/2881."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "ALP’AERA è un progetto del Programma Interreg VI-A Francia-Italia ALCOTRA 2021-2027, cofinanziato dal Fondo europeo di sviluppo regionale. Si è svolto da ottobre 2023 a ottobre 2026. Il progetto ha coinvolto AtmoSud, Atmo Auvergne-Rhône-Alpes, ARPA Valle d’Aosta, ARPA Piemonte e ARPA Liguria."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati e strumenti disponibili anche dopo il progetto"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La conclusione del progetto non chiude l’accesso ai materiali prodotti. Il cruscotto digitale Clima & Aria ALCOTRA raccoglie osservazioni dal 2012, emissioni suddivise per settore e territorio, oltre agli scenari di clima e qualità dell’aria al 2050 e al 2070. È pensato per restare un riferimento per le politiche di adattamento e per il contrasto all’inquinamento atmosferico."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Restano consultabili anche la brochure finale, il rapporto conclusivo, i rapporti tecnici dedicati a monitoraggio, emissioni e scenari, oltre ai video delle campagne di misura. Per i partner, le conoscenze condivise rappresentano un punto di partenza per il futuro delle montagne e per una cooperazione che unisce territori italiani e francesi davanti a sfide senza confini."
+  }
+ ],
+ "parole": 724,
+ "minuti": 4,
+ "fonte": {
+  "nome": "SNPA · le Arpa d’Italia",
+  "titolo": "L’aria e il clima non hanno confini: a Monêtier-les-Bains l’evento finale del progetto ALP’AERA",
+  "url": "https://www.snpambiente.it/notizie/temi/aria/qualita-dellaria/laria-e-il-clima-non-hanno-confini-a-monetier-les-bains-levento-finale-del-progetto-alpaera/?utm_source=rss&utm_medium=rss&utm_campaign=laria-e-il-clima-non-hanno-confini-a-monetier-les-bains-levento-finale-del-progetto-alpaera",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
