@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-29T07:21:33.220Z",
+ "aggiornato": "2026-10-30T07:21:46.023Z",
  "articoli": [
+  {
+   "id": "2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil",
+   "data": "2026-10-30",
+   "titolo": "A Milano un confronto internazionale per rafforzare la resilienza delle coste",
+   "sottotitolo": "Il workshop dedicato alle comunità e agli ecosistemi costieri ha lavorato a una roadmap in vista della Conferenza del Decennio dell’Oceano del 2027.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil-copertina.webp",
+   "miniatura": "immagini/2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil-mini.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/advancing-coastal-resilience-solutions-international-workshop-in-milan",
+   "fonteTitolo": "Advancing coastal resilience solutions: International Workshop in Milan",
+   "file": "articoli/2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil.json"
+  },
   {
    "id": "2026-10-29-alp-aera-chiude-tre-anni-di-studio-su-clima-e-qualita-dell-a",
    "data": "2026-10-29",

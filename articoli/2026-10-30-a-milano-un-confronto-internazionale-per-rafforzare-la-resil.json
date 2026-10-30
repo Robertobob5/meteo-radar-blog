@@ -1,0 +1,80 @@
+{
+ "id": "2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil",
+ "data": "2026-10-30",
+ "scritto": "2026-10-30T07:21:46.021Z",
+ "titolo": "A Milano un confronto internazionale per rafforzare la resilienza delle coste",
+ "sottotitolo": "Il workshop dedicato alle comunità e agli ecosistemi costieri ha lavorato a una roadmap in vista della Conferenza del Decennio dell’Oceano del 2027.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil-copertina.webp",
+ "copertinaAlt": "Illustrazione di una costa con mare, foce fluviale ed ecosistemi costieri esposti a diversi rischi.",
+ "miniatura": "immagini/2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Come trasformare le conoscenze scientifiche in azioni concrete per proteggere comunità ed ecosistemi costieri dai rischi crescenti legati all’oceano? È stata questa la domanda centrale del Coastal Resilience Blueprint Workshop, ospitato dalla Fondazione CMCC a Milano il 26 e 27 ottobre 2026. L’incontro internazionale ha riunito scienziati, rappresentanti dei programmi del Decennio dell’Oceano, organizzazioni internazionali, professionisti e giovani professionisti dell’oceano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il workshop è stato organizzato dal Centro collaborativo del Decennio per la resilienza costiera. L’obiettivo era contribuire a definire una roadmap, cioè un percorso condiviso di azioni e priorità, per aumentare la resilienza costiera nel mondo. Per resilienza si intende la capacità di comunità ed ecosistemi di affrontare i rischi, adattarsi e mettere in pratica soluzioni."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una delle otto roadmap per il 2027"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’incontro ha rappresentato un passaggio nello sviluppo della roadmap dedicata alle comunità umane e agli ecosistemi costieri resilienti. Si tratta di una delle otto roadmap orientate all’azione in preparazione per la Conferenza del Decennio dell’Oceano del 2027, prevista a Rio de Janeiro. L’iniziativa contribuisce inoltre alla sfida del Decennio dell’Oceano che punta ad aumentare la resilienza delle comunità rispetto ai pericoli oceanici."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Al lavoro hanno partecipato anche Nadia Pinardi, Giulia Galluccio e Giovanni Coppini del CMCC. Per la Fondazione, ospitare il confronto ha significato anche mettere a disposizione competenze nelle previsioni oceaniche costiere, nella modellistica climatica, nei sistemi di allerta precoce per rischi multipli, nella pianificazione dell’adattamento e nello sviluppo delle capacità. I sistemi di allerta precoce per rischi multipli sono strumenti che aiutano a riconoscere e comunicare pericoli diversi, invece di considerarli separatamente."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di una costa con mare, delta fluviale, zone umide e collegamenti tra osservazione e allerta.",
+   "didascalia": "Le discussioni hanno collegato previsioni, valutazione dei rischi, adattamento e trasferimento delle conoscenze.",
+   "file": "immagini/2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Rischi connessi lungo le coste"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "A Milano sono state affrontate sfide strettamente collegate tra loro: l’innalzamento del livello del mare, le inondazioni costiere, l’erosione, le ondate di calore marine, la sostenibilità dei delta fluviali e la conservazione degli ecosistemi. I contributi provenienti da diverse regioni geografiche e da iniziative internazionali, fra cui CoastPredict, hanno sottolineato quanto sia importante unire i progressi della scienza all’esperienza regionale e alle priorità locali."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un messaggio emerso dal lavoro preparatorio riguarda la distanza che continua a esistere fra conoscenza scientifica e applicazione pratica. Un’indagine che ha coinvolto 57 azioni del Decennio dell’Oceano ha rilevato che il 72% dei partecipanti segnala difficoltà nel trasferire in modo efficace le conoscenze ai decisori. Il dato mette in evidenza la necessità di andare oltre la sola ricerca scientifica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo l’impostazione discussa per la roadmap, conoscenze e innovazione tecnologica devono essere connesse ai servizi operativi, alle capacità delle istituzioni, al coinvolgimento dei soggetti interessati e ai processi decisionali. In questo quadro, il contributo del CMCC combina scienza del clima e dell’oceano, previsioni costiere e valutazione del rischio con esperienza nella formazione e nel trasferimento delle conoscenze."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Tre priorità per passare all’attuazione"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’iniziativa ruota intorno a tre priorità interconnesse: rafforzare sistemi di allerta precoce per rischi multipli centrati sulle persone; trasformare le evidenze scientifiche in strategie efficaci di adattamento costiero; costruire le competenze e la consapevolezza necessarie per applicare le soluzioni. Durante il workshop, i partecipanti hanno individuato lacune critiche, condiviso priorità e definito tappe di attuazione verso la conferenza del 2027, il 2030 e oltre."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "I prossimi passi della roadmap saranno dedicati a individuare gli ostacoli all’attuazione, le condizioni che possono favorirla, le partnership e le risorse necessarie per far avanzare le soluzioni per la resilienza costiera."
+  }
+ ],
+ "parole": 544,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CMCC",
+  "titolo": "Advancing coastal resilience solutions: International Workshop in Milan",
+  "url": "https://www.cmcc.it/article/advancing-coastal-resilience-solutions-international-workshop-in-milan",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
