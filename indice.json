@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-30T07:21:46.023Z",
+ "aggiornato": "2026-10-31T07:21:42.847Z",
  "articoli": [
+  {
+   "id": "2026-10-31-nel-delta-del-po-siccita-e-piene-spingono-acqua-e-mare-in-di",
+   "data": "2026-10-31",
+   "titolo": "Nel delta del Po siccità e piene spingono acqua e mare in direzioni opposte",
+   "sottotitolo": "Un modello tridimensionale ricostruisce l’intrusione salina del 2022 e i pennacchi di acqua dolce delle alluvioni del 2023.",
+   "categoria": "Mare",
+   "minuti": 4,
+   "copertina": "immagini/2026-10-31-nel-delta-del-po-siccita-e-piene-spingono-acqua-e-mare-in-di-copertina.webp",
+   "miniatura": "immagini/2026-10-31-nel-delta-del-po-siccita-e-piene-spingono-acqua-e-mare-in-di-mini.webp",
+   "fonte": "Arpae Emilia-Romagna",
+   "fonteUrl": "https://www.arpae.it/it/notizie/siccita-e-alluvioni-le-risposte-del-delta-del-po-e-della-costa",
+   "fonteTitolo": "Siccità e alluvioni, le risposte del delta del Po e della costa",
+   "file": "articoli/2026-10-31-nel-delta-del-po-siccita-e-piene-spingono-acqua-e-mare-in-di.json"
+  },
   {
    "id": "2026-10-30-a-milano-un-confronto-internazionale-per-rafforzare-la-resil",
    "data": "2026-10-30",
