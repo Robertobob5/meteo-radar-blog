@@ -1,0 +1,80 @@
+{
+ "id": "2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do",
+ "data": "2026-11-01",
+ "scritto": "2026-11-01T07:21:40.061Z",
+ "titolo": "I denti dei tursiopi per studiare l’esposizione all’acqua dolce",
+ "sottotitolo": "Un tirocinio ha analizzato il bario nei denti di delfini dell’estuario di Charleston.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do-copertina.webp",
+ "copertinaAlt": "Illustrazione di un tursiope in un estuario con una sezione schematica di un dente.",
+ "miniatura": "immagini/2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un dente può conservare tracce dell’ambiente in cui è vissuto un animale. È l’idea alla base del progetto svolto da Hannah Baker durante un tirocinio estivo al National Coastal Centers for Ocean Science Hollings Marine Laboratory, a Charleston, nella Carolina del Sud. Il lavoro ha riguardato i denti dei tursiopi di Tamanend, indicati scientificamente come Tursiops erebennus, presenti nel sistema estuarino di Charleston."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’obiettivo era cercare nei denti una firma dell’esposizione all’acqua dolce. In questo sistema estuarino, i tursiopi di Tamanend hanno affrontato una maggiore esposizione all’acqua dolce. Questa condizione è dannosa per la loro pelle e può portare a lesioni e ad altri problemi. Lo studio si è concentrato sul bario, un elemento naturalmente presente nell’acqua dolce, per capire se la sua presenza nei denti potesse fornire un indicatore di tale esposizione."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "I denti come archivio della vita dell’animale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I tursiopi incorporano sostanze chimiche nei denti durante l’intero arco della loro vita. Per questo i denti possono trasmettere informazioni sulla dieta, sull’habitat e sulle condizioni ambientali incontrate dagli animali. In questa ricerca, il bario è stato scelto proprio perché collegato alla presenza di acqua dolce: individuare come viene incorporato nei denti può offrire una traccia utile per studiare l’esposizione dei delfini."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I campioni non provenivano da nuovi prelievi: erano denti raccolti in precedenza da delfini spiaggiati. Baker ha tagliato i denti a metà con una sega e ha utilizzato una delle sezioni per le analisi. L’attività si inserisce in un lavoro con finalità di conservazione, basato su reperti di mammiferi marini e sulle informazioni che possono ancora fornire."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Illustrazione di una sezione di dente accanto a uno strumento per l’analisi microscopica.",
+   "didascalia": "Una sezione del dente può essere analizzata per cercare la presenza di bario.",
+   "file": "immagini/2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "L’analisi al microscopio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per misurare l’esposizione al bario, i campioni sono stati esaminati con SEM-EDS, sigla che indica la microscopia elettronica a scansione con spettroscopia a raggi X a dispersione di energia. È una tecnica che permette di analizzare i materiali e di rilevare gli elementi presenti nel campione. Nel corso del tirocinio sono stati sottoposti a scansione circa trenta denti di tursiope e anche un dente di capodoglio pigmeo, Kogia breviceps."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per la studentessa, lavorare con campioni di mammiferi marini era un’esperienza nuova. L’uso dei denti dei delfini per fini di conservazione è stato uno degli aspetti centrali del progetto. Dietro l’analisi di un elemento come il bario c’è quindi una domanda più ampia: quali segnali dell’ambiente restano registrati nei tessuti degli animali e come possono contribuire a comprenderne le condizioni di vita?"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un’estate tra ricerca e osservazioni sul campo"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il tirocinio al laboratorio di Charleston non è stato limitato alle analisi dei denti. Baker ha anche collaborato all’identificazione fotografica dei delfini nel fiume Kiawah. L’identificazione fotografica è un metodo che confronta immagini degli animali per riconoscerli. Ha inoltre assistito a necroscopie, cioè esami effettuati dopo la morte per studiare un animale, su una tartaruga caretta, un tursiope e un capodoglio nano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra le attività dell’esperienza c’è stata anche la visita alla nave da ricerca Nancy Foster insieme a un ufficiale del NOAA Corps. Per una studentessa interessata a proseguire nelle scienze marine, il laboratorio ha rappresentato un contesto in cui unire l’analisi dei campioni, l’osservazione degli animali e il confronto con le attività di ricerca in mare."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Lo studio ha cercato il bario nei denti dei tursiopi di Tamanend come possibile firma dell’esposizione all’acqua dolce. I denti, che incorporano sostanze chimiche nel corso della vita, possono contenere informazioni su dieta, habitat e condizioni ambientali. I campioni di delfini spiaggiati sono stati analizzati con microscopia elettronica a scansione e spettroscopia a raggi X."
+  }
+ ],
+ "parole": 573,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NOAA",
+  "titolo": "A toothy summer in Charleston: My internship studying barium in bottlenose dolphin teeth to determine freshwater exposure",
+  "url": "https://www.noaa.gov/office-education/hollings-scholarship/stories/toothy-summer-in-charleston-my-internship-studying-barium-in-bottlenose-dolphin-teeth-to-determine",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

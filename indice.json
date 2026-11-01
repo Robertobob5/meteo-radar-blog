@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-10-31T07:21:42.847Z",
+ "aggiornato": "2026-11-01T07:21:40.061Z",
  "articoli": [
+  {
+   "id": "2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do",
+   "data": "2026-11-01",
+   "titolo": "I denti dei tursiopi per studiare l’esposizione all’acqua dolce",
+   "sottotitolo": "Un tirocinio ha analizzato il bario nei denti di delfini dell’estuario di Charleston.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do-copertina.webp",
+   "miniatura": "immagini/2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do-mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/office-education/hollings-scholarship/stories/toothy-summer-in-charleston-my-internship-studying-barium-in-bottlenose-dolphin-teeth-to-determine",
+   "fonteTitolo": "A toothy summer in Charleston: My internship studying barium in bottlenose dolphin teeth to determine freshwater exposure",
+   "file": "articoli/2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do.json"
+  },
   {
    "id": "2026-10-31-nel-delta-del-po-siccita-e-piene-spingono-acqua-e-mare-in-di",
    "data": "2026-10-31",
