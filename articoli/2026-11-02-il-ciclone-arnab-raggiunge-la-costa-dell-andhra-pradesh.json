@@ -1,0 +1,80 @@
+{
+ "id": "2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh",
+ "data": "2026-11-02",
+ "scritto": "2026-11-02T07:21:40.888Z",
+ "titolo": "Il ciclone Arnab raggiunge la costa dell’Andhra Pradesh",
+ "sottotitolo": "La prima tempesta con nome della stagione nel Nord dell’Oceano Indiano è nata nel Golfo del Bengala e ha toccato terra il 28 ottobre.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh-copertina.webp",
+ "copertinaAlt": "Illustrazione satellitare notturna di un ciclone sul Golfo del Bengala in avvicinamento alla costa indiana.",
+ "miniatura": "immagini/2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Arnab, la prima tempesta con nome della stagione dei cicloni del Nord dell’Oceano Indiano del 2026, ha colpito la costa dell’Andhra Pradesh e di Yanam nelle prime ore del 28 ottobre. Il ciclone era emerso nel Golfo del Bengala il 25 ottobre, in un avvio considerato piuttosto tardivo per un bacino che di norma produce cicloni con nome già in aprile o maggio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il punto di approdo è stato localizzato tra Bapatla e Visakhapatnam, lungo una fascia costiera densamente abitata che comprende grandi città, aree agricole e comunità di pescatori. Prima dell’arrivo sulla terraferma, le autorità indiane avevano evacuato decine di migliaia di persone dalle zone costiere vulnerabili."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "La forza del ciclone osservata di notte"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Un’immagine notturna del 26 ottobre, acquisita dallo strumento VIIRS a bordo del satellite NOAA-20, ha mostrato Arnab sul Golfo del Bengala. VIIRS è un radiometro, cioè uno strumento che misura la radiazione per osservare la Terra anche nelle ore notturne. Al momento dell’immagine, rilevata alle 20:12 nel Tempo Universale e alle 1:42 del 27 ottobre secondo l’ora standard indiana, la tempesta aveva venti sostenuti attorno a 140 chilometri orari, secondo il Dipartimento meteorologico indiano."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I venti sostenuti indicano una velocità mantenuta nel tempo, non una singola raffica. Quando Arnab ha raggiunto la costa, i venti sostenuti erano di 130 chilometri orari. Per il Dipartimento meteorologico indiano, questa intensità rientra nella categoria di ciclone molto severo, una definizione paragonabile a una tempesta di categoria 1 nella scala dei venti degli uragani Saffir-Simpson."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di un satellite che osserva le bande nuvolose di un ciclone notturno.",
+   "didascalia": "Lo strumento VIIRS del satellite NOAA-20 ha acquisito un’immagine notturna di Arnab sul Golfo del Bengala.",
+   "file": "immagini/2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Danni lungo una costa abitata"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo le notizie citate dalla fonte, il passaggio di Arnab ha causato danni estesi. Alberi sono stati sradicati, coltivazioni e abitazioni sono state inondate, la pesca ha subito limitazioni e le reti di trasporto e di fornitura elettrica sono state interrotte. Gli effetti descritti mostrano quanto un ciclone possa coinvolgere nello stesso momento attività diverse della costa: case, agricoltura, collegamenti, energia e pesca."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’evacuazione preventiva delle aree più esposte è avvenuta prima dell’approdo. La fonte non dettaglia le singole località evacuate né la durata delle operazioni, ma segnala che lo spostamento verso i rifugi ha riguardato decine di migliaia di persone. Arnab è arrivato quindi su un tratto di litorale dove convivono centri urbani, terreni coltivati e attività legate al mare."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il contesto di El Niño"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La tempesta si è formata durante un episodio di El Niño, un andamento climatico caratterizzato da acque più calde del normale in parti del Pacifico equatoriale. Questo fenomeno emerge approssimativamente ogni due-sette anni. Le condizioni oceaniche modificate possono influenzare l’atmosfera e cambiare i modelli meteorologici globali, con conseguenze sulla distribuzione di piogge, venti, cicloni tropicali, incendi, alluvioni e altri fenomeni."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel Golfo del Bengala, alcune ricerche indicano che le condizioni ambientali alterate durante El Niño sono associate a una riduzione dell’attività dei cicloni tropicali. Gli studi citati hanno rilevato che, negli anni di El Niño, il bacino registra cicloni tropicali meno frequenti e meno intensi. Questo quadro generale non cambia il fatto che Arnab abbia raggiunto una forte intensità prima di toccare la costa, ma colloca il ciclone dentro una stagione iniziata più tardi del solito."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Arnab è emerso nel Golfo del Bengala il 25 ottobre e ha raggiunto la costa dell’Andhra Pradesh e di Yanam nelle prime ore del 28 ottobre. Al passaggio del satellite NOAA-20 i venti sostenuti erano attorno a 140 chilometri orari; all’approdo erano di 130 chilometri orari. Il ciclone ha provocato danni a case, coltivazioni, trasporti, energia e attività di pesca."
+  }
+ ],
+ "parole": 573,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "Arnab Strikes India",
+  "url": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

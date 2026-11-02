@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-01T07:21:40.061Z",
+ "aggiornato": "2026-11-02T07:21:40.889Z",
  "articoli": [
+  {
+   "id": "2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh",
+   "data": "2026-11-02",
+   "titolo": "Il ciclone Arnab raggiunge la costa dell’Andhra Pradesh",
+   "sottotitolo": "La prima tempesta con nome della stagione nel Nord dell’Oceano Indiano è nata nel Golfo del Bengala e ha toccato terra il 28 ottobre.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh-copertina.webp",
+   "miniatura": "immagini/2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/",
+   "fonteTitolo": "Arnab Strikes India",
+   "file": "articoli/2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh.json"
+  },
   {
    "id": "2026-11-01-i-denti-dei-tursiopi-per-studiare-l-esposizione-all-acqua-do",
    "data": "2026-11-01",
