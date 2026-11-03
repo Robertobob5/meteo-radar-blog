@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-02T07:21:40.889Z",
+ "aggiornato": "2026-11-03T07:21:51.610Z",
  "articoli": [
+  {
+   "id": "2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator",
+   "data": "2026-11-03",
+   "titolo": "Ciclone Harry, lo studio sulle onde record e gli amplificatori del rischio costiero",
+   "sottotitolo": "Una ricerca ricostruisce come onde, fondali e forme della costa abbiano contribuito agli impatti del ciclone nel Mediterraneo centrale.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator-copertina.webp",
+   "miniatura": "immagini/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero",
+   "fonteTitolo": "Ciclone Harry, onde record nel Mediterraneo: uno studio coordinato da UniBa e Università di Catania svela i fattori che amplificano il rischio costiero",
+   "file": "articoli/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator.json"
+  },
   {
    "id": "2026-11-02-il-ciclone-arnab-raggiunge-la-costa-dell-andhra-pradesh",
    "data": "2026-11-02",

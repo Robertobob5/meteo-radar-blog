@@ -1,0 +1,94 @@
+{
+ "id": "2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator",
+ "data": "2026-11-03",
+ "scritto": "2026-11-03T07:21:51.609Z",
+ "titolo": "Ciclone Harry, lo studio sulle onde record e gli amplificatori del rischio costiero",
+ "sottotitolo": "Una ricerca ricostruisce come onde, fondali e forme della costa abbiano contribuito agli impatti del ciclone nel Mediterraneo centrale.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator-copertina.webp",
+ "copertinaAlt": "Illustrazione di una forte mareggiata che raggiunge una costa con fondali irregolari.",
+ "miniatura": "immagini/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un’onda alta 16,6 metri, indicata come la più elevata mai registrata nel Mar Mediterraneo, e segnali osservabili anche dalle reti sismiche: il ciclone Harry è al centro di uno studio che ricostruisce gli effetti di un evento meteo-marino estremo nel Mediterraneo centrale. Il ciclone ha interessato l’area tra il 19 e il 22 gennaio 2026."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca, pubblicata sulla rivista Communications Earth & Environment e coordinata dall’Università degli Studi di Bari Aldo Moro e dall’Università di Catania, esamina non solo l’intensità della tempesta, ma anche il modo in cui la configurazione delle coste e dei fondali può aumentare gli effetti delle mareggiate. Una mareggiata è un forte moto ondoso associato alle condizioni meteorologiche, capace di investire la fascia costiera."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un evento osservato da mare, terra e satellite"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per ricostruire quanto accaduto, i ricercatori hanno integrato discipline diverse: climatologia, meteorologia, oceanografia, geomorfologia e sismologia. La geomorfologia studia le forme del territorio e dei fondali; la sismologia analizza le vibrazioni del suolo. L’obiettivo era seguire la catena di processi che ha trasformato una configurazione atmosferica eccezionale in inondazioni costiere, erosione e danni alle infrastrutture."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’analisi ha combinato dati satellitari, osservazioni raccolte da boe e mareografi, rilievi topografici e batimetrici, sopralluoghi sul campo e simulazioni numeriche ad alta risoluzione. I mareografi misurano le variazioni del livello del mare, mentre la batimetria descrive la profondità e la forma dei fondali."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Una boa oceanografica tra grandi onde durante una tempesta.",
+   "didascalia": "Una boa della Rete Ondametrica Nazionale ha registrato l’onda record nel Canale di Sicilia.",
+   "file": "immagini/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator-1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra i risultati principali c’è la registrazione dell’onda di 16,6 metri da parte di una boa della Rete Ondametrica Nazionale di ISPRA, nel Canale di Sicilia tra Portopalo di Capo Passero e Malta. Le simulazioni hanno inoltre indicato, nel Mar Ionio, altezze d’onda superiori ai 10 metri."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Quando le onde lasciano una traccia nel rumore sismico"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’eccezionalità del ciclone Harry è emersa anche dai dati sismologici. Il passaggio dell’energia delle onde marine al suolo ha prodotto un forte aumento del microseism, il rumore sismico generato dall’interazione tra il mare e il fondale. Analizzando i dati di 55 stazioni sismiche distribuite nel Mediterraneo, lo studio ha rilevato valori senza precedenti in molte serie storiche dell’area ionica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "«In questo quadro il microseism si propone come uno strumento complementare ai sistemi tradizionali di monitoraggio dello stato del mare, utile sia per seguire le mareggiate in tempo reale, sia per rileggere, attraverso le serie storiche, come gli eventi estremi a cui stiamo assistendo si collochino rispetto a quelli del passato», spiega Alfio Marco Borzì, ricercatore del Dipartimento di Scienze Biologiche, Geologiche ed Ambientali dell’Università di Catania."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le forme della costa possono aumentare gli impatti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le simulazioni in 19 siti costieri di Sicilia, Sardegna, Calabria e Malta mostrano che la vulnerabilità non dipende soltanto dalla forza della mareggiata. Alcune caratteristiche geomorfologiche possono favorire l’ingresso e l’accumulo dell’acqua marina nell’entroterra: canyon sottomarini, paleocanali, depressioni retrodunali e pianure alluvionali. I paleocanali sono antichi canali; le depressioni retrodunali sono aree più basse situate dietro le dune."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "In alcuni casi, le inondazioni associate al ciclone Harry si sono propagate per oltre 500 metri dalla linea di costa. Lo studio evidenzia quindi come località sottoposte alle stesse condizioni meteorologiche e marine possano avere conseguenze molto differenti, proprio per effetto delle caratteristiche locali."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema di una costa con canyon sottomarino, dune e area bassa retrostante raggiunta dall’acqua.",
+   "didascalia": "La ricerca considera i fattori locali che possono favorire l’ingresso dell’acqua marina verso l’entroterra.",
+   "file": "immagini/2026-11-03-ciclone-harry-lo-studio-sulle-onde-record-e-gli-amplificator-2.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per Giovanni Scardino dell’Istituto Nazionale di Geofisica e Vulcanologia, «Lo studio mostra che la vulnerabilità delle coste non dipende solo dall’intensità della mareggiata, ma anche da fattori locali, gli amplificatori, che possono essere individuati prima dell’evento integrando rilievi ad alta risoluzione, modellazione e monitoraggio. Conoscerli permette di orientare le scelte urbanistiche, la localizzazione delle infrastrutture e le strategie di adattamento»."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il ciclone Harry ha prodotto un’onda di 16,6 metri nel Canale di Sicilia e onde superiori ai 10 metri nel Mar Ionio secondo le simulazioni. Lo studio indica che fondali e forme della costa possono amplificare gli effetti delle mareggiate. I risultati sono disponibili anche sulla piattaforma Web-GIS ARCHIMEDE e contribuiranno ai sistemi prototipali di allerta previsti dal progetto WAVEGUARD."
+  }
+ ],
+ "parole": 638,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Ciclone Harry, onde record nel Mediterraneo: uno studio coordinato da UniBa e Università di Catania svela i fattori che amplificano il rischio costiero",
+  "url": "https://www.cnr.it/it/news/14773/ciclone-harry-onde-record-nel-mediterraneo-uno-studio-coordinato-da-uniba-e-universita-di-catania-svela-i-fattori-che-amplificano-il-rischio-costiero",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
