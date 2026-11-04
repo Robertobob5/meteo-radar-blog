@@ -1,0 +1,68 @@
+{
+ "id": "2026-11-04-arpae-cerca-osservatori-volontari-della-neve-in-emilia-romag",
+ "data": "2026-11-04",
+ "scritto": "2026-11-04T07:21:23.380Z",
+ "titolo": "Arpae cerca osservatori volontari della neve in Emilia-Romagna",
+ "sottotitolo": "I cittadini possono contribuire con misure dell’altezza della neve al suolo e informazioni condivise con la rete regionale.",
+ "categoria": "Atmosfera",
+ "copertina": "immagini/2026-11-04-arpae-cerca-osservatori-volontari-della-neve-in-emilia-romag-copertina.webp",
+ "copertinaAlt": "Un metro pieghevole misura la neve in un’area aperta e innevata.",
+ "miniatura": "immagini/2026-11-04-arpae-cerca-osservatori-volontari-della-neve-in-emilia-romag-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Arpae Emilia-Romagna cerca osservatori volontari della neve in tutte le località della regione. L’invito è rivolto a chi ha interesse per la meteorologia e desidera contribuire alla raccolta di dati sull’altezza del manto nevoso, cioè lo strato di neve presente al suolo. L’obiettivo è costruire una copertura più ampia ed estesa del monitoraggio della neve al suolo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La rete dei volontari affiancherà l’attuale monitoraggio formato dalle stazioni automatiche gestite da Arpae. I dati trasmessi dai cittadini potranno offrire informazioni più puntuali sull’estensione e sull’intensità delle nevicate in tutto il territorio regionale. In questo modo, ogni osservazione può contribuire a descrivere meglio dove la neve è presente e quale altezza raggiunge."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Come partecipare alla rete"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Chi aderisce al progetto entra nella rete di osservatori volontari della neve di Arpae. È prevista l’iscrizione a una mailing list, utile per rimanere aggiornati sulle nevicate previste in Emilia-Romagna. La community permette inoltre di condividere informazioni, fotografie e dati in tempo reale con gli altri osservatori volontari."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per manifestare il proprio interesse occorre scrivere alla dott.ssa Pavan della Struttura IdroMeteoClima, all’indirizzo vpavan@arpae.it. Il primo incontro per l’avvio della campagna neve si terrà in modalità virtuale il 18 novembre alle ore 18. Sarà un primo momento dedicato all’inizio dell’attività della rete."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un metro pieghevole posato verticalmente nella neve, lontano da alberi e ostacoli.",
+   "didascalia": "Per il rilievo, Arpae indica di scegliere un punto lontano da alberi e altri ostacoli.",
+   "file": "immagini/2026-11-04-arpae-cerca-osservatori-volontari-della-neve-in-emilia-romag-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "La misura dell’altezza della neve"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La misura richiesta è semplice: per rilevare l’altezza del manto nevoso è sufficiente un metro pieghevole in legno. La scelta del punto in cui effettuare il rilievo è però importante. Il sito deve essere lontano da alberi e da altri ostacoli, perché questi elementi potrebbero alterare il valore reale del dato misurato."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’attenzione al luogo della misura serve quindi a rendere il dato più utile alla rete. La raccolta delle osservazioni dei cittadini, insieme al monitoraggio già svolto dalle stazioni automatiche di Arpae, punta ad ampliare le informazioni disponibili sul fenomeno nevoso regionale. Foto, dati e informazioni condivisi dai volontari entrano così in un’attività comune dedicata alla neve al suolo."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Arpae cerca osservatori volontari della neve in Emilia-Romagna. Il contributo richiesto riguarda l’altezza della neve al suolo, da misurare con un metro pieghevole in legno in un punto lontano da alberi e ostacoli. Per aderire si può scrivere a vpavan@arpae.it. Il primo incontro virtuale della campagna neve è previsto il 18 novembre alle ore 18."
+  }
+ ],
+ "parole": 375,
+ "minuti": 2,
+ "fonte": {
+  "nome": "Arpae Emilia-Romagna",
+  "titolo": "AAA, Arpae cerca osservatori volontari della neve",
+  "url": "https://www.arpae.it/it/notizie/aaa-arpae-cerca-osservatori-volontari-della-neve",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
