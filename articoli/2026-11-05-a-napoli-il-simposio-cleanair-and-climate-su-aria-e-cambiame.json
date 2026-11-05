@@ -1,0 +1,80 @@
+{
+ "id": "2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame",
+ "data": "2026-11-05",
+ "scritto": "2026-11-05T07:22:02.931Z",
+ "titolo": "A Napoli il simposio CleanAIR and Climate su aria e cambiamenti climatici",
+ "sottotitolo": "Due giornate di confronto, relazioni scientifiche e formazione dedicate a qualità dell’aria e clima.",
+ "categoria": "Aria",
+ "copertina": "immagini/2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame-copertina.webp",
+ "copertinaAlt": "Illustrazione di strumenti per il monitoraggio dell’aria in un paesaggio urbano e costiero.",
+ "miniatura": "immagini/2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Napoli ospiterà il 10 e l’11 dicembre 2026 il simposio “CleanAIR and Climate”, dedicato al rapporto tra qualità dell’aria e cambiamenti climatici. L’iniziativa, il cui titolo richiama i temi dell’aria pulita e del clima, è organizzata dal gruppo di Ingegneria Sanitaria Ambientale dell’Università degli studi di Salerno e dalla Regione Campania, con il supporto del Ministero dell’Ambiente e della Sicurezza energetica."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’appuntamento si terrà al Musap – Museo artistico politecnico di Napoli, in Piazza Trieste e Trento. Il programma dell’edizione 2026 è articolato in due giornate di approfondimenti e occasioni di confronto tra soggetti che operano in ambiti diversi, ma legati dai temi dell’aria e del clima."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Relazioni, contributi e formazione"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il simposio prevede interventi principali, discussioni, contributi tecnici e relazioni scientifiche. Le relazioni scientifiche saranno raccolte attraverso una Call for Abstracts, cioè un invito a presentare sintesi delle proposte di studio o dei lavori da condividere durante l’evento. Accanto agli approfondimenti e alle attività di confronto, è previsto anche un corso di formazione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il corso rilascerà una certificazione di frequenza e crediti formativi professionali. Nelle due giornate trova spazio anche il networking, inteso come occasione di incontro e scambio tra persone e realtà che lavorano sugli stessi temi. La struttura annunciata riunisce quindi contenuti scientifici, contributi tecnici, formazione e dialogo fra partecipanti."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Strumentazione per il monitoraggio della qualità dell’aria accanto a vegetazione.",
+   "didascalia": "Il simposio mette al centro qualità dell’aria e cambiamenti climatici.",
+   "file": "immagini/2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le componenti del Sistema nazionale per la protezione dell’ambiente"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra i relatori sono annunciate diverse componenti del Sistema nazionale per la protezione dell’ambiente, il Snpa: le Arpa di Basilicata, Campania, Lazio, Lombardia, Marche, Puglia, Sardegna e Toscana, oltre a Ispra. La presenza di queste realtà si inserisce nell’obiettivo dichiarato di favorire un confronto continuo sui temi affrontati dal simposio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il confronto che l’iniziativa intende promuovere coinvolge il mondo accademico, quello professionale, le istituzioni, le autorità di controllo e le realtà produttive. Si tratta dunque di un appuntamento rivolto a più ambiti, con l’intento di mettere in relazione ricerca, controllo del territorio e soggetti impegnati nelle decisioni e nelle attività connesse ad aria e clima."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le sfide indicate dagli organizzatori"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Gli organizzatori indicano qualità dell’aria e cambiamenti climatici come le maggiori sfide ambientali del nostro tempo. Nella presentazione dell’evento richiamano inoltre una crescente consapevolezza degli effetti negativi collegati a questi aspetti sulla salute umana e sugli ecosistemi, cioè gli ambienti naturali e le relazioni fra gli organismi che li popolano."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il simposio CleanAIR and Climate è in programma a Napoli il 10 e l’11 dicembre 2026. Organizzato dall’Università degli studi di Salerno e dalla Regione Campania, con il supporto del Ministero dell’Ambiente e della Sicurezza energetica, riunirà relazioni scientifiche, contributi tecnici, discussioni, formazione e rappresentanti di diverse Arpa e di Ispra."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per gli organizzatori, la risposta alle questioni legate all’aria e al clima richiede che ricerca, enti di controllo e soggetti di governo del territorio uniscano le forze per promuovere strategie proattive e sostenibili. Il simposio nasce proprio con questo intento: mantenere aperto il confronto fra competenze, istituzioni e realtà professionali e produttive."
+  }
+ ],
+ "parole": 485,
+ "minuti": 2,
+ "fonte": {
+  "nome": "SNPA · le Arpa d’Italia",
+  "titolo": "CleanAIR and Climate, simposio il 10-11 dicembre a Napoli",
+  "url": "https://www.snpambiente.it/notizie/temi/aria/qualita-dellaria/cleanair-and-climate-simposio-il-10-11-dicembre-a-napoli/?utm_source=rss&utm_medium=rss&utm_campaign=cleanair-and-climate-simposio-il-10-11-dicembre-a-napoli",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

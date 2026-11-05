@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-04T07:21:23.381Z",
+ "aggiornato": "2026-11-05T07:22:02.932Z",
  "articoli": [
+  {
+   "id": "2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame",
+   "data": "2026-11-05",
+   "titolo": "A Napoli il simposio CleanAIR and Climate su aria e cambiamenti climatici",
+   "sottotitolo": "Due giornate di confronto, relazioni scientifiche e formazione dedicate a qualità dell’aria e clima.",
+   "categoria": "Aria",
+   "minuti": 2,
+   "copertina": "immagini/2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame-copertina.webp",
+   "miniatura": "immagini/2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame-mini.webp",
+   "fonte": "SNPA · le Arpa d’Italia",
+   "fonteUrl": "https://www.snpambiente.it/notizie/temi/aria/qualita-dellaria/cleanair-and-climate-simposio-il-10-11-dicembre-a-napoli/?utm_source=rss&utm_medium=rss&utm_campaign=cleanair-and-climate-simposio-il-10-11-dicembre-a-napoli",
+   "fonteTitolo": "CleanAIR and Climate, simposio il 10-11 dicembre a Napoli",
+   "file": "articoli/2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame.json"
+  },
   {
    "id": "2026-11-04-arpae-cerca-osservatori-volontari-della-neve-in-emilia-romag",
    "data": "2026-11-04",
@@ -1236,6 +1250,15 @@
    "fonteTitolo": "ESA’s FLEX mission reveals the secret glow of plants",
    "quando": "2026-10-26T07:20:57.002Z",
    "perche": "stessa storia di 2026-10-20-una-nuova-stazione-alla-spezia-per-osservare-la-ionosfera"
+  },
+  {
+   "id": "2026-11-05-il-buco-dell-ozono-antartico-del-2026-e-tra-i-piu-estesi-oss",
+   "data": "2026-11-05",
+   "titolo": "Il buco dell’ozono antartico del 2026 è tra i più estesi osservati",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-nasa-release-measurements-of-2026-ozone-hole",
+   "fonteTitolo": "NOAA, NASA release measurements of 2026 ozone hole",
+   "quando": "2026-11-05T07:21:06.603Z",
+   "perche": "stessa storia di 2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle-"
   }
  ]
 }
