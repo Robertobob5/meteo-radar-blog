@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CoDeC, uno strumento per stimare i costi dell’erosione costiera · Meteo News Radar</title>
+<meta name="description" content="Testato a San Lucido, il calcolatore mette insieme evoluzione delle spiagge, infrastrutture e movimento dei sedimenti.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CoDeC, uno strumento per stimare i costi dell’erosione costiera">
+<meta property="og:description" content="Testato a San Lucido, il calcolatore mette insieme evoluzione delle spiagge, infrastrutture e movimento dei sedimenti.">
+<meta property="og:image" content="https://robertobob5.github.io/meteo-radar-blog/immagini/2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie-copertina.webp">
+<meta property="og:site_name" content="Meteo News Radar · il blog">
+<meta property="article:published_time" content="2026-11-06">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0878f9">
+<style>*{box-sizing:border-box}
+:root{--sf:#eef3fa;--ct:#fff;--mo:#f6f8fc;--tx:#172033;--mu:#6d788d;--li:#dce4ef;--bl:#0878f9;--cy:#0bb6d4}
+@media(prefers-color-scheme:dark){:root{--sf:#0d1420;--ct:#172131;--mo:#1d293b;--tx:#edf4ff;--mu:#a8b4c7;--li:#2b3a51;--bl:#4ba2ff;--cy:#38c6df}}
+body{margin:0;background:var(--sf);color:var(--tx);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.gu{max-width:720px;margin:0 auto;background:var(--ct);min-height:100vh}
+.tt{display:flex;align-items:center;gap:10px;padding:13px 18px;border-bottom:1px solid var(--li);position:sticky;top:0;background:var(--ct);z-index:5}
+.mk{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;color:#fff;font-size:18px;background:linear-gradient(135deg,var(--bl),var(--cy))}
+.tt b{font-size:15px}.tt small{display:block;color:var(--mu);font-size:11px}
+.tt a{margin-left:auto;color:var(--bl);text-decoration:none;font-size:13px;font-weight:700}
+.cp{width:100%;aspect-ratio:16/10;object-fit:cover;display:block}
+.dd{padding:20px 18px 46px}
+.pl{display:inline-block;padding:5px 11px;margin:0 6px 6px 0;border-radius:99px;font-size:11px;font-weight:800;background:color-mix(in srgb,var(--bl) 15%,var(--mo));color:var(--tx)}
+h1{margin:14px 0 8px;font-size:29px;line-height:1.18;letter-spacing:-.5px}
+.so{margin:0 0 20px;color:var(--mu);font-size:17px;line-height:1.45}
+h2{margin:30px 0 10px;font-size:20px;line-height:1.3}
+p{margin:0 0 17px}
+figure{margin:24px -18px}figure img{width:100%;display:block}
+figcaption{padding:8px 18px 0;color:var(--mu);font-size:12.5px;line-height:1.45}
+.rq{margin:24px 0;padding:16px 18px;border-left:3px solid var(--bl);border-radius:0 14px 14px 0;background:var(--mo)}
+.rq b{display:block;margin-bottom:6px;font-size:12px;letter-spacing:.4px;text-transform:uppercase;color:var(--bl)}
+.rq p{margin:0}
+blockquote{margin:24px 0;padding:0 0 0 18px;border-left:3px solid var(--li);font-style:italic;font-size:18px}
+.fo{margin-top:34px;padding:16px 18px;border:1px solid var(--li);border-radius:16px;background:var(--mo)}
+.fo small{display:block;color:var(--mu);font-size:11px;text-transform:uppercase;letter-spacing:.4px}
+.fo b{display:block;margin:5px 0 10px;font-size:15px;line-height:1.4}
+.fo a{display:inline-block;padding:9px 15px;border-radius:11px;background:var(--bl);color:#fff;text-decoration:none;font-weight:800;font-size:13px}
+.ia{margin-top:14px;padding:13px 16px;border:1px dashed var(--li);border-radius:14px;color:var(--mu);font-size:12.5px;line-height:1.55}
+.ia b{color:var(--tx)}
+.el{display:grid;gap:13px;padding:18px}
+.rg{display:grid;grid-template-columns:118px 1fr;gap:14px;overflow:hidden;border:1px solid var(--li);border-radius:17px;background:var(--ct);text-decoration:none;color:inherit}
+.rg img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;display:block}
+.rg div{padding:13px 15px 13px 0;align-self:center}
+.rg b{display:block;font-size:15px;line-height:1.34}
+.ad{margin:34px 0 0;padding:22px 20px 20px;border-radius:20px;color:#fff;text-align:center;
+  background:linear-gradient(150deg,#0b5fd0,#0878f9 45%,#0bb6d4)}
+.ad .mk2{width:52px;height:52px;margin:0 auto 12px;border-radius:17px;display:grid;place-items:center;
+  font-size:27px;background:rgba(255,255,255,.17);border:1px solid rgba(255,255,255,.28)}
+.ad b{display:block;font-size:21px;line-height:1.25;letter-spacing:-.3px}
+.ad p{margin:11px auto 0;max-width:430px;font-size:14.5px;line-height:1.55;opacity:.94}
+.ad .btn{display:inline-block;margin-top:17px;padding:14px 26px;border-radius:14px;background:#fff;color:#0a4fa8;
+  text-decoration:none;font-weight:800;font-size:15px;box-shadow:0 10px 24px rgba(4,30,66,.28)}
+.ad .btn:active{transform:translateY(1px)}
+.ad .nota{display:block;margin:13px auto 0;max-width:420px;font-size:11.5px;line-height:1.5;opacity:.8}
+.ad .cose{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:15px}
+.ad .cose span{padding:5px 11px;border-radius:99px;background:rgba(255,255,255,.16);font-size:11.5px;font-weight:700}
+@media(max-width:520px){.ad{margin-left:-4px;margin-right:-4px;padding:20px 16px 18px}.ad b{font-size:19px}}
+.rg small{display:block;margin-top:6px;color:var(--mu);font-size:12px}
+/* il lettore vocale */
+.vc{display:inline-flex;align-items:center;gap:9px;margin:0 0 22px;padding:10px 17px 10px 13px;border:1px solid var(--li);
+  border-radius:99px;background:var(--mo);color:var(--tx);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.vc:hover{border-color:var(--bl)}
+.vc[data-on="1"]{background:var(--bl);border-color:var(--bl);color:#fff}
+.vc .ic{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:11px;
+  background:var(--bl);color:#fff}
+.vc[data-on="1"] .ic{background:rgba(255,255,255,.24)}
+.vc small{font-weight:600;opacity:.72}
+.leggo{background:color-mix(in srgb,var(--bl) 12%,transparent);border-radius:8px;
+  box-shadow:0 0 0 6px color-mix(in srgb,var(--bl) 12%,transparent)}
+@media(max-width:520px){.rg{grid-template-columns:96px 1fr}h1{font-size:25px}}</style>
+</head>
+<body><div class="gu">
+<div class="tt"><div class="mk">◉</div><div><b>Meteo News Radar</b><small>il blog</small></div><a href="../">Tutti gli articoli</a></div>
+<img class="cp" src="../immagini/2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie-copertina.webp" alt="Illustrazione di una spiaggia che si restringe vicino a ferrovia, strada e opere di difesa costiera.">
+<div class="dd">
+<span class="pl">Mare</span><span class="pl">2026-11-06</span><span class="pl">4 min</span>
+<h1>CoDeC, uno strumento per stimare i costi dell’erosione costiera</h1>
+<p class="so">Testato a San Lucido, il calcolatore mette insieme evoluzione delle spiagge, infrastrutture e movimento dei sedimenti.</p>
+<button id="vc" class="vc" type="button" hidden data-on="0"><span class="ic">▶</span><span class="tx">Ascolta</span><small>4 min</small></button>
+<p>Stimare quanto costa l’erosione costiera non significa soltanto misurare la spiaggia che scompare. Occorre considerare come cambia il litorale, quali infrastrutture sono presenti e in che modo si muovono i sedimenti, cioè sabbia e altri materiali trasportati da onde e correnti. Per questo ENEA, in collaborazione con ISPRA e Cnr, ha sviluppato CoDeC, acronimo di Calcolo del Degrado Costiero.</p>
+<p>Lo strumento serve a stimare gli impatti economici e ambientali dell’erosione. Può calcolare i volumi di sabbia necessari per il ripascimento degli arenili, il deposito periodico di sabbia compatibile con quella originaria, e i costi delle opere di difesa costiera, come i frangiflutti. Considera inoltre le risorse necessarie per ripristinare ecosistemi e infrastrutture danneggiati da eventi meteo estremi o da interventi antropici.</p>
+<h2>Il test lungo la costa di San Lucido</h2>
+<p>CoDeC è stato testato per la prima volta lungo la costa tirrenica della Calabria, nel comune di San Lucido, in provincia di Cosenza. Qui erosione e pressione antropica rappresentano da decenni una minaccia per gli ecosistemi naturali, per l’economia turistica e per le infrastrutture presenti: la linea ferroviaria e la strada litoranea.</p>
+<p>I ricercatori hanno analizzato una serie storica di ortofoto, immagini dall’alto del litorale, e dati satellitari raccolti dal 1954 al 2018. In questo modo hanno ricostruito l’evoluzione della linea di costa e delle variazioni della superficie di spiaggia emersa. Nel lungo periodo la superficie è passata da circa 414 mila a 159 mila metri quadrati: una perdita complessiva di circa il 62%.</p>
+<figure><img src="../immagini/2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie-1.webp" alt="Schema visivo di una costa con spiaggia, opere a T, onde e spostamento dei sedimenti." loading="lazy"><figcaption>Le opere costiere possono modificare il trasporto dei sedimenti lungo il litorale.</figcaption></figure>
+<p>Una riduzione rilevante si è verificata anche tra il 1987 e il 1994, quando la spiaggia ha perso circa 120 mila metri quadrati in concomitanza con la realizzazione delle opere di difesa costiera. Secondo l’analisi, il fenomeno è legato sia all’urbanizzazione sia alle difese rigide, che hanno alterato il trasporto naturale dei sedimenti.</p>
+<h2>Difendere un tratto di costa può spostare il problema</h2>
+<p>L’area di San Lucido è in erosione dalla fine dell’Ottocento, in concomitanza con la costruzione della linea ferroviaria su strette terrazze costiere esposte al moto ondoso e all’instabilità dei versanti. Nel tempo sono stati registrati danni alle infrastrutture e impatti socioeconomici significativi. Nel 1985 la linea ferroviaria è stata compromessa, risultando direttamente esposta all’azione delle mareggiate.</p>
+<p>Per proteggere la continuità del tratto ferroviario sono state realizzate opere di difesa, tra cui i pennelli a T: strutture perpendicolari alla costa che, senza un adattamento progressivo e una gestione dei sedimenti, possono creare uno squilibrio sedimentario. Le strutture a T possono aggravare questo effetto se non sono accompagnate da ripascimento e manutenzione sistematici. In queste condizioni, il trasporto naturale guidato da onde e correnti non basta a sostenere il sistema costiero e la redistribuzione dei sedimenti dipende dagli interventi umani.</p>
+<p>Le opere rigide, come muri e frangiflutti, sono state a lungo la principale strategia di difesa. Tuttavia possono trasferire l’erosione verso aree vicine e richiedono manutenzione continua. Il caso di San Lucido viene quindi indicato come un esempio utile per valutare non solo gli effetti dell’erosione sulle infrastrutture, ma anche i possibili effetti a cascata sull’interruzione di servizi essenziali.</p>
+<h2>Le stime per il ripascimento e il valore della spiaggia</h2>
+<p>Sulla base dei dati disponibili, CoDeC ha stimato circa 12,5 milioni di euro per il ripascimento con circa 540 mila metri cubi di sedimenti. Per la manutenzione sarebbero necessari circa 300 mila euro all’anno, considerando un fabbisogno di circa 20 mila metri cubi di sedimenti annui. Le cifre possono variare in funzione delle cave o dei depositi di sedimento scelti.</p>
+<p>Il caso calabrese si inserisce in un quadro più ampio: in Italia, negli ultimi 50 anni, sono andati persi circa 40 milioni di metri quadrati di spiagge. Il fenomeno riguarda circa il 40% delle coste sabbiose e interessa l’intero Mediterraneo, sempre più esposto all’innalzamento del mare e agli eventi estremi. Il turismo, che contribuisce per circa il 5% al PIL, subisce impatti significativi.</p>
+<p>La perdita di spiaggia non riguarda quindi soltanto lo spazio ricreativo. Spiagge, dune e praterie di Posidonia oceanica funzionano naturalmente come protezione costiera contro mareggiate e inondazioni, finché questi sistemi vengono conservati con interventi compatibili. Quando l’uso della costa si sbilancia verso infrastrutture e insediamenti, il costo della protezione può diventare elevato e spesso insostenibile per le realtà locali.</p>
+<h2>I prossimi sviluppi</h2>
+<p>Il gruppo di ricerca punta ora a potenziare CoDeC con ortofoto storiche, dati di monitoraggio in tempo reale e modelli di apprendimento automatico, sistemi che elaborano dati per individuare schemi. Sono previste anche interfacce per il supporto alle politiche pubbliche e alla gestione delle emergenze. L’uso di infrastrutture di calcolo avanzate, indicate come HPC, dovrebbe consentire di estendere le metodologie alla scala nazionale e rafforzare la pianificazione e la gestione del rischio costiero.</p>
+<div class="rq"><b>In breve</b><p>CoDeC stima danni, costi di protezione e ripristino legati all’erosione costiera. A San Lucido, tra il 1954 e il 2018, la superficie di spiaggia emersa si è ridotta di circa il 62%. Il calcolatore valuta anche la sabbia necessaria per il ripascimento e le risorse richieste per mantenere gli interventi nel tempo.</p></div>
+<div class="fo"><small>Da dove viene</small><b>ENEA sviluppa con Cnr e ISPRA strumento per stimare impatto erosione costiera</b>
+<a href="https://www.cnr.it/it/news/14753/enea-sviluppa-con-cnr-e-ispra-strumento-per-stimare-impatto-erosione-costiera" target="_blank" rel="noopener">Leggi la fonte originale · CNR ↗</a></div>
+<div class="ia"><b>Come è nato questo articolo.</b> Il testo e le immagini sono stati generati da un'intelligenza
+artificiale a partire dalla fonte qui sopra, e prima della pubblicazione un controllo automatico verifica che ogni
+numero citato compaia davvero nella fonte. Non è un articolo scritto da una persona, e le immagini sono
+illustrazioni, non fotografie di quello che è successo.</div>
+<div class="ad">
+<div class="mk2">◉</div>
+<b>Il meteo spiegato, non solo previsto</b>
+<p>Questo articolo l'hai letto sul blog di <strong>Meteo News Radar</strong>: un'app che ti mostra da dove
+vengono i numeri, invece di limitarsi a dartelo. E ogni mattina ne trovi uno nuovo come questo.</p>
+<div class="cose"><span>Radar della pioggia</span><span>Allerte Protezione Civile</span>
+<span>Qualità dell'aria</span><span>Mare e onde</span><span>Pollini</span></div>
+<a class="btn" href="https://drive.google.com/drive/folders/12S14HNl9zudUCuLCyeIYXtYYD1Sf6I07" target="_blank" rel="noopener">Scarica l'app per Android</a>
+<small class="nota">Gratis, senza pubblicità e senza account. Il file arriva da Google Drive:
+la prima volta Android chiederà di autorizzare l'installazione da questa origine — succede con
+tutte le app che non passano dallo store.</small>
+</div>
+</div></div>
+<script>
+(function(){
+ var S=window.speechSynthesis;
+ var b=document.getElementById('vc');
+ if(!S||!b){ if(b) b.remove(); return; }
+ b.hidden=false;
+ var giro=0,acceso=false;
+ function pezzi(){
+  var dd=document.querySelector('.dd'); if(!dd) return [];
+  var out=[];
+  dd.querySelectorAll('h1,.so,h2,.rq b,.rq p,blockquote,p').forEach(function(el){
+   if(el.closest('.fo')||el.closest('.ia')||el.closest('.ad')||el.closest('figcaption')) return;
+   var t=(el.textContent||'').trim();
+   if(t.length>1) out.push({el:el,testo:t});
+  });
+  return out;
+ }
+ function luce(el){
+  var v=document.querySelector('.leggo'); if(v) v.classList.remove('leggo');
+  if(!el) return;
+  el.classList.add('leggo');
+  try{ el.scrollIntoView({behavior:'smooth',block:'center'}); }catch(e){}
+ }
+ function stato(on){
+  acceso=on; b.dataset.on=on?'1':'0';
+  b.querySelector('.ic').textContent=on?'\u25a0':'\u25b6';
+  b.querySelector('.tx').textContent=on?'Ferma':'Ascolta';
+ }
+ function dire(t){
+  return new Promise(function(fine){
+   var u=new SpeechSynthesisUtterance(t);
+   u.lang='it-IT'; u.onend=fine; u.onerror=fine;
+   S.speak(u);
+  });
+ }
+ function stop(){ giro++; S.cancel(); luce(null); stato(false); }
+ b.onclick=async function(){
+  if(acceso){ stop(); return; }
+  var mio=++giro; stato(true);
+  var lista=pezzi();
+  for(var i=0;i<lista.length;i++){
+   if(mio!==giro) return;
+   luce(lista[i].el);
+   await dire(lista[i].testo);
+  }
+  if(mio!==giro) return;
+  luce(null);
+  await dire('Fine dell\'articolo. Il testo \u00e8 stato scritto da un\'intelligenza artificiale a partire da CNR.');
+  if(mio===giro) stop();
+ };
+ window.addEventListener('pagehide',function(){ try{S.cancel();}catch(e){} });
+})();
+</script>
+</body></html>

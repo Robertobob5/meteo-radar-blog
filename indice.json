@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-05T07:22:02.932Z",
+ "aggiornato": "2026-11-06T07:21:57.201Z",
  "articoli": [
+  {
+   "id": "2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie",
+   "data": "2026-11-06",
+   "titolo": "CoDeC, uno strumento per stimare i costi dell’erosione costiera",
+   "sottotitolo": "Testato a San Lucido, il calcolatore mette insieme evoluzione delle spiagge, infrastrutture e movimento dei sedimenti.",
+   "categoria": "Mare",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie-copertina.webp",
+   "miniatura": "immagini/2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14753/enea-sviluppa-con-cnr-e-ispra-strumento-per-stimare-impatto-erosione-costiera",
+   "fonteTitolo": "ENEA sviluppa con Cnr e ISPRA strumento per stimare impatto erosione costiera",
+   "file": "articoli/2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie.json"
+  },
   {
    "id": "2026-11-05-a-napoli-il-simposio-cleanair-and-climate-su-aria-e-cambiame",
    "data": "2026-11-05",
@@ -1259,6 +1273,15 @@
    "fonteTitolo": "NOAA, NASA release measurements of 2026 ozone hole",
    "quando": "2026-11-05T07:21:06.603Z",
    "perche": "stessa storia di 2026-09-28-laboratori-su-insetti-citta-e-biodiversita-alla-notte-delle-"
+  },
+  {
+   "id": "2026-11-06-noaa-avvia-il-nuovo-sistema-di-previsioni-rapide-rrfs",
+   "data": "2026-11-06",
+   "titolo": "NOAA avvia il nuovo sistema di previsioni rapide RRFS",
+   "fonteUrl": "https://www.noaa.gov/news-release/noaa-weather-modeling-hits-key-milestone-with-rapid-refresh-forecast-system-debut",
+   "fonteTitolo": "NOAA weather modeling hits key milestone with Rapid Refresh Forecast System debut",
+   "quando": "2026-11-06T07:21:06.743Z",
+   "perche": "stessa storia di 2026-09-18-noaa-affida-a-tomorrow-io-il-supporto-per-un-nuovo-sistema-d"
   }
  ]
 }
