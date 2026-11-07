@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-06T07:21:57.201Z",
+ "aggiornato": "2026-11-07T07:21:33.420Z",
  "articoli": [
+  {
+   "id": "2026-11-07-il-forte-el-nino-spinge-in-alto-la-previsione-della-co-per-i",
+   "data": "2026-11-07",
+   "titolo": "Il forte El Niño spinge in alto la previsione della CO₂ per il 2027",
+   "sottotitolo": "Secondo il Met Office, l’indebolimento temporaneo degli assorbimenti naturali si sommerà alla crescita dovuta alle emissioni umane.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-07-il-forte-el-nino-spinge-in-alto-la-previsione-della-co-per-i-copertina.webp",
+   "miniatura": "immagini/2026-11-07-il-forte-el-nino-spinge-in-alto-la-previsione-della-co-per-i-mini.webp",
+   "fonte": "Met Office",
+   "fonteUrl": "https://www.metoffice.gov.uk/about-us/news-and-media/media-centre/weather-and-climate-news/2026/strong-el-nino-drives-2027-co-rise-towards-record-levels",
+   "fonteTitolo": "Strong El Niño drives 2027 CO₂ rise towards record levels",
+   "file": "articoli/2026-11-07-il-forte-el-nino-spinge-in-alto-la-previsione-della-co-per-i.json"
+  },
   {
    "id": "2026-11-06-codec-uno-strumento-per-stimare-i-costi-dell-erosione-costie",
    "data": "2026-11-06",
