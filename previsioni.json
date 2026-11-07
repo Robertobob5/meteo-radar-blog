@@ -1,0 +1,188 @@
+{
+ "versione": 1,
+ "generato": "2026-11-07T06:01:54.806Z",
+ "modello": "Open-Meteo (modello migliore per l'Italia, di solito ICON)",
+ "griglia": "0,5° · 625 punti",
+ "video": [
+  {
+   "id": "temperature",
+   "titolo": "Temperature",
+   "sotto": "ogni 3 ore per 5 giorni · modello Open-Meteo",
+   "file": "previsioni/temperature.mp4",
+   "poster": "previsioni/temperature.jpg",
+   "fotogrammi": 40,
+   "secondi": 8.2,
+   "da": "2026-11-07T07:00",
+   "a": "2026-11-12T04:00",
+   "byte": 238287,
+   "generato": "2026-11-07T06:01:54.806Z"
+  },
+  {
+   "id": "pioggia",
+   "titolo": "Pioggia e temporali",
+   "sotto": "ora per ora per 48 ore · i fulmini dove il modello vede temporali",
+   "file": "previsioni/pioggia.mp4",
+   "poster": "previsioni/pioggia.jpg",
+   "fotogrammi": 48,
+   "secondi": 9.5,
+   "da": "2026-11-07T07:00",
+   "a": "2026-11-09T06:00",
+   "byte": 187971,
+   "generato": "2026-11-07T06:01:54.806Z"
+  },
+  {
+   "id": "vento",
+   "titolo": "Vento e raffiche",
+   "sotto": "raffiche massime ora per ora · sabato 07 e domenica 08",
+   "file": "previsioni/vento.mp4",
+   "poster": "previsioni/vento.jpg",
+   "fotogrammi": 41,
+   "secondi": 8.3,
+   "da": "2026-11-07T07:00",
+   "a": "2026-11-08T23:00",
+   "byte": 702384,
+   "generato": "2026-11-07T06:01:54.806Z"
+  },
+  {
+   "id": "neve",
+   "titolo": "Neve accumulata",
+   "sotto": "centimetri caduti dall'inizio del filmato · 7 giorni",
+   "file": "previsioni/neve.mp4",
+   "poster": "previsioni/neve.jpg",
+   "fotogrammi": 56,
+   "secondi": 10.8,
+   "da": "2026-11-07T07:00",
+   "a": "2026-11-14T04:00",
+   "byte": 53946,
+   "generato": "2026-11-07T06:01:54.806Z"
+  },
+  {
+   "id": "nuvole",
+   "titolo": "Nuvolosità",
+   "sotto": "copertura del cielo ora per ora · domani",
+   "file": "previsioni/nuvole.mp4",
+   "poster": "previsioni/nuvole.jpg",
+   "fotogrammi": 24,
+   "secondi": 5.5,
+   "da": "2026-11-08T00:00",
+   "a": "2026-11-08T23:00",
+   "byte": 259182,
+   "generato": "2026-11-07T06:01:54.806Z"
+  },
+  {
+   "id": "mare",
+   "titolo": "Mare e onde",
+   "sotto": "altezza delle onde ora per ora · 48 ore",
+   "file": "previsioni/mare.mp4",
+   "poster": "previsioni/mare.jpg",
+   "fotogrammi": 48,
+   "secondi": 9.5,
+   "da": "2026-11-07T07:00",
+   "a": "2026-11-09T06:00",
+   "byte": 861409,
+   "generato": "2026-11-07T06:01:54.806Z"
+  }
+ ],
+ "mondo": {
+  "id": "mondo",
+  "titolo": "Da dove arriva il tempo",
+  "sotto": "Atlantico, Europa e Nord Africa · vento in quota, piogge e calo termico · 72 ore",
+  "file": "previsioni/mondo.mp4",
+  "poster": "previsioni/mondo.jpg",
+  "secondi": 42,
+  "fotogrammi": 330,
+  "da": "2026-11-07T07:00",
+  "a": "2026-11-10T07:00",
+  "byte": 3231284,
+  "generato": "2026-11-07T06:01:54.806Z",
+  "edizione": "SAB 7 NOV · ORE 07",
+  "parlato": true,
+  "musica": "krasnoshchok · Pixabay",
+  "racconto": [
+   "Buongiorno e benvenuti al video del giorno di Meteo News Radar.",
+   "Partiamo dal quadro generale: la bassa pressione più profonda oggi la troviamo in mezzo all'Atlantico, e nei prossimi tre giorni si sposta verso l'Atlantico a ovest dell'Irlanda.",
+   "Veniamo all'Italia: la pioggia arriva martedì nella notte.",
+   "In quota le temperature restano più o meno dove sono: nessun calo di rilievo.",
+   "Il vento in quota soffia da sud-ovest, con punte intorno ai 68 chilometri orari.",
+   "È tutto per oggi: buona giornata da Meteo News Radar."
+  ],
+  "evidenza": [
+   "BASSA PRESSIONE IN MEZZO ALL'ATLANTICO",
+   "PIOGGIA SULL'ITALIA MARTEDÌ NELLA NOTTE",
+   "IN QUOTA NESSUN CALO IMPORTANTE",
+   "VENTO IN QUOTA DA SUD-OVEST FINO A 68 KM/H"
+  ],
+  "griglia": "2,0° · 756 punti",
+  "finestra": [
+   -35,
+   28,
+   35,
+   68
+  ]
+ },
+ "italia": {
+  "id": "italia",
+  "titolo": "Il video del giorno · Italia",
+  "sotto": "Steve racconta cielo, temperature, pioggia, vento, mare e neve, città per città",
+  "file": "previsioni/italia.mp4",
+  "poster": "previsioni/italia.jpg",
+  "posterA": 6.08,
+  "secondi": 74,
+  "fotogrammi": 1851,
+  "byte": 2347675,
+  "generato": "2026-11-07T06:01:54.806Z",
+  "edizione": "SAB 7 NOV · ORE 07",
+  "parlato": true,
+  "presentatore": "Steve",
+  "capitoli": [
+   {
+    "id": "apertura",
+    "titolo": "Il tempo di oggi sull'Italia",
+    "da": 5
+   },
+   {
+    "id": "cielo",
+    "titolo": "Cielo e temperature",
+    "da": 14.1
+   },
+   {
+    "id": "pioggia",
+    "titolo": "Pioggia e temporali",
+    "da": 32.7
+   },
+   {
+    "id": "vento",
+    "titolo": "Vento",
+    "da": 45
+   },
+   {
+    "id": "mare",
+    "titolo": "Mare",
+    "da": 52.9
+   },
+   {
+    "id": "neve",
+    "titolo": "Neve",
+    "da": 61.6
+   },
+   {
+    "id": "chiusura",
+    "titolo": "A domani",
+    "da": 66.5
+   }
+  ],
+  "racconto": [
+   "Buongiorno, sono Steve, il tuo meteorologo virtuale di Meteo News Radar: ecco il tempo di oggi sull'Italia, città per città.",
+   "Al Nord pioggia, massime fra 10 e 15 gradi.",
+   "Al Centro pioggia, massime fra 14 e 18 gradi.",
+   "Al Sud cielo coperto, massime fra 18 e 20 gradi.",
+   "Sulle isole cielo coperto, massime fra 20 e 21 gradi.",
+   "Pioggia oggi su Milano, Venezia, Bologna, Roma, Ancona e Bari nella notte, abbondante su Bologna con 11 millimetri.",
+   "Domani asciutto quasi ovunque.",
+   "Vento forte su Genova e Venezia, con raffiche fino a 47 chilometri orari a Genova.",
+   "Mare mosso sul Tirreno centrale con onde fino a 1,4 metri; altrove poco mosso o calmo.",
+   "Sulle Alpi la quota neve è intorno ai 1500 metri.",
+   "È tutto per oggi. Buona giornata da Meteo News Radar, e a domani."
+  ]
+ }
+}
