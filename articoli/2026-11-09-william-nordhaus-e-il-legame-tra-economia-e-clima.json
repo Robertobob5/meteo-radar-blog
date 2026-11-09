@@ -1,0 +1,80 @@
+{
+ "id": "2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima",
+ "data": "2026-11-09",
+ "scritto": "2026-11-09T07:21:38.403Z",
+ "titolo": "William Nordhaus e il legame tra economia e clima",
+ "sottotitolo": "Il lavoro dell’economista ha contribuito a mettere le variabili climatiche e ambientali al centro delle prospettive di crescita.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima-copertina.webp",
+ "copertinaAlt": "Illustrazione del pianeta collegato a elementi che rappresentano clima ed economia.",
+ "miniatura": "immagini/2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "William Nordhaus è stato tra i primi economisti a mostrare che le prospettive di crescita possono apparire molto diverse quando si tengono conto anche delle variabili climatiche e ambientali. Un passaggio che ha aiutato a collocare il clima al centro dell’analisi economica: non come un elemento separato, ma come una componente che interagisce con le attività della società e con il loro sviluppo."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il riconoscimento ricevuto dall’Accademia reale svedese delle scienze descriveva il suo contributo come pionieristico per comprendere la dipendenza reciproca tra l’economia e il clima del pianeta. Questa relazione, al centro del suo lavoro, ha aperto un campo diventato cruciale per studiare l’interazione fra sistema economico e sistema climatico."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una ricerca che ha aperto nuove domande"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il lavoro di Nordhaus ha anche messo in evidenza quanto sia complesso il rapporto tra società e ambiente. Da qui sono nate discussioni e confronti scientifici che restano aperti su come affrontare le crisi climatiche. La sua ricerca ha quindi contribuito non soltanto a proporre un quadro di analisi, ma anche a rendere più visibili le domande che collegano cambiamento climatico, economia e scelte collettive."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per il CMCC, il riconoscimento al cambiamento climatico attraverso il più importante premio nelle scienze economiche, assegnato a Nordhaus alcuni anni dopo il Nobel per la pace ricevuto dall’IPCC, ha rappresentato un momento culminante. L’IPCC è il gruppo che riunisce le conoscenze scientifiche sul cambiamento climatico. Il premio ha dato rilievo a un filone di studi nel quale clima ed economia vengono considerati insieme."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato che collega ambiente, atmosfera e analisi economica.",
+   "didascalia": "Lo studio delle relazioni tra clima, ambiente, società ed economia è al centro dell’economia del clima.",
+   "file": "immagini/2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "L’incontro con il CMCC"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Pochi mesi dopo avere ricevuto il Nobel, nel giugno del 2019 Nordhaus inaugurò con una lezione il nuovo European Institute on Economics and the Environment. In quell’occasione affrontò la necessità di una tassa sul carbonio, cioè uno strumento fiscale riferito al carbonio, progettata per portare benefici a tutti i cittadini indipendentemente dal reddito."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La sua presenza a Milano ebbe un valore che andava oltre il simbolo. I temi dell’istituto del CMCC erano infatti gli stessi che avevano attraversato la sua ricerca: sviluppo sostenibile, dimensione sociale dell’economia ambientale e necessità crescente di limitare il cambiamento climatico e i suoi impatti."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "L’eredità nei modelli e nella ricerca aperta"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’influenza di Nordhaus sulla ricerca del CMCC è stata importante. Il Comitato Nobel ha citato il modello WITCH, sviluppato da Massimo Tavoni, Carlo Carraro e Valentina Bosetti, come esempio rilevante di un lavoro costruito a partire dalle sue idee. Un modello è uno strumento di ricerca che serve a studiare un sistema attraverso una sua rappresentazione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Con la scomparsa di Nordhaus, la comunità internazionale perde un pioniere che ha aperto nuove strade e nuovi ambiti di ricerca. Il suo lavoro è stato reso apertamente disponibile per essere studiato, analizzato, criticato e utilizzato. Per Massimo Tavoni, questa disponibilità ha rappresentato un grande esperimento di trasparenza della scienza, realizzato in anticipo sui tempi nel campo dell’economia."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "William Nordhaus ha contribuito a mostrare che clima e ambiente possono modificare il modo in cui si guardano le prospettive di crescita. Le sue idee hanno influenzato gli studi su sviluppo sostenibile, dimensione sociale dell’economia ambientale e limitazione degli impatti climatici, oltre a lavori come il modello WITCH citato dal Comitato Nobel."
+  }
+ ],
+ "parole": 523,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CMCC",
+  "titolo": "William Nordhaus, the economist who put climate at the heart of economics",
+  "url": "https://www.cmcc.it/article/william-nordhaus-the-economist-who-put-climate-at-the-heart-of-economics",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

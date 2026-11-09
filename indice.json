@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-08T07:21:30.823Z",
+ "aggiornato": "2026-11-09T07:21:38.405Z",
  "articoli": [
+  {
+   "id": "2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima",
+   "data": "2026-11-09",
+   "titolo": "William Nordhaus e il legame tra economia e clima",
+   "sottotitolo": "Il lavoro dell’economista ha contribuito a mettere le variabili climatiche e ambientali al centro delle prospettive di crescita.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima-copertina.webp",
+   "miniatura": "immagini/2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima-mini.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/william-nordhaus-the-economist-who-put-climate-at-the-heart-of-economics",
+   "fonteTitolo": "William Nordhaus, the economist who put climate at the heart of economics",
+   "file": "articoli/2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima.json"
+  },
   {
    "id": "2026-11-08-relion-studia-schiume-composite-sostenibili-per-edilizia-e-s",
    "data": "2026-11-08",
