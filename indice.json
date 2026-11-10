@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-09T07:21:38.405Z",
+ "aggiornato": "2026-11-10T07:21:34.105Z",
  "articoli": [
+  {
+   "id": "2026-11-10-allerta-precoce-nel-sahel-l-esperienza-del-cnr-alla-cop31",
+   "data": "2026-11-10",
+   "titolo": "Allerta precoce nel Sahel: l’esperienza del CNR alla COP31",
+   "sottotitolo": "Un incontro dedicato ai dati satellitari e ai sistemi di prevenzione del rischio idrometeorologico",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-10-allerta-precoce-nel-sahel-l-esperienza-del-cnr-alla-cop31-copertina.webp",
+   "miniatura": "immagini/2026-11-10-allerta-precoce-nel-sahel-l-esperienza-del-cnr-alla-cop31-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14787/osservazione-della-terra-e-trasparenza-climatica-il-cnr-ibe-alla-cop31-con-l-esperienza-di-flood-early-warning-nel-sahel",
+   "fonteTitolo": "Osservazione della Terra e trasparenza climatica: il CNR-IBE alla COP31 con l'esperienza di Flood Early Warning nel Sahel",
+   "file": "articoli/2026-11-10-allerta-precoce-nel-sahel-l-esperienza-del-cnr-alla-cop31.json"
+  },
   {
    "id": "2026-11-09-william-nordhaus-e-il-legame-tra-economia-e-clima",
    "data": "2026-11-09",
