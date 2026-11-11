@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-10T07:21:34.105Z",
+ "aggiornato": "2026-11-11T07:21:32.879Z",
  "articoli": [
+  {
+   "id": "2026-11-11-ripartono-le-osservazioni-della-piramide-sull-everest",
+   "data": "2026-11-11",
+   "titolo": "Ripartono le osservazioni della Piramide sull’Everest",
+   "sottotitolo": "Il CNR riattiva il laboratorio in Himalaya per seguire atmosfera, ghiacciai, acque e stabilità dei versanti.",
+   "categoria": "Clima",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-11-ripartono-le-osservazioni-della-piramide-sull-everest-copertina.webp",
+   "miniatura": "immagini/2026-11-11-ripartono-le-osservazioni-della-piramide-sull-everest-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14792/la-ricerca-cnr-torna-sull-everest-riparte-la-piramide-osservatorio-italiano-sul-cambiamento-climatico-dell-himalaya",
+   "fonteTitolo": "La ricerca CNR torna sull'Everest: riparte la Piramide, osservatorio italiano sul cambiamento climatico dell'Himalaya",
+   "file": "articoli/2026-11-11-ripartono-le-osservazioni-della-piramide-sull-everest.json"
+  },
   {
    "id": "2026-11-10-allerta-precoce-nel-sahel-l-esperienza-del-cnr-alla-cop31",
    "data": "2026-11-10",
