@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-11T07:21:32.879Z",
+ "aggiornato": "2026-11-12T07:21:54.233Z",
  "articoli": [
+  {
+   "id": "2026-11-12-frumento-e-micotossine-ricerca-italiana-e-brasiliana-contro-",
+   "data": "2026-11-12",
+   "titolo": "Frumento e micotossine: ricerca italiana e brasiliana contro la fusariosi della spiga",
+   "sottotitolo": "CNR-ISPA ed Embrapa Trigo collaborano per ridurre i rischi legati ai funghi che possono contaminare il grano.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-12-frumento-e-micotossine-ricerca-italiana-e-brasiliana-contro--copertina.webp",
+   "miniatura": "immagini/2026-11-12-frumento-e-micotossine-ricerca-italiana-e-brasiliana-contro--mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14796/cnr-ispa-ed-embrapa-insieme-per-contrastare-le-micotossine-nel-frumento-e-migliorare-la-sicurezza-alimentare",
+   "fonteTitolo": "CNR-ISPA ed Embrapa insieme per contrastare le micotossine nel frumento e migliorare la sicurezza alimentare",
+   "file": "articoli/2026-11-12-frumento-e-micotossine-ricerca-italiana-e-brasiliana-contro-.json"
+  },
   {
    "id": "2026-11-11-ripartono-le-osservazioni-della-piramide-sull-everest",
    "data": "2026-11-11",
