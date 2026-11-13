@@ -1,0 +1,96 @@
+{
+ "id": "2026-11-13-kolumbo-osservato-dal-fondale-fibra-ottica-e-robot-per-studi",
+ "data": "2026-11-13",
+ "scritto": "2026-11-13T07:22:07.333Z",
+ "titolo": "Kolumbo osservato dal fondale: fibra ottica e robot per studiare il vulcano sommerso",
+ "sottotitolo": "La campagna HYDROSENSE ha esplorato il cratere di Kolumbo e la caldera di Santorini con strumenti diretti sul fondo del mare.",
+ "categoria": "Vulcani",
+ "copertina": "immagini/2026-11-13-kolumbo-osservato-dal-fondale-fibra-ottica-e-robot-per-studi-copertina.webp",
+ "copertinaAlt": "Illustrazione del cratere sottomarino di Kolumbo con un cavo in fibra ottica e un robot sul fondale.",
+ "miniatura": "immagini/2026-11-13-kolumbo-osservato-dal-fondale-fibra-ottica-e-robot-per-studi-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Un cavo in fibra ottica disteso sul fondo del cratere, un robot filoguidato impegnato a osservare camini idrotermali e una nuova area di emissione di gas individuata durante le attività. Sono alcuni dei risultati della campagna oceanografica HYDROSENSE 2026, conclusa dopo due settimane di lavoro tra il vulcano sottomarino Kolumbo e la caldera di Santorini."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Kolumbo si trova a nord-est di Santorini ed è completamente sommerso. Il suo cratere è profondo circa 500 metri. La campagna, svolta a bordo della nave da ricerca Gaia Blu del CNR, ha portato il monitoraggio direttamente sul fondale: un passaggio importante in un'area dove le reti sismiche installate a terra non possono arrivare."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un sistema per ascoltare le vibrazioni del fondale"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La principale novità è stata la posa di un sistema DAS, sigla che indica il rilevamento acustico distribuito: una tecnologia che usa una fibra ottica per registrare vibrazioni e segnali acustici lungo il suo percorso. Sul fondo del cratere, alla profondità di 500 metri, è stato steso un cavo lungo 514 metri."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il cavo ha funzionato come una fila di 135 sensori e ha raccolto dati per quasi sette giorni. Fra i segnali registrati c'è anche un terremoto avvenuto a 25 chilometri di distanza. Il metodo è pensato per riconoscere segnali che possono precedere la risalita del magma oppure cambiamenti nell'attività idrotermale, cioè nei fenomeni legati alla fuoriuscita dal fondale di fluidi ad alta temperatura."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "HYDROSENSE ha studiato Kolumbo e la caldera di Santorini con una fibra ottica sul fondale, un robot filoguidato, rilievi idroacustici e campionamenti di sedimenti, acqua, gas e rocce. I dati raccolti saranno analizzati nei prossimi mesi."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Camini idrotermali mappati con grande dettaglio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le attività hanno incluso otto immersioni del MiniROV di MBARI, un robot filoguidato, per oltre 32 ore complessive sul fondale. Il mezzo ha esplorato, campionato e mappato i siti idrotermali. Tra gli elementi osservati ci sono camini idrotermali, mounds — rilievi del fondale — e altre forme create dalla fuoriuscita di fluidi caldi dal fondo del mare."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La mappatura dei campi idrotermali ha raggiunto una risoluzione molto elevata: la batimetria, cioè la misura della forma e della profondità del fondale, è arrivata a quattro centimetri; i fotomosaici, immagini composte da molte fotografie, fino a pochi millimetri. Questi rilievi permettono di studiare in modo approfondito la morfologia dei siti e la loro risposta acustica e ottica."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Un robot filoguidato osserva camini idrotermali e rilievi sul fondo del cratere.",
+   "didascalia": "Il MiniROV ha esplorato e mappato i siti idrotermali sul fondale.",
+   "file": "immagini/2026-11-13-kolumbo-osservato-dal-fondale-fibra-ottica-e-robot-per-studi-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Rilievi, campioni e una nuova emissione di gas"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La spedizione ha inoltre effettuato rilievi idroacustici per oltre 250 miglia nautiche. Il lavoro ha compreso rilievi batimetrici, rilievi sismici ad alta risoluzione dei sedimenti superficiali e l'individuazione di emissioni gassose tramite un ecoscandaglio scientifico. Durante la campagna è stata scoperta una nuova area di emissione di gas."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Sono stati raccolti campioni di sedimento, acqua, gas e roccia. I ricercatori hanno anche misurato la temperatura dei camini e realizzato profili delle correnti marine. Il maltempo ha imposto diverse soste e ha spostato parte delle attività nella caldera di Santorini, più riparata. Questo cambio di programma ha consentito di estendere lo studio ai campi idrotermali interni alla caldera e di confrontarli con quelli di Kolumbo."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un'area da seguire da vicino"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Kolumbo ebbe la sua ultima eruzione nel 1650, quando provocò uno tsunami e l'emissione di gas tossici che causò vittime a Santorini. All'inizio del 2025 il vulcano è tornato a mostrare attività con una crisi sismica durata un mese e oltre 28.000 terremoti, collegata alla risalita di magma verso l'isola di Anhydros."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "«Kolumbo è uno dei vulcani sottomarini più attivi del Mediterraneo, e la crisi del 2025 ha mostrato quanto sia urgente osservarlo da vicino», dichiara Mariacristina Prampolini, ricercatrice del CNR-ISMAR, co-responsabile scientifica e capo missione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo Aaron Micallef, del Monterey Bay Aquarium Research Institute e co-responsabile scientifico, gli strumenti portati sul fondo del cratere pongono le basi per lo sviluppo di sistemi di allerta precoce. I dati e i campioni saranno analizzati nei prossimi mesi e contribuiranno a comprendere meglio il sistema vulcanico Christiana-Santorini-Kolumbo, con l'obiettivo di migliorare la preparazione e la gestione del rischio in Grecia."
+  }
+ ],
+ "parole": 664,
+ "minuti": 3,
+ "fonte": {
+  "nome": "CNR",
+  "titolo": "Kolumbo, il vulcano sommerso di Santorini, osservato da vicino: si conclude la campagna HYDROSENSE",
+  "url": "https://www.cnr.it/it/news/14807/kolumbo-il-vulcano-sommerso-di-santorini-osservato-da-vicino-si-conclude-la-campagna-hydrosense",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
