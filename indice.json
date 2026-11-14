@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-13T07:22:07.333Z",
+ "aggiornato": "2026-11-14T07:21:49.777Z",
  "articoli": [
+  {
+   "id": "2026-11-14-risorsa-acqua-arriva-a-venezia-al-centro-il-legame-tra-acqua",
+   "data": "2026-11-14",
+   "titolo": "Risorsa Acqua arriva a Venezia: al centro il legame tra acqua, energia e clima",
+   "sottotitolo": "La quinta edizione del workshop riunisce ricerca, istituzioni e territorio attorno al percorso che va dalle sorgenti alpine alla laguna e al mare.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-14-risorsa-acqua-arriva-a-venezia-al-centro-il-legame-tra-acqua-copertina.webp",
+   "miniatura": "immagini/2026-11-14-risorsa-acqua-arriva-a-venezia-al-centro-il-legame-tra-acqua-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14809/dal-rifugio-galassi-a-venezia-il-workshop-risorsa-acqua-celebra-la-quinta-edizione",
+   "fonteTitolo": "Dal Rifugio Galassi a Venezia: il workshop \"Risorsa Acqua\" celebra la quinta edizione",
+   "file": "articoli/2026-11-14-risorsa-acqua-arriva-a-venezia-al-centro-il-legame-tra-acqua.json"
+  },
   {
    "id": "2026-11-13-kolumbo-osservato-dal-fondale-fibra-ottica-e-robot-per-studi",
    "data": "2026-11-13",
