@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-14T07:21:49.777Z",
+ "aggiornato": "2026-11-15T07:21:43.828Z",
  "articoli": [
+  {
+   "id": "2026-11-15-ricerca-su-oceani-e-clima-cmcc-rafforza-la-collaborazione-co",
+   "data": "2026-11-15",
+   "titolo": "Ricerca su oceani e clima: CMCC rafforza la collaborazione con la Cina",
+   "sottotitolo": "Un incontro a Guangzhou mette in dialogo previsione climatica, intelligenza artificiale e resilienza delle coste.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-15-ricerca-su-oceani-e-clima-cmcc-rafforza-la-collaborazione-co-copertina.webp",
+   "miniatura": "immagini/2026-11-15-ricerca-su-oceani-e-clima-cmcc-rafforza-la-collaborazione-co-mini.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/cmcc-strengthens-scientific-cooperation-with-china-on-ocean-and-climate-research",
+   "fonteTitolo": "CMCC strengthens scientific cooperation with China on ocean and climate research",
+   "file": "articoli/2026-11-15-ricerca-su-oceani-e-clima-cmcc-rafforza-la-collaborazione-co.json"
+  },
   {
    "id": "2026-11-14-risorsa-acqua-arriva-a-venezia-al-centro-il-legame-tra-acqua",
    "data": "2026-11-14",
