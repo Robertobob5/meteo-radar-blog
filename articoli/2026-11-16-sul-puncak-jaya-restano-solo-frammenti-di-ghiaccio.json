@@ -1,0 +1,84 @@
+{
+ "id": "2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio",
+ "data": "2026-11-16",
+ "scritto": "2026-11-16T07:21:35.647Z",
+ "titolo": "Sul Puncak Jaya restano solo frammenti di ghiaccio",
+ "sottotitolo": "Le immagini satellitari mostrano la rapida riduzione dei ghiacci della catena del Sudirman, in Indonesia.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio-copertina.webp",
+ "copertinaAlt": "Le creste rocciose del Puncak Jaya con piccoli residui di ghiaccio.",
+ "miniatura": "immagini/2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Vicino alla vetta del Puncak Jaya, nella catena del Sudirman in Indonesia, il ghiaccio si è ridotto a chiazze sparse e molto piccole. Sono frammenti ormai troppo sottili e limitati per scorrere come fanno i ghiacciai. Il confronto fra immagini satellitari di anni diversi rende visibile un cambiamento netto: dove in passato le creste più alte erano coperte dal ghiaccio, oggi prevale la roccia nuda."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Questa regione dell’isola della Nuova Guinea è uno dei pochi luoghi prossimi all’equatore che hanno conservato a lungo ghiaccio durante tutto l’anno. I ghiacciai della catena si trovano però in condizioni particolarmente calde per la sopravvivenza del ghiaccio permanente: sono nei tropici e accanto alla più vasta distesa di acqua oceanica calda della Terra. Per questo gli scienziati li considerano importanti segnali delle trasformazioni in corso, insieme ad altri ghiacci tropicali rimasti in Venezuela, Perù e Tanzania."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dal bianco ghiaccio alla roccia esposta"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le osservazioni messe a confronto sono state raccolte nel 1988 dal sensore Thematic Mapper del satellite Landsat 5 e nel 2026 dal sensore Operational Land Imager del satellite Landsat 9. Si tratta di immagini a falsi colori: una tecnica che assegna colori scelti ai dati raccolti dal satellite per distinguere più facilmente le superfici. In questo caso il ghiaccio appare azzurro chiaro, la roccia esposta marrone, la vegetazione verde e le nuvole bianche."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Confronto visivo tra una montagna con ampie superfici glaciali e la stessa montagna con pochi residui di ghiaccio.",
+   "didascalia": "Le immagini a falsi colori permettono di distinguere il ghiaccio dalla roccia e dalla vegetazione.",
+   "file": "immagini/2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio-1.webp"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nel 1988 i ghiacciai coprivano circa 4,31 chilometri quadrati. A settembre 2025, secondo dati satellitari e rilievi aerei, ne restavano circa 0,09: un’estensione paragonabile a una dozzina di campi da calcio, circa il 2 per cento dell’area presente nel 1988. Un rilievo aereo previsto per dicembre dovrebbe fornire una nuova stima della quantità di ghiaccio rimasta nel 2026."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Ghiaccio più sottile e diviso"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Non si è ridotta soltanto la superficie. Anche lo spessore del ghiaccio è diminuito fortemente. Nel principale sito di monitoraggio, sull’East Northwall Firn, le misure indicavano 32 metri di spessore nel 2010 e 4 metri nel 2023. Nel novembre 2024, in quel punto, il ghiaccio era scomparso."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Quando un ghiacciaio si assottiglia, tende anche a spezzarsi. Ogni frammento nuovo espone più bordi al contatto con l’aria e con le condizioni che favoriscono la fusione, aggravando la perdita. Nell’immagine del 2026, fra i residui di ghiaccio si vede roccia emersa di recente. Nella zona continua a nevicare, ma la neve non resta abbastanza a lungo sulla roccia nuda da accumularsi e formare nuovo ghiaccio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "In generale, per essere definita ghiacciaio, una massa di ghiaccio deve essere abbastanza spessa da scorrere verso valle sotto il proprio peso e deve avere una zona in cui la neve si accumula più rapidamente di quanto fonde. I residui del Puncak Jaya si sono assottigliati e frammentati al punto da non scorrere più. Piccoli resti persistono nelle fessure in quota, ma la loro funzione di ghiacciai attivi è considerata di fatto conclusa."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il ruolo di El Niño"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Studi satellitari recenti indicano che le principali aree glaciali potrebbero scomparire attorno al 2030. Le stime dell’Agenzia indonesiana per la meteorologia, la climatologia e la geofisica suggeriscono però che la scomparsa potrebbe arrivare prima, anche per effetto dell’attuale El Niño. El Niño è una fase climatica associata a un riscaldamento delle acque del Pacifico tropicale, che può modificare temperatura e precipitazioni."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Negli anni di El Niño questi ghiacci hanno subito perdite particolarmente intense. Con l’aumento della temperatura dell’aria, il livello al quale l’acqua congela sale oltre la vetta: le precipitazioni cadono allora come pioggia anziché come neve. Manca così la neve fresca e bianca che riflette la luce solare e protegge il ghiaccio; restano superfici più scure, capaci di assorbire più calore e di fondere più rapidamente."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Tra il 1988 e settembre 2025, l’area glaciale del Puncak Jaya è passata da circa 4,31 a 0,09 chilometri quadrati. I frammenti rimasti non scorrono più come ghiacciai. Il loro assottigliamento e la frammentazione aumentano le superfici esposte alla fusione, mentre durante El Niño la pioggia può sostituire la neve alle quote più alte."
+  }
+ ],
+ "parole": 656,
+ "minuti": 3,
+ "fonte": {
+  "nome": "NASA Science",
+  "titolo": "The Last Ice on Puncak Jaya",
+  "url": "https://science.nasa.gov/earth/earth-observatory/the-last-ice-on-puncak-jaya/",
+  "lingua": "en"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

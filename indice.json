@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-15T07:21:43.828Z",
+ "aggiornato": "2026-11-16T07:21:35.647Z",
  "articoli": [
+  {
+   "id": "2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio",
+   "data": "2026-11-16",
+   "titolo": "Sul Puncak Jaya restano solo frammenti di ghiaccio",
+   "sottotitolo": "Le immagini satellitari mostrano la rapida riduzione dei ghiacci della catena del Sudirman, in Indonesia.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio-copertina.webp",
+   "miniatura": "immagini/2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/the-last-ice-on-puncak-jaya/",
+   "fonteTitolo": "The Last Ice on Puncak Jaya",
+   "file": "articoli/2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio.json"
+  },
   {
    "id": "2026-11-15-ricerca-su-oceani-e-clima-cmcc-rafforza-la-collaborazione-co",
    "data": "2026-11-15",
