@@ -1,0 +1,76 @@
+{
+ "id": "2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode",
+ "data": "2026-11-17",
+ "scritto": "2026-11-17T07:21:37.851Z",
+ "titolo": "Nuove mappe dell’inquinamento atmosferico in Italia con modelli statistici e machine learning",
+ "sottotitolo": "La ricerca integra monitoraggi, meteo, territorio e simulazioni per descrivere l’esposizione agli inquinanti con maggiore dettaglio.",
+ "categoria": "Aria",
+ "copertina": "immagini/2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode-copertina.webp",
+ "copertinaAlt": "Mappa illustrata dell’Italia con diverse concentrazioni di inquinanti nell’aria.",
+ "miniatura": "immagini/2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Nuove mappe ad alta risoluzione possono aiutare a osservare con maggior dettaglio come gli inquinanti atmosferici si distribuiscono nello spazio e nel tempo in Italia. È il risultato di una ricerca che mette a confronto due approcci: un modello statistico bayesiano di tipo INLA-SPDE e l’algoritmo di machine learning Random Forest. Entrambi riescono a riprodurre con elevata accuratezza la distribuzione spaziale e temporale degli inquinanti. Quando i due metodi vengono combinati in un unico modello ensemble, cioè un modello che unisce più metodi, le prestazioni migliorano ulteriormente."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dati diversi per leggere l’aria"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La ricerca è stata svolta nell’ambito del progetto “Aria outdoor e salute: un Atlante integrato a supporto delle decisioni e della ricerca”, finanziato dal Piano nazionale per gli investimenti complementari. Alla base del lavoro c’è l’integrazione di fonti informative diverse: i dati delle reti di monitoraggio della qualità dell’aria, le informazioni meteorologiche, i dati territoriali e le simulazioni del sistema nazionale di modellistica atmosferica kAIROS."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le reti di monitoraggio raccolgono dati sulla qualità dell’aria; le informazioni meteorologiche aggiungono il contesto delle condizioni atmosferiche; i dati territoriali descrivono il territorio. Le simulazioni della modellistica atmosferica, cioè rappresentazioni ottenute con modelli dell’atmosfera, completano questo insieme di informazioni. L’obiettivo è costruire una rappresentazione più dettagliata dell’esposizione della popolazione agli inquinanti atmosferici."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di dati di monitoraggio, meteo, territorio e simulazioni che confluiscono in una mappa dell’aria.",
+   "didascalia": "Le mappe integrano dati di monitoraggio, meteorologia, territorio e simulazioni atmosferiche.",
+   "file": "immagini/2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il confronto fra due approcci"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il primo metodo analizzato è un modello statistico bayesiano di tipo INLA-SPDE. Si tratta di un approccio statistico usato per descrivere una distribuzione nello spazio e nel tempo. Il secondo è Random Forest, un algoritmo di machine learning: un metodo che utilizza i dati per individuare relazioni utili alla previsione. Il confronto riguarda la previsione spazio-temporale di PM10, PM2.5 e NO2, gli inquinanti considerati nello studio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "I risultati indicano che ciascuno dei due approcci è in grado di rappresentare con elevata accuratezza dove e quando si distribuiscono gli inquinanti. La combinazione in un modello ensemble offre un ulteriore miglioramento. Non si tratta quindi soltanto di confrontare tecniche diverse, ma di usarne l’integrazione per ottenere mappe più dettagliate dell’esposizione della popolazione."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Le aree più interessate"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le mappe ottenute mettono in evidenza le aree del Paese maggiormente interessate dall’inquinamento atmosferico. Tra queste emergono in particolare la Pianura Padana e le principali aree urbane. La rappresentazione spaziale e temporale consente quindi di individuare le zone più coinvolte e di disporre di uno strumento orientato alla valutazione dell’esposizione."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il valore delle mappe non riguarda solo la visualizzazione del fenomeno. I risultati possono essere utili alla ricerca epidemiologica, cioè allo studio dell’esposizione in relazione alla salute, e al supporto delle politiche per la qualità dell’aria previste dalla nuova Direttiva europea 2024/2881. L’Atlante integrato a cui contribuisce la ricerca è infatti pensato come supporto sia alle decisioni sia alla ricerca."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "La ricerca confronta un modello statistico bayesiano e un algoritmo di machine learning per prevedere PM10, PM2.5 e NO2 in Italia. Integra monitoraggi della qualità dell’aria, dati meteorologici e territoriali, oltre alle simulazioni kAIROS. L’unione dei due metodi migliora le prestazioni e produce mappe dettagliate dell’esposizione, utili per ricerca epidemiologica e politiche di qualità dell’aria."
+  }
+ ],
+ "parole": 504,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Nuove mappe ad alta risoluzione dell’inquinamento atmosferico in Italia grazie all’integrazione di modelli statistici e machine learning",
+  "url": "https://www.isprambiente.gov.it/it/news/nuove-mappe-ad-alta-risoluzione-inquinamento-atmosferico-in-italia",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

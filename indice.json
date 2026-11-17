@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-16T07:21:35.647Z",
+ "aggiornato": "2026-11-17T07:21:37.851Z",
  "articoli": [
+  {
+   "id": "2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode",
+   "data": "2026-11-17",
+   "titolo": "Nuove mappe dell’inquinamento atmosferico in Italia con modelli statistici e machine learning",
+   "sottotitolo": "La ricerca integra monitoraggi, meteo, territorio e simulazioni per descrivere l’esposizione agli inquinanti con maggiore dettaglio.",
+   "categoria": "Aria",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode-copertina.webp",
+   "miniatura": "immagini/2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/nuove-mappe-ad-alta-risoluzione-inquinamento-atmosferico-in-italia",
+   "fonteTitolo": "Nuove mappe ad alta risoluzione dell’inquinamento atmosferico in Italia grazie all’integrazione di modelli statistici e machine learning",
+   "file": "articoli/2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode.json"
+  },
   {
    "id": "2026-11-16-sul-puncak-jaya-restano-solo-frammenti-di-ghiaccio",
    "data": "2026-11-16",
