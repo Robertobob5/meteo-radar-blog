@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-17T07:21:37.851Z",
+ "aggiornato": "2026-11-18T07:21:33.548Z",
  "articoli": [
+  {
+   "id": "2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b",
+   "data": "2026-11-18",
+   "titolo": "Pulizia e monitoraggio dei rifiuti sulle sponde del Reno a Bologna",
+   "sottotitolo": "Un’iniziativa aperta al pubblico unisce raccolta dei rifiuti e ricerca partecipativa lungo il fiume.",
+   "categoria": "Mare",
+   "minuti": 2,
+   "copertina": "immagini/2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b-copertina.webp",
+   "miniatura": "immagini/2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/insieme-per-un-reno-piu-pulito",
+   "fonteTitolo": "Insieme per un Reno più pulito!",
+   "file": "articoli/2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b.json"
+  },
   {
    "id": "2026-11-17-nuove-mappe-dell-inquinamento-atmosferico-in-italia-con-mode",
    "data": "2026-11-17",

@@ -1,0 +1,64 @@
+{
+ "id": "2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b",
+ "data": "2026-11-18",
+ "scritto": "2026-11-18T07:21:33.547Z",
+ "titolo": "Pulizia e monitoraggio dei rifiuti sulle sponde del Reno a Bologna",
+ "sottotitolo": "Un’iniziativa aperta al pubblico unisce raccolta dei rifiuti e ricerca partecipativa lungo il fiume.",
+ "categoria": "Mare",
+ "copertina": "immagini/2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b-copertina.webp",
+ "copertinaAlt": "Illustrazione di una sponda fluviale urbana con persone impegnate nella raccolta e nel monitoraggio dei rifiuti.",
+ "miniatura": "immagini/2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "A Bologna torna un appuntamento dedicato alla cura degli spazi verdi urbani e del fiume Reno. L’iniziativa, promossa da Plastic Free e ISPRA, prevede un’attività di CleanUp, cioè di pulizia con raccolta dei rifiuti dispersi, affiancata da un momento di ricerca partecipativa. Il pubblico potrà contribuire direttamente alla rimozione dei materiali presenti nell’area e al loro monitoraggio."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Raccogliere, misurare e catalogare"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La giornata non sarà soltanto una raccolta di rifiuti. Sulle sponde del Reno verrà svolto anche un monitoraggio dei materiali rinvenuti, nell’ambito del progetto TETHYS4ADRION, con la partecipazione del personale dell’ISPRA. Monitorare significa osservare e registrare in modo organizzato ciò che viene trovato; in questo caso, l’attenzione è rivolta ai rifiuti presenti lungo il fiume."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Dopo la raccolta, i materiali saranno misurati e catalogati, cioè ordinati e registrati in base alle loro caratteristiche. Questo passaggio è indicato come cruciale per seguire l’inquinamento da plastica e per sostenere la ricerca scientifica dedicata alla tutela degli ecosistemi. La pulizia del luogo e la raccolta di dati diventano così parti dello stesso percorso."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Materiali raccolti lungo una sponda fluviale pronti per essere misurati e catalogati.",
+   "didascalia": "La catalogazione dei materiali raccolti serve a monitorare l’inquinamento da plastica.",
+   "file": "immagini/2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Un’attività aperta a tutti"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’evento è aperto a tutti e si svolgerà il 22 novembre a Bologna, al Giardino Amos Facchini in via Menganti, dalle 10:30 alle 12:30. Per partecipare sono richiesti guanti da giardinaggio e scarpe comode. È inoltre necessaria l’iscrizione, così da permettere ai referenti di organizzare al meglio la giornata."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’invito è a prendere parte a un’azione concreta negli spazi verdi e lungo il fiume, contribuendo sia alla rimozione dei rifiuti dispersi sia alla raccolta di informazioni utili alla ricerca. La cura del Reno passa quindi da un lavoro condiviso: osservare ciò che si trova sulle sponde, raccoglierlo e trasformarlo in dati per comprendere meglio la presenza di plastica nell’ambiente."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il 22 novembre, dalle 10:30 alle 12:30, Plastic Free e ISPRA organizzano a Bologna un’attività di pulizia e monitoraggio sulle sponde del Reno. L’appuntamento è al Giardino Amos Facchini, in via Menganti. La partecipazione è aperta a tutti, con iscrizione obbligatoria."
+  }
+ ],
+ "parole": 325,
+ "minuti": 2,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Insieme per un Reno più pulito!",
+  "url": "https://www.isprambiente.gov.it/it/news/insieme-per-un-reno-piu-pulito",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
