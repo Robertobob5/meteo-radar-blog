@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-18T07:21:33.548Z",
+ "aggiornato": "2026-11-19T07:22:04.577Z",
  "articoli": [
+  {
+   "id": "2026-11-19-le-piogge-di-el-nino-colorano-il-deserto-di-atacama",
+   "data": "2026-11-19",
+   "titolo": "Le piogge di El Niño colorano il deserto di Atacama",
+   "sottotitolo": "Un inverno insolitamente piovoso ha risvegliato semi dormienti nel nord del Cile, dando vita a un'eccezionale fioritura osservata dai satelliti.",
+   "categoria": "Clima",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-19-le-piogge-di-el-nino-colorano-il-deserto-di-atacama-copertina.webp",
+   "miniatura": "immagini/2026-11-19-le-piogge-di-el-nino-colorano-il-deserto-di-atacama-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/el-nino-rains-paint-the-atacama/",
+   "fonteTitolo": "El Niño Rains Paint the Atacama",
+   "file": "articoli/2026-11-19-le-piogge-di-el-nino-colorano-il-deserto-di-atacama.json"
+  },
   {
    "id": "2026-11-18-pulizia-e-monitoraggio-dei-rifiuti-sulle-sponde-del-reno-a-b",
    "data": "2026-11-18",
