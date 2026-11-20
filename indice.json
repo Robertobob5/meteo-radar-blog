@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-19T07:22:04.577Z",
+ "aggiornato": "2026-11-20T07:21:45.292Z",
  "articoli": [
+  {
+   "id": "2026-11-20-le-misure-del-mare-di-tre-secoli-fa-aiutano-a-ricostruire-il",
+   "data": "2026-11-20",
+   "titolo": "Le misure del mare di tre secoli fa aiutano a ricostruire il Mediterraneo",
+   "sottotitolo": "Le osservazioni del naturalista Luigi Ferdinando Marsili vengono rilette e confrontate con i dati moderni.",
+   "categoria": "Mare",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-20-le-misure-del-mare-di-tre-secoli-fa-aiutano-a-ricostruire-il-copertina.webp",
+   "miniatura": "immagini/2026-11-20-le-misure-del-mare-di-tre-secoli-fa-aiutano-a-ricostruire-il-mini.webp",
+   "fonte": "INGV Ambiente",
+   "fonteUrl": "https://ingvambiente.com/2026/11/19/dai-coralli-del-settecento-ai-cambiamenti-climatici-quando-la-storia-aiuta-a-conoscere-il-mare/",
+   "fonteTitolo": "Dai coralli del Settecento ai cambiamenti climatici: quando la storia aiuta a conoscere il mare",
+   "file": "articoli/2026-11-20-le-misure-del-mare-di-tre-secoli-fa-aiutano-a-ricostruire-il.json"
+  },
   {
    "id": "2026-11-19-le-piogge-di-el-nino-colorano-il-deserto-di-atacama",
    "data": "2026-11-19",
