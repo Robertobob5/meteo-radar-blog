@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-20T07:21:45.292Z",
+ "aggiornato": "2026-11-21T07:21:59.005Z",
  "articoli": [
+  {
+   "id": "2026-11-21-ricerca-agroforestale-mediterranea-monitoraggi-suolo-e-adatt",
+   "data": "2026-11-21",
+   "titolo": "Ricerca agroforestale mediterranea: monitoraggi, suolo e adattamento climatico al centro della conferenza ISAFoM",
+   "sottotitolo": "L’incontro annuale del CNR-ISAFoM ha riunito le attività delle quattro sedi su biodiversità, acqua, suoli, foreste e tecnologie per l’agricoltura.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-21-ricerca-agroforestale-mediterranea-monitoraggi-suolo-e-adatt-copertina.webp",
+   "miniatura": "immagini/2026-11-21-ricerca-agroforestale-mediterranea-monitoraggi-suolo-e-adatt-mini.webp",
+   "fonte": "CNR",
+   "fonteUrl": "https://www.cnr.it/it/news/14832/conferenza-annuale-istituto-per-i-sistemi-agricoli-e-forestali-del-mediterraneo-isafom-l-innovazione-nella-ricerca-dei-sistemi-agricoli-e-forestali-del-mediterraneo",
+   "fonteTitolo": "Conferenza annuale Istituto per i Sistemi Agricoli e Forestali del Mediterraneo - ISAFoM \"L'Innovazione nella Ricerca dei sistemi Agricoli e Forestali del Mediterraneo\"",
+   "file": "articoli/2026-11-21-ricerca-agroforestale-mediterranea-monitoraggi-suolo-e-adatt.json"
+  },
   {
    "id": "2026-11-20-le-misure-del-mare-di-tre-secoli-fa-aiutano-a-ricostruire-il",
    "data": "2026-11-20",
