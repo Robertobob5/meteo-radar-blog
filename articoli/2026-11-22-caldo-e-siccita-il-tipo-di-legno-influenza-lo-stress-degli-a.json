@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-22-caldo-e-siccita-il-tipo-di-legno-influenza-lo-stress-degli-a",
+ "data": "2026-11-22",
+ "scritto": "2026-11-22T07:21:49.394Z",
+ "titolo": "Caldo e siccità: il tipo di legno influenza lo stress degli alberi",
+ "sottotitolo": "Uno studio su foreste europee mostra perché il recupero notturno e la struttura del legno contano nella risposta alla siccità estiva.",
+ "categoria": "Clima",
+ "copertina": "immagini/2026-11-22-caldo-e-siccita-il-tipo-di-legno-influenza-lo-stress-degli-a-copertina.webp",
+ "copertinaAlt": "Un lariceto alpino in una giornata estiva calda e asciutta.",
+ "miniatura": "immagini/2026-11-22-caldo-e-siccita-il-tipo-di-legno-influenza-lo-stress-degli-a-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Le estati calde e secche mettono sotto pressione le foreste europee, ma la risposta degli alberi non è uguale per tutte le specie. Un gruppo internazionale di ricerca ha analizzato come si comportano gli alberi durante i periodi di carenza d’acqua estiva, osservando che conta non soltanto l’intensità del caldo o della siccità: hanno un ruolo importante anche la capacità di recuperare acqua durante la notte e la struttura del legno."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Lo studio ha raccolto misure in 130 siti forestali europei, considerando 29 specie e quasi 700 alberi. I dati coprono il periodo dal 2003 al 2018. Tra i luoghi inclusi c’è il lariceto di Torgnon, in Valle d’Aosta, dove ARPA Valle d’Aosta ha contribuito con dati e osservazioni acquisiti nel sito di monitoraggio."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Che cosa accade al tronco quando manca l’acqua"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Quando le temperature sono alte e il suolo è asciutto, il tronco di un albero si restringe leggermente perché perde acqua. Durante la notte la traspirazione diminuisce e l’albero può reidratarsi, tornando alle dimensioni precedenti. Se però il recupero non è completo, resta un deficit idrico, cioè una condizione in cui l’albero non recupera tutta l’acqua perduta. In questi periodi la crescita del legno può fermarsi o rallentare."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per seguire questo processo, i ricercatori hanno usato dendrometri: sensori che misurano le variazioni del diametro del tronco fino al micrometro. Queste misure permettono di osservare le dinamiche nell’arco di ore e giorni, invece di limitarsi alla lettura annuale degli anelli di crescita."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di un tronco misurato da un dendrometro tra il giorno e la notte.",
+   "didascalia": "I dendrometri rilevano le piccole variazioni del diametro del tronco durante i periodi caldi e asciutti.",
+   "file": "immagini/2026-11-22-caldo-e-siccita-il-tipo-di-legno-influenza-lo-stress-degli-a-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Recuperare di notte fa la differenza"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il risultato centrale riguarda proprio il recupero notturno. Più un albero fatica a reidratarsi durante la notte, più a lungo si prolunga il periodo di stress idrico. L’effetto è risultato particolarmente marcato nelle conifere e nelle latifoglie a porosità anulare, un gruppo nel quale rientrano le querce: per questi gruppi l’allungamento indicato dallo studio è del 70%. Nelle latifoglie a porosità diffusa, come il faggio, è del 42%."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Caldo e siccità, inoltre, agiscono insieme. Temperature più alte allungano i periodi di stress in tutti i tipi di legno: lo studio indica un aumento del 44% per ogni incremento standard della temperatura. Questo effetto diventa maggiore quando l’acqua nel suolo scarseggia."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Le conifere presentano in media periodi di stress più lunghi. Le latifoglie a porosità diffusa mostrano invece un’altra caratteristica: sono le uniche per cui gli episodi successivi di deficit idrico nella stessa estate si allungano progressivamente, del 12% a ogni nuovo episodio. Secondo lo studio, la ripetizione della siccità può quindi compromettere gradualmente la capacità di gestire l’acqua."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Anche la stagione in cui arriva lo stress è importante"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il legno si forma in una finestra temporale relativamente breve. Per questo uno stress idrico che si verifica durante quel periodo pesa sulla crescita più di un episodio che arriva a stagione avanzata. La vulnerabilità di una foresta non può quindi essere descritta guardando soltanto alla forza di un singolo episodio caldo e secco: bisogna considerare il momento in cui avviene, il recupero notturno e le caratteristiche del legno."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Il lariceto di Torgnon nel confronto europeo"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il lariceto di Torgnon si trova a 2050 metri di quota, in Valle d’Aosta, a pochi chilometri dal sito di Torgnon pascolo. La foresta è composta per circa il 90% da larice europeo e per il restante 10% da abete rosso. Nel sottobosco sono presenti ginepro comune, rododendro ferrugineo e mirtillo nero."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il larice è una conifera e rientra quindi nel gruppo che tende ad avere periodi di stress idrico più lunghi e un recupero notturno più lento. Le misure raccolte ad alta frequenza a Torgnon consentono di mettere a confronto una foresta alpina d’alta quota con boschi di pianura, collina e ambiente mediterraneo, in condizioni climatiche diverse. È questo confronto su scala europea a rendere possibile l’analisi."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Lo studio mostra che, per capire come gli alberi affrontano le estati calde e secche, non basta misurare la siccità. Sono decisivi il recupero dell’acqua durante la notte, il tipo di legno, la ripetizione degli episodi nella stessa estate e il momento della stagione in cui avviene lo stress. Queste informazioni possono aiutare a individuare le foreste più vulnerabili e a orientare la gestione forestale."
+  }
+ ],
+ "parole": 686,
+ "minuti": 3,
+ "fonte": {
+  "nome": "SNPA · le Arpa d’Italia",
+  "titolo": "Caldo e siccità estiva: perché alcuni alberi soffrono più di altri",
+  "url": "https://www.snpambiente.it/notizie/temi/report-intertematici/cambiamenti-climatici/caldo-e-siccita-estiva-perche-alcuni-alberi-soffrono-piu-di-altri/?utm_source=rss&utm_medium=rss&utm_campaign=caldo-e-siccita-estiva-perche-alcuni-alberi-soffrono-piu-di-altri",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
