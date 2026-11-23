@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-22T07:21:49.394Z",
+ "aggiornato": "2026-11-23T07:21:38.661Z",
  "articoli": [
+  {
+   "id": "2026-11-23-un-nuovo-laser-in-svalbard-misura-con-piu-precisione-le-orbi",
+   "data": "2026-11-23",
+   "titolo": "Un nuovo laser in Svalbard misura con più precisione le orbite dei satelliti",
+   "sottotitolo": "Il sistema di telemetria laser satellitare di nuova generazione rafforza le misure della Terra dall’Artico.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-23-un-nuovo-laser-in-svalbard-misura-con-piu-precisione-le-orbi-copertina.webp",
+   "miniatura": "immagini/2026-11-23-un-nuovo-laser-in-svalbard-misura-con-piu-precisione-le-orbi-mini.webp",
+   "fonte": "NASA Science",
+   "fonteUrl": "https://science.nasa.gov/earth/earth-observatory/laser-focus-at-the-top-of-the-world/",
+   "fonteTitolo": "Laser Focus at the Top of the World",
+   "file": "articoli/2026-11-23-un-nuovo-laser-in-svalbard-misura-con-piu-precisione-le-orbi.json"
+  },
   {
    "id": "2026-11-22-caldo-e-siccita-il-tipo-di-legno-influenza-lo-stress-degli-a",
    "data": "2026-11-22",
