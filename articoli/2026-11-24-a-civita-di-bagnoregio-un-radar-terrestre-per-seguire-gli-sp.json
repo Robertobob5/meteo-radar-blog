@@ -1,0 +1,80 @@
+{
+ "id": "2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp",
+ "data": "2026-11-24",
+ "scritto": "2026-11-24T07:21:48.916Z",
+ "titolo": "A Civita di Bagnoregio un radar terrestre per seguire gli spostamenti della rupe",
+ "sottotitolo": "Il nuovo sistema ISPRA misurerà nel tempo i movimenti superficiali della rupe e dei versanti del borgo.",
+ "categoria": "Ricerca",
+ "copertina": "immagini/2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp-copertina.webp",
+ "copertinaAlt": "Illustrazione della rupe di Civita di Bagnoregio osservata da un radar terrestre.",
+ "miniatura": "immagini/2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Civita di Bagnoregio sarà al centro di una giornata dedicata alla conoscenza e alla tutela del borgo. L’appuntamento è previsto il 4 dicembre a Bagnoregio e comprende una sessione scientifica e l’inaugurazione di un nuovo sistema di monitoraggio della rupe. Il sistema, acquisito nell’ambito del PNRR – Sistema Integrato di Monitoraggio, è pensato per misurare nel tempo gli spostamenti superficiali della rupe e dei versanti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’inaugurazione è in programma nel pomeriggio al Belvedere di Civita. A realizzarla sarà ISPRA, che svolge attività di supporto tecnico-scientifico a favore del borgo attraverso il Servizio Geologico d’Italia e partecipa anche al Comitato scientifico di Civita di Bagnoregio. Il nuovo strumento si inserisce quindi in un insieme di attività rivolte a seguire l’evoluzione della rupe e dei versanti."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Come funziona il monitoraggio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il sistema utilizza un radar interferometrico terrestre, indicato con la sigla GBInSAR. È uno strumento che, attraverso misure ripetute, consente di rilevare gli spostamenti della superficie nel tempo. In questo caso l’osservazione riguarda la rupe e i versanti: due elementi al centro degli studi previsti per Civita di Bagnoregio."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Misurare nel tempo significa poter disporre di osservazioni dedicate ai movimenti superficiali, senza limitarsi a una singola immagine del luogo. Il sistema sarà installato e inaugurato come parte del Sistema Integrato di Monitoraggio. La fonte non anticipa dati o risultati delle misure: l’evento presenta l’avvio del nuovo monitoraggio in situ, cioè effettuato direttamente sul posto."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema visivo di un radar terrestre che osserva una rupe e i versanti.",
+   "didascalia": "Il radar interferometrico terrestre è impiegato per misurare nel tempo gli spostamenti superficiali.",
+   "file": "immagini/2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Stabilità, frane e mitigazione del rischio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La parte scientifica della giornata si terrà alla Casa del Vento e sarà dedicata alla presentazione di un numero speciale della Rivista Italiana di Geotecnica sul borgo. La geotecnica è lo studio del comportamento dei terreni e delle rocce in relazione alle opere e alla stabilità del territorio. Gli studi illustrati affronteranno la stabilità della rupe e dei versanti, l’evoluzione dei fenomeni franosi e gli interventi di mitigazione del rischio idrogeologico."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per fenomeni franosi si intendono i movimenti di materiali lungo un versante. Il rischio idrogeologico riguarda invece i pericoli legati alle condizioni del terreno, dei versanti e dell’acqua. La mitigazione del rischio indica gli interventi destinati a ridurne gli effetti. Questi temi sono esplicitamente collegati alla conoscenza della rupe e dei versanti di Civita di Bagnoregio, insieme al monitoraggio che verrà inaugurato nel corso dell’evento."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Anche il rilievo con drone tra le attività di studio"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Tra le attività citate da ISPRA c’è anche un rilievo con drone condotto all’inizio del 2026 in collaborazione con la Croce Rossa Italiana di Viterbo. Il rilievo ha fornito una documentazione di dettaglio della rupe e dei versanti, a supporto degli studi sulla loro evoluzione. Si tratta di un’attività distinta dal nuovo radar terrestre, ma rivolta allo stesso obiettivo di conoscenza del contesto."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La giornata del 4 dicembre riunirà dunque presentazione scientifica, studi sulla stabilità e sui fenomeni franosi, documentazione ottenuta con drone e avvio del monitoraggio con radar interferometrico terrestre. L’attenzione resta concentrata sulla rupe e sui versanti del borgo, osservati attraverso strumenti e attività di supporto tecnico-scientifico."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il 4 dicembre ISPRA inaugurerà al Belvedere di Civita un sistema di monitoraggio in situ della rupe e dei versanti. Lo strumento usa un radar interferometrico terrestre per misurare gli spostamenti superficiali nel tempo. La giornata comprende anche una sessione dedicata a stabilità, fenomeni franosi e mitigazione del rischio idrogeologico."
+  }
+ ],
+ "parole": 543,
+ "minuti": 3,
+ "fonte": {
+  "nome": "ISPRA",
+  "titolo": "Civita di Bagnoregio, ISPRA inaugura il nuovo sistema di monitoraggio della rupe",
+  "url": "https://www.isprambiente.gov.it/it/news/civita-di-bagnoregio-ispra-inaugura-il-nuovo-sistema-di-monitoraggio-della-rupe",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}

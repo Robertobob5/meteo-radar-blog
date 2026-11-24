@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-23T07:21:38.661Z",
+ "aggiornato": "2026-11-24T07:21:48.917Z",
  "articoli": [
+  {
+   "id": "2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp",
+   "data": "2026-11-24",
+   "titolo": "A Civita di Bagnoregio un radar terrestre per seguire gli spostamenti della rupe",
+   "sottotitolo": "Il nuovo sistema ISPRA misurerà nel tempo i movimenti superficiali della rupe e dei versanti del borgo.",
+   "categoria": "Ricerca",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp-copertina.webp",
+   "miniatura": "immagini/2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp-mini.webp",
+   "fonte": "ISPRA",
+   "fonteUrl": "https://www.isprambiente.gov.it/it/news/civita-di-bagnoregio-ispra-inaugura-il-nuovo-sistema-di-monitoraggio-della-rupe",
+   "fonteTitolo": "Civita di Bagnoregio, ISPRA inaugura il nuovo sistema di monitoraggio della rupe",
+   "file": "articoli/2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp.json"
+  },
   {
    "id": "2026-11-23-un-nuovo-laser-in-svalbard-misura-con-piu-precisione-le-orbi",
    "data": "2026-11-23",
