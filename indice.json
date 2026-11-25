@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-24T07:21:48.917Z",
+ "aggiornato": "2026-11-25T07:22:11.913Z",
  "articoli": [
+  {
+   "id": "2026-11-25-el-nino-ha-diviso-la-stagione-degli-uragani-tra-atlantico-e-",
+   "data": "2026-11-25",
+   "titolo": "El Niño ha diviso la stagione degli uragani tra Atlantico e Pacifico",
+   "sottotitolo": "Nel 2026 l’Atlantico è rimasto sotto la media, mentre il Pacifico ha registrato la sua stagione più attiva secondo l’energia dei cicloni.",
+   "categoria": "Atmosfera",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-25-el-nino-ha-diviso-la-stagione-degli-uragani-tra-atlantico-e--copertina.webp",
+   "miniatura": "immagini/2026-11-25-el-nino-ha-diviso-la-stagione-degli-uragani-tra-atlantico-e--mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news-release/hurricane-season-wrap-up-el-nino-fueled-record-number-of-pacific-storms-but-calmed-atlantic",
+   "fonteTitolo": "Hurricane season wrap-up: El Nino fueled record number of Pacific storms but calmed Atlantic",
+   "file": "articoli/2026-11-25-el-nino-ha-diviso-la-stagione-degli-uragani-tra-atlantico-e-.json"
+  },
   {
    "id": "2026-11-24-a-civita-di-bagnoregio-un-radar-terrestre-per-seguire-gli-sp",
    "data": "2026-11-24",
