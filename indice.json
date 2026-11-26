@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-25T07:22:11.913Z",
+ "aggiornato": "2026-11-26T07:22:04.094Z",
  "articoli": [
+  {
+   "id": "2026-11-26-due-sistemi-di-maltempo-complicano-gli-spostamenti-della-set",
+   "data": "2026-11-26",
+   "titolo": "Due sistemi di maltempo complicano gli spostamenti della settimana del Ringraziamento",
+   "sottotitolo": "Piogge intense, vento, neve in montagna e possibili allagamenti costieri interesseranno aree orientali e occidentali degli Stati Uniti.",
+   "categoria": "Atmosfera",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-26-due-sistemi-di-maltempo-complicano-gli-spostamenti-della-set-copertina.webp",
+   "miniatura": "immagini/2026-11-26-due-sistemi-di-maltempo-complicano-gli-spostamenti-della-set-mini.webp",
+   "fonte": "NOAA",
+   "fonteUrl": "https://www.noaa.gov/news/thanksgiving-week-weather-potent-coastal-storms-rain-and-snow-to-impact-travel",
+   "fonteTitolo": "Thanksgiving week weather: Potent coastal storms, rain and snow to impact travel",
+   "file": "articoli/2026-11-26-due-sistemi-di-maltempo-complicano-gli-spostamenti-della-set.json"
+  },
   {
    "id": "2026-11-25-el-nino-ha-diviso-la-stagione-degli-uragani-tra-atlantico-e-",
    "data": "2026-11-25",
