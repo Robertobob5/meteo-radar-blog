@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-26T07:22:04.094Z",
+ "aggiornato": "2026-11-27T07:21:54.924Z",
  "articoli": [
+  {
+   "id": "2026-11-27-dal-rischio-di-alluvioni-all-oceano-le-ricerche-cmcc-ad-agu2",
+   "data": "2026-11-27",
+   "titolo": "Dal rischio di alluvioni all’oceano: le ricerche CMCC ad AGU26",
+   "sottotitolo": "Intelligenza artificiale, previsioni ambientali e scenari climatici tra i temi portati dal CMCC all’incontro internazionale di San Francisco.",
+   "categoria": "Ricerca",
+   "minuti": 4,
+   "copertina": "immagini/2026-11-27-dal-rischio-di-alluvioni-all-oceano-le-ricerche-cmcc-ad-agu2-copertina.webp",
+   "miniatura": "immagini/2026-11-27-dal-rischio-di-alluvioni-all-oceano-le-ricerche-cmcc-ad-agu2-mini.webp",
+   "fonte": "CMCC",
+   "fonteUrl": "https://www.cmcc.it/article/from-ai-to-climate-resilience-cmcc-brings-frontier-science-to-agu26",
+   "fonteTitolo": "From AI to climate resilience: CMCC brings frontier science to AGU26",
+   "file": "articoli/2026-11-27-dal-rischio-di-alluvioni-all-oceano-le-ricerche-cmcc-ad-agu2.json"
+  },
   {
    "id": "2026-11-26-due-sistemi-di-maltempo-complicano-gli-spostamenti-della-set",
    "data": "2026-11-26",
