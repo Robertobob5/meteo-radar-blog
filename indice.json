@@ -1,6 +1,20 @@
 {
- "aggiornato": "2026-11-27T07:21:54.924Z",
+ "aggiornato": "2026-11-28T07:22:02.045Z",
  "articoli": [
+  {
+   "id": "2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun",
+   "data": "2026-11-28",
+   "titolo": "Il sistema INGV per le previsioni probabilistiche degli tsunami riceve un premio internazionale",
+   "sottotitolo": "Il metodo PTF stima rapidamente intensità e incertezza delle onde nel Mediterraneo dopo un forte terremoto.",
+   "categoria": "Terremoti",
+   "minuti": 3,
+   "copertina": "immagini/2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun-copertina.webp",
+   "miniatura": "immagini/2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun-mini.webp",
+   "fonte": "INGV Terremoti",
+   "fonteUrl": "https://ingvterremoti.com/2026/11/25/premiato-il-sistema-ingv-per-la-previsione-probabilistica-degli-tsunami/",
+   "fonteTitolo": "Premiato il sistema INGV per la previsione probabilistica degli tsunami",
+   "file": "articoli/2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun.json"
+  },
   {
    "id": "2026-11-27-dal-rischio-di-alluvioni-all-oceano-le-ricerche-cmcc-ad-agu2",
    "data": "2026-11-27",

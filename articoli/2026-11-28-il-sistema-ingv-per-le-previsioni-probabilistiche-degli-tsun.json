@@ -1,0 +1,80 @@
+{
+ "id": "2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun",
+ "data": "2026-11-28",
+ "scritto": "2026-11-28T07:22:02.045Z",
+ "titolo": "Il sistema INGV per le previsioni probabilistiche degli tsunami riceve un premio internazionale",
+ "sottotitolo": "Il metodo PTF stima rapidamente intensità e incertezza delle onde nel Mediterraneo dopo un forte terremoto.",
+ "categoria": "Terremoti",
+ "copertina": "immagini/2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun-copertina.webp",
+ "copertinaAlt": "Illustrazione del Mediterraneo con onde sismiche in mare e aree costiere rappresentate da fasce di probabilità.",
+ "miniatura": "immagini/2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun-mini.webp",
+ "blocchi": [
+  {
+   "tipo": "paragrafo",
+   "testo": "Il sistema Probabilistic Tsunami Forecasting, chiamato PTF, ha ricevuto il premio HPCwire Readers’ Choice Award 2026 nella categoria dedicata al miglior uso del calcolo ad alte prestazioni e dell’intelligenza artificiale in risposta a problemi che riguardano la società. Il riconoscimento è stato assegnato durante la Supercomputing Conference 2026, tenuta a Chicago, negli Stati Uniti."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il PTF è operativo nel Mar Mediterraneo dal 5 ottobre 2026 presso il Centro Allerta Tsunami dell’INGV, indicato come CAT-INGV. Il suo obiettivo è fornire, in tempi rapidi, stime probabilistiche dell’intensità delle onde di tsunami che possono essere generate da un terremoto. Una previsione probabilistica non restituisce un unico esito: indica invece la probabilità dei diversi possibili livelli di impatto e rende esplicita l’incertezza associata alla valutazione."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Cosa valuta il sistema dopo un terremoto"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Nei minuti successivi a un forte terremoto in mare o vicino alla costa, il PTF può stimare la probabilità che l’intensità dello tsunami superi determinate soglie in punti già definiti lungo le coste del Mediterraneo. La rapidità è quindi accompagnata da un’informazione aggiuntiva: non soltanto quale possa essere l’intensità dell’onda, ma anche quanto sia incerta la previsione disponibile in quel momento."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Per elaborare queste stime, il metodo combina le prime informazioni raccolte sull’evento sismico con le conoscenze sismotettoniche già disponibili per l’area interessata. La sismotettonica studia il rapporto tra terremoti e strutture geologiche che si muovono nella crosta terrestre. Da questa integrazione il sistema produce valutazioni probabilistiche dell’impatto possibile dello tsunami."
+  },
+  {
+   "tipo": "immagine",
+   "alt": "Schema illustrato di onde di tsunami che dal mare raggiungono diversi punti della costa mediterranea.",
+   "didascalia": "Il PTF stima la probabilità di superare specifiche soglie di intensità in punti costieri predefiniti.",
+   "file": "immagini/2026-11-28-il-sistema-ingv-per-le-previsioni-probabilistiche-degli-tsun-1.webp"
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Dalla singola indicazione alla stima dell’incertezza"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "La quantificazione delle incertezze è uno degli aspetti distintivi del PTF. Il sistema non si limita a fornire una singola previsione, ma restituisce una valutazione probabilistica del possibile impatto dello tsunami. In questo modo mette a disposizione informazioni ulteriori a supporto delle decisioni dei centri di allerta."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Secondo la fonte, questo approccio supera i limiti della precedente matrice decisionale. Il passaggio centrale è l’uso congiunto delle informazioni iniziali sul sisma e delle conoscenze già disponibili sull’area: il risultato è una stima che considera esplicitamente l’incertezza, anziché ridurla a una sola risposta."
+  },
+  {
+   "tipo": "sottotitolo",
+   "testo": "Una collaborazione tra ricerca e calcolo"
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "Il progetto è il risultato di una collaborazione multidisciplinare sostenuta dal Dipartimento della Protezione Civile e rafforzata dai progetti di ricerca europei ChEESE, Eflows4HPC e DT-GEO. Nel lavoro sono stati coinvolti anche il CINECA, tra i principali centri di calcolo ad alte prestazioni in Italia e in Europa, l’Istituto Geotecnico Norvegese e il Dipartimento di Matematica Applicata dell’Università di Malaga."
+  },
+  {
+   "tipo": "paragrafo",
+   "testo": "L’Università di Malaga ha sviluppato il codice numerico impiegato dal PTF per simulare gli tsunami su GPU. Un codice numerico è un insieme di procedure di calcolo usate per rappresentare un fenomeno; le GPU sono processori grafici utilizzati anche per eseguire calcoli. Il calcolo ad alte prestazioni, spesso indicato con la sigla HPC, permette di affrontare elaborazioni complesse."
+  },
+  {
+   "tipo": "riquadro",
+   "titolo": "In breve",
+   "testo": "Il PTF è operativo nel Mediterraneo presso il CAT-INGV. Dopo un forte terremoto in mare o vicino alla costa, stima la probabilità che l’intensità di uno tsunami superi soglie stabilite in località costiere predefinite. Il sistema integra dati iniziali sul terremoto e conoscenze sismotettoniche dell’area, indicando anche il grado di incertezza delle valutazioni."
+  }
+ ],
+ "parole": 513,
+ "minuti": 3,
+ "fonte": {
+  "nome": "INGV Terremoti",
+  "titolo": "Premiato il sistema INGV per la previsione probabilistica degli tsunami",
+  "url": "https://ingvterremoti.com/2026/11/25/premiato-il-sistema-ingv-per-la-previsione-probabilistica-degli-tsunami/",
+  "lingua": "it"
+ },
+ "generato": {
+  "testo": "gpt-5.6-terra",
+  "immagini": "gpt-image-2"
+ }
+}
